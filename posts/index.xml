@@ -4,12 +4,25 @@
         <link>https://amingosec.github.io/posts/</link>
         <description>All Posts | 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Test</title>
-    <link>https://amingosec.github.io/posts/test/</link>
+    <title>Windows Event Log</title>
+    <link>https://amingosec.github.io/posts/windows-event-log/</link>
     <pubDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://amingosec.github.io/posts/test/</guid>
-    <description><![CDATA[這是另一個測試文章]]></description>
+    <guid>https://amingosec.github.io/posts/windows-event-log/</guid>
+    <description><![CDATA[Event Log Location %SystemRoot%\System32\winevt\Logs\
+三種主要取得 Event Log 的方法：
+Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx
+在 System 中有主機運作的相關訊息。
+Security.evtx
+在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
+Application.evtx
+Application log
+Windows PowerShell.evtx
+在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
+%SystemRoot%\System32\winevt\ Logs\Microsoft-Windows-PowerShell%4Operational.evtx
+windows rdp
+Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx
+MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。]]></description>
 </item>
 <item>
     <title>My First Post</title>

@@ -55,9 +55,22 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/test/">Test</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content">這是另一個測試文章</div><div class="post-footer">
-        <a href="/posts/test/">Read More</a></div>
+        <a href="/posts/windows-event-log/">Windows Event Log</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content">Event Log Location %SystemRoot%\System32\winevt\Logs\
+三種主要取得 Event Log 的方法：
+Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx
+在 System 中有主機運作的相關訊息。
+Security.evtx
+在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
+Application.evtx
+Application log
+Windows PowerShell.evtx
+在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
+%SystemRoot%\System32\winevt\ Logs\Microsoft-Windows-PowerShell%4Operational.evtx
+windows rdp
+Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx
+MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。</div><div class="post-footer">
+        <a href="/posts/windows-event-log/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/my-first-post/">My First Post</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content">Introduction This is bold text, and this is emphasized text.
