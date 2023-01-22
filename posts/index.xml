@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - 資安工作筆記</title>
+        <title>All Posts - </title>
         <link>https://amingosec.github.io/posts/</link>
-        <description>All Posts | 資安工作筆記</description>
+        <description>All Posts | </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Windows Event Log</title>
     <link>https://amingosec.github.io/posts/windows-event-log/</link>
