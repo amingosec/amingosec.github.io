@@ -55,6 +55,12 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/portswigger-file-upload/">PortSwigger-檔案上傳漏洞 lab 1</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-23">2023-01-23</time></span></div><div class="content">Lab 目標 Lab：remote code execution via web shell upload 利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 題目特別說明沒有任何的檢查，算是滿基本的上傳漏洞練習，webshell跟路徑都準備好了，讓攻擊者練習上傳漏洞需要注意的兩點。
+將檔案順利上傳到目標主機。 找到目標主機上傳檔案後的位置並呼叫檔案。 因此，利用burpsuite，可看到檔案被上傳到/files/avatars/資料夾下，假設上傳的檔名為shell.php，可直接利用browser去連/files/avatars/shell.php的頁面，會直接出現flag。最後將flag提交到最上面的banner就可以過關了。</div><div class="post-footer">
+        <a href="/posts/portswigger-file-upload/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/windows-event-log/">Windows Event Log</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content">Event Log Location %SystemRoot%\System32\winevt\Logs\
 三種主要取得 Event Log 的方法：
