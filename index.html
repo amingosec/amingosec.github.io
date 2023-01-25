@@ -55,11 +55,27 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/portswigger-file-upload/">PortSwigger-檔案上傳漏洞 lab 1</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-23">2023-01-23</time></span></div><div class="content">Lab 目標 Lab：remote code execution via web shell upload 利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+        <a href="/posts/portswigger-file-upload-lab-2/">PortSwigger 檔案上傳漏洞 lab 2</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-26">2023-01-26</time></span></div><div class="content">名稱 Web shell upload via Content-Type restriction bypass
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，這個lab針對上傳的內容做了Content-Type的檢查，練習利用burpsuit修改Content-Type來繞過檢查的目標。
+因為此lab只是利用Content-Type檢查，webshell 不用調整，可使用上一個 lab 的 shell。
+一樣先上傳一個正常的檔案，確認檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。 在上傳 shell 前啟動 proxy intercept，將上傳的 Content-Type 修改成 image/jpeg 後再進行 forward。 上傳成功後，連線shell，flag會直接出現在browser中，提交就可以完成此lab。 </div><div class="post-footer">
+        <a href="/posts/portswigger-file-upload-lab-2/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/learning-resource/">Learning Resource</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-25">2023-01-25</time></span></div><div class="content">在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。
+Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的Learning Path，雖說大多是介紹微軟的工具，但所包含的內容相當的廣，很適合初學者學習。
+這邊列出幾個我覺得滿實用的 Learning Path。
+Introduction to version control with Git - Learn | Microsoft Docs Introduction to GitHub - Learn | Microsoft Docs Introduction to Docker containers - Learn | Microsoft Docs Introduction to Kubernetes on Azure - Learn | Microsoft Docs </div><div class="post-footer">
+        <a href="/posts/learning-resource/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/portswigger-file-upload-lab-1/">PortSwigger 檔案上傳漏洞 lab 1</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-23">2023-01-23</time></span></div><div class="content">名稱 Lab：remote code execution via web shell upload
+目標 利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
 說明 題目特別說明沒有任何的檢查，算是滿基本的上傳漏洞練習，webshell跟路徑都準備好了，讓攻擊者練習上傳漏洞需要注意的兩點。
 將檔案順利上傳到目標主機。 找到目標主機上傳檔案後的位置並呼叫檔案。 因此，利用burpsuite，可看到檔案被上傳到/files/avatars/資料夾下，假設上傳的檔名為shell.php，可直接利用browser去連/files/avatars/shell.php的頁面，會直接出現flag。最後將flag提交到最上面的banner就可以過關了。</div><div class="post-footer">
-        <a href="/posts/portswigger-file-upload/">Read More</a></div>
+        <a href="/posts/portswigger-file-upload-lab-1/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/windows-event-log/">Windows Event Log</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content">Event Log Location %SystemRoot%\System32\winevt\Logs\
