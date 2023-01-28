@@ -55,6 +55,14 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/get-the-stored-wifi-password-on-windows/">Windows-找尋已連線過的Wifi 密碼</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-27">2021-04-27</time></span></div><div class="content">利用netsh wlan指令找出連線過的Wifi名稱
+netsh wlan show profiles
+再利用以下指令，針對想查詢的wlan名稱顯示明碼的Key，[WLAN Name]請換成想查詢的名稱
+netsh wlan show profiles name=&quot;[WLAN Name]&quot; key=clear</div><div class="post-footer">
+        <a href="/posts/get-the-stored-wifi-password-on-windows/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/860/"></a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-25">2021-04-25</time></span></div><div class="content"></div><div class="post-footer">
         <a href="/posts/860/">Read More</a><div class="post-tags">
@@ -92,11 +100,6 @@ wevtutil el 列出系統中所有日誌名稱 wevtutil cl system 清理系統日
 延伸閱讀 資訊安全-Wevtutil 日誌指令 RedTeam攻擊技巧和安全防禦 Redteam-紅隊作戰執行手冊 [轉]lonelysec-OSCP心得分享 參考文章 https://mp.weixin.qq.com/s/SWMWVezAVzykkjTuRRDxJw</div><div class="post-footer">
         <a href="/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/">從紅隊角度看Mittre Att&amp;ck</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-24">2021-04-24</time></span></div><div class="content">link.medium.com/ILX1KSadIfb</div><div class="post-footer">
-        <a href="/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -127,7 +130,7 @@ wevtutil el 列出系統中所有日誌名稱 wevtutil cl system 清理系統日
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/36/">36</a>
+                        <a href="/page/35/">35</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

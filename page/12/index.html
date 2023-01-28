@@ -55,6 +55,13 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/">Windows Server Update Services (WSUS) 介紹</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content">WSUS是windows提供更新管理的Server
+影片說明 https://www.youtube.com/watch?v=Yv0qjxdX5yw
+文章連結 https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+ 相關攻擊手法 https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/</div><div class="post-footer">
+        <a href="/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/pstools/">工具介紹-PsTools</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content">PsExec：執行遠端電腦上的指令
 PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，或是Regedit等特定的系統工具程式。舉例來說，若我們欲在名稱為iThome的遠端電腦上，執行test.exe程式，則可鍵入「psexec \\iThome -u user -p passwd -c c:\test.exe」，其中user與passwd為系統管理員帳號及密碼，而這兩個也是PsTools的公用參數；至於-c則代表先將應用程式test.exe，複製到遠端電腦後再執行。值得注意的是，若使用者未指定欲執行的應用程式路徑，則會使用預設的原始目錄，亦即Windows根目錄（％SystemRoot％）。
@@ -109,14 +116,6 @@ nc -nv 192.168.0.1 3389 -n 表示不解析名稱 -v 表示所給的值 在本機
 nc -nlvp 8080 延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 參考文章 https://blog.gtwang.org/linux/linux-utility-netcat-examples https://myapollo.com.tw/zh-tw/linux-command-nc/ </div><div class="post-footer">
         <a href="/posts/netcat-nc-commands/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/netcat/">netcat</a>,&nbsp;<a href="/tags/red-team/">red team</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/windows-ir-comments/">在 Windows 系統上進行Incident Response 的重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-04">2021-05-04</time></span></div><div class="content">資訊安全-Windows Event Log位置 – 資安工作筆記 - Feb 1, 2022
-[…] Windows IR 方向 […]
-[…] Windows IR 方向 […]
-[…] 資安鑑識-Windows IR 方向 […]</div><div class="post-footer">
-        <a href="/posts/windows-ir-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ediscovery/">eDiscovery</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/">資安產品</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/incident-response/">Incident Response</a>,&nbsp;<a href="/tags/windows/">Windows</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -147,7 +146,7 @@ nc -nlvp 8080 延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 參
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/36/">36</a>
+                        <a href="/page/35/">35</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
