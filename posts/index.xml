@@ -25,31 +25,6 @@ Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx
 MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。]]></description>
 </item>
 <item>
-    <title>4個必知重點讓你的遠端會議更輕鬆</title>
-    <link>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</link>
-    <pubDate>Fri, 26 Aug 2022 16:56:37 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</guid>
-    <description><![CDATA[隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。
-在疫情間建立起遠端會議的模式讓會議的時間地點更有彈性，方便性的提升讓更多人習慣使用遠端開會。
-在進行遠端會議時，注意以下5個要點，會讓你開會起來更顯專業與輕鬆。
-耳麥的選擇與設定 視訊鏡頭的設定 簡報投影的方式 準備好備案 耳麥的選擇與設定 在遠端會議中耳麥可說是最重要的部份，看過太多的會議因為收不到聲音而拖了快半小時還無法開會。
-目前自己使用的方法是Apple 的 3.5 mm耳麥加上他們家的type c 轉 3.5 mm的轉接頭，在大部份的情境下都相當適用，也有不錯的品質。
-幾次經驗下來，發現回歸傳統的 3.5 mm 有線耳麥是相當好的選擇。收音穩定也不會有藍芽耳機要開會到一半充電的問題。
-但在使用 3.5 mm 耳麥上會遇到規格不同的問題。有分為 CTIA/OMTP兩種規格，一般廠商不會特別說明，如果耳麥的規格跟電腦不同，就會出現只有聲音，但麥克風無法使用的狀況。因此除了買兩種規格的轉接頭外，建議使用可支援兩種規格的USB網卡，加上平常使用的耳麥，就可以達到通訊的效果。
-所以怕麻煩或沒有特別想法下，可以參考我的做法，CP值不一定最好，但沒出什麼大差錯，省了不少工。
-視訊鏡頭的設定 轉到遠端會議時後，少了面對面的接觸難免多了生疏，加上有時會議會希望能看到人，增加參與人的專注度，鏡頭的設定就相當重要了。在感受上來說，開啟鏡頭的會議更可以感受到對會議的重視跟專業。
-視訊鏡頭設定上需要注意兩部份
-虛擬背景 鏡頭蓋 依使用的視訊軟體不同，會有各種虛擬背景可以選，最基本的會有模糊背景的選項。因此可以在會議前設定好自己的背景確認一下效果再進入會議室。
-另外增加了鏡頭後隨之而來的隱私問題不可不防，鏡頭蓋是相當簡單的商品之一，在筆電上貼上一個鏡頭貼，不使用時直接蓋上相當的好用。如果會議中不想開鏡頭，不小心打開了鏡頭蓋就可避免這個錯誤。
-簡報投影的方式 在投影簡報時，如會果沒有接投影機，沒有第二個螢幕，遇到狀況是投影的結果把整的螢幕佔滿，沒有辦法看到會議中的對話。
-如果使用Teams的話，建議使用PPT的投影到teams中，會有不錯的效果。
-如果是使用其他的會議軟體，建議使用投影到視窗，再利用分享視窗的方式讓報告呈現出來。就可以達到分享視窗加同時看到會議內容的結果。
-準備好備案 之前參加一個線上產品發表，最後在發表前因為原本使用的會議系統出包無法使用，臨時通知所有參加的人換另一個連結，但因為沒有測試好，拖了半小時以上。
-這就就是備案的重要，不論是舉辦會議，還是參加會議，建議把所有會用的軟硬體都找好備案，並想好備案轉換方法，在遇到問題時立刻轉換。
-在WFH期間遇到了不少會議與工作上原本的系統與軟體無法使用，需要找備案狀況，都因為有了準備而安然渡過。]]></description>
-</item>
-<item>
     <title>Learning Resource</title>
     <link>https://amingosec.github.io/posts/learning-resource/</link>
     <pubDate>Sun, 10 Jul 2022 21:10:16 &#43;0800</pubDate>
@@ -156,6 +131,32 @@ Regex Previewer 身為資訊人員多會遇到的正則表示，這個 extension
 url decode 解url encode
 Hex Editor 讓 VS Code 有看跟編輯 raw hexadecimal 的功能。
 參考連結 https://towardsdatascience.com/best-vs-code-extensions-of-2022-e9b49990cb4b]]></description>
+</item>
+<item>
+    <title>獨立線路的另一個選擇 - 無框行動 Circles.Life</title>
+    <link>https://amingosec.github.io/posts/introduction-to-circles-life/</link>
+    <pubDate>Sun, 17 Apr 2022 05:13:22 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-circles-life/</guid>
+    <description><![CDATA[在執行資安工作時，不論是事件、惡意程式分析或滲透，都會需要獨立的線路。尤其是在家工作時，相較牽新的線路，使用 4G 網路會是很好的選擇，而**無框行動 Circles.Life** 的方案相當值得推薦。搭配 4G LTE 無線路由器可快速建立獨立線路。
+為何需要使用獨立線路 在執行一些任務時，不論事件分析，還是特定的演練，最好是需要跟自己原本的網路做區隔，不讓正常工作的網路受到影響；同時，很多任務的內容本身就違反公司資安政策，需要使用這類的 Drity line 來運行。尤其是現在越來越多公司開始 WFH 如果單使用家中網路進行資安相關工作不太適合，這時使用另一個網路就顯的很必要。
+為何推薦無框行動 Circles.Life 配合 4G LTE 無線路由器輕鬆建立備用網路 在疫情下，如果要讓人到家中工裝難免不放心，無框行動 Circles.Life 是全數位電信，一切申請都可在家中完成，sim 卡可宅配到家，結合 4G LTE 無線路由器可輕鬆享有備用網路。
+吃不飽可退錢 在466吃到飽方案中，提供吃不飽的減免機制，針對用量不固定的使用來說，相當有吸引力。
+用量
+減免金額
+月付
+用量 &lt; 3GB
+$300
+$166
+3GB ≦ 用量 &lt; 18GB
+$100
+$366
+無綁約 這點相當重要，有時只是短期需求，無綁約給了使用上相當大的彈性，可以自由的申辦，不必受到合約的限制。
+直接網路申辦 如果實務上有需要，真的相當推薦，點下面連結直接申辦吃到飽方案。
+近期也有愚人節不框你活動，輸入序號申辦可加贈 200 元 7-11 商品卡。
+cv_ad_options = { ad_slot_id: &ldquo;54888aec73ae1608938c913a5c3d75ca&rdquo;, ad_width: &ldquo;364&rdquo;, ad_height: &ldquo;90&rdquo;, mode: &ldquo;production&rdquo; };
+品牌介紹 國際級行動電信－無框行動 Circles.Life
+「無框行動」顧名思義就是希望能打破傳統電信的合約框架，帶給你不綁約的電信自由，不綁約可以帶給你的比想要中還更多。無框行動成立於新加坡，主要股東包括紅杉資本印度、美國矽谷創投等世界級投資公司，並持續擴展海外市場。台灣是我們的海外據點第一站，並已陸續插旗在澳洲、印尼等市場，誓言要將電信自由概念席捲全球。]]></description>
 </item>
 </channel>
 </rss>

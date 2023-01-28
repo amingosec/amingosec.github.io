@@ -3,32 +3,7 @@
         <title>未分類 - Tag - </title>
         <link>https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/</link>
         <description>未分類 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 26 Aug 2022 16:56:37 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/" rel="self" type="application/rss+xml" /><item>
-    <title>4個必知重點讓你的遠端會議更輕鬆</title>
-    <link>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</link>
-    <pubDate>Fri, 26 Aug 2022 16:56:37 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</guid>
-    <description><![CDATA[隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。
-在疫情間建立起遠端會議的模式讓會議的時間地點更有彈性，方便性的提升讓更多人習慣使用遠端開會。
-在進行遠端會議時，注意以下5個要點，會讓你開會起來更顯專業與輕鬆。
-耳麥的選擇與設定 視訊鏡頭的設定 簡報投影的方式 準備好備案 耳麥的選擇與設定 在遠端會議中耳麥可說是最重要的部份，看過太多的會議因為收不到聲音而拖了快半小時還無法開會。
-目前自己使用的方法是Apple 的 3.5 mm耳麥加上他們家的type c 轉 3.5 mm的轉接頭，在大部份的情境下都相當適用，也有不錯的品質。
-幾次經驗下來，發現回歸傳統的 3.5 mm 有線耳麥是相當好的選擇。收音穩定也不會有藍芽耳機要開會到一半充電的問題。
-但在使用 3.5 mm 耳麥上會遇到規格不同的問題。有分為 CTIA/OMTP兩種規格，一般廠商不會特別說明，如果耳麥的規格跟電腦不同，就會出現只有聲音，但麥克風無法使用的狀況。因此除了買兩種規格的轉接頭外，建議使用可支援兩種規格的USB網卡，加上平常使用的耳麥，就可以達到通訊的效果。
-所以怕麻煩或沒有特別想法下，可以參考我的做法，CP值不一定最好，但沒出什麼大差錯，省了不少工。
-視訊鏡頭的設定 轉到遠端會議時後，少了面對面的接觸難免多了生疏，加上有時會議會希望能看到人，增加參與人的專注度，鏡頭的設定就相當重要了。在感受上來說，開啟鏡頭的會議更可以感受到對會議的重視跟專業。
-視訊鏡頭設定上需要注意兩部份
-虛擬背景 鏡頭蓋 依使用的視訊軟體不同，會有各種虛擬背景可以選，最基本的會有模糊背景的選項。因此可以在會議前設定好自己的背景確認一下效果再進入會議室。
-另外增加了鏡頭後隨之而來的隱私問題不可不防，鏡頭蓋是相當簡單的商品之一，在筆電上貼上一個鏡頭貼，不使用時直接蓋上相當的好用。如果會議中不想開鏡頭，不小心打開了鏡頭蓋就可避免這個錯誤。
-簡報投影的方式 在投影簡報時，如會果沒有接投影機，沒有第二個螢幕，遇到狀況是投影的結果把整的螢幕佔滿，沒有辦法看到會議中的對話。
-如果使用Teams的話，建議使用PPT的投影到teams中，會有不錯的效果。
-如果是使用其他的會議軟體，建議使用投影到視窗，再利用分享視窗的方式讓報告呈現出來。就可以達到分享視窗加同時看到會議內容的結果。
-準備好備案 之前參加一個線上產品發表，最後在發表前因為原本使用的會議系統出包無法使用，臨時通知所有參加的人換另一個連結，但因為沒有測試好，拖了半小時以上。
-這就就是備案的重要，不論是舉辦會議，還是參加會議，建議把所有會用的軟硬體都找好備案，並想好備案轉換方法，在遇到問題時立刻轉換。
-在WFH期間遇到了不少會議與工作上原本的系統與軟體無法使用，需要找備案狀況，都因為有了準備而安然渡過。]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 27 Apr 2021 01:19:42 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/" rel="self" type="application/rss+xml" /><item>
     <title>Windows-找尋已連線過的Wifi 密碼</title>
     <link>https://amingosec.github.io/posts/get-the-stored-wifi-password-on-windows/</link>
     <pubDate>Tue, 27 Apr 2021 01:19:42 &#43;0000</pubDate>
@@ -122,6 +97,15 @@ https://www.bnext.com.tw/article/52521/citrix-hacker-iran
     <author>Author</author>
     <guid>https://amingosec.github.io/posts/github%E8%B7%9Fraw-githubusercontent-com/</guid>
     <description><![CDATA[在看到不少Powershell攻擊指令時，都會raw.githubusercontent.com下載東西，其實是在github上的code點raw看到的URL，除了一開始的domain不同外，後面的路徑是相同的。]]></description>
+</item>
+<item>
+    <title>Windows - 利用Kali Linux找回登入密碼</title>
+    <link>https://amingosec.github.io/posts/windows-%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC-%E5%88%A9%E7%94%A8kali-linux-comments/</link>
+    <pubDate>Sat, 15 Aug 2020 03:25:49 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/windows-%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC-%E5%88%A9%E7%94%A8kali-linux-comments/</guid>
+    <description><![CDATA[windows-NTP設定 – 資安工作筆記 - Mar 4, 2022
+[…] Windows 忘記密碼-利用Kali Linux […]]]></description>
 </item>
 </channel>
 </rss>

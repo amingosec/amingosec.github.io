@@ -5,12 +5,10 @@
             <loc>https://amingosec.github.io/</loc><lastmod>2023-01-22T20:13:06&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/</loc><lastmod>2023-01-22T20:13:06&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/windows-event-log/</loc><lastmod>2023-01-22T20:13:06&#43;08:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</loc><lastmod>2022-08-26T16:56:37&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/tags/</loc><lastmod>2022-08-26T16:56:37&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/</loc><lastmod>2022-08-26T16:56:37&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/learning-resource/</loc><lastmod>2022-07-10T21:10:16&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/kali-linux/</loc><lastmod>2022-05-25T06:39:02&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</loc><lastmod>2022-05-25T06:39:02&#43;00:00</lastmod></url><url>
+            <loc>https://amingosec.github.io/tags/</loc><lastmod>2022-05-25T06:39:02&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/upgrade/</loc><lastmod>2022-05-25T06:39:02&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/</loc><lastmod>2022-05-25T06:39:02&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/powershell/</loc><lastmod>2022-05-19T16:59:16&#43;00:00</lastmod></url><url>
@@ -138,6 +136,7 @@
             <loc>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks-comments/</loc><lastmod>2021-04-28T12:34:50&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks/</loc><lastmod>2021-04-28T12:34:50&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/get-the-stored-wifi-password-on-windows/</loc><lastmod>2021-04-27T01:19:42&#43;00:00</lastmod></url><url>
+            <loc>https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/</loc><lastmod>2021-04-27T01:19:42&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/860/</loc><lastmod>2021-04-25T04:10:38&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E8%B3%87%E5%AE%89%E7%9B%B8%E9%97%9C%E7%B6%B2%E7%AB%99/</loc><lastmod>2021-04-25T04:07:57&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/2021hw%E5%8F%82%E8%80%83%E7%BA%A2%E8%93%9D%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98%E6%BC%94%E4%B9%A0%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/</loc><lastmod>2021-04-24T17:29:51&#43;00:00</lastmod></url><url>
@@ -318,4 +317,6 @@
             <loc>https://amingosec.github.io/tags/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/</loc><lastmod>2017-12-17T02:41:31&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/home/</loc><lastmod>2017-12-17T02:41:31&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E7%B0%A1%E4%BB%8B/</loc><lastmod>2017-12-17T02:36:31&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/categories/</loc></url></urlset>
+            <loc>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</loc></url><url>
+            <loc>https://amingosec.github.io/categories/</loc></url><url>
+            <loc>https://amingosec.github.io/tags/%E5%B7%A5%E4%BD%9C%E7%BF%92%E6%85%A3/</loc></url></urlset>

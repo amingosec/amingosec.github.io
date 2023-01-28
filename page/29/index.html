@@ -55,15 +55,6 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">工具介紹-nmap使用</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-26">2018-08-26</time></span></div><div class="content">nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn
-Port Scanning 狀態：open，close、filtered、unfiltered、open|filtered、closed|filtered -sT TCP scan -sU UTP scan -sA ACK scanning 可以確定是否有防火牆檔著 -sX Xmas scan
-OS fingerprinting -sV -O
-其他指令 -vv 列出詳細掃瞄狀態
-延伸閱讀 工具介紹-hping 使用 工具介紹-Netcat指令 Nmap Cheat Sheet 參考資料 https://nmap.org/docs/discovery.pdf https://nmap.org/docs/nmap-mindmap.pdf https://rookiehunting.wordpress.com/2022/02/02/nmap-a-brief-introduction/ </div><div class="post-footer">
-        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/nmap/">nmap</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/">關於資安事件因應</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-11">2018-08-11</time></span></div><div class="content">關於事件因應，常會聽到各種不同的說法，參加了幾個課程有的講師認為應該在發現有問題時直接隔離主機，以防問題病毒擴散；有的認為應該放著，好好檢查找出問題根源一次解決。這兩種完全不同的方向，好像都有理，但又相互矛盾，但目前看到最正確的做法是，依照公司SOP操作。 依照公司SOP感覺沒有回答問題，但又確實重要。試想，所請來的資安顧問跟公司內部人員，誰會更瞭解公司設備的重要性？訂便當系統、教育訓練系統受感染了，要斷隨時可以斷，不會有事，但今天出事的如果是公司主要營運的系統直接隔離的損失可能更大。而公司所有系統，資安人員不一定每個都熟，依經驗，依感覺冒然處理都不是好方法，這就是SOP的重要性了。 但我想，更重要的是SOP的產生。公司是否有平時有計畫與確實演練都是在面對資安件事時能將損害降到最低的重要因素。</div><div class="post-footer">
         <a href="/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/">Read More</a><div class="post-tags">
@@ -95,6 +86,12 @@ Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
 Level 1 &lt;body/onload=prompt(1)//</div><div class="post-footer">
         <a href="/posts/prompt1-to-win-xss/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">File Inclusion 漏洞練習</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-24">2018-07-24</time></span></div><div class="content">如果在metasploitable2上使用這個漏洞，需先將php.ini檔做設定。 allow_url_fopen = On allow_url_include = On (反過來說，如果將上面兩行設成Off，將可以有效的防止這個漏洞) 確認事項
+弱點主機與攻擊主機可以互連 在攻擊主機上先建立好revers shell檔，放入www資料夾中(通常會用txt檔，以免自己看時執行) 開啟nc 在弱點主機url的&quot;page=&ldquo;後輸入攻擊主機shell的網址 確認nc有監聽到 解決方法： 除了如上所說外，當php使用get 時，參數使用白名單的方法，名單外的以Error回應。 參考資料： https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_(OTG-AUTHZ-001)</div><div class="post-footer">
+        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/file-inclusion/">file inclusion</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

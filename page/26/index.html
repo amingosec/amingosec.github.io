@@ -55,12 +55,6 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/what-is-rdp-tunneling/">攻擊手法-RDP tunneling介紹與防範</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-28">2019-01-28</time></span></div><div class="content">介紹 利用受害者電腦對c2 Server建立起ssh連線行，進一步建立tunnel從c2 Server RDP連線至受害者主機。
-A Microsoft Windows component, RDP was designed to provide administrators, engineers, and users with remote access to systems. However, threat actors have been using the technology for nefarious purposes, and the trend continues, especially since an RDP attack is usually more difficult to detect than a backdoor. 說明How it works? Inbound RDP Tunneling , a common utility used to tunnel RDP sessions is PuTTY Link, commonly known as Plink.</div><div class="post-footer">
-        <a href="/posts/what-is-rdp-tunneling/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/fuzzing-%E4%BB%8B%E7%B4%B9/">Fuzzing 介紹</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-27">2019-01-27</time></span></div><div class="content">https://labs.mwrinfosecurity.com/blog/what-the-fuzz/</div><div class="post-footer">
         <a href="/posts/fuzzing-%E4%BB%8B%E7%B4%B9/">Read More</a><div class="post-tags">
@@ -90,6 +84,14 @@ A Microsoft Windows component, RDP was designed to provide administrators, engin
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-11-03">2018-11-03</time></span></div><div class="content">https://nginxconfig.io/ 最近看到的，似乎不錯</div><div class="post-footer">
         <a href="/posts/nginx%E8%A8%AD%E5%AE%9A%E6%AA%94%E5%AD%B8%E7%BF%92/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/">PowerShell - 修改網卡設定</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-28">2018-10-28</time></span></div><div class="content">可以使用以下兩個指令來設定IP與dns
+Set-NetIPAddress Set-DnsClientServerAddress
+例如： ps c:/&gt;set-NetIPAddress -InputObject lan1 -IPAddress 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.254
+ps c:/&gt;Set-DnsClientServerAddress -InputObject lan1 -ServerAddresses (&#34;10.0.0.1&#34;,&#34;10.0.0.2&#34;) ``` 參考資料 [https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps) [https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps) [https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/](https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/) </div><div class="post-footer">
+        <a href="/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
