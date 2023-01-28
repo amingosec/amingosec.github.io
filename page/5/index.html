@@ -60,10 +60,6 @@
         <a href="/posts/1404/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/primary/">Primary</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E8%B4%8A%E5%8A%A9%E4%BD%9C%E8%80%851%E6%9D%AF%E5%92%96%E5%95%A1/">贊助作者1杯咖啡</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-17">2022-02-17</time></span></div><div class="content">贊助作者1杯咖啡，讓作者能持續創作優良的文章。</div><div class="post-footer">
-        <a href="/posts/%E8%B4%8A%E5%8A%A9%E4%BD%9C%E8%80%851%E6%9D%AF%E5%92%96%E5%95%A1/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/what-is-credential-stuffing/">攻擊手法-Credential stuffing</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-11">2022-02-11</time></span></div><div class="content">說明 Credential stuffing為密碼破解的一種手法，利用在外部取得的帳密，在目標網站登入位置進行密碼噴灑、撞庫或其他爆力密碼破解方式。
 延伸閱讀 密碼破解-撞庫攻擊 密碼破解-密碼噴灑攻擊 參考網站 https://owasp.org/www-community/attacks/Credential_stuffing
@@ -104,6 +100,28 @@ Log集中監控 在企業中使用SIEM建立關連規則來監控是可以監控
 在討論資訊安全時，就會以此三件事為基礎展開來討論。</div><div class="post-footer">
         <a href="/posts/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/information-security/">Information Security</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/windows-server-iis-%E8%B7%91-php/">Windows-Windows Server IIS 上建立PHP網站</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-04">2022-02-04</time></span></div><div class="content">分享最近在IIS上使用Web Platform Installer安裝的經驗。
+OS：Server 2016
+PHP：8.0
+1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools
+2. 安裝VC++ Runtime 如果沒有安裝的話，之後會出現error code 500。可安裝最新的x86版本，下載連結如下：
+https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+3. 安裝Web Platform Installer 之後會透過Web Platform安裝PHP，下載連結如下：
+https://www.microsoft.com/web/downloads/platform.aspx
+4. 安裝PHP 進到IIS Manager，在左邊connections中選取自己的Hostname，再選取Web Platform Installer，圖中紅框處。
+進到Web Platform Installer後，選擇Product，再選擇想要安裝的PHP版本後，選擇Add，再點選下面的Install，如下圖紅框。
+之後再點選I Accept開始安裝
+5. 測試PHP安裝 在安裝好後，建立一個新檔案，輸入內容&lt;?php phpinfo(); ?&gt;
+將檔案存成C:\inetpub\wwwroot\Phpinfo.php
+存好檔後，開啟Broswer，進到http://localhost/phpinfo.php，會出現PHP的設定畫面，表示安裝完成。
+6. 其他事項 如果要使用php上傳檔案，請先確認php.ini檔案中的值file_uploads = On，同時上傳目標資料夾要有可寫入權限。
+延申閱讀 IIS log 位置 參考資料 https://docs.microsoft.com/en-us/iis/application-frameworks/scenario-build-a-php-website-on-iis/configuring-step-1-install-iis-and-php
+https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/quick-create-portal
+https://www.w3schools.com/php/php_file_upload.asp</div><div class="post-footer">
+        <a href="/posts/windows-server-iis-%E8%B7%91-php/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/windows/">Windows</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

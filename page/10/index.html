@@ -55,15 +55,6 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/using-powershell-to-check-scheduledtasks/">Powershell-查詢ScheduledTasks</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-28">2021-04-28</time></span></div><div class="content">指令
-Get-ScheduledTask 列出所有 ScheduledTask
-Get-ScheduledTask -TaskName &#34;SystemScan&#34; 針對特定Task名稱列出
-Get-ScheduledTask -TaskPath &#34;\\UpdateTasks\\\*&#34; 列出特定路徑的Task
-Get-ScheduledTask -TaskPath &#34;\\Microsoft\\Windows\\Work Folders\\&#34;,&#34;\\Microsoft\\Windows\\Workplace Join\\&#34; 其他跟 ScheduledTask 相關指令 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?view=windowsserver2019-ps</div><div class="post-footer">
-        <a href="/posts/using-powershell-to-check-scheduledtasks/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/get-the-stored-wifi-password-on-windows/">Windows-找尋已連線過的Wifi 密碼</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-27">2021-04-27</time></span></div><div class="content">利用netsh wlan指令找出連線過的Wifi名稱
 netsh wlan show profiles
@@ -102,6 +93,11 @@ windows Windows 主要清除的內容為event log跟recent的內容。
 wevtutil el 列出系統中所有日誌名稱 wevtutil cl system 清理系統日誌 wevtutil cl application 清理應用程式日誌 wevtutil cl security 清理安全性日誌 除了系統日誌外，如果問標是Web，也記得一併刪除wed access log。
 延伸閱讀 資訊安全-Wevtutil 日誌指令 RedTeam攻擊技巧和安全防禦 Redteam-紅隊作戰執行手冊 [轉]lonelysec-OSCP心得分享 參考文章 https://mp.weixin.qq.com/s/SWMWVezAVzykkjTuRRDxJw</div><div class="post-footer">
         <a href="/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/">從紅隊角度看Mittre Att&amp;ck</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-24">2021-04-24</time></span></div><div class="content">link.medium.com/ILX1KSadIfb</div><div class="post-footer">
+        <a href="/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
