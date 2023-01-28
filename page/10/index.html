@@ -55,17 +55,6 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/using-powershell-to-check-system-up-down-time/">PowerShell-使用powershell查找電腦開關機狀況</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-10">2021-06-10</time></span></div><div class="content">說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間
-Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果要存到特定檔案，可在後面加入&gt;來進行輸出
-Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap &gt; log.log 也可以使用 event id 27 來確認 boot time
-Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.message -like “The boot type*”} 或是
-Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like “27”} 其他方式 可以使用nirsoft的工具，TurnedOnTimesView ，來查找開關機狀態。
-https://www.nirsoft.net/utils/computer_turned_on_times.html
-延伸閱讀 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 參考連結 https://steachs.</div><div class="post-footer">
-        <a href="/posts/using-powershell-to-check-system-up-down-time/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/monitoring-active-directory-for-signs-of-compromise/">資安監控- 監控 AD 的受駭跡證</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-26">2021-05-26</time></span></div><div class="content">本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。
 介紹 資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。
@@ -106,6 +95,12 @@ IP/DN 資訊查找 https://community.riskiq.com https://www.robtex.com/ https://
 Before we discuss malware incidents in detail, first, we will understand what is malware? According to Norton, “Malware is an abbreviated form of “malicious software.” Malware is software that is specifically designed to gain access to or damage a computer, usually without the knowledge of the owner.</div><div class="post-footer">
         <a href="/posts/1011/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/blue-team/">Blue Team</a>,&nbsp;<a href="/tags/%E8%97%8D%E9%9A%8A/">藍隊</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/1010-comments/">藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-11">2021-05-11</time></span></div><div class="content">資安鑑識-Memory Analyzing – 資安工作筆記 - Feb 5, 2022
+[…] 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? […]</div><div class="post-footer">
+        <a href="/posts/1010-comments/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/blue-team/">Blue Team</a>,&nbsp;<a href="/tags/%E8%97%8D%E9%9A%8A/">藍隊</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -136,7 +131,7 @@ Before we discuss malware incidents in detail, first, we will understand what is
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/35/">35</a>
+                        <a href="/page/34/">34</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

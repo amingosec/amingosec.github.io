@@ -55,38 +55,6 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/private-ip-address/">Network-私有IP位置</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-10-23">2021-10-23</time></span></div><div class="content">私有IPv4 RFC1918 name
-IP address range
-Number of addresses
-Largest CIDR block (subnet mask)
-Host ID size
-Mask bits
-Classful description
-24-bit block
-10.0.0.0 – 10.255.255.255
-16777216
-10.0.0.0/8 (255.0.0.0)
-24 bits
-8 bits
-single class A network
-20-bit block
-172.16.0.0 – 172.31.255.255
-1048576
-172.16.0.0/12 (255.240.0.0)
-20 bits
-12 bits
-16 contiguous class B networks
-16-bit block
-192.168.0.0 – 192.168.255.255
-65536
-192.168.0.0/16 (255.255.0.0)
-16 bits
-16 bits
-256 contiguous class C networks</div><div class="post-footer">
-        <a href="/posts/private-ip-address/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/what-is-lateral-movement-comments/">資訊安全-內網橫向移動(Lateral Movement)介紹</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-31">2021-07-31</time></span></div><div class="content">網頁攻擊手法-上傳弱點 – 資安工作筆記 - Mar 3, 2022
 […] 資訊安全-內網橫向移動(Lateral Movement)介紹 […]</div><div class="post-footer">
@@ -128,6 +96,17 @@ https://github.com/SecureAuthCorp/impacket</div><div class="post-footer">
 […] 使用powershell查找電腦開關機狀況 […]</div><div class="post-footer">
         <a href="/posts/using-powershell-to-check-system-up-down-time-comments/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/using-powershell-to-check-system-up-down-time/">PowerShell-使用powershell查找電腦開關機狀況</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-10">2021-06-10</time></span></div><div class="content">說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間
+Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果要存到特定檔案，可在後面加入&gt;來進行輸出
+Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap &gt; log.log 也可以使用 event id 27 來確認 boot time
+Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.message -like “The boot type*”} 或是
+Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like “27”} 其他方式 可以使用nirsoft的工具，TurnedOnTimesView ，來查找開關機狀態。
+https://www.nirsoft.net/utils/computer_turned_on_times.html
+延伸閱讀 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 參考連結 https://steachs.</div><div class="post-footer">
+        <a href="/posts/using-powershell-to-check-system-up-down-time/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -158,7 +137,7 @@ https://github.com/SecureAuthCorp/impacket</div><div class="post-footer">
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/35/">35</a>
+                        <a href="/page/34/">34</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

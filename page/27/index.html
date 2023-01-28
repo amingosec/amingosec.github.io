@@ -55,21 +55,6 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-dns-tunneling-comments/">攻擊手法-DNS tunneling</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-12">2018-10-12</time></span></div><div class="content">名詞介紹-Domain Name Service (DNS) – 資安工作筆記 - Feb 4, 2022
-[…] DNS tunneling […]</div><div class="post-footer">
-        <a href="/posts/introduction-to-dns-tunneling-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">DNS</a>,&nbsp;<a href="/tags/domain/">domain</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-dns-tunneling/">攻擊手法-DNS tunneling</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-12">2018-10-12</time></span></div><div class="content">主要是利用dns 查詢的功能將backdoor的payload傳到受害電腦。
-首先攻擊者會註冊一個Domain，並將Domain指到攻擊者的主機。其次在受害者的主機上，執行的攻擊程式會開始進行DNS query。因為DNS query行為較容易被允許的，當受害主機進行查詢時，就可藉由DNS回傳攻擊payload建立起後門。
-因為DNS tunneling的行為非直接跟C2 server連線，所以較不容易被發現。
-延伸閱讀 名詞介紹-Domain Name Service (DNS)
-參考資料 https://www.paloaltonetworks.com/cyberpedia/what-is-dns-tunneling </div><div class="post-footer">
-        <a href="/posts/introduction-to-dns-tunneling/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">DNS</a>,&nbsp;<a href="/tags/domain/">domain</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/sql-injection-comments/">網頁攻擊手法-SQL injection</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-09-09">2018-09-09</time></span></div><div class="content">網頁攻擊手法-XSS 介紹 – 資安工作筆記 - Feb 0, 2022
 […] SQL injection […]
@@ -100,6 +85,22 @@ https://bbs.ichunqiu.com/thread-43169-1-1.html?from=snew
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-30">2018-08-30</time></span></div><div class="content">403 表示路徑正確，但沒有權限存取 404 表示路徑不存在 500 表示程式只接受特定的字元或符號(可透過使用正確的符號完成注入)</div><div class="post-footer">
         <a href="/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/http-status-codes/">HTTP status codes</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/how-to-find-subdomain/">工具介紹 - 子網域查找工具</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-28">2018-08-28</time></span></div><div class="content">sublist3r apt-get update apt-get install sublist3r
+網站工具 dnsdumpster 內容詳細，同時也提供domain mapping與xlsx檔下載。 DNStable DNStable滿完整的，還提供分類。 pentest-tools 除了sub domain查找外還有不少工具，每天提供每費點數試用，超過要錢。好處為找到後可以與網站提供的其他工具一同使用。
+其他 https://github.com/We5ter/Scanners-Box Scanners-Box各種掃描工具</div><div class="post-footer">
+        <a href="/posts/how-to-find-subdomain/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">DNS</a>,&nbsp;<a href="/tags/domain/">domain</a>,&nbsp;<a href="/tags/information-gathering/">information gathering</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">工具介紹-nmap使用</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-26">2018-08-26</time></span></div><div class="content">nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn
+Port Scanning 狀態：open，close、filtered、unfiltered、open|filtered、closed|filtered -sT TCP scan -sU UTP scan -sA ACK scanning 可以確定是否有防火牆檔著 -sX Xmas scan
+OS fingerprinting -sV -O
+其他指令 -vv 列出詳細掃瞄狀態
+延伸閱讀 工具介紹-hping 使用 工具介紹-Netcat指令 Nmap Cheat Sheet 參考資料 https://nmap.org/docs/discovery.pdf https://nmap.org/docs/nmap-mindmap.pdf https://rookiehunting.wordpress.com/2022/02/02/nmap-a-brief-introduction/ </div><div class="post-footer">
+        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/nmap/">nmap</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -130,7 +131,7 @@ https://bbs.ichunqiu.com/thread-43169-1-1.html?from=snew
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/35/">35</a>
+                        <a href="/page/34/">34</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
