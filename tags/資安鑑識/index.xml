@@ -5,41 +5,20 @@
         <description>資安鑑識 - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-osquery</title>
-    <link>https://amingosec.github.io/posts/introduction-to-osquery-comments/</link>
-    <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-osquery-comments/</guid>
-    <description><![CDATA[資安鑑識-Windows IR 方向 - 資安工作筆記 - Apr 6, 2022
-[…] 工具介紹-osquery […]
-[…] osquery 是 facebook 發展的 open source 軟體，也提供取得檔案 hash 值的方法，可以參考工具介紹 – osquery一文的說明。 […]]]></description>
-</item>
-<item>
-    <title>工具介紹-osquery</title>
     <link>https://amingosec.github.io/posts/introduction-to-osquery/</link>
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
-    <description><![CDATA[osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。
-說明 osquery是由facebook開發的開源工具，從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
+    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
 除了安裝版外，也提供免安裝版。
 osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
 取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
 osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
 osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
 取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
-scheduled_tasks table 資訊如下
-COLUMN
-TYPE
-DESCRIPTION
-name
-TEXT
-Name of the scheduled task
-action
-TEXT
-Actions executed by the scheduled task
-path
-TEXT
-Path to the executable to be run]]></description>
+可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
+c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
++---------------------------+------------------------------------------------------------------+ | name | action | +---------------------------+------------------------------------------------------------------+ | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1.]]></description>
 </item>
 <item>
     <title>Windows Event Log位置</title>
@@ -147,6 +126,18 @@ Local Group Policy Editor
 pstree
 cmdscan
 延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? 藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst ]]></description>
+</item>
+<item>
+    <title>工具介紹-PsTools</title>
+    <link>https://amingosec.github.io/posts/pstools/</link>
+    <pubDate>Thu, 06 May 2021 05:38:30 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/pstools/</guid>
+    <description><![CDATA[PsExec：執行遠端電腦上的指令
+PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，或是Regedit等特定的系統工具程式。舉例來說，若我們欲在名稱為iThome的遠端電腦上，執行test.exe程式，則可鍵入「psexec \\iThome -u user -p passwd -c c:\test.exe」，其中user與passwd為系統管理員帳號及密碼，而這兩個也是PsTools的公用參數；至於-c則代表先將應用程式test.exe，複製到遠端電腦後再執行。值得注意的是，若使用者未指定欲執行的應用程式路徑，則會使用預設的原始目錄，亦即Windows根目錄（％SystemRoot％）。
+遠端RPC指令
+相關連結 https://www.itprotoday.com/compute-engines/psexec
+https://docs.microsoft.com/en-us/sysinternals/downloads/pstools]]></description>
 </item>
 </channel>
 </rss>

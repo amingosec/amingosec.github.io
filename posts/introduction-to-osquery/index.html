@@ -5,58 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>工具介紹-osquery - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="工具介紹-osquery" />
-<meta property="og:description" content="osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。
-說明 osquery是由facebook開發的開源工具，從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
+<meta property="og:description" content="介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
 除了安裝版外，也提供免安裝版。
 osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
 取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
 osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
 osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
 取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
-scheduled_tasks table 資訊如下
-COLUMN
-TYPE
-DESCRIPTION
-name
-TEXT
-Name of the scheduled task
-action
-TEXT
-Actions executed by the scheduled task
-path
-TEXT
-Path to the executable to be run" />
+可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
+c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
+&#43;---------------------------&#43;------------------------------------------------------------------&#43; | name | action | &#43;---------------------------&#43;------------------------------------------------------------------&#43; | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://amingosec.github.io/posts/introduction-to-osquery/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-28T23:30:30+00:00" />
 <meta property="article:modified_time" content="2022-02-28T23:30:30+00:00" /><meta property="og:site_name" content="資安工作筆記" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="工具介紹-osquery"/>
-<meta name="twitter:description" content="osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。
-說明 osquery是由facebook開發的開源工具，從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
+<meta name="twitter:description" content="介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
 除了安裝版外，也提供免安裝版。
 osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
 取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
 osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
 osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
 取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
-scheduled_tasks table 資訊如下
-COLUMN
-TYPE
-DESCRIPTION
-name
-TEXT
-Name of the scheduled task
-action
-TEXT
-Actions executed by the scheduled task
-path
-TEXT
-Path to the executable to be run"/>
+可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
+c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
+&#43;---------------------------&#43;------------------------------------------------------------------&#43; | name | action | &#43;---------------------------&#43;------------------------------------------------------------------&#43; | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1."/>
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/introduction-to-osquery/" /><link rel="prev" href="https://amingosec.github.io/posts/1407/" /><link rel="next" href="https://amingosec.github.io/posts/introduction-to-osquery-comments/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/introduction-to-osquery/" /><link rel="prev" href="https://amingosec.github.io/posts/1407/" /><link rel="next" href="https://amingosec.github.io/posts/portswigger-file-upload-lab-1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -67,7 +45,7 @@ Path to the executable to be run"/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/amingosec.github.io\/posts\/introduction-to-osquery\/"
-        },"genre": "posts","keywords": "資訊安全, 資安監控, 資安鑑識, osquery","wordcount":  187 ,
+        },"genre": "posts","keywords": "資訊安全, 資安監控, 資安鑑識, osquery","wordcount":  90 ,
         "url": "https:\/\/amingosec.github.io\/posts\/introduction-to-osquery\/","datePublished": "2022-02-28T23:30:30+00:00","dateModified": "2022-02-28T23:30:30+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -109,7 +87,7 @@ Path to the executable to be run"/>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">工具介紹-osquery</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-02-28">2022-02-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;187 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-02-28">2022-02-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;90 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -118,7 +96,7 @@ Path to the executable to be run"/>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#說明">說明</a></li>
+    <li><a href="#介紹">介紹</a></li>
     <li><a href="#osqueryi-使用">osqueryi 使用</a>
       <ul>
         <li><a href="#取得檔案-hash-value">取得檔案 hash value</a></li>
@@ -128,9 +106,8 @@ Path to the executable to be run"/>
     <li><a href="#參考資料">參考資料</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。</p>
-<h2 id="說明">說明</h2>
-<p>osquery是由facebook開發的開源工具，從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的<a href="https://osquery.io/schema/5.2.2/" target="_blank" rel="noopener noreffer ">schema</a>。</p>
+            </div><div class="content" id="content"><h2 id="介紹">介紹</h2>
+<p>osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的<a href="https://osquery.io/schema/5.2.2/" target="_blank" rel="noopener noreffer ">schema</a>。</p>
 <p>除了安裝版外，也提供免安裝版。</p>
 <h2 id="osqueryi-使用">osqueryi 使用</h2>
 <p>安裝好後使用osqueryi指令進入進行操作interface。</p>
@@ -142,40 +119,6 @@ Path to the executable to be run"/>
 </code></pre><p>上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。</p>
 <h3 id="取得排程資訊">取得排程資訊</h3>
 <p>利用 scheduled_tasks 可以取得 Windows 上的排程資料</p>
-<p>scheduled_tasks table 資訊如下</p>
-<p>COLUMN</p>
-<p>TYPE</p>
-<p>DESCRIPTION</p>
-<p>name</p>
-<p>TEXT</p>
-<p>Name of the scheduled task</p>
-<p>action</p>
-<p>TEXT</p>
-<p>Actions executed by the scheduled task</p>
-<p>path</p>
-<p>TEXT</p>
-<p>Path to the executable to be run</p>
-<p>enabled</p>
-<p>INTEGER</p>
-<p>Whether or not the scheduled task is enabled</p>
-<p>state</p>
-<p>TEXT</p>
-<p>State of the scheduled task</p>
-<p>hidden</p>
-<p>INTEGER</p>
-<p>Whether or not the task is visible in the UI</p>
-<p>last_run_time</p>
-<p>BIGINT</p>
-<p>Timestamp the task last ran</p>
-<p>next_run_time</p>
-<p>BIGINT</p>
-<p>Timestamp the task is scheduled to run next</p>
-<p>last_run_message</p>
-<p>TEXT</p>
-<p>Exit status message of the last task run</p>
-<p>last_run_code</p>
-<p>TEXT</p>
-<p>Exit status code of the last task run</p>
 <p>可以參考以下指令將 state 是 <code>ready</code> 跟 <code>running</code> 的 task 把 <code>name</code> 跟 <code>action</code> 列出來。</p>
 <pre tabindex="0"><code> c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 
 </code></pre><p>輸出結果參考</p>
@@ -210,7 +153,7 @@ Path to the executable to be run"/>
     </div>
 
     <div class="post-nav"><a href="/posts/1407/" class="prev" rel="prev" title=""><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i></a>
-            <a href="/posts/introduction-to-osquery-comments/" class="next" rel="next" title="工具介紹-osquery">工具介紹-osquery<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+            <a href="/posts/portswigger-file-upload-lab-1/" class="next" rel="next" title="PortSwigger 檔案上傳漏洞 lab 1">PortSwigger 檔案上傳漏洞 lab 1<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
