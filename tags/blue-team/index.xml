@@ -5,15 +5,6 @@
         <description>Blue Team - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 11 May 2021 10:38:07 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/blue-team/" rel="self" type="application/rss+xml" /><item>
     <title>藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst</title>
-    <link>https://amingosec.github.io/posts/1011-comments/</link>
-    <pubDate>Tue, 11 May 2021 10:38:07 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/1011-comments/</guid>
-    <description><![CDATA[資安鑑識-Memory Analyzing – 資安工作筆記 - Feb 5, 2022
-[…] 藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst […]]]></description>
-</item>
-<item>
-    <title>藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst</title>
     <link>https://amingosec.github.io/posts/1011/</link>
     <pubDate>Tue, 11 May 2021 10:38:07 &#43;0000</pubDate>
     <author>Author</author>
@@ -23,30 +14,12 @@ Before we discuss malware incidents in detail, first, we will understand what is
 </item>
 <item>
     <title>藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate?</title>
-    <link>https://amingosec.github.io/posts/1010-comments/</link>
-    <pubDate>Tue, 11 May 2021 10:37:47 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/1010-comments/</guid>
-    <description><![CDATA[資安鑑識-Memory Analyzing – 資安工作筆記 - Feb 5, 2022
-[…] 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? […]]]></description>
-</item>
-<item>
-    <title>藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate?</title>
     <link>https://amingosec.github.io/posts/1010/</link>
     <pubDate>Tue, 11 May 2021 10:37:47 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://amingosec.github.io/posts/1010/</guid>
     <description><![CDATA[介紹 This is the first part of the Blue Team Operations — Technical Series where we discuss how SOC operates in corporate world. In this article we try to understand SOC from a CISO and Management point-of-view. In the upcoming stories, we shall deep-dive into how to perform incident response, investigations and triage different types of cyber security incident from a SOC analyst point-of-view. So Stay Tuned!
 文章連結 infosecwriteups.com/blue-team-operations-part-1-how-corporate-and-enterprise-soc-operate-b5286ab6cbcf]]></description>
-</item>
-<item>
-    <title>[轉]藍隊訓練</title>
-    <link>https://amingosec.github.io/posts/808-comments/</link>
-    <pubDate>Tue, 13 Apr 2021 00:58:26 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/808-comments/</guid>
-    <description><![CDATA[資安鑑識-Memory Analyzing – 資安工作筆記 - Feb 5, 2022
-[…] [轉]藍隊訓練 […]]]></description>
 </item>
 <item>
     <title>[轉]藍隊訓練</title>

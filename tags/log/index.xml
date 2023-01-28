@@ -5,15 +5,6 @@
         <description>LOG - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/log/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
-    <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/</link>
-    <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/</guid>
-    <description><![CDATA[PowerShell-使用powershell查找電腦開關機狀況 – 資安工作筆記 - Mar 3, 2022
-[…] 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 […]]]></description>
-</item>
-<item>
-    <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
     <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</link>
     <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
     <author>Author</author>
@@ -21,20 +12,6 @@
     <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。
 TUrnedOnTimesView透過windows event log來比對開關機資訊。
 EventID 41 (Microsoft-Windows-Kernel-Power): 系統重啟前未完整關機。 可能造成的原因包含系統未回應、系統crash，或是未預期的斷電。 EventID 42 (Microsoft-Windows-Kernel-Power): 系統進入睡眠 EventID 1 (Microsoft-Windows-Power-Troubleshooter): 系統從睡眠中開啟. EventID 1074 (USER32): The process xxx has initiated the xxx of computer xxx on behalf of user xxx for the following reason: xxx EventID 6005 (EventLog): 稽核記錄開始。 EventID 6006 (EventLog): 稽核記錄停止。 參考連結 https://www.nirsoft.net/utils/computer_turned_on_times.html ]]></description>
-</item>
-<item>
-    <title>Windows Event Log位置</title>
-    <link>https://amingosec.github.io/posts/location-of-windows-event-log-comments/</link>
-    <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/location-of-windows-event-log-comments/</guid>
-    <description><![CDATA[資安監控-微軟建議監控AD受駭跡證 – 資安工作筆記 - Feb 3, 2022
-[…] Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]]]></description>
 </item>
 <item>
     <title>Windows Event Log位置</title>

@@ -19,16 +19,6 @@ Get-Service | Where-Object {$_.Status -eq &#34;Running&#34;} 結論 在使用 Po
 </item>
 <item>
     <title>PowerShell-使用powershell查找電腦開關機狀況</title>
-    <link>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time-comments/</link>
-    <pubDate>Thu, 10 Jun 2021 16:05:03 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time-comments/</guid>
-    <description><![CDATA[Windows IR – 資安工作筆記 - Jul 2, 2021
-[…] 使用powershell查找電腦開關機狀況 […]
-[…] 使用powershell查找電腦開關機狀況 […]]]></description>
-</item>
-<item>
-    <title>PowerShell-使用powershell查找電腦開關機狀況</title>
     <link>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</link>
     <pubDate>Thu, 10 Jun 2021 16:05:03 &#43;0000</pubDate>
     <author>Author</author>
@@ -43,16 +33,6 @@ https://www.nirsoft.net/utils/computer_turned_on_times.html
 </item>
 <item>
     <title>Powershell-查詢ScheduledTasks</title>
-    <link>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks-comments/</link>
-    <pubDate>Wed, 28 Apr 2021 12:34:50 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks-comments/</guid>
-    <description><![CDATA[Windows IR – 資安工作筆記 - Jul 2, 2021
-[…] 利用Powershell 查詢ScheduledTasks […]
-[…] Powershell-查詢ScheduledTasks […]]]></description>
-</item>
-<item>
-    <title>Powershell-查詢ScheduledTasks</title>
     <link>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks/</link>
     <pubDate>Wed, 28 Apr 2021 12:34:50 &#43;0000</pubDate>
     <author>Author</author>
@@ -62,15 +42,6 @@ Get-ScheduledTask 列出所有 ScheduledTask
 Get-ScheduledTask -TaskName &#34;SystemScan&#34; 針對特定Task名稱列出
 Get-ScheduledTask -TaskPath &#34;\\UpdateTasks\\\*&#34; 列出特定路徑的Task
 Get-ScheduledTask -TaskPath &#34;\\Microsoft\\Windows\\Work Folders\\&#34;,&#34;\\Microsoft\\Windows\\Workplace Join\\&#34; 其他跟 ScheduledTask 相關指令 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?view=windowsserver2019-ps]]></description>
-</item>
-<item>
-    <title>需要知道的幾個 PowerShell 中 IP Address 相關指令</title>
-    <link>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know-comments/</link>
-    <pubDate>Fri, 17 Apr 2020 06:47:03 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know-comments/</guid>
-    <description><![CDATA[PowerShell-取得檔案hash值 – 資安工作筆記 - Feb 4, 2022
-[…] PowerShell-設定IP位置 […]]]></description>
 </item>
 <item>
     <title>需要知道的幾個 PowerShell 中 IP Address 相關指令</title>

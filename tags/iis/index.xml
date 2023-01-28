@@ -5,20 +5,6 @@
         <description>IIS - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 26 Jan 2022 12:39:52 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/iis/" rel="self" type="application/rss+xml" /><item>
     <title>資訊安全-IIS log 位置</title>
-    <link>https://amingosec.github.io/posts/location-of-iis-log-files-comments/</link>
-    <pubDate>Wed, 26 Jan 2022 12:39:52 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/location-of-iis-log-files-comments/</guid>
-    <description><![CDATA[Windows Server IIS 上建立PHP網站 – 資安工作筆記 - Feb 6, 2022
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] 資訊安全-IIS log 位置 […]
-[…] 資訊安全-IIS log 位置 […]]]></description>
-</item>
-<item>
-    <title>資訊安全-IIS log 位置</title>
     <link>https://amingosec.github.io/posts/location-of-iis-log-files/</link>
     <pubDate>Wed, 26 Jan 2022 12:39:52 &#43;0000</pubDate>
     <author>Author</author>

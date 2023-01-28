@@ -21,15 +21,6 @@ Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) | expor
 </item>
 <item>
     <title>Windows 產生檔案 hash 值的方式</title>
-    <link>https://amingosec.github.io/posts/get-file-hash-in-windows-comments/</link>
-    <pubDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/get-file-hash-in-windows-comments/</guid>
-    <description><![CDATA[PowerShell-取得檔案hash值 – 資安工作筆記 - Feb 4, 2022
-[…] 小知識-產生hash值的方式 […]]]></description>
-</item>
-<item>
-    <title>Windows 產生檔案 hash 值的方式</title>
     <link>https://amingosec.github.io/posts/get-file-hash-in-windows/</link>
     <pubDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</pubDate>
     <author>Author</author>

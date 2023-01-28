@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,64 +48,57 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/windows-ir/">在 Windows 系統上進行Incident Response 的重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-04">2021-05-04</time></span></div><div class="content">在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
-在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
-Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
-在 Windows Event Log 分析時可以檢查的幾個重點：
-系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
-Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
-GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
-https://eventlogxp.com</div><div class="post-footer">
-        <a href="/posts/windows-ir/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ediscovery/">eDiscovery</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/">資安產品</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/incident-response/">Incident Response</a>,&nbsp;<a href="/tags/windows/">Windows</a></div></div>
+        <a href="/posts/what-is-web-security/">網頁安全(Web Security)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-05-30">2020-05-30</time></span></div><div class="content">在資訊安全領域中，網頁安全是相當重要的一環，很多企業受攻擊的根源都來自網頁弱點，被入侵後駭客進行橫向移動對企業內部產生傷害。 滲透測試跟最近知名的紅隊演練更是發現網頁弱點的重要方式。 OWASP Top 10整理了近期前10大主要的網頁攻擊手法。可用來看自己的網頁是否有相關的弱點。 btw滲透跟弱掃是不同，很多廠商拿弱掃當滲透賣，但只要能合規也是可以的啦。
+延伸閱讀 網頁攻擊手法-上傳弱點 網頁攻擊手法-SQL injection 網頁攻擊手法-XSS 介紹 參考資料 mp.weixin.qq.com/s/mA7iBJq4MzPNmDY_KJpLUA OWASP Top 10 </div><div class="post-footer">
+        <a href="/posts/what-is-web-security/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/">滲透測試-提權輔助工具箱</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-01">2021-05-01</time></span></div><div class="content">Redteam-內網橫向移動思路和技巧 – 資安工作筆記 - Feb 1, 2022
-[…] 滲透利器 | 提權輔助工具箱 […]</div><div class="post-footer">
-        <a href="/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1/">滲透測試-提權輔助工具箱</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-01">2021-05-01</time></span></div><div class="content">[caption id=&ldquo;attachment_913&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;868&rdquo;] Photo by Anete Lusina on Pexels.com[/caption]
-說明 此篇文章作者整理了9款輔助提權的工具，在攻擊時可以參考使用。
-介紹 作为技术宅的我，日常最大的爱好就是逛论坛。某日看到论坛里有一款基于主机的漏洞扫描工具，用来查找主机上公开EXP的CVE。嗯嗯，我想还是叫提权辅助工具可能会更顺口一些。在我印象中，类似的工具其实还蛮多的，比如我们熟知的Linux_Exploit_Suggester和Windows-Exploit-Suggester。
-我花了一点时间，整理了 9 款提权辅助工具，不敢独享，特整理成文。如果你对提权有那么点想法，我相信这些工具是可以帮助到你的。
-文章連結 mp.weixin.qq.com/s/FSKB-S__WnP1U57BW01rLA
-延伸閱讀 自動化滲透測試框架-OWASP Nettacker Lab-建立Metasploitable 滲透練習Lab </div><div class="post-footer">
-        <a href="/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/using-powershell-to-check-scheduledtasks-comments/">Powershell-查詢ScheduledTasks</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-28">2021-04-28</time></span></div><div class="content">Windows IR – 資安工作筆記 - Jul 2, 2021
-[…] 利用Powershell 查詢ScheduledTasks […]
-[…] Powershell-查詢ScheduledTasks […]</div><div class="post-footer">
-        <a href="/posts/using-powershell-to-check-scheduledtasks-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/using-powershell-to-check-scheduledtasks/">Powershell-查詢ScheduledTasks</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-28">2021-04-28</time></span></div><div class="content">指令
-Get-ScheduledTask 列出所有 ScheduledTask
-Get-ScheduledTask -TaskName &#34;SystemScan&#34; 針對特定Task名稱列出
-Get-ScheduledTask -TaskPath &#34;\\UpdateTasks\\\*&#34; 列出特定路徑的Task
-Get-ScheduledTask -TaskPath &#34;\\Microsoft\\Windows\\Work Folders\\&#34;,&#34;\\Microsoft\\Windows\\Workplace Join\\&#34; 其他跟 ScheduledTask 相關指令 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?view=windowsserver2019-ps</div><div class="post-footer">
-        <a href="/posts/using-powershell-to-check-scheduledtasks/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/get-the-stored-wifi-password-on-windows/">Windows-找尋已連線過的Wifi 密碼</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-27">2021-04-27</time></span></div><div class="content">利用netsh wlan指令找出連線過的Wifi名稱
-netsh wlan show profiles
-再利用以下指令，針對想查詢的wlan名稱顯示明碼的Key，[WLAN Name]請換成想查詢的名稱
-netsh wlan show profiles name=&quot;[WLAN Name]&quot; key=clear</div><div class="post-footer">
-        <a href="/posts/get-the-stored-wifi-password-on-windows/">Read More</a><div class="post-tags">
+        <a href="/posts/%E6%96%B0%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/">勒索軟體-新加密方法</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-05-26">2020-05-26</time></span></div><div class="content">應該說是新的bypass防護的方式。在目標主機中安裝VM，再mount host的資料的vm上，由VM執行加密，因為VM上中內容不會被host主機上的防護手段發現，可以有效達到攻擊的目標。
+延伸閱讀 再爆發 AgeLocker、eCh0raix 加密勒索 QNAP NAS 一週內連發 5 項安全漏洞更新
+密碼與加密
+[轉]內網橫向移動思路和技巧
+參考資料 news.sophos.com/en-us/2020/05/21/ragnar-locker-ransomware-deploys-virtual-machine-to-dodge-security/</div><div class="post-footer">
+        <a href="/posts/%E6%96%B0%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/704/">[iThome]看懂MITRE ATT&amp;CK資安產品評測結果，先瞭解6大偵測類別含義</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-05-26">2020-05-26</time></span></div><div class="content">簡介 隨著模擬APT29攻擊的MITRE ATT&amp;CK評測結果在4月底公開，企業要如何看懂這項評測？基本上，瞭解評測6大偵測類別定義，才能對偵測能力的展現更有認識，而Technique Comparison Tool的運用也很重要。
+文章網址 www.ithome.com.tw/news/137821</div><div class="post-footer">
+        <a href="/posts/704/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/ssh-bruteforce-using-putty/">攻擊手法-SSH bruteforce using putty</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-26">2020-04-26</time></span></div><div class="content">簡介 利用powershell，並透過putty來執行ssh爆力破解。
+延伸閱讀 密碼破解-密碼噴灑攻擊 密碼破解-撞庫攻擊 文章網址 www.infosecmatter.com/ssh-login-bruteforcer-using-putty-plink/</div><div class="post-footer">
+        <a href="/posts/ssh-bruteforce-using-putty/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99try-hack-me/">練習網站-Try hack me</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-24">2020-04-24</time></span></div><div class="content">說明
+Try hacke me是一個資安練習網站，登入後回答一些簡單問題就可以開始了。
+進入之後開始引導你回答問題來提升自己的資安技巧。
+tryhackme.com/</div><div class="post-footer">
+        <a href="/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99try-hack-me/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/powershell-ip-address-commands-must-to-know/">需要知道的幾個 PowerShell 中 IP Address 相關指令</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-17">2020-04-17</time></span></div><div class="content">在 Windows 中除了 CMD 指令外，還有強大的 PowerShell 可以使用，除了支援 CMD 的操作外，還提供了更多指令內容。本文介紹幾個主機 IP 相關指令。
+取得 IP 狀態 Get-NetIPAddress Get-NetIPAddress 會取得主機各 ip 相關的資料。
+Get-NetIPConfiguration Get-NetIPConfiguration 一樣可以取得 ip 資訊，整體內容跟 ipconfig 的結果較為相近。
+設定 IP Address Set-NetIPAddress Set-NetIPAddress 可以設定主機 IP 位置。
+結論 PowerShell 是相當好用的工具。如果可以多熟悉相關指令，可以讓工作或日常維運更為輕鬆。
+參考資料 how-to-change-ip-address-using-set-netipaddress set-netipaddress </div><div class="post-footer">
+        <a href="/posts/powershell-ip-address-commands-must-to-know/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/network/">Network</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -136,7 +129,7 @@ netsh wlan show profiles name=&quot;[WLAN Name]&quot; key=clear</div><div class=
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

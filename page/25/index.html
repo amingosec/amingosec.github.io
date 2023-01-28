@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,48 +48,58 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/what-is-rdp-tunneling/">攻擊手法-RDP tunneling介紹與防範</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-28">2019-01-28</time></span></div><div class="content">介紹 利用受害者電腦對c2 Server建立起ssh連線行，進一步建立tunnel從c2 Server RDP連線至受害者主機。
-A Microsoft Windows component, RDP was designed to provide administrators, engineers, and users with remote access to systems. However, threat actors have been using the technology for nefarious purposes, and the trend continues, especially since an RDP attack is usually more difficult to detect than a backdoor. 說明How it works? Inbound RDP Tunneling , a common utility used to tunnel RDP sessions is PuTTY Link, commonly known as Plink.</div><div class="post-footer">
-        <a href="/posts/what-is-rdp-tunneling/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/what-is-command-and-control-server-c2/">資安名詞-惡意中繼站, C2</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-20">2018-04-20</time></span></div><div class="content">惡意中繼站是指具備命令與控制能力的伺服器 (Command &amp; Control, C&amp;C)或叫C2 server。
+通常為被駭客入侵的主機，並用利用此受駭主機來對其他入侵後的主機進行連線與操作。
+依手法不同，可見為IP或Domain的形式。不論IP或Domain這類情資的都有一定的時效性，有時駭客可能只針對些一案場，或當時的攻擊程式而設定中繼站，因此情資的更新也是相當重要的一環。
+中繼站情資的應用 在應用上，可以監控組織內部的 DNS Server log 、防火牆 log ，跟所收到的情資來比對，看是否有異常的連線行為。同時，如果有 IPS 或是 NGFW 等設備，也會有相關的情資或流量的分析，也需將相關的 log 加入監控，更能清楚的瞭解內部的網路狀況。
+延伸閱讀 網頁攻擊手法-上傳弱點 資安監控-rever shell監控方法 PHP revers shell 參考網站 https://cybersecuritynews.com/command-and-controlc2-server/?fbclid=IwAR0EEW4faI6odNZfZ1_R2y-jU84TGOuFuOze5t_HE9Li-3yxiLLDTokSv2A&amp;amp</div><div class="post-footer">
+        <a href="/posts/what-is-command-and-control-server-c2/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/campc-server/">c&amp;amp;c server</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E6%83%A1%E6%84%8F%E4%B8%AD%E7%B9%BC%E7%AB%99/">惡意中繼站</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/fuzzing-%E4%BB%8B%E7%B4%B9/">Fuzzing 介紹</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-27">2019-01-27</time></span></div><div class="content">https://labs.mwrinfosecurity.com/blog/what-the-fuzz/</div><div class="post-footer">
-        <a href="/posts/fuzzing-%E4%BB%8B%E7%B4%B9/">Read More</a><div class="post-tags">
+        <a href="/posts/cyber-kill-chain/">資安名詞-Cyber Kill Chain</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-18">2018-04-18</time></span></div><div class="content">介紹 Cyber Kill Chain由洛馬發展出來，中文有人翻譯成「網路狙殺鏈」但通常還是直接念英文較為順口。
+Cyber Kill Chain主要是說明APT攻擊時的流程，進行資安鑑識時可輔助解析攻擊的過程，對防守方來說，也可用來檢視在各階段防禦的狀態。
+同時可參考Mittre Att&amp;ck 針對Kill Chain中的各環節所列出的攻擊技巧。
+步驟 Reconnaissance Weaponization Delivery Exploition Installation Command and Control Action on Objective 防守方角度來看Cyber Kill Chain 如果Cyber Kill Chain為攻擊方攻擊時的步驟，那對防守方來說，打斷Cyber Kill Chain可說是防御APT攻擊的手段。
+以下為說明Cyber Kill Chain與利用其防禦的影片
+https://youtu.be/II91fiUax2g
+延伸閱讀 SSCP – Methodology of an Attack 參考網站 洛馬的官網介紹 MITRE ATT&amp;CK® eccouncil Cyber Kill Chain介紹 </div><div class="post-footer">
+        <a href="/posts/cyber-kill-chain/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/apt/">APT</a>,&nbsp;<a href="/tags/cyber-kill-chain/">Cyber Kill Chain</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/pt-va-%E5%A0%B1%E5%91%8A/">PT VA 報告</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-18">2018-04-18</time></span></div><div class="content">要確保弱點的可用性，可以將可利用的弱點，與掃到的弱點分開列出。 在進行pt va報告時，以系統為主體報告，雖然可能會出現重複的弱點說明，但會讓承辦人比較清楚。或可以弱點列出，並提出相關系統。 弱點說名後可提出弱點風險與相關修補方案，也可提出一些廠商不錯的地方，以免廠商不開心。</div><div class="post-footer">
+        <a href="/posts/pt-va-%E5%A0%B1%E5%91%8A/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/shellshock%E4%BB%8B%E7%B4%B9%E8%88%87%E6%AA%A2%E6%B8%AC/">ShellShock介紹與檢測</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-12">2019-01-12</time></span></div><div class="content">參考臺大計中的說明 http://www.cc.ntu.edu.tw/chinese/epaper/0036/20160321_3610.html</div><div class="post-footer">
-        <a href="/posts/shellshock%E4%BB%8B%E7%B4%B9%E8%88%87%E6%AA%A2%E6%B8%AC/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/shellshock/">shellshock</a></div></div>
+        <a href="/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/">資安相關條文</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-17">2018-04-17</time></span></div><div class="content">金融機構辦理電腦系統資訊安全評估辦法 行動裝置應用程式注意事項 電子票證應用安全強度準則 http://law.moj.gov.tw全國法規資料庫</div><div class="post-footer">
+        <a href="/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%90%88%E8%A6%8F/">合規</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/rever-shell%E7%9B%A3%E6%8E%A7%E6%96%B9%E6%B3%95-comments/">資安監控-rever shell監控方法</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-11-03">2018-11-03</time></span></div><div class="content">資安名詞-惡意中繼站 – 資安工作筆記 - Feb 0, 2022
-[…] 資安監控-rever shell監控方法 […]
-[…] 資安監控-rever shell監控方法 […]
-[…] 資安監控-rever shell監控方法 […]</div><div class="post-footer">
-        <a href="/posts/rever-shell%E7%9B%A3%E6%8E%A7%E6%96%B9%E6%B3%95-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/">資安名詞-異地備援</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-15">2018-04-15</time></span></div><div class="content">備援種類 Cold Site：建築物、不一定有公同設施
+WarmSite：建築物、公用設施、IT設備
+Hot Site：建築物、公用設施、IT設備、資料
+Mobile Site：行動機房
+Multiple Processing Site：在不同地點有相同的設備與資料，Mirro Site
+距離 在「我國機房異地備援機制參考指引v1.0」中提到，2003年資通安全會報中，建議異地備援距離為30公里。但勤業眾信依據921與日本311地震的影響範圍與，提出備援距離要至少需要150-200公里。
+延伸閱讀 資安名詞-木桶理論 資安名詞-Demilitarized Zone (DMZ) 資安名詞-惡意中繼站, C2 </div><div class="post-footer">
+        <a href="/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/backup-site/">backup site</a>,&nbsp;<a href="/tags/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/">異地備援</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/sscp/">SSCP</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/rever-shell%E7%9B%A3%E6%8E%A7%E6%96%B9%E6%B3%95/">資安監控-rever shell監控方法</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-11-03">2018-11-03</time></span></div><div class="content">rever shell或是webshell，可說是外網滲透的最後一步，也是內網滲透的第一步，取得shell後就有機會用來往目標組織更進一步的入侵。 也因此在於這個階段的攻防可說是相當重要，也是近期EDR興起的重要原因。
-延伸閱讀 網頁安全(Web Security) [轉]瞭解MDR EDR EPP XDR PHP revers shell
-參考資料 https://mp.weixin.qq.com/s?__biz=MzIyMzE5NTQ3Ng==&amp;mid=2650601015&amp;idx=1&amp;sn=a91e8f4ad308391288839fe52c4ee799</div><div class="post-footer">
-        <a href="/posts/rever-shell%E7%9B%A3%E6%8E%A7%E6%96%B9%E6%B3%95/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/nginx%E8%A8%AD%E5%AE%9A%E6%AA%94%E5%AD%B8%E7%BF%92/">nginx設定檔學習</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-11-03">2018-11-03</time></span></div><div class="content">https://nginxconfig.io/ 最近看到的，似乎不錯</div><div class="post-footer">
-        <a href="/posts/nginx%E8%A8%AD%E5%AE%9A%E6%AA%94%E5%AD%B8%E7%BF%92/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/home/">首頁</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-12-17">2017-12-17</time></span></div><div class="content"></div><div class="post-footer">
+        <a href="/posts/home/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/primary/">Primary</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -107,20 +117,6 @@ A Microsoft Windows component, RDP was designed to provide administrators, engin
                 </li><li class="page-item active">
                     <span class="page-link">
                         <a href="/page/25/">25</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/26/">26</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/27/">27</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link" aria-hidden="true">&hellip;</span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/34/">34</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

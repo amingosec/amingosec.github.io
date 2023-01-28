@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,63 +48,59 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/demilitarized-zone-dmz/">資安名詞-Demilitarized Zone (DMZ)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-26">2020-01-26</time></span></div><div class="content">DMZ為外部網路使用者提供有限度的連線存取，讓外部使用者能最小限度使用組織所提供的公開資源(如網站)，並且與內部網路(LAN)區隔。一般來說，會使用Firewall隔出DMZ區。同時，DMZ區主機亦會限制存取內部網路資源，避免DMZ區受駭時，造成內網資安的威脅。
-在現在的資安觀念上，除了基本的網段區隔外，零信任也是重要的觀念。
-延伸閱讀 資訊安全-內網橫向移動(Lateral Movement)介紹 工具介紹-Weevely (kali linux web shell產生工具) </div><div class="post-footer">
-        <a href="/posts/demilitarized-zone-dmz/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dmz/">DMZ￼</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+        <a href="/posts/alert1-to-win/">Lab - alert(1) to win</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-01">2018-08-01</time></span></div><div class="content">Level 0-Warmup &quot;);alert(1)//
+Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
+%22)alert(1)//
+Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
+可以直接關閉script來開啟另一個alert</div><div class="post-footer">
+        <a href="/posts/alert1-to-win/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/owasp-top-10/">owasp top 10</a>,&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/ftp%E4%BB%8B%E7%B4%B9/">Network - FTP介紹</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-26">2020-01-26</time></span></div><div class="content">使用Port
-主動傳輸時：21/tcp為指令使用，20/tcp為資料傳輸使用
-被動傳輸時：21/tcp為指令使用，資料使用&gt;1023 port
-Client都使用&gt;1023 port與Server連線
-在主動模式下，資料會使用指令Port -1來傳輸
-參考連結 https://irw.ncut.edu.tw/peterju/course/network/971/doc/homework/07/ftp.html</div><div class="post-footer">
-        <a href="/posts/ftp%E4%BB%8B%E7%B4%B9/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/prompt1-to-win-xss/">Lab - prompt(1) to win (XSS)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-25">2018-07-25</time></span></div><div class="content">在不少等級中都有出現input.replace 的function，使用方法可以參考https://www.w3schools.com/jsref/jsref_replace.asp，有對replace method說明，有所了解後會對prompt(1)的思路比較有想法。
+Level 1 &lt;body/onload=prompt(1)//</div><div class="post-footer">
+        <a href="/posts/prompt1-to-win-xss/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/what-is-ipsec/">IP Security (IPsec)介紹</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-26">2020-01-26</time></span></div><div class="content">在IP層運作，提供Layer 3的安全(RFC 2401)
-https://heranonazure.wordpress.com/2019/10/11/ip-security-ipsec-basics/
-https://tools.ietf.org/html/rfc2401</div><div class="post-footer">
-        <a href="/posts/what-is-ipsec/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/network/">Network</a></div></div>
+        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">File Inclusion 漏洞練習</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-24">2018-07-24</time></span></div><div class="content">如果在metasploitable2上使用這個漏洞，需先將php.ini檔做設定。 allow_url_fopen = On allow_url_include = On (反過來說，如果將上面兩行設成Off，將可以有效的防止這個漏洞) 確認事項
+弱點主機與攻擊主機可以互連 在攻擊主機上先建立好revers shell檔，放入www資料夾中(通常會用txt檔，以免自己看時執行) 開啟nc 在弱點主機url的&quot;page=&ldquo;後輸入攻擊主機shell的網址 確認nc有監聽到 解決方法： 除了如上所說外，當php使用get 時，參數使用白名單的方法，名單外的以Error回應。 參考資料： https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_(OTG-AUTHZ-001)</div><div class="post-footer">
+        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/file-inclusion/">file inclusion</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/dns-comments/">名詞介紹-Domain Name Service (DNS)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-25">2020-01-25</time></span></div><div class="content">攻擊手法-DNS tunneling – 資安工作筆記 - Feb 2, 2022
-[…] 名詞介紹-Domain Name Service (DNS) […]
-[…] 名詞介紹-Domain Name Service (DNS) […]</div><div class="post-footer">
-        <a href="/posts/dns-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/introduction-to-cross-site-scripting-xss/">網頁攻擊手法-XSS 介紹</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-10">2018-07-10</time></span></div><div class="content">介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。
+在owasp top 10-2017中改到第七名
+https://www.owasp.org/index.php/Top_10-2017_Top_10
+https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
+可分為stored、reflected。
+可使用的方法 加入或用 的error呼叫 利用編碼的方試bypass 練習網站 alert(1) to win
+prompt(1) to win
+利用工具 beef xss framework 滿不錯用的，kali跟backbox都有，
+XSS hunter也有提供攻擊payload，並把結果回覆分析，相當有用
+要防禦的話，除了在client side也請記得一定要在server side進行相關安全性設定。
+延伸閱讀 SQL injection Lab - alert(1) to win Lab - prompt(1) to win (XSS) </div><div class="post-footer">
+        <a href="/posts/introduction-to-cross-site-scripting-xss/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/beef/">beef</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/xss-hunter/">XSS hunter</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/dns/">名詞介紹-Domain Name Service (DNS)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-25">2020-01-25</time></span></div><div class="content">DNS提供將Domain name進行解析成IP的服務，需使用53/TCP、53/UDP(通常為UDP)進行連線。
-DNS查詢
-在電腦在需要連線Domain時，會優先查找主機內的hosts file，並利用該資料進行連線。如果沒有找到，將再對所設定的DNS提出Domain查詢的請求。
-Linux 先找/etc/hosts
-windows 先找 C:\windows\System32\drivers\etc\hosts
-依RFC 3330 localhost 會指到127.0.0.1
-DNS設定(Linux)
-http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux
-延伸閱讀 DNS amplification attack (DNS放大攻擊)簡介 10 DNS Attacks Types and The Mitigate Steps – 2020 DNS tunneling 參考資料 https://tools.ietf.org/html/rfc3330
-https://www.cloudflare.com/learning/dns/what-is-dns/
-https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5%90%8D%E7%A8%B1%E8%A7%A3%E6%9E%90%E9%A0%86%E5%BA%8F-dae00cc9-7e9c-c0cc-8360-477b99cb978a</div><div class="post-footer">
-        <a href="/posts/dns/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/">Network-一些常用的埠號 port number</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-10">2018-07-10</time></span></div><div class="content">在應用層中，每個服務都有預設的port number，當然也可以依自己的需求指定使用，曾經也是有看過https走TCP/80，或是RDP走TCP/1234。
+FTP 20 FTP 21 SSH 22 Telnet 23 SMTP 25 TACACS+ 49 IPSec ESP 50 IPSec AH 51 DNS 53 TFTP 69 HTTP 80 POP3 110 NTP 123 nbns 137 smb over netbios 139 SNMP 161 SNMP 162 NTP 123￼LDAP 389 TLS SSL 443(tcp) L2TP1701 (UDP) PPTP 1723(tcp) IMAP4 143(tcp) windows 遠端 3389 延伸閱讀 Network-私有IP位置 Network-135、137、138、139、445說明 </div><div class="post-footer">
+        <a href="/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/port-number/">port number</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/what-is-intrusion-detection-systems-ids/">Intrusion Detection Systems (IDS)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-25">2020-01-25</time></span></div><div class="content">IDS 中文稱為入侵偵測系統，可分為安裝在主機上的HIDS跟在網路的NIDS。NIDS 使用 mirror 或 Tap 的方式將流量導入設備，並與已知的惡意行為進行比對，可針對可疑行為監控與告警</div><div class="post-footer">
-        <a href="/posts/what-is-intrusion-detection-systems-ids/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/">憑證過期問題</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-04">2018-07-04</time></span></div><div class="content">最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證匯入電腦都不行，直到發現了一件事，使用者的電腦日期比憑證的啟用日期還早，原來是很久沒使用電腦了，日期正常後就好了。</div><div class="post-footer">
+        <a href="/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E6%86%91%E8%AD%89/">憑證</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -135,7 +131,7 @@ https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

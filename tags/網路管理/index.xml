@@ -5,15 +5,6 @@
         <description>網路管理 - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
     <title>Windows-Windows Server IIS 上建立PHP網站</title>
-    <link>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php-comments/</link>
-    <pubDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php-comments/</guid>
-    <description><![CDATA[Chan - Jan 5, 2023
-WPI 終止服務了，請問一下有沒有類似的好的替代方案]]></description>
-</item>
-<item>
-    <title>Windows-Windows Server IIS 上建立PHP網站</title>
     <link>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</link>
     <pubDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</pubDate>
     <author>Author</author>
@@ -36,15 +27,6 @@ https://www.microsoft.com/web/downloads/platform.aspx
 延申閱讀 IIS log 位置 參考資料 https://docs.microsoft.com/en-us/iis/application-frameworks/scenario-build-a-php-website-on-iis/configuring-step-1-install-iis-and-php
 https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/quick-create-portal
 https://www.w3schools.com/php/php_file_upload.asp]]></description>
-</item>
-<item>
-    <title>Network-私有IP位置</title>
-    <link>https://amingosec.github.io/posts/private-ip-address-comments/</link>
-    <pubDate>Sat, 23 Oct 2021 11:53:25 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/private-ip-address-comments/</guid>
-    <description><![CDATA[Network-一些常用的埠號 port number – 資安工作筆記 - Feb 1, 2022
-[…] Network-私有IP位置 […]]]></description>
 </item>
 <item>
     <title>Network-私有IP位置</title>
@@ -83,16 +65,6 @@ single class A network
 </item>
 <item>
     <title>工具介紹-Microsoft Network Monitor</title>
-    <link>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor-comments/</link>
-    <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor-comments/</guid>
-    <description><![CDATA[Network-私有IP位置 – 資安工作筆記 - Mar 2, 2022
-[…] 工具介紹-Microsoft Network Monitor […]
-[…] 工具介紹-Microsoft Network Monitor […]]]></description>
-</item>
-<item>
-    <title>工具介紹-Microsoft Network Monitor</title>
     <link>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</link>
     <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
     <author>Author</author>
@@ -115,16 +87,6 @@ single class A network
 也就是說Client端所請求的對向不是真正的Server，而是Reverse Proxy。因此對Server來說可以達到隱藏真實IP的功能。
 同時利用Reverse Proxy，也可以達到Loadbalance的效果。是WAF跟CDN所運用到的技術。
 參考網站 https://www.anquanke.com/post/id/150436 https://github.com/Passer6y/Reverse_proxy ]]></description>
-</item>
-<item>
-    <title>Network-135、137、138、139、445說明</title>
-    <link>https://amingosec.github.io/posts/about-ports-135-137-138-139-445-comments/</link>
-    <pubDate>Wed, 05 May 2021 16:54:20 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/about-ports-135-137-138-139-445-comments/</guid>
-    <description><![CDATA[Network-一些常用的埠號 port number – 資安工作筆記 - Feb 1, 2022
-[…] Network-135、137、138、139、445說明 […]
-[…] Network-135、137、138、139、445說明 […]]]></description>
 </item>
 <item>
     <title>Network-135、137、138、139、445說明</title>
@@ -163,6 +125,41 @@ TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居�
 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /d 0x00000e10 /t REG_DWORD /f 接受誤差 在預設的狀況下，與NTP Server誤差過大時，不會進行校時。如果沒有設定有可能會因為有誤差而沒有校時成功。
 #接受誤差，總是校時 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config /v MaxPosPhaseCorrection /d 0xFFFFFFFF /t REG_DWORD /f
 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config /v MaxNegPhaseCorrection /d 0xFFFFFFFF /t REG_DWORD /f ``` 延伸閱讀 ---- * [Windows 忘記密碼-利用Kali Linux](https://amingosec.blog/2020/08/15/windows-%e5%bf%98%e8%a8%98%e5%af%86%e7%a2%bc-%e5%88%a9%e7%94%a8kali-linux/) * [資安鑑識-Windows IR 方向](https://amingosec.blog/2021/05/04/windows-ir/) ]]></description>
+</item>
+<item>
+    <title>CentOS - ip command</title>
+    <link>https://amingosec.github.io/posts/centos-%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%9D-ifconfig/</link>
+    <pubDate>Sat, 13 Oct 2018 06:59:04 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/centos-%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%9D-ifconfig/</guid>
+    <description><![CDATA[在安裝CentOS時使用最小安裝，一登入時想使用ifconfig查一下網路狀況，沒想到找不到這個指令。查了一下，原來已經改成要使用ip addr。
+BTW ip addr在kali 上也可以用。
+延伸閱讀 Kali-客製化Kali Linux 工具介紹-在Kali Linux上安裝openvas ]]></description>
+</item>
+<item>
+    <title>Network - 常見HTTP status codes整理</title>
+    <link>https://amingosec.github.io/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/</link>
+    <pubDate>Thu, 30 Aug 2018 08:11:07 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/</guid>
+    <description><![CDATA[403 表示路徑正確，但沒有權限存取 404 表示路徑不存在 500 表示程式只接受特定的字元或符號(可透過使用正確的符號完成注入)]]></description>
+</item>
+<item>
+    <title>Network-一些常用的埠號 port number</title>
+    <link>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</link>
+    <pubDate>Tue, 10 Jul 2018 00:20:53 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</guid>
+    <description><![CDATA[在應用層中，每個服務都有預設的port number，當然也可以依自己的需求指定使用，曾經也是有看過https走TCP/80，或是RDP走TCP/1234。
+FTP 20 FTP 21 SSH 22 Telnet 23 SMTP 25 TACACS+ 49 IPSec ESP 50 IPSec AH 51 DNS 53 TFTP 69 HTTP 80 POP3 110 NTP 123 nbns 137 smb over netbios 139 SNMP 161 SNMP 162 NTP 123￼LDAP 389 TLS SSL 443(tcp) L2TP1701 (UDP) PPTP 1723(tcp) IMAP4 143(tcp) windows 遠端 3389 延伸閱讀 Network-私有IP位置 Network-135、137、138、139、445說明 ]]></description>
+</item>
+<item>
+    <title>憑證過期問題</title>
+    <link>https://amingosec.github.io/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</link>
+    <pubDate>Wed, 04 Jul 2018 02:18:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</guid>
+    <description><![CDATA[最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證匯入電腦都不行，直到發現了一件事，使用者的電腦日期比憑證的啟用日期還早，原來是很久沒使用電腦了，日期正常後就好了。]]></description>
 </item>
 </channel>
 </rss>

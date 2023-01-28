@@ -14,16 +14,6 @@
 </item>
 <item>
     <title>Network-135、137、138、139、445說明</title>
-    <link>https://amingosec.github.io/posts/about-ports-135-137-138-139-445-comments/</link>
-    <pubDate>Wed, 05 May 2021 16:54:20 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/about-ports-135-137-138-139-445-comments/</guid>
-    <description><![CDATA[Network-一些常用的埠號 port number – 資安工作筆記 - Feb 1, 2022
-[…] Network-135、137、138、139、445說明 […]
-[…] Network-135、137、138、139、445說明 […]]]></description>
-</item>
-<item>
-    <title>Network-135、137、138、139、445說明</title>
     <link>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</link>
     <pubDate>Wed, 05 May 2021 16:54:20 &#43;0000</pubDate>
     <author>Author</author>
@@ -48,15 +38,6 @@ TCP/UDP 137 NetBIOS-NS 如前面所說，NetBIOS-NS主要作用是在區域網�
 NetBIOS-NS較常的見的為對廣播IP 137 Port進行連線，用以發現各台電腦。同時也有針對特定IP進行詢問的方式，進一步可去瞭解NetBIOS的節點類型。
 UDP 138 NetBIOS-Datagram 如前面所說，NetBIOS-Datagram 透過unicast、multicast 和 broadcast 提供無需連線，不可信賴的訊息傳遞。
 TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居訪問區域網中的共享文件或共享印表機時就能發揮作用。]]></description>
-</item>
-<item>
-    <title>需要知道的幾個 PowerShell 中 IP Address 相關指令</title>
-    <link>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know-comments/</link>
-    <pubDate>Fri, 17 Apr 2020 06:47:03 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know-comments/</guid>
-    <description><![CDATA[PowerShell-取得檔案hash值 – 資安工作筆記 - Feb 4, 2022
-[…] PowerShell-設定IP位置 […]]]></description>
 </item>
 <item>
     <title>需要知道的幾個 PowerShell 中 IP Address 相關指令</title>

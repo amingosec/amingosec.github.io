@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,82 +48,100 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/windows-server-iis-%E8%B7%91-php/">Windows-Windows Server IIS 上建立PHP網站</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-04">2022-02-04</time></span></div><div class="content">分享最近在IIS上使用Web Platform Installer安裝的經驗。
-OS：Server 2016
-PHP：8.0
-1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools
-2. 安裝VC++ Runtime 如果沒有安裝的話，之後會出現error code 500。可安裝最新的x86版本，下載連結如下：
-https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
-3. 安裝Web Platform Installer 之後會透過Web Platform安裝PHP，下載連結如下：
-https://www.microsoft.com/web/downloads/platform.aspx
-4. 安裝PHP 進到IIS Manager，在左邊connections中選取自己的Hostname，再選取Web Platform Installer，圖中紅框處。
-進到Web Platform Installer後，選擇Product，再選擇想要安裝的PHP版本後，選擇Add，再點選下面的Install，如下圖紅框。
-之後再點選I Accept開始安裝
-5. 測試PHP安裝 在安裝好後，建立一個新檔案，輸入內容&lt;?php phpinfo(); ?&gt;
-將檔案存成C:\inetpub\wwwroot\Phpinfo.php
-存好檔後，開啟Broswer，進到http://localhost/phpinfo.php，會出現PHP的設定畫面，表示安裝完成。
-6. 其他事項 如果要使用php上傳檔案，請先確認php.ini檔案中的值file_uploads = On，同時上傳目標資料夾要有可寫入權限。
-延申閱讀 IIS log 位置 參考資料 https://docs.microsoft.com/en-us/iis/application-frameworks/scenario-build-a-php-website-on-iis/configuring-step-1-install-iis-and-php
-https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/quick-create-portal
-https://www.w3schools.com/php/php_file_upload.asp</div><div class="post-footer">
-        <a href="/posts/windows-server-iis-%E8%B7%91-php/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/windows/">Windows</a></div></div>
+        <a href="/posts/private-ip-address/">Network-私有IP位置</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-10-23">2021-10-23</time></span></div><div class="content">私有IPv4 RFC1918 name
+IP address range
+Number of addresses
+Largest CIDR block (subnet mask)
+Host ID size
+Mask bits
+Classful description
+24-bit block
+10.0.0.0 – 10.255.255.255
+16777216
+10.0.0.0/8 (255.0.0.0)
+24 bits
+8 bits
+single class A network
+20-bit block
+172.16.0.0 – 172.31.255.255
+1048576
+172.16.0.0/12 (255.240.0.0)
+20 bits
+12 bits
+16 contiguous class B networks
+16-bit block
+192.168.0.0 – 192.168.255.255
+65536
+192.168.0.0/16 (255.255.0.0)
+16 bits
+16 bits
+256 contiguous class C networks</div><div class="post-footer">
+        <a href="/posts/private-ip-address/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/location-of-iis-log-files-comments/">資訊安全-IIS log 位置</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-26">2022-01-26</time></span></div><div class="content">Windows Server IIS 上建立PHP網站 – 資安工作筆記 - Feb 6, 2022
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] 資訊安全-IIS log 位置 […]
-[…] 資訊安全-IIS log 位置 […]</div><div class="post-footer">
-        <a href="/posts/location-of-iis-log-files-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/iis/">IIS</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+        <a href="/posts/what-is-lateral-movement/">資訊安全-內網橫向移動(Lateral Movement)介紹</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-31">2021-07-31</time></span></div><div class="content">介紹 攻擊者初步取得內網權限後，藉助跳板機接通過各種方式來獲取目標系統許可權，進一步入侵內網其他伺服器。包含取得內網使用者密碼，網域權限…等。最後再從中取得重要資料或加密勒索，達到入侵目的。
+相較於內外網連線稱為南北向，內網的連線常被稱為東西向連線。而內網橫向移動主要就在這東西向間，從內網的一台跳到另一台並達到入侵目標。
+在知道帳密下，橫向方式可利用微軟的遠端執行功能來完成。impacket有python寫成的利用工具可以使用。
+IPC PsExec WIM WinRM 除了上述協定外，也可以用目標弱點來達到入侵的目的。
+延伸閱讀 工具介紹-Weevely (kali linux web shell產生工具) Red team-後滲透清除入侵軌跡 自動化滲透測試框架-OWASP Nettacker 滲透利器 | 提權輔助工具箱 參考連結 www.gushiciku.cn/pl/p5OX/zh-tw
+​【安全科普】企业内网中的横向移动（一） - 嘶吼 RoarTalk – 回归最本质的信息安全,互联网安全新媒体,4hou.com
+https://github.com/SecureAuthCorp/impacket</div><div class="post-footer">
+        <a href="/posts/what-is-lateral-movement/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/red-team/">red team</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/location-of-iis-log-files/">資訊安全-IIS log 位置</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-26">2022-01-26</time></span></div><div class="content">說明 Log時間是UTC，要查詢相關log記得注意時區問題。 每天一個log檔，event會即時寫入該天log檔內。 IIS 預設log路徑為 %SystemDrive%\inetpub\logs\LogFiles\，在資料夾中，各網站會有一個子資料夾如：W3SVC1，網站的 log 會在資料夾中以 u_exyymmdd.log 的log檔呈現。
-W3SVC 後面的數字是 IIS 的網站 ID
-Log檔名說明：
-名稱格式：u_exyymmdd.log yy:西元年份後2碼，2022年會以22表示 mm:月份 dd:日期 延伸閱讀 資訊安全-Windows Event Log位置 Windows IR 方向 資訊安全-基本概念 參考資料 Managing IIS Log File Storage | Microsoft Docs</div><div class="post-footer">
-        <a href="/posts/location-of-iis-log-files/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/iis/">IIS</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+        <a href="/posts/introduction-to-microsoft-network-monitor/">工具介紹-Microsoft Network Monitor</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-09">2021-07-09</time></span></div><div class="content">說明 Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路界面卡。
+開啟後左下角是選擇要聽的網卡，確認好之後，點選左上方的New Capture。
+點選New Capture後會開啟新的頁面，再點選上方的Start，開始錄包。
+執行結果如下圖
+結論 整體使用起來相當直覺，工具沒有好壞，主要看使用起來熟不熟悉，如果有封包分析的需求可以下載來使用看看。
+下載連結 https://www.microsoft.com/en-us/download/details.aspx?id=4865
+延伸閱讀 工具介紹-Wireshark 解密Https 流量 工具介紹-Tcpdump指令介紹 </div><div class="post-footer">
+        <a href="/posts/introduction-to-microsoft-network-monitor/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/location-of-windows-event-log-comments/">Windows Event Log位置</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-22">2022-01-22</time></span></div><div class="content">資安監控-微軟建議監控AD受駭跡證 – 資安工作筆記 - Feb 3, 2022
-[…] Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]</div><div class="post-footer">
-        <a href="/posts/location-of-windows-event-log-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/log/">LOG</a></div></div>
+        <a href="/posts/using-powershell-to-check-system-up-down-time/">PowerShell-使用powershell查找電腦開關機狀況</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-10">2021-06-10</time></span></div><div class="content">說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間
+Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果要存到特定檔案，可在後面加入&gt;來進行輸出
+Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap &gt; log.log 也可以使用 event id 27 來確認 boot time
+Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.message -like “The boot type*”} 或是
+Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like “27”} 其他方式 可以使用nirsoft的工具，TurnedOnTimesView ，來查找開關機狀態。
+https://www.nirsoft.net/utils/computer_turned_on_times.html
+延伸閱讀 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 參考連結 https://steachs.</div><div class="post-footer">
+        <a href="/posts/using-powershell-to-check-system-up-down-time/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/location-of-windows-event-log/">Windows Event Log位置</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-22">2022-01-22</time></span></div><div class="content">在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。
-Event Log 位置 windows event log預設位置為： %SystemRoot%\System32\winevt\Logs\ ，如果沒有看到或需要進行調整的話可以到註冊檔中確認與調整，註冊檔位置： HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog。
-幾個重要的event log 以下是進行事件查找時常會用到的幾個 log ，但是 log 是否被紀錄下來取決於稽核原則的設定，因此，記得進行良好的稽核原則設定，以利後續事件的查找。
-System.evtx 在 System 中有主機運作的相關訊息。
-Security.evtx 在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
-Application.evtx Application log
-Windows PowerShell.evtx 在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
-MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。
-延伸閱讀 Windows IR 方向 IIS log 位置 參考資料 https://docs.</div><div class="post-footer">
-        <a href="/posts/location-of-windows-event-log/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/log/">LOG</a></div></div>
+        <a href="/posts/monitoring-active-directory-for-signs-of-compromise/">資安監控- 監控 AD 的受駭跡證</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-26">2021-05-26</time></span></div><div class="content">本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。
+介紹 資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。
+Account Logon Events Account Management Directory Service Access Logon Events Object Access Policy Change Privilege Use Process Tracking System Events 使用 Auditpol.exe 設定 Windows 稽核原則 依微軟的說明，Auditpol.exe 較能正確回傳稽核原則的設定值。
+參考以下指令，可列出所有稽核原則設定值。
+auditpol /get /category:\* 參考以下指令，可設定logon的稽核原則內容。
+auditpol /set /subcategory:&#34;logon&#34; /success:enable /failure:enable 使用 Group policy 設定稽核原則 開啟群組原則設定，開到以下的路徑，將想要開啟的稽核原則開啟即可。
+Computer Configuration\Windows Settings\Security Settings\Local Policies\Audit Policy
+Local Group Policy Editor
+微軟建議的稽核原則設定 https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
+在監控上常用到的幾個Event ID 除了微軟建議監的 Event ID中的說明外，特別列出以下實務上常用的幾個Event ID。</div><div class="post-footer">
+        <a href="/posts/monitoring-active-directory-for-signs-of-compromise/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ad/">AD</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/wp-global-styles-pub%2ffranklin/">Custom Styles</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-19">2022-01-19</time></span></div><div class="content">{&ldquo;version&rdquo;:2,&ldquo;isGlobalStylesUserThemeJSON&rdquo;:true}</div><div class="post-footer">
-        <a href="/posts/wp-global-styles-pub%2ffranklin/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/franklin/">franklin</a></div></div>
+        <a href="/posts/memory-analyzing/">資安鑑識-Memory Analyzing</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-18">2021-05-18</time></span></div><div class="content">主要利用volatility framework 2.6執行
+識別system profile python vol.py -f %image\_name% imageinfo pslist
+pstree
+cmdscan
+延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? 藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst </div><div class="post-footer">
+        <a href="/posts/memory-analyzing/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/memory/">Memory</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -154,7 +172,7 @@ MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操�
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

@@ -5,15 +5,6 @@
         <description>windows server - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/windows-server/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
-    <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/</link>
-    <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/</guid>
-    <description><![CDATA[PowerShell-使用powershell查找電腦開關機狀況 – 資安工作筆記 - Mar 3, 2022
-[…] 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 […]]]></description>
-</item>
-<item>
-    <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
     <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</link>
     <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
     <author>Author</author>
@@ -21,20 +12,6 @@
     <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。
 TUrnedOnTimesView透過windows event log來比對開關機資訊。
 EventID 41 (Microsoft-Windows-Kernel-Power): 系統重啟前未完整關機。 可能造成的原因包含系統未回應、系統crash，或是未預期的斷電。 EventID 42 (Microsoft-Windows-Kernel-Power): 系統進入睡眠 EventID 1 (Microsoft-Windows-Power-Troubleshooter): 系統從睡眠中開啟. EventID 1074 (USER32): The process xxx has initiated the xxx of computer xxx on behalf of user xxx for the following reason: xxx EventID 6005 (EventLog): 稽核記錄開始。 EventID 6006 (EventLog): 稽核記錄停止。 參考連結 https://www.nirsoft.net/utils/computer_turned_on_times.html ]]></description>
-</item>
-<item>
-    <title>資訊安全-IIS log 位置</title>
-    <link>https://amingosec.github.io/posts/location-of-iis-log-files-comments/</link>
-    <pubDate>Wed, 26 Jan 2022 12:39:52 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/location-of-iis-log-files-comments/</guid>
-    <description><![CDATA[Windows Server IIS 上建立PHP網站 – 資安工作筆記 - Feb 6, 2022
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] IIS log 位置 […]
-[…] 資訊安全-IIS log 位置 […]
-[…] 資訊安全-IIS log 位置 […]]]></description>
 </item>
 <item>
     <title>資訊安全-IIS log 位置</title>
@@ -46,15 +23,6 @@ EventID 41 (Microsoft-Windows-Kernel-Power): 系統重啟前未完整關機。 �
 W3SVC 後面的數字是 IIS 的網站 ID
 Log檔名說明：
 名稱格式：u_exyymmdd.log yy:西元年份後2碼，2022年會以22表示 mm:月份 dd:日期 延伸閱讀 資訊安全-Windows Event Log位置 Windows IR 方向 資訊安全-基本概念 參考資料 Managing IIS Log File Storage | Microsoft Docs]]></description>
-</item>
-<item>
-    <title>資訊安全-Wevtutil 日誌指令</title>
-    <link>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command-comments/</link>
-    <pubDate>Mon, 01 Nov 2021 16:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command-comments/</guid>
-    <description><![CDATA[Red team-後滲透清除入侵軌跡 – 資安工作筆記 - Mar 1, 2022
-[…] 資訊安全-Wevtutil 日誌指令 […]]]></description>
 </item>
 <item>
     <title>資訊安全-Wevtutil 日誌指令</title>

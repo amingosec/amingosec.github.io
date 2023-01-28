@@ -5,20 +5,6 @@
         <description>滲透測試 - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-Weevely (kali linux web shell產生工具)</title>
-    <link>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell-comments/</link>
-    <pubDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell-comments/</guid>
-    <description><![CDATA[[轉]瞭解MDR EDR EPP XDR – 資安工作筆記 - Feb 3, 2022
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]]]></description>
-</item>
-<item>
-    <title>工具介紹-Weevely (kali linux web shell產生工具)</title>
     <link>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell/</link>
     <pubDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</pubDate>
     <author>Author</author>
@@ -33,15 +19,6 @@ file.download rpath lpath [-vector]
 利用Webshell上傳檔案 使用:file_upload2web指令可以檔案上傳到目標主機
 :file_upload2web lpath rpath
 :file\_upload2web /home/kali/Desktop/test.exe test.exe 延伸閱讀 資安監控-rever shell監控方法 工具介紹-Python-Backdoor 網頁攻擊手法-上傳弱點 參考資料 https://www.kali.org/tools/weevely https://securityonline.info/weevely-tutorial-php-webshell/ https://github.com/epinna/weevely3 ]]></description>
-</item>
-<item>
-    <title>資訊安全-內網橫向移動(Lateral Movement)介紹</title>
-    <link>https://amingosec.github.io/posts/what-is-lateral-movement-comments/</link>
-    <pubDate>Sat, 31 Jul 2021 13:57:24 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/what-is-lateral-movement-comments/</guid>
-    <description><![CDATA[網頁攻擊手法-上傳弱點 – 資安工作筆記 - Mar 3, 2022
-[…] 資訊安全-內網橫向移動(Lateral Movement)介紹 […]]]></description>
 </item>
 <item>
     <title>資訊安全-內網橫向移動(Lateral Movement)介紹</title>
@@ -68,16 +45,6 @@ https://www.anquanke.com/post/id/239640]]></description>
 </item>
 <item>
     <title>工具介紹-Netcat指令</title>
-    <link>https://amingosec.github.io/posts/netcat-nc-commands-comments/</link>
-    <pubDate>Tue, 04 May 2021 15:21:58 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/netcat-nc-commands-comments/</guid>
-    <description><![CDATA[工具介紹-hping 使用 – 資安工作筆記 - Feb 0, 2022
-[…] 工具介紹-Netcat指令 […]
-[…] 工具介紹-Netcat指令 […]]]></description>
-</item>
-<item>
-    <title>工具介紹-Netcat指令</title>
     <link>https://amingosec.github.io/posts/netcat-nc-commands/</link>
     <pubDate>Tue, 04 May 2021 15:21:58 &#43;0000</pubDate>
     <author>Author</author>
@@ -86,15 +53,6 @@ https://www.anquanke.com/post/id/239640]]></description>
 跟遠端主機特定Port建立連線 確認是特定主機3389 Port是否有開，有時可以取代telnet
 nc -nv 192.168.0.1 3389 -n 表示不解析名稱 -v 表示所給的值 在本機監聽特定Port的連線 以下指令在本機8080port
 nc -nlvp 8080 延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 參考文章 https://blog.gtwang.org/linux/linux-utility-netcat-examples https://myapollo.com.tw/zh-tw/linux-command-nc/ ]]></description>
-</item>
-<item>
-    <title>滲透測試-提權輔助工具箱</title>
-    <link>https://amingosec.github.io/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/</link>
-    <pubDate>Sat, 01 May 2021 16:05:47 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/</guid>
-    <description><![CDATA[Redteam-內網橫向移動思路和技巧 – 資安工作筆記 - Feb 1, 2022
-[…] 滲透利器 | 提權輔助工具箱 […]]]></description>
 </item>
 <item>
     <title>滲透測試-提權輔助工具箱</title>
@@ -118,6 +76,51 @@ nc -nlvp 8080 延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 參
     <description><![CDATA[介紹 最近参加的几家机构的防守方防护方案评估，部分防守方缺乏对攻击者的正确认知，攻击者的手法已经比较高超了，不扫描，不落地，污染日志等都很普及了。同时也要正确认知对手：攻防演练中，攻击者并非无所不能，他们面临着和防御方一样的问题：时间紧，任务重。所以攻击者的攻击目标，攻击手法也是有迹可循的。
 內容 文章中提到，對防守方來說，網路層的ACL較為有效，而應用層的阻擋較容易繞過。
 文章連結 https://mp.weixin.qq.com/s/dgUxj8_D68d9iR3ekGueuw]]></description>
+</item>
+<item>
+    <title>[轉]lonelysec-OSCP心得分享</title>
+    <link>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec/</link>
+    <pubDate>Sat, 03 Apr 2021 03:13:43 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec/</guid>
+    <description><![CDATA[介紹 OSCP是有名的滲透證照，以下為網路上有人分享OSCP心得。
+文章連結 https://lonelysec.com/offensive-security-certified-professional-oscp-%E8%80%83%E8%A9%A6%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/
+延伸閱讀 The Journey to Try Harder: TJnull’s Preparation Guide for PWK/OSCP | NetSec Focus 建立Metasploitable 滲透練習Lab Redteam-紅隊作戰執行手冊 RedTeam攻擊技巧和安全防禦 ]]></description>
+</item>
+<item>
+    <title>工具介紹-Shodan</title>
+    <link>https://amingosec.github.io/posts/introduction-to-shodan/</link>
+    <pubDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-shodan/</guid>
+    <description><![CDATA[Shodan常被稱為駭客的google，會在網路上掃公開網路上的訊息，並建立成資料庫。使用者利用shodan取得資料可減少在資料取得時的足跡。 付費版的shodan有提供更完整的功能，加上shodan常有特價，可以抓準時機來買一下。
+延伸閱讀 自動化滲透測試框架-OWASP Nettacker 紅隊工具整理 參考資料 Shodan Pentesting Guide – TurgenSec Community — Read on community.turgensec.com/shodan-pentesting-guide/]]></description>
+</item>
+<item>
+    <title>網頁安全(Web Security)</title>
+    <link>https://amingosec.github.io/posts/what-is-web-security/</link>
+    <pubDate>Sat, 30 May 2020 00:05:07 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/what-is-web-security/</guid>
+    <description><![CDATA[在資訊安全領域中，網頁安全是相當重要的一環，很多企業受攻擊的根源都來自網頁弱點，被入侵後駭客進行橫向移動對企業內部產生傷害。 滲透測試跟最近知名的紅隊演練更是發現網頁弱點的重要方式。 OWASP Top 10整理了近期前10大主要的網頁攻擊手法。可用來看自己的網頁是否有相關的弱點。 btw滲透跟弱掃是不同，很多廠商拿弱掃當滲透賣，但只要能合規也是可以的啦。
+延伸閱讀 網頁攻擊手法-上傳弱點 網頁攻擊手法-SQL injection 網頁攻擊手法-XSS 介紹 參考資料 mp.weixin.qq.com/s/mA7iBJq4MzPNmDY_KJpLUA OWASP Top 10 ]]></description>
+</item>
+<item>
+    <title>SSCP - Methodology of an Attack</title>
+    <link>https://amingosec.github.io/posts/sscp-methodology-of-an-attack/</link>
+    <pubDate>Sat, 25 Jan 2020 14:21:20 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/sscp-methodology-of-an-attack/</guid>
+    <description><![CDATA[說明 在SSCP中說明攻擊者攻擊成功會經過的步驟，這些過程跟cyber kill chain有相似的地方，可相互對照。
+Target Acquisition Target Analysis Target Access Target Appropriation Target Acquisition
+在攻擊前取得目標資訊，公開非公開都是。
+Target Analysis
+分析所得到的資訊，找到弱點。
+Target Access
+利用各種弱點存取目標。
+Target Appropriation
+提權，維持存取資格。
+延伸閱讀 資安名詞-Cyber Kill Chain ]]></description>
 </item>
 </channel>
 </rss>

@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,61 +48,67 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/dns%E6%94%BE%E5%A4%A7%E6%94%BB%E6%93%8A%E7%B0%A1%E4%BB%8B/">DNS amplification attack (DNS放大攻擊)簡介</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-28">2019-12-28</time></span></div><div class="content">DNS amplification is an asymmetrical DDoS attack in which the attacker sends out a small look-up query with spoofed target IP, making the spoofed target the recipient of much larger DNS responses. With these attacks, the attacker’s goal is to saturate the network by continuously exhausting bandwidth capacity.
-DNS放大攻擊簡介，原文連結
-http://www.cc.ntu.edu.tw/chinese/epaper/0028/20140320_2808.html
-http://nirlog.com/2006/03/28/dns-amplification-attack/</div><div class="post-footer">
-        <a href="/posts/dns%E6%94%BE%E5%A4%A7%E6%94%BB%E6%93%8A%E7%B0%A1%E4%BB%8B/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+        <a href="/posts/%E5%BC%B1%E9%BB%9E%E5%88%A9%E7%94%A8/">Exploit db 介紹</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-17">2018-06-17</time></span></div><div class="content">說明 Exploit db 針對一些 cve 有提供 poc 的語法，讓攻擊者可以用來測試目標是否有存有弱點。有commend line的功能。
+網站連結 https://www.exploit-db.com </div><div class="post-footer">
+        <a href="/posts/%E5%BC%B1%E9%BB%9E%E5%88%A9%E7%94%A8/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/tcsec-orange-book/">TCSEC (Orange Book)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-09-28">2019-09-28</time></span></div><div class="content">由美國國防部委託National Computer Security Center (NCSC)發展。
-分級資訊如下:
-Division D - minimal security Division C - discretionary protection Division B - mandatory protection Division A - verified protection https://csrc.nist.gov/csrc/media/publications/white-paper/1985/12/26/dod-rainbow-series/final/documents/std001.txt
-https://en.wikipedia.org/wiki/Trusted_Computer_System_Evaluation_Criteria</div><div class="post-footer">
-        <a href="/posts/tcsec-orange-book/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/what-is-wooden-barrel-theory/">什麼是木桶理論？</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-13">2018-06-13</time></span></div><div class="content">木桶理論在資訊安全上的應用，如同木桶的容量是取決於最低的一支木條，資安的安全等級取決於最弱的系統。 可以想像木桶做的再大，但如果有一邊或是有一個木條特別低，那麼再多的水也無法裝，只能到最低的木條的容量。 因此從企業資訊安全的角度來看，不能只針對特定系統來加強，而是應全面性的評估。
+延伸閱讀 資安名詞-惡意中繼站 資訊安全-基本概念 </div><div class="post-footer">
+        <a href="/posts/what-is-wooden-barrel-theory/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E6%9C%A8%E6%A1%B6%E7%90%86%E8%AB%96/">木桶理論</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/535/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-09-26">2019-09-26</time></span></div><div class="content"></div><div class="post-footer">
-        <a href="/posts/535/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/primary/">Primary</a></div></div>
+        <a href="/posts/active-directory-attack/">Active Directory Attack</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-11">2018-06-11</time></span></div><div class="content">針對AD的攻擊 https://www.c0d3xpl0it.com/2018/06/active-directory-attack-dcsync.html</div><div class="post-footer">
+        <a href="/posts/active-directory-attack/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/active-directory-attack/">Active Directory Attack</a>,&nbsp;<a href="/tags/ad/">AD</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99/">資安練習網站</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-09-26">2019-09-26</time></span></div><div class="content">滲透測試的手法是有一定的攻擊性的，非經允許是不可在他人電腦上使用。因此有練習的靶場相當的重要。以下整理幾個練習的網站，都相當的推薦。
-PortSwigger https://portswigger.net/
-PortSwigger主要是針對web application漏洞進行教學。有完整的說明內容與練習，是相當適合新手的地方。
-CTF網站 https://www.root-me.org/?page=news&amp;lang=en https://www.pentesterlab.com/ https://picoctf.org Try Hack Me https://tryhackme.com/
-有完整有訓練路徑，不只紅隊相關練習，從基礎的內容開始講起。
-Hack the box Hack the box：https://www.hackthebox.eu/
-提供各靶機讓人練習，註冊需要一點技巧。
-OSCP相關機器整理 針對OSCP證照考試，將相關的Lab整理出來。
-https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=0</div><div class="post-footer">
-        <a href="/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99/">Read More</a></div>
+        <a href="/posts/what-is-file-upload-vulnerability/">攻擊手法-檔案上傳漏洞</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-04">2018-06-04</time></span></div><div class="content">說明 在現在的網路環境中，越來越多網站提供上傳檔案的功能，不論是上傳照片、履歷、作品集&hellip;等，如當發果沒有良好的設計，很容易就會產生檔案上傳漏洞。
+Server在回應Client的請求時，如果是可執行的檔案，會回應執行後的結果。此時，如果攻擊者利用上傳的功能，將檔案傳到Server上，並且請求Server執行成功時，即可攻擊成功。因此檔案上傳漏洞有兩個重要的條件。
+繞過上傳限制將檔案上傳 對上傳的檔案正確的請求 發現網站可以上傳資料時，可以製做該網站可用的shell來上傳，達到遠端操作的功能。如果該網站可以用php，可以透過kali的weevely 來產生php shell，上傳後來進行連線。
+部份網站會使用副檔名檢查來防止上傳，但很容易被更改副檔名後繞過。
+檔案上傳漏洞的危害 如果弱點被利用成功，很有可能讓攻擊者可進行遠端執行。且因為執行網頁服務的權限有時相當大，可直接讓攻擊者得到高權限來進一步進行橫向移動或其他攻擊。
+同時，如果目標主機存在路徑走訪的漏洞，會讓攻擊者有機會將檔案上傳到其他路徑，較不容易被察覺。
+延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 工具介紹-Weevely (kali linux web shell產生工具) 資訊安全-內網橫向移動(Lateral Movement)介紹 參考連結 https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload </div><div class="post-footer">
+        <a href="/posts/what-is-file-upload-vulnerability/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shell/">shell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/incident-response-for-ransomeare-comments/">幾個進行 Ransomware Incident Response 的重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-08-30">2019-08-30</time></span></div><div class="content">[轉]藍隊訓練 – 資安工作筆記 - Feb 5, 2022
-[…] 勒索病毒IR […]
-[…] 勒索病毒IR […]</div><div class="post-footer">
-        <a href="/posts/incident-response-for-ransomeare-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/metasploitable-%E5%BB%BA%E7%AB%8B/">Lab-建立Metasploitable 滲透練習Lab</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-03">2018-06-03</time></span></div><div class="content">Kali Linux 下載位置 https://www.kali.org/downloads/
+username root and password toor
+登入後開啟終端機更新
+#apt-get update
+#apt-get dist-upgrade
+#updatedb
+Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/
+下載後用VirtualBox匯入映象檔，以下面帳密使用
+username msfadmin and password msfadmin
+Windows 10 VM https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+可下載來進行測試
+offensive security 說明
+https://www.offensive-security.com/metasploit-unleashed/requirements/
+延伸閱讀 [轉]lonelysec-OSCP心得分享 練習網站 </div><div class="post-footer">
+        <a href="/posts/metasploitable-%E5%BB%BA%E7%AB%8B/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/metasploitable/">Metasploitable</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/incident-response-for-ransomeare/">幾個進行 Ransomware Incident Response 的重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-08-30">2019-08-30</time></span></div><div class="content">Ransomware 算是相當常見的攻擊方式，自從永恒之藍漏洞被利用後廣泛被大家得知。
-傳播方式 通常可能的傳播方式：
-通過社交工程，釣魚郵件誘導受害者下載檔案後執行並傳播 利用主機上RCR漏洞來進行傳播 利用主機上Web或第三方套件漏洞來進行傳播 利用弱密碼登入主機進行傳播 感染 Ransomware 的特點 如果感染Ransomware 會有以下兩個明顯特點。
-各類檔案出現可疑的副檔名 會有明顯的提示要求付贖金 Ransomware IR 目的 並不建議支付贖金，這會讓駭客認為此方法有效，開啟其他攻擊 同時支付贖金不一定能讓檔案 找到入侵的原因，找到漏洞，進行修補(一般來說在重要資料有保存的前題下進行重灌） 發現被感染時的處理要點 不能關機！不能關機！不能關機！ 為了防止持續傳播，可以受駭主機網路線拔除 可利用副檔名找是否有解密工具 在沒有100%保證可解密下，別自己解 依尋公司政策處理 針對 Ransomware 的預防 針對重要檔案進行備份 限制445、3389埠連線行為(此為目前常見的傳播行為) 定期進行更新 Incident Response 範例 http://blog.nsfocus.net/emergency-response-case-study/ https://blog.csdn.net/qq_27446553/article/details/81102198
-http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%8820170503%EF%BC%89/ https://mp.weixin.qq.com/s?src=11&timestamp=1533106387&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4h8eCCyQEr8A9hbHaIHPrqR-WiIdoJPqMsmSVic4-gs*sd3j613UabGbt6z9mQT6p5fWutdawPYrht-VlixmLLS&amp;new=1 https://mp.weixin.qq.com/s?src=11&timestamp=1533106458&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4hJcF-gDfZJVqz2bzHZt6fF_EmCrKm_DXOl3CMpdqrFZwBPOuAKr1TQcF7qG2x72YvsE8D1nglxXyYenvA2HLqY&new=1 </div><div class="post-footer">
-        <a href="/posts/incident-response-for-ransomeare/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/%E8%B3%87%E8%A8%8A%E6%90%9C%E9%9B%86%E7%B6%B2%E7%AB%99%E8%88%87%E5%B7%A5%E5%85%B7/">資訊搜集網站與工具</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-03">2018-06-03</time></span></div><div class="content">目標資訊 http://whois.domaintools.com https://www.netcraft.com https://talosintelligence.com
+DNS查詢 https://www.robtex.com
+Subdomain Knock Subdomain Scan https://github.com/guelfoweb/knock 使用下面指令安裝 # git clone https://github.com/guelfoweb/knock.git
+其他軟體或指令 dirb (資料夾內容查詢) nslookup maltego(installed in kali) wappalyzer 瀏覽器插件
+該注意的資料 以下為information gathering該注意的資訊 版本、目標server上其他的系統 login.xxx phpinfo robots.txt(會存該網站不想給google看的資料) config.ini tset</div><div class="post-footer">
+        <a href="/posts/%E8%B3%87%E8%A8%8A%E6%90%9C%E9%9B%86%E7%B6%B2%E7%AB%99%E8%88%87%E5%B7%A5%E5%85%B7/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/information-gathering/">information gathering</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -128,12 +134,6 @@ http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%882
                 </li><li class="page-item ">
                     <span class="page-link">
                         <a href="/page/25/">25</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link" aria-hidden="true">&hellip;</span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/34/">34</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

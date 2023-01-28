@@ -5,15 +5,6 @@
         <description>弱點掃瞄 - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-Shodan</title>
-    <link>https://amingosec.github.io/posts/introduction-to-shodan-comments/</link>
-    <pubDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-shodan-comments/</guid>
-    <description><![CDATA[資訊安全-公開資訊蒐集 – 資安工作筆記 - Mar 4, 2022
-[…] 工具介紹-Shodan […]]]></description>
-</item>
-<item>
-    <title>工具介紹-Shodan</title>
     <link>https://amingosec.github.io/posts/introduction-to-shodan/</link>
     <pubDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</pubDate>
     <author>Author</author>
@@ -41,16 +32,6 @@ OS fingerprinting -sV -O
     <guid>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[如果還沒有安裝，可以參考之前的文章，工具介紹-在Kali Linux上安裝openvas。
 1.使用Wizard掃描 開啟openvas後，第一次使用可以用wizard來進行弱點掃瞄 點選scans-&gt;task找到紫色的wizard點了之後輸入要掃的網站即可。]]></description>
-</item>
-<item>
-    <title>工具介紹-在Kali Linux上安裝openvas</title>
-    <link>https://amingosec.github.io/posts/install-openvas-on-kali-linux-comments/</link>
-    <pubDate>Sat, 30 Jun 2018 10:18:33 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/install-openvas-on-kali-linux-comments/</guid>
-    <description><![CDATA[CentOS – ip command – 資安工作筆記 - Feb 5, 2022
-[…] 工具介紹-在Kali Linux上安裝openvas […]
-[…] 如果還沒有安裝，可以參考之前的文章，工具介紹-在Kali Linux上安裝openvas。 […]]]></description>
 </item>
 <item>
     <title>工具介紹-在Kali Linux上安裝openvas</title>

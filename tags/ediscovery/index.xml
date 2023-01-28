@@ -5,17 +5,6 @@
         <description>eDiscovery - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 12:42:48 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/ediscovery/" rel="self" type="application/rss+xml" /><item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
-    <link>https://amingosec.github.io/posts/windows-ir-comments/</link>
-    <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-ir-comments/</guid>
-    <description><![CDATA[資訊安全-Windows Event Log位置 – 資安工作筆記 - Feb 1, 2022
-[…] Windows IR 方向 […]
-[…] Windows IR 方向 […]
-[…] 資安鑑識-Windows IR 方向 […]]]></description>
-</item>
-<item>
-    <title>在 Windows 系統上進行Incident Response 的重點</title>
     <link>https://amingosec.github.io/posts/windows-ir/</link>
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
     <author>Author</author>

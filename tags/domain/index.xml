@@ -5,15 +5,6 @@
         <description>domain - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/domain/" rel="self" type="application/rss+xml" /><item>
     <title>攻擊手法-DNS tunneling</title>
-    <link>https://amingosec.github.io/posts/introduction-to-dns-tunneling-comments/</link>
-    <pubDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-dns-tunneling-comments/</guid>
-    <description><![CDATA[名詞介紹-Domain Name Service (DNS) – 資安工作筆記 - Feb 4, 2022
-[…] DNS tunneling […]]]></description>
-</item>
-<item>
-    <title>攻擊手法-DNS tunneling</title>
     <link>https://amingosec.github.io/posts/introduction-to-dns-tunneling/</link>
     <pubDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</pubDate>
     <author>Author</author>

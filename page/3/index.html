@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,7 +48,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
@@ -86,14 +86,6 @@ C:\Users\\AppData\Local\Microsoft\Edge\User Data\Default\
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content"></div><div class="post-footer">
         <a href="/posts/1673/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/portswigger-lab-web-shell-upload-via-path-traversal-comments/">PortSwigger-檔案上傳漏洞 lab 3</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content">PortSwigger-檔案上傳漏洞 lab 4 - 資安工作筆記 - Mar 4, 2022
-[…] PortSwigger-檔案上傳漏洞 lab 3 […]
-[…] PortSwigger-檔案上傳漏洞 lab 3 […]
-[…] PortSwigger-檔案上傳漏洞 lab 3 […]</div><div class="post-footer">
-        <a href="/posts/portswigger-lab-web-shell-upload-via-path-traversal-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/">檔案上傳</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/portswigger-lab-web-shell-upload-via-path-traversal/">PortSwigger-檔案上傳漏洞 lab 3</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content">Lab: Web shell upload via path traversal
 Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
@@ -103,6 +95,15 @@ Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/car
 上傳shell並連線後發現無法執行，因為資料夾無執行權限。 在HTTP history中將上傳的HTTP request傳到Burp Repeater中。 在Burp Repeater中修改上傳路徑到可執行的路徑，filename=&quot;../shell.php&quot;。如果直接上傳會發現回傳的結果跟直接上傳相同。 因為server對路徑走訪有些許防範，因此利用URL encoding來進行混淆，改為filename=&quot;..%2fshell.php&quot; 從response中可看到avatars/../shell.php，表示有成功將路徑值帶入。 皆下來，連到上傳路徑/files/shell.php (/files/avatars/../shell.php)後，flag會直接出現在browser中，提交就可以完成此lab。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 網頁攻擊手法-檔案上傳弱點 </div><div class="post-footer">
         <a href="/posts/portswigger-lab-web-shell-upload-via-path-traversal/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/">檔案上傳</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/portswigger-file-upload-lab-2/">PortSwigger 檔案上傳漏洞 lab 2</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content">Lab 名稱 Web shell upload via Content-Type restriction bypass
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，這個lab針對上傳的內容做了Content-Type的檢查，練習利用burpsuit修改Content-Type來繞過檢查的目標。
+此lab只是利用Content-Type檢查，webshell可使用上一個lab的內容。
+可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
+上傳shell前啟動proxy intercept，將上傳的Content-Type修改成image/jpeg後再進行forward。 上傳成功後，連線shell，flag會直接出現在browser中，提交就可以完成此lab。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 網頁攻擊手法-檔案上傳弱點 </div><div class="post-footer">
+        <a href="/posts/portswigger-file-upload-lab-2/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -127,7 +128,7 @@ Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/car
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

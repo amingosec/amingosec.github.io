@@ -22,20 +22,6 @@ c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#
 </item>
 <item>
     <title>Windows Event Log位置</title>
-    <link>https://amingosec.github.io/posts/location-of-windows-event-log-comments/</link>
-    <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/location-of-windows-event-log-comments/</guid>
-    <description><![CDATA[資安監控-微軟建議監控AD受駭跡證 – 資安工作筆記 - Feb 3, 2022
-[…] Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]
-[…] 資訊安全-Windows Event Log位置 […]]]></description>
-</item>
-<item>
-    <title>Windows Event Log位置</title>
     <link>https://amingosec.github.io/posts/location-of-windows-event-log/</link>
     <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
     <author>Author</author>
@@ -52,16 +38,6 @@ MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操�
 </item>
 <item>
     <title>工具介紹-Microsoft Network Monitor</title>
-    <link>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor-comments/</link>
-    <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor-comments/</guid>
-    <description><![CDATA[Network-私有IP位置 – 資安工作筆記 - Mar 2, 2022
-[…] 工具介紹-Microsoft Network Monitor […]
-[…] 工具介紹-Microsoft Network Monitor […]]]></description>
-</item>
-<item>
-    <title>工具介紹-Microsoft Network Monitor</title>
     <link>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</link>
     <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
     <author>Author</author>
@@ -73,16 +49,6 @@ MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操�
 結論 整體使用起來相當直覺，工具沒有好壞，主要看使用起來熟不熟悉，如果有封包分析的需求可以下載來使用看看。
 下載連結 https://www.microsoft.com/en-us/download/details.aspx?id=4865
 延伸閱讀 工具介紹-Wireshark 解密Https 流量 工具介紹-Tcpdump指令介紹 ]]></description>
-</item>
-<item>
-    <title>PowerShell-使用powershell查找電腦開關機狀況</title>
-    <link>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time-comments/</link>
-    <pubDate>Thu, 10 Jun 2021 16:05:03 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time-comments/</guid>
-    <description><![CDATA[Windows IR – 資安工作筆記 - Jul 2, 2021
-[…] 使用powershell查找電腦開關機狀況 […]
-[…] 使用powershell查找電腦開關機狀況 […]]]></description>
 </item>
 <item>
     <title>PowerShell-使用powershell查找電腦開關機狀況</title>
@@ -138,6 +104,31 @@ PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，�
 遠端RPC指令
 相關連結 https://www.itprotoday.com/compute-engines/psexec
 https://docs.microsoft.com/en-us/sysinternals/downloads/pstools]]></description>
+</item>
+<item>
+    <title>在 Windows 系統上進行Incident Response 的重點</title>
+    <link>https://amingosec.github.io/posts/windows-ir/</link>
+    <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/windows-ir/</guid>
+    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
+在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
+Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
+在 Windows Event Log 分析時可以檢查的幾個重點：
+系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
+Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
+GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
+https://eventlogxp.com]]></description>
+</item>
+<item>
+    <title>名詞介紹-YARA Rules</title>
+    <link>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</link>
+    <pubDate>Thu, 21 Jun 2018 01:57:56 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</guid>
+    <description><![CDATA[YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。
+YARA Elements YARA rules包含以下幾個元件：
+Metadata Strings Conditions Imports 參考連結 YARA Rules Guide: Learning this Malware Research Tool malware detection using yara YARA 文件 ]]></description>
 </item>
 </channel>
 </rss>

@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,59 +48,61 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/monitoring-active-directory-for-signs-of-compromise/">資安監控- 監控 AD 的受駭跡證</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-26">2021-05-26</time></span></div><div class="content">本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。
-介紹 資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。
-Account Logon Events Account Management Directory Service Access Logon Events Object Access Policy Change Privilege Use Process Tracking System Events 使用 Auditpol.exe 設定 Windows 稽核原則 依微軟的說明，Auditpol.exe 較能正確回傳稽核原則的設定值。
-參考以下指令，可列出所有稽核原則設定值。
-auditpol /get /category:\* 參考以下指令，可設定logon的稽核原則內容。
-auditpol /set /subcategory:&#34;logon&#34; /success:enable /failure:enable 使用 Group policy 設定稽核原則 開啟群組原則設定，開到以下的路徑，將想要開啟的稽核原則開啟即可。
-Computer Configuration\Windows Settings\Security Settings\Local Policies\Audit Policy
-Local Group Policy Editor
-微軟建議的稽核原則設定 https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
-在監控上常用到的幾個Event ID 除了微軟建議監的 Event ID中的說明外，特別列出以下實務上常用的幾個Event ID。</div><div class="post-footer">
-        <a href="/posts/monitoring-active-directory-for-signs-of-compromise/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ad/">AD</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a></div></div>
+        <a href="/posts/using-powershell-to-check-scheduledtasks/">Powershell-查詢ScheduledTasks</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-28">2021-04-28</time></span></div><div class="content">指令
+Get-ScheduledTask 列出所有 ScheduledTask
+Get-ScheduledTask -TaskName &#34;SystemScan&#34; 針對特定Task名稱列出
+Get-ScheduledTask -TaskPath &#34;\\UpdateTasks\\\*&#34; 列出特定路徑的Task
+Get-ScheduledTask -TaskPath &#34;\\Microsoft\\Windows\\Work Folders\\&#34;,&#34;\\Microsoft\\Windows\\Workplace Join\\&#34; 其他跟 ScheduledTask 相關指令 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?view=windowsserver2019-ps</div><div class="post-footer">
+        <a href="/posts/using-powershell-to-check-scheduledtasks/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/memory-analyzing/">資安鑑識-Memory Analyzing</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-18">2021-05-18</time></span></div><div class="content">主要利用volatility framework 2.6執行
-識別system profile python vol.py -f %image\_name% imageinfo pslist
-pstree
-cmdscan
-延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? 藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst </div><div class="post-footer">
-        <a href="/posts/memory-analyzing/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/memory/">Memory</a></div></div>
+        <a href="/posts/get-the-stored-wifi-password-on-windows/">Windows-找尋已連線過的Wifi 密碼</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-27">2021-04-27</time></span></div><div class="content">利用netsh wlan指令找出連線過的Wifi名稱
+netsh wlan show profiles
+再利用以下指令，針對想查詢的wlan名稱顯示明碼的Key，[WLAN Name]請換成想查詢的名稱
+netsh wlan show profiles name=&quot;[WLAN Name]&quot; key=clear</div><div class="post-footer">
+        <a href="/posts/get-the-stored-wifi-password-on-windows/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/open-source-intelligence-osint/">資訊安全-公開資訊蒐集</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-13">2021-05-13</time></span></div><div class="content">在資訊安全領域中，不論扮演的是紅隊還是藍隊，都需要的公開資訊蒐集的能力。如有需要知道的IP與Domain Name，可利用下面的網站查詢
-IP/DN 資訊查找 https://community.riskiq.com https://www.robtex.com/ https://www.shodan.io/ http://ping.chinaz.com/ https://whois.chinaz.com/ 延伸閱讀 工具介紹-Shodan </div><div class="post-footer">
-        <a href="/posts/open-source-intelligence-osint/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+        <a href="/posts/860/"></a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-25">2021-04-25</time></span></div><div class="content"></div><div class="post-footer">
+        <a href="/posts/860/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/primary/">Primary</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/1011-comments/">藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-11">2021-05-11</time></span></div><div class="content">資安鑑識-Memory Analyzing – 資安工作筆記 - Feb 5, 2022
-[…] 藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst […]</div><div class="post-footer">
-        <a href="/posts/1011-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/blue-team/">Blue Team</a>,&nbsp;<a href="/tags/%E8%97%8D%E9%9A%8A/">藍隊</a></div></div>
+        <a href="/posts/%E8%B3%87%E5%AE%89%E7%9B%B8%E9%97%9C%E7%B6%B2%E7%AB%99/">資安相關網站</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-25">2021-04-25</time></span></div><div class="content">msrc blog https://msrc-blog.microsoft.com/
+一些不錯的Blog https://www.anquanke.com/
+國際Cert https://www.us-cert.gov/
+https://www.jpcert.or.jp/english/
+https://twcert.org.tw/
+Mitre Att&amp;ck Evaluation https://attackevals.mitre-engenuity.org/index.html
+滲透測試OS https://blog.backbox.org/
+https://www.ired.team</div><div class="post-footer">
+        <a href="/posts/%E8%B3%87%E5%AE%89%E7%9B%B8%E9%97%9C%E7%B6%B2%E7%AB%99/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/1011/">藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-11">2021-05-11</time></span></div><div class="content">介紹 Malware incidents are the most common yet most dangerous cyber security incidents in any organization. We shall discuss how a SOC expert will investigate malware incidents in a real-time corporate environment along with a relevant example.
-Before we discuss malware incidents in detail, first, we will understand what is malware? According to Norton, “Malware is an abbreviated form of “malicious software.” Malware is software that is specifically designed to gain access to or damage a computer, usually without the knowledge of the owner.</div><div class="post-footer">
-        <a href="/posts/1011/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/blue-team/">Blue Team</a>,&nbsp;<a href="/tags/%E8%97%8D%E9%9A%8A/">藍隊</a></div></div>
+        <a href="/posts/2021hw%E5%8F%82%E8%80%83%E7%BA%A2%E8%93%9D%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98%E6%BC%94%E4%B9%A0%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/">Red team-紅藍攻防實戰演練總盤點</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-24">2021-04-24</time></span></div><div class="content">介紹 最近参加的几家机构的防守方防护方案评估，部分防守方缺乏对攻击者的正确认知，攻击者的手法已经比较高超了，不扫描，不落地，污染日志等都很普及了。同时也要正确认知对手：攻防演练中，攻击者并非无所不能，他们面临着和防御方一样的问题：时间紧，任务重。所以攻击者的攻击目标，攻击手法也是有迹可循的。
+內容 文章中提到，對防守方來說，網路層的ACL較為有效，而應用層的阻擋較容易繞過。
+文章連結 https://mp.weixin.qq.com/s/dgUxj8_D68d9iR3ekGueuw</div><div class="post-footer">
+        <a href="/posts/2021hw%E5%8F%82%E8%80%83%E7%BA%A2%E8%93%9D%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98%E6%BC%94%E4%B9%A0%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/red-team/">red team</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/1010-comments/">藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate?</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-11">2021-05-11</time></span></div><div class="content">資安鑑識-Memory Analyzing – 資安工作筆記 - Feb 5, 2022
-[…] 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? […]</div><div class="post-footer">
-        <a href="/posts/1010-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/blue-team/">Blue Team</a>,&nbsp;<a href="/tags/%E8%97%8D%E9%9A%8A/">藍隊</a></div></div>
+        <a href="/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/">Red team-後滲透清除入侵軌跡</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-04-24">2021-04-24</time></span></div><div class="content">說明 在渗透完成之後，為了降低被發現的機率，攻擊者需要將自己的入侵軌跡清除。當然如果時間不夠，目標又有可利用的漏洞，直接作加密勒索一波也是常見的方式。
+以下提供了windows軌跡清除的方式。
+windows Windows 主要清除的內容為event log跟recent的內容。
+wevtutil el 列出系統中所有日誌名稱 wevtutil cl system 清理系統日誌 wevtutil cl application 清理應用程式日誌 wevtutil cl security 清理安全性日誌 除了系統日誌外，如果問標是Web，也記得一併刪除wed access log。
+延伸閱讀 資訊安全-Wevtutil 日誌指令 RedTeam攻擊技巧和安全防禦 Redteam-紅隊作戰執行手冊 [轉]lonelysec-OSCP心得分享 參考文章 https://mp.weixin.qq.com/s/SWMWVezAVzykkjTuRRDxJw</div><div class="post-footer">
+        <a href="/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -131,7 +133,7 @@ Before we discuss malware incidents in detail, first, we will understand what is
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

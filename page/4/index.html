@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,28 +48,13 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/portswigger-file-upload-lab-2/">PortSwigger 檔案上傳漏洞 lab 2</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content">Lab 名稱 Web shell upload via Content-Type restriction bypass
-Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
-說明 相較於上一題，這個lab針對上傳的內容做了Content-Type的檢查，練習利用burpsuit修改Content-Type來繞過檢查的目標。
-此lab只是利用Content-Type檢查，webshell可使用上一個lab的內容。
-可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
-上傳shell前啟動proxy intercept，將上傳的Content-Type修改成image/jpeg後再進行forward。 上傳成功後，連線shell，flag會直接出現在browser中，提交就可以完成此lab。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 網頁攻擊手法-檔案上傳弱點 </div><div class="post-footer">
-        <a href="/posts/portswigger-file-upload-lab-2/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/">工具介紹-TurnedOnTimesView-取得windows 開關機資訊</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-13">2022-03-13</time></span></div><div class="content">PowerShell-使用powershell查找電腦開關機狀況 – 資安工作筆記 - Mar 3, 2022
-[…] 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 […]</div><div class="post-footer">
-        <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/log/">LOG</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time/">工具介紹-TurnedOnTimesView-取得windows 開關機資訊</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-13">2022-03-13</time></span></div><div class="content">除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。
 TUrnedOnTimesView透過windows event log來比對開關機資訊。
@@ -99,6 +84,24 @@ DoH Client 可使用以下的URI Tamplate來跟DoH Server進行 IN A Records解�
 將檔案順利上傳到目標主機。 找到目標主機上傳檔案後的位置並呼叫檔案。 因此，利用burpsuite，可看到檔案被上傳到/files/avatars/資料夾下，假設上傳的檔名為shell.php，可直接利用browser去連/files/avatars/shell.php的頁面，會直接出現flag。最後將flag提交到最上面的banner就可以過關了。
 延伸閱讀 網頁攻擊手法-上傳弱點 </div><div class="post-footer">
         <a href="/posts/portswigger-file-upload-lab-1/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-osquery/">工具介紹-osquery</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-28">2022-02-28</time></span></div><div class="content">介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
+除了安裝版外，也提供免安裝版。
+osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
+取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
+osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
+osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
+取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
+可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
+c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
++---------------------------+------------------------------------------------------------------+ | name | action | +---------------------------+------------------------------------------------------------------+ | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1.</div><div class="post-footer">
+        <a href="/posts/introduction-to-osquery/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/osquery/">osquery</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/1407/"></a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-17">2022-02-17</time></span></div><div class="content"></div><div class="post-footer">
+        <a href="/posts/1407/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -127,7 +130,7 @@ DoH Client 可使用以下的URI Tamplate來跟DoH Server進行 IN A Records解�
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

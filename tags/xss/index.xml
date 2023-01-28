@@ -5,15 +5,6 @@
         <description>XSS - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/xss/" rel="self" type="application/rss+xml" /><item>
     <title>Lab - alert(1) to win</title>
-    <link>https://amingosec.github.io/posts/alert1-to-win-comments/</link>
-    <pubDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/alert1-to-win-comments/</guid>
-    <description><![CDATA[網頁攻擊手法-XSS 介紹 – 資安工作筆記 - Mar 0, 2022
-[…] Lab – alert(1) to win […]]]></description>
-</item>
-<item>
-    <title>Lab - alert(1) to win</title>
     <link>https://amingosec.github.io/posts/alert1-to-win/</link>
     <pubDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</pubDate>
     <author>Author</author>
@@ -26,31 +17,12 @@ Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
 </item>
 <item>
     <title>Lab - prompt(1) to win (XSS)</title>
-    <link>https://amingosec.github.io/posts/prompt1-to-win-xss-comments/</link>
-    <pubDate>Wed, 25 Jul 2018 06:22:01 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/prompt1-to-win-xss-comments/</guid>
-    <description><![CDATA[網頁攻擊手法-XSS 介紹 – 資安工作筆記 - Mar 0, 2022
-[…] Lab – prompt(1) to win (XSS) […]]]></description>
-</item>
-<item>
-    <title>Lab - prompt(1) to win (XSS)</title>
     <link>https://amingosec.github.io/posts/prompt1-to-win-xss/</link>
     <pubDate>Wed, 25 Jul 2018 06:22:01 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://amingosec.github.io/posts/prompt1-to-win-xss/</guid>
     <description><![CDATA[在不少等級中都有出現input.replace 的function，使用方法可以參考https://www.w3schools.com/jsref/jsref_replace.asp，有對replace method說明，有所了解後會對prompt(1)的思路比較有想法。
 Level 1 &lt;body/onload=prompt(1)//]]></description>
-</item>
-<item>
-    <title>網頁攻擊手法-XSS 介紹</title>
-    <link>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss-comments/</link>
-    <pubDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss-comments/</guid>
-    <description><![CDATA[網頁攻擊手法-SQL injection – 資安工作筆記 - Feb 0, 2022
-[…] 網頁攻擊手法-XSS 介紹 […]
-[…] 網頁攻擊手法-XSS 介紹 […]]]></description>
 </item>
 <item>
     <title>網頁攻擊手法-XSS 介紹</title>

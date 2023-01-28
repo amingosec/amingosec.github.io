@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/posts/"><i class='fa fa-road'></i> post <span class='alert'>New!</span></a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,60 +48,57 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-road'></i>post<span class='alert'>New!</span></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/github-xp4xbox-python-backdoor-this-program-is-an-non-object-oriented-opensource-hidden-and-undetectable-backdoor-reverse-shell-rat-for-windows-made-in-python-3-which-contains-many-features-such-a/">工具介紹-Python-Backdoor</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-07">2020-02-07</time></span></div><div class="content">GitHub - xp4xbox/Python-Backdoor: This program is an non-object oriented opensource, hidden and undetectable backdoor/reverse shell/RAT for Windows made in Python 3 which contains many features such as multi-client support and cross-platform server.
-— Read on github.com/xp4xbox/Python-Backdoor</div><div class="post-footer">
-        <a href="/posts/github-xp4xbox-python-backdoor-this-program-is-an-non-object-oriented-opensource-hidden-and-undetectable-backdoor-reverse-shell-rat-for-windows-made-in-python-3-which-contains-many-features-such-a/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+        <a href="/posts/sql-injection/">網頁攻擊手法-SQL injection</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-09-09">2018-09-09</time></span></div><div class="content">介紹 SQL injection或稱SQLi是網頁上常見的漏洞，在OWASP Top 10中已跟其他注入型的漏洞合併到Injection類型中。
+https://youtu.be/wX6tszfgYp4
+註解符號
+# &ndash;
+In-band SQLi error-based sqli(simple) 透過每一次的輸入的回應來判斷正確性
+Union attack 繞過原本查詢表格
+Blind/inferential SQLi Out of Band SQLi SQLMAP
+https://bbs.ichunqiu.com/thread-43169-1-1.html?from=snew
+延伸閱讀 網頁攻擊手法-XSS 介紹 網頁攻擊手法-上傳弱點 網頁安全(Web Security) </div><div class="post-footer">
+        <a href="/posts/sql-injection/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/639/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-01">2020-02-01</time></span></div><div class="content"></div><div class="post-footer">
-        <a href="/posts/639/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/primary/">Primary</a></div></div>
+        <a href="/posts/%E6%97%A5%E8%AA%8C%E9%9B%BB%E8%85%A6%E5%AF%AB%E7%9A%84%E6%97%A5%E8%A8%98/">名詞介紹-日誌 Log</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-09-03">2018-09-03</time></span></div><div class="content">log檔可分為system log, security log, even log…等等，事發時可透過log來勾勒出事情的樣貌。平時可將log統一保存，並設立分析規則，用以偵察事件的發生。 可透過稽核來追蹤誰在什麼時候改變了什麼，以維持資源的完整性。 在組織中，會將log集中保存。一般的架構下，會有前端收集器，負責將log進行收集與正規化，再將處理過的資料傳到後端SIEM，在SIEM中建端關聯規則產生即時告警，或進行統計產生視覺化圖表或報告，可較為完整的看到組織內資安狀況的全貌。
+延伸閱讀 資訊安全-Windows Event Log位置 資訊安全-IIS log 位置 </div><div class="post-footer">
+        <a href="/posts/%E6%97%A5%E8%AA%8C%E9%9B%BB%E8%85%A6%E5%AF%AB%E7%9A%84%E6%97%A5%E8%A8%98/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/log/">LOG</a>,&nbsp;<a href="/tags/soc/">SOC</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E4%B8%8B%E8%BC%89%E9%80%A3%E7%B5%90/">下載連結</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-01">2020-02-01</time></span></div><div class="content">提供一些hacker常用的os下載連結
-Kali Linux
-https://www.kali.org/downloads/
-BlackBox Linux
-https://www.backbox.org/download/
-Parrot OS
-https://parrotlinux.org/download.php
-BlackWin
-OS為Windows 10，沒看錯的話是伊朗人發展的
-https://blackwin.ir/download/</div><div class="post-footer">
-        <a href="/posts/%E4%B8%8B%E8%BC%89%E9%80%A3%E7%B5%90/">Read More</a></div>
+        <a href="/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/">Network - 常見HTTP status codes整理</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-30">2018-08-30</time></span></div><div class="content">403 表示路徑正確，但沒有權限存取 404 表示路徑不存在 500 表示程式只接受特定的字元或符號(可透過使用正確的符號完成注入)</div><div class="post-footer">
+        <a href="/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/http-status-codes/">HTTP status codes</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E-comments/">資安名詞-病毒相關名詞</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-28">2020-01-28</time></span></div><div class="content">[轉]藍隊訓練 – 資安工作筆記 - Feb 5, 2022
-[…] 病毒相關名詞 […]</div><div class="post-footer">
-        <a href="/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/attack-vectors/">attack vectors</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/malicious-payload/">malicious payload</a>,&nbsp;<a href="/tags/virus/">Virus</a></div></div>
+        <a href="/posts/how-to-find-subdomain/">工具介紹 - 子網域查找工具</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-28">2018-08-28</time></span></div><div class="content">sublist3r apt-get update apt-get install sublist3r
+網站工具 dnsdumpster 內容詳細，同時也提供domain mapping與xlsx檔下載。 DNStable DNStable滿完整的，還提供分類。 pentest-tools 除了sub domain查找外還有不少工具，每天提供每費點數試用，超過要錢。好處為找到後可以與網站提供的其他工具一同使用。
+其他 https://github.com/We5ter/Scanners-Box Scanners-Box各種掃描工具</div><div class="post-footer">
+        <a href="/posts/how-to-find-subdomain/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">DNS</a>,&nbsp;<a href="/tags/domain/">domain</a>,&nbsp;<a href="/tags/information-gathering/">information gathering</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/">資安名詞-病毒相關名詞</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-28">2020-01-28</time></span></div><div class="content">Attack Vectors Attack Vectors指攻擊途徑，也就是攻擊者進入到網路或系統的方式，對防禦方來講，可說是曝露在外可受攻擊的路徑。
-常見的attack vectors 包含社交工程、漏洞利用或內部威&hellip;等
-Malicious Payload 在資安領域中，payload指的是會產經傷害的惡意程式碼或指攻擊的指令。
-virus 病毒感染主機檔案，用以傳播
-Trojan 木馬，為偽裝成正常程式的惡意程式，通常不會自我複製，會包含間諜程式或後門程式，讓受駭主機可以遠端被操控。
-Worm 可以自我複製的惡意程式，可以安裝後門程式。
-Logic bomb 木馬的一種，在特定條件下(時間、日期)發作，通常為惡意行為。
-延伸閱讀 資安名詞-Sheep dip 勒索病毒IR 參考資料 https://www.cloudflare.com/learning/security/glossary/attack-vector/ https://www.cloudflare.com/learning/security/glossary/malicious-payload/ </div><div class="post-footer">
-        <a href="/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/attack-vectors/">attack vectors</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/malicious-payload/">malicious payload</a>,&nbsp;<a href="/tags/virus/">Virus</a></div></div>
+        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">工具介紹-nmap使用</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-26">2018-08-26</time></span></div><div class="content">nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn
+Port Scanning 狀態：open，close、filtered、unfiltered、open|filtered、closed|filtered -sT TCP scan -sU UTP scan -sA ACK scanning 可以確定是否有防火牆檔著 -sX Xmas scan
+OS fingerprinting -sV -O
+其他指令 -vv 列出詳細掃瞄狀態
+延伸閱讀 工具介紹-hping 使用 工具介紹-Netcat指令 Nmap Cheat Sheet 參考資料 https://nmap.org/docs/discovery.pdf https://nmap.org/docs/nmap-mindmap.pdf https://rookiehunting.wordpress.com/2022/02/02/nmap-a-brief-introduction/ </div><div class="post-footer">
+        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/nmap/">nmap</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/demilitarized-zone-dmz-comments/">資安名詞-Demilitarized Zone (DMZ)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-26">2020-01-26</time></span></div><div class="content">資安名詞-異地備援 – 資安工作筆記 - Feb 5, 2022
-[…] 資安名詞-Demilitarized Zone (DMZ) […]</div><div class="post-footer">
-        <a href="/posts/demilitarized-zone-dmz-comments/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dmz/">DMZ￼</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+        <a href="/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/">關於資安事件因應</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-11">2018-08-11</time></span></div><div class="content">關於事件因應，常會聽到各種不同的說法，參加了幾個課程有的講師認為應該在發現有問題時直接隔離主機，以防問題病毒擴散；有的認為應該放著，好好檢查找出問題根源一次解決。這兩種完全不同的方向，好像都有理，但又相互矛盾，但目前看到最正確的做法是，依照公司SOP操作。 依照公司SOP感覺沒有回答問題，但又確實重要。試想，所請來的資安顧問跟公司內部人員，誰會更瞭解公司設備的重要性？訂便當系統、教育訓練系統受感染了，要斷隨時可以斷，不會有事，但今天出事的如果是公司主要營運的系統直接隔離的損失可能更大。而公司所有系統，資安人員不一定每個都熟，依經驗，依感覺冒然處理都不是好方法，這就是SOP的重要性了。 但我想，更重要的是SOP的產生。公司是否有平時有計畫與確實演練都是在面對資安件事時能將損害降到最低的重要因素。</div><div class="post-footer">
+        <a href="/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/incident-response/">Incident Response</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -132,7 +129,7 @@ Logic bomb 木馬的一種，在特定條件下(時間、日期)發作，通常�
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/34/">34</a>
+                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
