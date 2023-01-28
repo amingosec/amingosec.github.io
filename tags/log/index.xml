@@ -1,0 +1,65 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>LOG - Tag - </title>
+        <link>https://amingosec.github.io/tags/log/</link>
+        <description>LOG - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/log/" rel="self" type="application/rss+xml" /><item>
+    <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
+    <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/</link>
+    <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time-comments/</guid>
+    <description><![CDATA[PowerShell-使用powershell查找電腦開關機狀況 – 資安工作筆記 - Mar 3, 2022
+[…] 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 […]]]></description>
+</item>
+<item>
+    <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
+    <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</link>
+    <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</guid>
+    <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。
+TUrnedOnTimesView透過windows event log來比對開關機資訊。
+EventID 41 (Microsoft-Windows-Kernel-Power): 系統重啟前未完整關機。 可能造成的原因包含系統未回應、系統crash，或是未預期的斷電。 EventID 42 (Microsoft-Windows-Kernel-Power): 系統進入睡眠 EventID 1 (Microsoft-Windows-Power-Troubleshooter): 系統從睡眠中開啟. EventID 1074 (USER32): The process xxx has initiated the xxx of computer xxx on behalf of user xxx for the following reason: xxx EventID 6005 (EventLog): 稽核記錄開始。 EventID 6006 (EventLog): 稽核記錄停止。 參考連結 https://www.nirsoft.net/utils/computer_turned_on_times.html ]]></description>
+</item>
+<item>
+    <title>Windows Event Log位置</title>
+    <link>https://amingosec.github.io/posts/location-of-windows-event-log-comments/</link>
+    <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/location-of-windows-event-log-comments/</guid>
+    <description><![CDATA[資安監控-微軟建議監控AD受駭跡證 – 資安工作筆記 - Feb 3, 2022
+[…] Windows Event Log位置 […]
+[…] 資訊安全-Windows Event Log位置 […]
+[…] 資訊安全-Windows Event Log位置 […]
+[…] 資訊安全-Windows Event Log位置 […]
+[…] 資訊安全-Windows Event Log位置 […]
+[…] 資訊安全-Windows Event Log位置 […]]]></description>
+</item>
+<item>
+    <title>Windows Event Log位置</title>
+    <link>https://amingosec.github.io/posts/location-of-windows-event-log/</link>
+    <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/location-of-windows-event-log/</guid>
+    <description><![CDATA[在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。
+Event Log 位置 windows event log預設位置為： %SystemRoot%\System32\winevt\Logs\ ，如果沒有看到或需要進行調整的話可以到註冊檔中確認與調整，註冊檔位置： HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog。
+幾個重要的event log 以下是進行事件查找時常會用到的幾個 log ，但是 log 是否被紀錄下來取決於稽核原則的設定，因此，記得進行良好的稽核原則設定，以利後續事件的查找。
+System.evtx 在 System 中有主機運作的相關訊息。
+Security.evtx 在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
+Application.evtx Application log
+Windows PowerShell.evtx 在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
+MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。
+延伸閱讀 Windows IR 方向 IIS log 位置 參考資料 https://docs.]]></description>
+</item>
+<item>
+    <title>名詞介紹-日誌 Log</title>
+    <link>https://amingosec.github.io/posts/%E6%97%A5%E8%AA%8C%E9%9B%BB%E8%85%A6%E5%AF%AB%E7%9A%84%E6%97%A5%E8%A8%98/</link>
+    <pubDate>Mon, 03 Sep 2018 05:26:48 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E6%97%A5%E8%AA%8C%E9%9B%BB%E8%85%A6%E5%AF%AB%E7%9A%84%E6%97%A5%E8%A8%98/</guid>
+    <description><![CDATA[log檔可分為system log, security log, even log…等等，事發時可透過log來勾勒出事情的樣貌。平時可將log統一保存，並設立分析規則，用以偵察事件的發生。 可透過稽核來追蹤誰在什麼時候改變了什麼，以維持資源的完整性。 在組織中，會將log集中保存。一般的架構下，會有前端收集器，負責將log進行收集與正規化，再將處理過的資料傳到後端SIEM，在SIEM中建端關聯規則產生即時告警，或進行統計產生視覺化圖表或報告，可較為完整的看到組織內資安狀況的全貌。
+延伸閱讀 資訊安全-Windows Event Log位置 資訊安全-IIS log 位置 ]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>OSCP - Tag - </title>
+        <link>https://amingosec.github.io/tags/oscp/</link>
+        <description>OSCP - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sat, 03 Apr 2021 03:13:43 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/oscp/" rel="self" type="application/rss+xml" /><item>
+    <title>[轉]lonelysec-OSCP心得分享</title>
+    <link>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec-comments/</link>
+    <pubDate>Sat, 03 Apr 2021 03:13:43 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec-comments/</guid>
+    <description><![CDATA[Lab-建立Metasploitable 滲透練習Lab – 資安工作筆記 - Feb 1, 2022
+[…] [轉]lonelysec-OSCP心得分享 […]
+[…] [轉]lonelysec-OSCP心得分享 […]]]></description>
+</item>
+<item>
+    <title>[轉]lonelysec-OSCP心得分享</title>
+    <link>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec/</link>
+    <pubDate>Sat, 03 Apr 2021 03:13:43 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec/</guid>
+    <description><![CDATA[介紹 OSCP是有名的滲透證照，以下為網路上有人分享OSCP心得。
+文章連結 https://lonelysec.com/offensive-security-certified-professional-oscp-%E8%80%83%E8%A9%A6%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/
+延伸閱讀 The Journey to Try Harder: TJnull’s Preparation Guide for PWK/OSCP | NetSec Focus 建立Metasploitable 滲透練習Lab Redteam-紅隊作戰執行手冊 RedTeam攻擊技巧和安全防禦 ]]></description>
+</item>
+</channel>
+</rss>

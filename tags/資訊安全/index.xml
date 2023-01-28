@@ -1,0 +1,146 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>資訊安全 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/</link>
+        <description>資訊安全 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 25 May 2022 06:39:02 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/" rel="self" type="application/rss+xml" /><item>
+    <title>Kali Linux 升級跟版本確認</title>
+    <link>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</link>
+    <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
+    <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。
+升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令
+方法 1
+lsb_release -a 方法 2
+cat /etc/os-release ]]></description>
+</item>
+<item>
+    <title>Excel 刪除重覆值或取得唯一值</title>
+    <link>https://amingosec.github.io/posts/excel-remove-duplicates/</link>
+    <pubDate>Wed, 18 May 2022 07:13:18 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/excel-remove-duplicates/</guid>
+    <description><![CDATA[在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重覆值刪除的功能，選取有重覆值的欄，再點選 Remove Duplicates 就可以了。
+操作說明 選取資料欄。 找到 Remove Duplicates (Data &gt; Data tools &gt; Remove Duplicates) 按下去，再選想套用的欄，就會將有重覆的資料刪除，只保留唯一的值。 結尾 這算是相當實用的功能，雖然只是小動作，但學起來後，在日常工作中相信可以增加不少生產力。]]></description>
+</item>
+<item>
+    <title>利用 Linux command 取得檔案 hash 值</title>
+    <link>https://amingosec.github.io/posts/linux-hash-command/</link>
+    <pubDate>Sun, 01 May 2022 03:21:15 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/linux-hash-command/</guid>
+    <description><![CDATA[hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異動，比較是否為相同的檔案。之前介紹了 Windows 中取得檔案 hash 值的方式。在這邊列出幾個 Linux 上取得 hash 值的指令。
+下面指令 &lt;your file&gt; 需要換成要產生 hash 值的檔名，或是使用 * 來產生當前路徑下所有檔案的 hash 值。
+md5sum 使用 md5sum 取得檔案的 MD5 值。
+md5sum &lt;your file&gt; sha1sum 用 sha1sum 取得檔案的 SHA1 值。
+sha1sum &lt;your file&gt; sha256sum 使用 sha256sum 取得檔案的 SHA256 值。
+sha256sum &lt;your file&gt; 結論 利用上述提到的幾個指令，可以產生檔案 hash 值，整體來說算簡單好記。指令加上 file path 即可。
+延伸閱讀 PowerShell-取得檔案hash值 小知識-產生檔案 hash 值的方式 工具介紹-osquery 參考資料 wiki: Hash_function ]]></description>
+</item>
+<item>
+    <title>VS Code extension 推薦</title>
+    <link>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</link>
+    <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
+    <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。
+一般設定 Settings Sync
+vs code icon
+extension
+Live Server
+remote ssh
+excel viewer
+vscode-sqlite
+icon
+waka time 用來追蹤 coding 時的活動狀況。
+Regex Previewer 身為資訊人員多會遇到的正則表示，這個 extension 提供了相當方便的編輯方式。
+資安相關 base64 decode 解base64
+url decode 解url encode
+Hex Editor 讓 VS Code 有看跟編輯 raw hexadecimal 的功能。
+參考連結 https://towardsdatascience.com/best-vs-code-extensions-of-2022-e9b49990cb4b]]></description>
+</item>
+<item>
+    <title>獨立線路的另一個選擇 - 無框行動 Circles.Life</title>
+    <link>https://amingosec.github.io/posts/introduction-to-circles-life/</link>
+    <pubDate>Sun, 17 Apr 2022 05:13:22 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-circles-life/</guid>
+    <description><![CDATA[在執行資安工作時，不論是事件、惡意程式分析或滲透，都會需要獨立的線路。尤其是在家工作時，相較牽新的線路，使用 4G 網路會是很好的選擇，而**無框行動 Circles.Life** 的方案相當值得推薦。搭配 4G LTE 無線路由器可快速建立獨立線路。
+為何需要使用獨立線路 在執行一些任務時，不論事件分析，還是特定的演練，最好是需要跟自己原本的網路做區隔，不讓正常工作的網路受到影響；同時，很多任務的內容本身就違反公司資安政策，需要使用這類的 Drity line 來運行。尤其是現在越來越多公司開始 WFH 如果單使用家中網路進行資安相關工作不太適合，這時使用另一個網路就顯的很必要。
+為何推薦無框行動 Circles.Life 配合 4G LTE 無線路由器輕鬆建立備用網路 在疫情下，如果要讓人到家中工裝難免不放心，無框行動 Circles.Life 是全數位電信，一切申請都可在家中完成，sim 卡可宅配到家，結合 4G LTE 無線路由器可輕鬆享有備用網路。
+吃不飽可退錢 在466吃到飽方案中，提供吃不飽的減免機制，針對用量不固定的使用來說，相當有吸引力。
+用量
+減免金額
+月付
+用量 &lt; 3GB
+$300
+$166
+3GB ≦ 用量 &lt; 18GB
+$100
+$366
+無綁約 這點相當重要，有時只是短期需求，無綁約給了使用上相當大的彈性，可以自由的申辦，不必受到合約的限制。
+直接網路申辦 如果實務上有需要，真的相當推薦，點下面連結直接申辦吃到飽方案。
+近期也有愚人節不框你活動，輸入序號申辦可加贈 200 元 7-11 商品卡。
+cv_ad_options = { ad_slot_id: &ldquo;54888aec73ae1608938c913a5c3d75ca&rdquo;, ad_width: &ldquo;364&rdquo;, ad_height: &ldquo;90&rdquo;, mode: &ldquo;production&rdquo; };
+品牌介紹 國際級行動電信－無框行動 Circles.Life
+「無框行動」顧名思義就是希望能打破傳統電信的合約框架，帶給你不綁約的電信自由，不綁約可以帶給你的比想要中還更多。無框行動成立於新加坡，主要股東包括紅杉資本印度、美國矽谷創投等世界級投資公司，並持續擴展海外市場。台灣是我們的海外據點第一站，並已陸續插旗在澳洲、印尼等市場，誓言要將電信自由概念席捲全球。]]></description>
+</item>
+<item>
+    <title>PortSwigger-檔案上傳漏洞 lab 6</title>
+    <link>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</link>
+    <pubDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</guid>
+    <description><![CDATA[Lab: Remote code execution via polyglot web shell upload
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。 此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。 步驟 如同之前的 lab 先找到上傳後可被存取的路徑。 因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。 需要將 payload 加到圖片檔中來執行。 下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行sudo apt install libimage-exiftool-perl來安裝。 exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 FLAG_START 、 FLAG_END加以區別。 將產生的payload.]]></description>
+</item>
+<item>
+    <title>PortSwigger-檔案上傳漏洞 lab 5</title>
+    <link>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</link>
+    <pubDate>Mon, 04 Apr 2022 02:38:09 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</guid>
+    <description><![CDATA[Lab: Web shell upload via obfuscated file extension
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，此Lab重點在練習副檔名的混淆手法，讓攻擊者可以上傳shell到有副檔名檢查網站。可以達到此攻擊的原因來自於判斷程式跟執行程式方式的差異，例如在判斷時，會把混淆過的副檔名當成真正的檔名而允許上傳，但在執行時，會轉為正真的攻擊檔案來執行。參考portswigger網站所列出的方式即可達成目標。
+步驟 此lab可使用與上一個lab相同的webshell。 可以先上傳一個正常的檔案，看一下檔案會被存放的位置。 利用burpsuite可看到位置在/files/avatars/資料夾下。 直接上傳webshell後，會出現無法上傳的錯誤訊息；從下圖的錯誤訊息中可以看出，僅可上傳jpg &amp; png兩種類型的檔案，因此利用混淆副檔名來bypass。 將一開始上傳的request傳到Burp Repeater 在filename的內容改為&quot;exploit.php%00.jpg&quot;。最後的結果如右，filename=&quot;exploit.php%00.jpg&quot; 傳出請求後，會看到下圖的結果。可以看到最後server上傳的是shell.php。 最後後再次存取/files/avatars/shell.php5即可取得此Lab的Flag。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 PortSwigger-檔案上傳漏洞 lab 3 PortSwigger-檔案上傳漏洞 lab 4 網頁攻擊手法-檔案上傳弱點 ]]></description>
+</item>
+<item>
+    <title>PortSwigger-檔案上傳漏洞 lab 4</title>
+    <link>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</link>
+    <pubDate>Wed, 30 Mar 2022 16:10:42 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</guid>
+    <description><![CDATA[Lab: Web shell upload via extension blacklist bypass
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，此Lab主要在於限制使用者上傳php檔，讓攻擊者練習利用php其他副檔名.php5來上傳。同時因為.php5並非系統預設可執行的檔案，因此也需利用.htaccess檔的調整來達到攻擊的目標。
+此lab可使用與上一個lab相同的webshell。
+可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
+可以試著上傳.php結尾的shell，會發現無法上傳，得到如下圖的回應。 將副檔名改成.php5後即可成功上傳。結果如下圖。 直接存取/files/avatars/shell.php5後沒有將/home/carlos/secret的內容回傳，所以判斷是無法執行副檔名為.php5的檔案造成的。 再上傳.htaccess檔案，讓該路徑可以執行.php5檔案。檔案內容如下。 AddType application/x-httpd-php .php5 上傳後再次存取/files/avatars/shell.php5即可取得此Lab的Flag。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 PortSwigger-檔案上傳漏洞 lab 3 網頁攻擊手法-檔案上傳弱點 ]]></description>
+</item>
+<item>
+    <title>Microsoft Edge 瀏覽記錄位置</title>
+    <link>https://amingosec.github.io/posts/microsoft-edge-browsing-history-location/</link>
+    <pubDate>Tue, 22 Mar 2022 13:55:42 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/microsoft-edge-browsing-history-location/</guid>
+    <description><![CDATA[說明 Edge的瀏覽記錄位置如下，檔案名稱為History，以SQLite的型式儲存。
+C:\Users\\AppData\Local\Microsoft\Edge\User Data\Default\
+取得資料後可以使用讀取SQLite的工具，如SQLite Reader去讀取資料。
+如果有在使用 VS Code 的話，可參考 vscode-sqlite 這個 extension 。
+參考資料 https://nxlog.co/documentation/nxlog-user-guide/browser-history.html ]]></description>
+</item>
+<item>
+    <title>PortSwigger-檔案上傳漏洞 lab 3</title>
+    <link>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal-comments/</link>
+    <pubDate>Sun, 20 Mar 2022 13:33:54 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal-comments/</guid>
+    <description><![CDATA[PortSwigger-檔案上傳漏洞 lab 4 - 資安工作筆記 - Mar 4, 2022
+[…] PortSwigger-檔案上傳漏洞 lab 3 […]
+[…] PortSwigger-檔案上傳漏洞 lab 3 […]
+[…] PortSwigger-檔案上傳漏洞 lab 3 […]]]></description>
+</item>
+</channel>
+</rss>

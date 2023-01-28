@@ -1,0 +1,47 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Primary - Tag - </title>
+        <link>https://amingosec.github.io/tags/primary/</link>
+        <description>Primary - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 17 Feb 2022 15:05:52 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/primary/" rel="self" type="application/rss+xml" /><item>
+    <title></title>
+    <link>https://amingosec.github.io/posts/1404/</link>
+    <pubDate>Thu, 17 Feb 2022 15:05:52 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/1404/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title></title>
+    <link>https://amingosec.github.io/posts/860/</link>
+    <pubDate>Sun, 25 Apr 2021 04:10:38 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/860/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title></title>
+    <link>https://amingosec.github.io/posts/639/</link>
+    <pubDate>Sat, 01 Feb 2020 15:35:38 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/639/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title></title>
+    <link>https://amingosec.github.io/posts/535/</link>
+    <pubDate>Thu, 26 Sep 2019 14:49:37 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/535/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>首頁</title>
+    <link>https://amingosec.github.io/posts/home/</link>
+    <pubDate>Sun, 17 Dec 2017 02:41:31 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/home/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

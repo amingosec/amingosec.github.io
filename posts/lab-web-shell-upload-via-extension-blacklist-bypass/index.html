@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>PortSwigger-檔案上傳漏洞 lab 4 - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="PortSwigger-檔案上傳漏洞 lab 4" />
+<meta property="og:description" content="Lab: Web shell upload via extension blacklist bypass
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，此Lab主要在於限制使用者上傳php檔，讓攻擊者練習利用php其他副檔名.php5來上傳。同時因為.php5並非系統預設可執行的檔案，因此也需利用.htaccess檔的調整來達到攻擊的目標。
+此lab可使用與上一個lab相同的webshell。
+可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
+可以試著上傳.php結尾的shell，會發現無法上傳，得到如下圖的回應。 將副檔名改成.php5後即可成功上傳。結果如下圖。 直接存取/files/avatars/shell.php5後沒有將/home/carlos/secret的內容回傳，所以判斷是無法執行副檔名為.php5的檔案造成的。 再上傳.htaccess檔案，讓該路徑可以執行.php5檔案。檔案內容如下。 AddType application/x-httpd-php .php5 上傳後再次存取/files/avatars/shell.php5即可取得此Lab的Flag。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 PortSwigger-檔案上傳漏洞 lab 3 網頁攻擊手法-檔案上傳弱點 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-30T16:10:42+00:00" />
+<meta property="article:modified_time" content="2022-03-30T16:10:42+00:00" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PortSwigger-檔案上傳漏洞 lab 4"/>
+<meta name="twitter:description" content="Lab: Web shell upload via extension blacklist bypass
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，此Lab主要在於限制使用者上傳php檔，讓攻擊者練習利用php其他副檔名.php5來上傳。同時因為.php5並非系統預設可執行的檔案，因此也需利用.htaccess檔的調整來達到攻擊的目標。
+此lab可使用與上一個lab相同的webshell。
+可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
+可以試著上傳.php結尾的shell，會發現無法上傳，得到如下圖的回應。 將副檔名改成.php5後即可成功上傳。結果如下圖。 直接存取/files/avatars/shell.php5後沒有將/home/carlos/secret的內容回傳，所以判斷是無法執行副檔名為.php5的檔案造成的。 再上傳.htaccess檔案，讓該路徑可以執行.php5檔案。檔案內容如下。 AddType application/x-httpd-php .php5 上傳後再次存取/files/avatars/shell.php5即可取得此Lab的Flag。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 PortSwigger-檔案上傳漏洞 lab 3 網頁攻擊手法-檔案上傳弱點 "/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/" /><link rel="prev" href="https://amingosec.github.io/posts/microsoft-edge-browsing-history-location/" /><link rel="next" href="https://amingosec.github.io/posts/franklin/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PortSwigger-檔案上傳漏洞 lab 4",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/amingosec.github.io\/posts\/lab-web-shell-upload-via-extension-blacklist-bypass\/"
+        },"genre": "posts","keywords": "資訊安全, fiel upload vulnerabilities, lab, PortSwigger, 檔案上傳","wordcount":  34 ,
+        "url": "https:\/\/amingosec.github.io\/posts\/lab-web-shell-upload-via-extension-blacklist-bypass\/","datePublished": "2022-03-30T16:10:42+00:00","dateModified": "2022-03-30T16:10:42+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">PortSwigger-檔案上傳漏洞 lab 4</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-03-30">2022-03-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;34 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#lab-目標">Lab 目標</a></li>
+    <li><a href="#說明">說明</a></li>
+    <li><a href="#延伸閱讀">延伸閱讀</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Lab: Web shell upload via extension blacklist bypass</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<p>跟上一個lab相同，利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p>
+<h2 id="說明">說明</h2>
+<p>相較於上一題，此Lab主要在於限制使用者上傳php檔，讓攻擊者練習利用php其他副檔名<code>.php5</code>來上傳。同時因為<code>.php5</code>並非系統預設可執行的檔案，因此也需利用<code>.htaccess</code>檔的調整來達到攻擊的目標。</p>
+<ul>
+<li>
+<p>此lab可使用與上一個lab相同的webshell。</p>
+</li>
+<li>
+<p>可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在<code>/files/avatars/</code>資料夾下。</p>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://amingosec.blog/wp-content/uploads/2022/03/uploadlocation-1024x560.png"
+        data-srcset="https://amingosec.blog/wp-content/uploads/2022/03/uploadlocation-1024x560.png, https://amingosec.blog/wp-content/uploads/2022/03/uploadlocation-1024x560.png 1.5x, https://amingosec.blog/wp-content/uploads/2022/03/uploadlocation-1024x560.png 2x"
+        data-sizes="auto"
+        alt="https://amingosec.blog/wp-content/uploads/2022/03/uploadlocation-1024x560.png"
+        title="https://amingosec.blog/wp-content/uploads/2022/03/uploadlocation-1024x560.png" /></p>
+<ul>
+<li>可以試著上傳<code>.php</code>結尾的shell，會發現無法上傳，得到如下圖的回應。</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://amingosec.blog/wp-content/uploads/2022/03/can_not_upload_php_file.png"
+        data-srcset="https://amingosec.blog/wp-content/uploads/2022/03/can_not_upload_php_file.png, https://amingosec.blog/wp-content/uploads/2022/03/can_not_upload_php_file.png 1.5x, https://amingosec.blog/wp-content/uploads/2022/03/can_not_upload_php_file.png 2x"
+        data-sizes="auto"
+        alt="https://amingosec.blog/wp-content/uploads/2022/03/can_not_upload_php_file.png"
+        title="https://amingosec.blog/wp-content/uploads/2022/03/can_not_upload_php_file.png" /></p>
+<ul>
+<li>將副檔名改成<code>.php5</code>後即可成功上傳。結果如下圖。</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://amingosec.blog/wp-content/uploads/2022/03/success_upload_php5_file.png"
+        data-srcset="https://amingosec.blog/wp-content/uploads/2022/03/success_upload_php5_file.png, https://amingosec.blog/wp-content/uploads/2022/03/success_upload_php5_file.png 1.5x, https://amingosec.blog/wp-content/uploads/2022/03/success_upload_php5_file.png 2x"
+        data-sizes="auto"
+        alt="https://amingosec.blog/wp-content/uploads/2022/03/success_upload_php5_file.png"
+        title="https://amingosec.blog/wp-content/uploads/2022/03/success_upload_php5_file.png" /></p>
+<ul>
+<li>直接存取<code>/files/avatars/shell.php5</code>後沒有將<code>/home/carlos/secret</code>的內容回傳，所以判斷是無法執行副檔名為<code>.php5</code>的檔案造成的。</li>
+<li>再上傳<code>.htaccess</code>檔案，讓該路徑可以執行<code>.php5</code>檔案。檔案內容如下。</li>
+</ul>
+<pre tabindex="0"><code>AddType application/x-httpd-php .php5
+</code></pre><ul>
+<li>上傳後再次存取<code>/files/avatars/shell.php5</code>即可取得此Lab的Flag。</li>
+</ul>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2022/03/17/postswigger-%e4%b8%8a%e5%82%b3%e6%bc%8f%e6%b4%9e-lab-1/" target="_blank" rel="noopener noreffer ">PortSwigger-檔案上傳漏洞 lab 1</a></li>
+<li><a href="https://amingosec.blog/2022/03/20/portswigger-%e6%aa%94%e6%a1%88%e4%b8%8a%e5%82%b3%e6%bc%8f%e6%b4%9e-lab-2/" target="_blank" rel="noopener noreffer ">PortSwigger-檔案上傳漏洞 lab 2</a></li>
+<li><a href="https://amingosec.blog/2022/03/20/portswigger-%e6%aa%94%e6%a1%88%e4%b8%8a%e5%82%b3%e6%bc%8f%e6%b4%9e-lab-3/" target="_blank" rel="noopener noreffer ">PortSwigger-檔案上傳漏洞 lab 3</a><a href="https://amingosec.blog/2022/03/20/portswigger-%e6%aa%94%e6%a1%88%e4%b8%8a%e5%82%b3%e6%bc%8f%e6%b4%9e-lab-3/" target="_blank" rel="noopener noreffer "></a></li>
+<li><a href="https://amingosec.blog/2018/06/04/%e6%aa%94%e6%a1%88%e4%b8%8a%e5%82%b3/" target="_blank" rel="noopener noreffer ">網頁攻擊手法-檔案上傳弱點</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-03-30</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/" data-title="PortSwigger-檔案上傳漏洞 lab 4" data-hashtags="資訊安全,fiel upload vulnerabilities,lab,PortSwigger,檔案上傳"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/" data-hashtag="資訊安全"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/" data-title="PortSwigger-檔案上傳漏洞 lab 4"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/" data-title="PortSwigger-檔案上傳漏洞 lab 4"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/" data-title="PortSwigger-檔案上傳漏洞 lab 4"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/">檔案上傳</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/microsoft-edge-browsing-history-location/" class="prev" rel="prev" title="Microsoft Edge 瀏覽記錄位置"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Microsoft Edge 瀏覽記錄位置</a>
+            <a href="/posts/franklin/" class="next" rel="next" title="franklin">franklin<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

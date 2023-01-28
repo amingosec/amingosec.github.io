@@ -1,0 +1,38 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Metasploitable - Tag - </title>
+        <link>https://amingosec.github.io/tags/metasploitable/</link>
+        <description>Metasploitable - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 03 Jun 2018 04:45:31 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/metasploitable/" rel="self" type="application/rss+xml" /><item>
+    <title>Lab-建立Metasploitable 滲透練習Lab</title>
+    <link>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B-comments/</link>
+    <pubDate>Sun, 03 Jun 2018 04:45:31 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B-comments/</guid>
+    <description><![CDATA[[轉]lonelysec-OSCP心得分享 – 資安工作筆記 - Feb 1, 2022
+[…] 建立Metasploitable 滲透練習Lab […]
+[…] Lab-建立Metasploitable 滲透練習Lab […]]]></description>
+</item>
+<item>
+    <title>Lab-建立Metasploitable 滲透練習Lab</title>
+    <link>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</link>
+    <pubDate>Sun, 03 Jun 2018 04:45:31 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</guid>
+    <description><![CDATA[Kali Linux 下載位置 https://www.kali.org/downloads/
+username root and password toor
+登入後開啟終端機更新
+#apt-get update
+#apt-get dist-upgrade
+#updatedb
+Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/
+下載後用VirtualBox匯入映象檔，以下面帳密使用
+username msfadmin and password msfadmin
+Windows 10 VM https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+可下載來進行測試
+offensive security 說明
+https://www.offensive-security.com/metasploit-unleashed/requirements/
+延伸閱讀 [轉]lonelysec-OSCP心得分享 練習網站 ]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>資安工作 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E5%B7%A5%E4%BD%9C/</link>
+        <description>資安工作 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 30 Jan 2019 15:48:16 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E5%B7%A5%E4%BD%9C/" rel="self" type="application/rss+xml" /><item>
+    <title>如何成為資安研究人員</title>
+    <link>https://amingosec.github.io/posts/how-to-become-a-cyber-security-researcher/</link>
+    <pubDate>Wed, 30 Jan 2019 15:48:16 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/how-to-become-a-cyber-security-researcher/</guid>
+    <description><![CDATA[在剛加入資安這一行時，真的不知道該從哪方面下手，台灣的資源相較國外真的少。但最大的問題來至於，那些資深的資安研究人員怎麼會這麼強，他們是怎麼做到的？當然以入行這幾年來還不算什麼咖的我，實在沒什麼資格教別人怎麼做，只能整理一些看到的資料跟自己的心得來分享，也勉勵自己。
+心態 portswigger上有一篇文章在心態上有著滿不錯的說明，很值得學習。
+Breaking stuff for a living Moving beyond known techniques Hunt forgotten knowledge Collect diversity No idea is too stupid Abandon comfort Iterate, invent, share 除了上述心態外，也整理一下自己的體會。
+持續進步，不安於現在的成就。 細節決定成果。 練習以第一性原則思考。 語文能力 英文 在資訊領域中，英文的重要性相信是不用多說的，相當多的一手資料跟技術文件都是英文，有一定的英文能力相當重要。
+增進的方式相當多，以閱讀來說，過去為了練習自己的英文閱讀，直接把所有系統換成英文，一開始很吃力，強迫自己直接看英文文件，但沒多久後發現有相當多互通的單字，開始可以享受到學習的複利。
+中文 中文的文件也相當的多，如果本身母語是中文，算是相當有利的條件。
+其他 世界很大，不是只有上述兩種語言，如果能學習第二外語，對於在各方面都很有幫助的。在過去的資料查找過程中，就遇到日文的文獻，這也是目前自己在學習的第二外語。
+參考文章 portswigger - so you want to be a web security researcher ]]></description>
+</item>
+</channel>
+</rss>

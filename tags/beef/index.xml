@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>beef - Tag - </title>
+        <link>https://amingosec.github.io/tags/beef/</link>
+        <description>beef - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/beef/" rel="self" type="application/rss+xml" /><item>
+    <title>網頁攻擊手法-XSS 介紹</title>
+    <link>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss-comments/</link>
+    <pubDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss-comments/</guid>
+    <description><![CDATA[網頁攻擊手法-SQL injection – 資安工作筆記 - Feb 0, 2022
+[…] 網頁攻擊手法-XSS 介紹 […]
+[…] 網頁攻擊手法-XSS 介紹 […]]]></description>
+</item>
+<item>
+    <title>網頁攻擊手法-XSS 介紹</title>
+    <link>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</link>
+    <pubDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</guid>
+    <description><![CDATA[介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。
+在owasp top 10-2017中改到第七名
+https://www.owasp.org/index.php/Top_10-2017_Top_10
+https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
+可分為stored、reflected。
+可使用的方法 加入或用 的error呼叫 利用編碼的方試bypass 練習網站 alert(1) to win
+prompt(1) to win
+利用工具 beef xss framework 滿不錯用的，kali跟backbox都有，
+XSS hunter也有提供攻擊payload，並把結果回覆分析，相當有用
+要防禦的話，除了在client side也請記得一定要在server side進行相關安全性設定。
+延伸閱讀 SQL injection Lab - alert(1) to win Lab - prompt(1) to win (XSS) ]]></description>
+</item>
+</channel>
+</rss>

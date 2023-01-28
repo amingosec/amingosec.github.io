@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+	<meta name="generator" content="Hugo 0.110.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title></title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="" />
+<meta property="og:description" content="This is 資安工作筆記" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://amingosec.github.io/" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="This is 資安工作筆記"/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title=""><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https:\/\/amingosec.github.io\/","inLanguage": "zh-TW","description": "This is 資安工作筆記","name": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/postgresql-date-calculate/">postgresql 計算日期</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-15">2022-05-15</time></span></div><div class="content">使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的日期與時間。
+date_trunc 會回傳計算後時期的0分0秒，再利用這個為基準找到想要的時間。
+範例 本月份第一天
+date_trunc(&#39;month&#39;, current_date) 上月份第一天
+date_trunc(&#39;month&#39;, current_date - interval &#39;1&#39; month) 今年第一天
+date_trunc(&#39;year&#39;, current_date) 結論 之前為了這個日期的計算可說是煞費苦心，瞭解後其實內容沒有這麼難，把一些心得記錄下來，也希望之後需要時有地方可以找。</div><div class="post-footer">
+        <a href="/posts/postgresql-date-calculate/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/postgresql/">postgresql</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/vs-code-extensions-for-markdown/">VS Code extensions 推薦 for markdown</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-03">2022-05-03</time></span></div><div class="content">使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。
+Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of contents 跟 Easily add/update/remove section numbering 都是相當實用的功能。
+Markdown PDF 再來推薦的是 Markdown PDF 顧名思義是讓 Markdown 轉成 PDF 的工具。但不只 pdf，連 html，png，jpeg 都可以匯出。
+Markdown Paste Markdown 雖然好用，但要把圖片加入文章中還是有些不方便，Markdown Paste 可說是讓這工作簡輕了不少，他的好用就直接看下圖的 demo 吧。
+Markdown Extended 除了 Markdown 的基本語法外 Markdown Extended 提供了更多延伸語法讓使用者使用。其中表格整理的功能讓 markdown 在編輯表格時相當的方便省時。
+結論 以上提供了幾個用 VS Code 來編輯 Markdown 時常用的 extension 可以讓整體的使用變的更順手，如果有其他推薦的也歡迎在下方留言說明。</div><div class="post-footer">
+        <a href="/posts/vs-code-extensions-for-markdown/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/vs-code/">VS Code</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/linux-hash-command/">利用 Linux command 取得檔案 hash 值</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-01">2022-05-01</time></span></div><div class="content">hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異動，比較是否為相同的檔案。之前介紹了 Windows 中取得檔案 hash 值的方式。在這邊列出幾個 Linux 上取得 hash 值的指令。
+下面指令 &lt;your file&gt; 需要換成要產生 hash 值的檔名，或是使用 * 來產生當前路徑下所有檔案的 hash 值。
+md5sum 使用 md5sum 取得檔案的 MD5 值。
+md5sum &lt;your file&gt; sha1sum 用 sha1sum 取得檔案的 SHA1 值。
+sha1sum &lt;your file&gt; sha256sum 使用 sha256sum 取得檔案的 SHA256 值。
+sha256sum &lt;your file&gt; 結論 利用上述提到的幾個指令，可以產生檔案 hash 值，整體來說算簡單好記。指令加上 file path 即可。
+延伸閱讀 PowerShell-取得檔案hash值 小知識-產生檔案 hash 值的方式 工具介紹-osquery 參考資料 wiki: Hash_function </div><div class="post-footer">
+        <a href="/posts/linux-hash-command/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/top-vscode-extensions-for-cyber-security-work/">VS Code extension 推薦</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-28">2022-04-28</time></span></div><div class="content">VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。
+一般設定 Settings Sync
+vs code icon
+extension
+Live Server
+remote ssh
+excel viewer
+vscode-sqlite
+icon
+waka time 用來追蹤 coding 時的活動狀況。
+Regex Previewer 身為資訊人員多會遇到的正則表示，這個 extension 提供了相當方便的編輯方式。
+資安相關 base64 decode 解base64
+url decode 解url encode
+Hex Editor 讓 VS Code 有看跟編輯 raw hexadecimal 的功能。
+參考連結 https://towardsdatascience.com/best-vs-code-extensions-of-2022-e9b49990cb4b</div><div class="post-footer">
+        <a href="/posts/top-vscode-extensions-for-cyber-security-work/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/ssh/">SSH</a>,&nbsp;<a href="/tags/vs-code/">VS Code</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-circles-life/">獨立線路的另一個選擇 - 無框行動 Circles.Life</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-17">2022-04-17</time></span></div><div class="content">在執行資安工作時，不論是事件、惡意程式分析或滲透，都會需要獨立的線路。尤其是在家工作時，相較牽新的線路，使用 4G 網路會是很好的選擇，而**無框行動 Circles.Life** 的方案相當值得推薦。搭配 4G LTE 無線路由器可快速建立獨立線路。
+為何需要使用獨立線路 在執行一些任務時，不論事件分析，還是特定的演練，最好是需要跟自己原本的網路做區隔，不讓正常工作的網路受到影響；同時，很多任務的內容本身就違反公司資安政策，需要使用這類的 Drity line 來運行。尤其是現在越來越多公司開始 WFH 如果單使用家中網路進行資安相關工作不太適合，這時使用另一個網路就顯的很必要。
+為何推薦無框行動 Circles.Life 配合 4G LTE 無線路由器輕鬆建立備用網路 在疫情下，如果要讓人到家中工裝難免不放心，無框行動 Circles.Life 是全數位電信，一切申請都可在家中完成，sim 卡可宅配到家，結合 4G LTE 無線路由器可輕鬆享有備用網路。
+吃不飽可退錢 在466吃到飽方案中，提供吃不飽的減免機制，針對用量不固定的使用來說，相當有吸引力。
+用量
+減免金額
+月付
+用量 &lt; 3GB
+$300
+$166
+3GB ≦ 用量 &lt; 18GB
+$100
+$366
+無綁約 這點相當重要，有時只是短期需求，無綁約給了使用上相當大的彈性，可以自由的申辦，不必受到合約的限制。
+直接網路申辦 如果實務上有需要，真的相當推薦，點下面連結直接申辦吃到飽方案。
+近期也有愚人節不框你活動，輸入序號申辦可加贈 200 元 7-11 商品卡。
+cv_ad_options = { ad_slot_id: &ldquo;54888aec73ae1608938c913a5c3d75ca&rdquo;, ad_width: &ldquo;364&rdquo;, ad_height: &ldquo;90&rdquo;, mode: &ldquo;production&rdquo; };
+品牌介紹 國際級行動電信－無框行動 Circles.Life
+「無框行動」顧名思義就是希望能打破傳統電信的合約框架，帶給你不綁約的電信自由，不綁約可以帶給你的比想要中還更多。無框行動成立於新加坡，主要股東包括紅杉資本印度、美國矽谷創投等世界級投資公司，並持續擴展海外市場。台灣是我們的海外據點第一站，並已陸續插旗在澳洲、印尼等市場，誓言要將電信自由概念席捲全球。</div><div class="post-footer">
+        <a href="/posts/introduction-to-circles-life/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/">PortSwigger-檔案上傳漏洞 lab 6</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-15">2022-04-15</time></span></div><div class="content">Lab: Remote code execution via polyglot web shell upload
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。 此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。 步驟 如同之前的 lab 先找到上傳後可被存取的路徑。 因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。 需要將 payload 加到圖片檔中來執行。 下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行sudo apt install libimage-exiftool-perl來安裝。 exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 FLAG_START 、 FLAG_END加以區別。 將產生的payload.</div><div class="post-footer">
+        <a href="/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/">檔案上傳漏洞</a></div></div>
+</article><ul class="pagination"><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/page/2/">2</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/3/">3</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/4/">4</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/36/">36</a>
+                    </span>
+                </li></ul></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

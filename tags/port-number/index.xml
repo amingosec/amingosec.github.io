@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>port number - Tag - </title>
+        <link>https://amingosec.github.io/tags/port-number/</link>
+        <description>port number - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 10 Jul 2018 00:20:53 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/port-number/" rel="self" type="application/rss+xml" /><item>
+    <title>Network-一些常用的埠號 port number</title>
+    <link>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number-comments/</link>
+    <pubDate>Tue, 10 Jul 2018 00:20:53 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number-comments/</guid>
+    <description><![CDATA[Network-私有IP位置 – 資安工作筆記 - Mar 2, 2022
+[…] Network-一些常用的埠號 port number […]]]></description>
+</item>
+<item>
+    <title>Network-一些常用的埠號 port number</title>
+    <link>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</link>
+    <pubDate>Tue, 10 Jul 2018 00:20:53 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</guid>
+    <description><![CDATA[在應用層中，每個服務都有預設的port number，當然也可以依自己的需求指定使用，曾經也是有看過https走TCP/80，或是RDP走TCP/1234。
+FTP 20 FTP 21 SSH 22 Telnet 23 SMTP 25 TACACS+ 49 IPSec ESP 50 IPSec AH 51 DNS 53 TFTP 69 HTTP 80 POP3 110 NTP 123 nbns 137 smb over netbios 139 SNMP 161 SNMP 162 NTP 123￼LDAP 389 TLS SSL 443(tcp) L2TP1701 (UDP) PPTP 1723(tcp) IMAP4 143(tcp) windows 遠端 3389 延伸閱讀 Network-私有IP位置 Network-135、137、138、139、445說明 ]]></description>
+</item>
+</channel>
+</rss>

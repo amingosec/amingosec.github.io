@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>異地備援 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</link>
+        <description>異地備援 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 15 Apr 2018 06:37:25 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/" rel="self" type="application/rss+xml" /><item>
+    <title>資安名詞-異地備援</title>
+    <link>https://amingosec.github.io/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</link>
+    <pubDate>Sun, 15 Apr 2018 06:37:25 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</guid>
+    <description><![CDATA[備援種類 Cold Site：建築物、不一定有公同設施
+WarmSite：建築物、公用設施、IT設備
+Hot Site：建築物、公用設施、IT設備、資料
+Mobile Site：行動機房
+Multiple Processing Site：在不同地點有相同的設備與資料，Mirro Site
+距離 在「我國機房異地備援機制參考指引v1.0」中提到，2003年資通安全會報中，建議異地備援距離為30公里。但勤業眾信依據921與日本311地震的影響範圍與，提出備援距離要至少需要150-200公里。
+延伸閱讀 資安名詞-木桶理論 資安名詞-Demilitarized Zone (DMZ) 資安名詞-惡意中繼站, C2 ]]></description>
+</item>
+</channel>
+</rss>

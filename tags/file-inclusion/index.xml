@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>file inclusion - Tag - </title>
+        <link>https://amingosec.github.io/tags/file-inclusion/</link>
+        <description>file inclusion - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 24 Jul 2018 15:34:09 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/file-inclusion/" rel="self" type="application/rss+xml" /><item>
+    <title>File Inclusion 漏洞練習</title>
+    <link>https://amingosec.github.io/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/</link>
+    <pubDate>Tue, 24 Jul 2018 15:34:09 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/</guid>
+    <description><![CDATA[如果在metasploitable2上使用這個漏洞，需先將php.ini檔做設定。 allow_url_fopen = On allow_url_include = On (反過來說，如果將上面兩行設成Off，將可以有效的防止這個漏洞) 確認事項
+弱點主機與攻擊主機可以互連 在攻擊主機上先建立好revers shell檔，放入www資料夾中(通常會用txt檔，以免自己看時執行) 開啟nc 在弱點主機url的&quot;page=&ldquo;後輸入攻擊主機shell的網址 確認nc有監聽到 解決方法： 除了如上所說外，當php使用get 時，參數使用白名單的方法，名單外的以Error回應。 參考資料： https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_(OTG-AUTHZ-001)]]></description>
+</item>
+</channel>
+</rss>

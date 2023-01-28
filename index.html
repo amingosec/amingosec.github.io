@@ -55,28 +55,6 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/portswigger-file-upload-lab-2/">PortSwigger 檔案上傳漏洞 lab 2</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-26">2023-01-26</time></span></div><div class="content">名稱 Web shell upload via Content-Type restriction bypass
-Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
-說明 相較於上一題，這個lab針對上傳的內容做了Content-Type的檢查，練習利用burpsuit修改Content-Type來繞過檢查的目標。
-因為此lab只是利用Content-Type檢查，webshell 不用調整，可使用上一個 lab 的 shell。
-一樣先上傳一個正常的檔案，確認檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。 在上傳 shell 前啟動 proxy intercept，將上傳的 Content-Type 修改成 image/jpeg 後再進行 forward。 上傳成功後，連線shell，flag會直接出現在browser中，提交就可以完成此lab。 </div><div class="post-footer">
-        <a href="/posts/portswigger-file-upload-lab-2/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/learning-resource/">Learning Resource</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-25">2023-01-25</time></span></div><div class="content">在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。
-Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的Learning Path，雖說大多是介紹微軟的工具，但所包含的內容相當的廣，很適合初學者學習。
-這邊列出幾個我覺得滿實用的 Learning Path。
-Introduction to version control with Git - Learn | Microsoft Docs Introduction to GitHub - Learn | Microsoft Docs Introduction to Docker containers - Learn | Microsoft Docs Introduction to Kubernetes on Azure - Learn | Microsoft Docs </div><div class="post-footer">
-        <a href="/posts/learning-resource/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/portswigger-file-upload-lab-1/">PortSwigger 檔案上傳漏洞 lab 1</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-23">2023-01-23</time></span></div><div class="content">名稱 Lab：remote code execution via web shell upload
-目標 利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
-說明 題目特別說明沒有任何的檢查，算是滿基本的上傳漏洞練習，webshell跟路徑都準備好了，讓攻擊者練習上傳漏洞需要注意的兩點。
-將檔案順利上傳到目標主機。 找到目標主機上傳檔案後的位置並呼叫檔案。 因此，利用burpsuite，可看到檔案被上傳到/files/avatars/資料夾下，假設上傳的檔名為shell.php，可直接利用browser去連/files/avatars/shell.php的頁面，會直接出現flag。最後將flag提交到最上面的banner就可以過關了。</div><div class="post-footer">
-        <a href="/posts/portswigger-file-upload-lab-1/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/windows-event-log/">Windows Event Log</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content">Event Log Location %SystemRoot%\System32\winevt\Logs\
 三種主要取得 Event Log 的方法：
@@ -93,7 +71,80 @@ windows rdp
 Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx
 MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。</div><div class="post-footer">
         <a href="/posts/windows-event-log/">Read More</a></div>
-</article></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/tips-for-improving-your-remote-meetings/">4個必知重點讓你的遠端會議更輕鬆</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-26">2022-08-26</time></span></div><div class="content">隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。
+在疫情間建立起遠端會議的模式讓會議的時間地點更有彈性，方便性的提升讓更多人習慣使用遠端開會。
+在進行遠端會議時，注意以下5個要點，會讓你開會起來更顯專業與輕鬆。
+耳麥的選擇與設定 視訊鏡頭的設定 簡報投影的方式 準備好備案 耳麥的選擇與設定 在遠端會議中耳麥可說是最重要的部份，看過太多的會議因為收不到聲音而拖了快半小時還無法開會。
+目前自己使用的方法是Apple 的 3.5 mm耳麥加上他們家的type c 轉 3.5 mm的轉接頭，在大部份的情境下都相當適用，也有不錯的品質。
+幾次經驗下來，發現回歸傳統的 3.5 mm 有線耳麥是相當好的選擇。收音穩定也不會有藍芽耳機要開會到一半充電的問題。
+但在使用 3.5 mm 耳麥上會遇到規格不同的問題。有分為 CTIA/OMTP兩種規格，一般廠商不會特別說明，如果耳麥的規格跟電腦不同，就會出現只有聲音，但麥克風無法使用的狀況。因此除了買兩種規格的轉接頭外，建議使用可支援兩種規格的USB網卡，加上平常使用的耳麥，就可以達到通訊的效果。
+所以怕麻煩或沒有特別想法下，可以參考我的做法，CP值不一定最好，但沒出什麼大差錯，省了不少工。
+視訊鏡頭的設定 轉到遠端會議時後，少了面對面的接觸難免多了生疏，加上有時會議會希望能看到人，增加參與人的專注度，鏡頭的設定就相當重要了。在感受上來說，開啟鏡頭的會議更可以感受到對會議的重視跟專業。
+視訊鏡頭設定上需要注意兩部份
+虛擬背景 鏡頭蓋 依使用的視訊軟體不同，會有各種虛擬背景可以選，最基本的會有模糊背景的選項。因此可以在會議前設定好自己的背景確認一下效果再進入會議室。
+另外增加了鏡頭後隨之而來的隱私問題不可不防，鏡頭蓋是相當簡單的商品之一，在筆電上貼上一個鏡頭貼，不使用時直接蓋上相當的好用。如果會議中不想開鏡頭，不小心打開了鏡頭蓋就可避免這個錯誤。
+簡報投影的方式 在投影簡報時，如會果沒有接投影機，沒有第二個螢幕，遇到狀況是投影的結果把整的螢幕佔滿，沒有辦法看到會議中的對話。
+如果使用Teams的話，建議使用PPT的投影到teams中，會有不錯的效果。
+如果是使用其他的會議軟體，建議使用投影到視窗，再利用分享視窗的方式讓報告呈現出來。就可以達到分享視窗加同時看到會議內容的結果。
+準備好備案 之前參加一個線上產品發表，最後在發表前因為原本使用的會議系統出包無法使用，臨時通知所有參加的人換另一個連結，但因為沒有測試好，拖了半小時以上。
+這就就是備案的重要，不論是舉辦會議，還是參加會議，建議把所有會用的軟硬體都找好備案，並想好備案轉換方法，在遇到問題時立刻轉換。
+在WFH期間遇到了不少會議與工作上原本的系統與軟體無法使用，需要找備案狀況，都因為有了準備而安然渡過。</div><div class="post-footer">
+        <a href="/posts/tips-for-improving-your-remote-meetings/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/learning-resource/">Learning Resource</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-10">2022-07-10</time></span></div><div class="content">在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。
+Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的Learning Path，雖說大多是介紹微軟的工具，但所包含的內容相當的廣，很適合初學者學習。
+這邊列出幾個我覺得滿實用的 Learning Path。
+Introduction to version control with Git - Learn | Microsoft Docs Introduction to GitHub - Learn | Microsoft Docs Introduction to Docker containers - Learn | Microsoft Docs Introduction to Kubernetes on Azure - Learn | Microsoft Docs </div><div class="post-footer">
+        <a href="/posts/learning-resource/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/kali-linux-upgrade-and-check-version/">Kali Linux 升級跟版本確認</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-25">2022-05-25</time></span></div><div class="content">Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。
+升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令
+方法 1
+lsb_release -a 方法 2
+cat /etc/os-release </div><div class="post-footer">
+        <a href="/posts/kali-linux-upgrade-and-check-version/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/upgrade/">upgrade</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/powershell-use-where-object-to-filter-results/">PowerShell - 使用 Where-Object 過慮輸出內容</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-19">2022-05-19</time></span></div><div class="content">說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。
+在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。
+Containment Operators -contains：包含特定值 -notcontains：不包含特定值 Matching Operators -like：字串符合萬用字元特徵 -notlike：字串不符合萬用字元特徵 Equality Operators -eq：完全符合值 -ne：不符合值 範例 下面指令可以將想要的 hotfix 輸出出來。
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34;} 當然，Where-Object 也可以使用多條件來查詢。利用-and 跟 -or兩個參數來達到
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34; -or $_.HotFixID -eq &#34;KB3080149&#34;} 利用大於等於條件 -ge ，找大於等於特定日期後安裝的 hotfix
+Get-Hotfix | Where-Object {$_.InstalledOn -ge &#34;2022/05/01&#34;} 取得 Status 是 Running 的服務。
+Get-Service | Where-Object {$_.Status -eq &#34;Running&#34;} 結論 在使用 PowerShell 取得一些資訊時，善用 Where-Object 可以相當快速的取得相要的內容，是個需要好好熟悉的指令。</div><div class="post-footer">
+        <a href="/posts/powershell-use-where-object-to-filter-results/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/excel-remove-duplicates/">Excel 刪除重覆值或取得唯一值</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-18">2022-05-18</time></span></div><div class="content">在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重覆值刪除的功能，選取有重覆值的欄，再點選 Remove Duplicates 就可以了。
+操作說明 選取資料欄。 找到 Remove Duplicates (Data &gt; Data tools &gt; Remove Duplicates) 按下去，再選想套用的欄，就會將有重覆的資料刪除，只保留唯一的值。 結尾 這算是相當實用的功能，雖然只是小動作，但學起來後，在日常工作中相信可以增加不少生產力。</div><div class="post-footer">
+        <a href="/posts/excel-remove-duplicates/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><ul class="pagination"><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/2/">2</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/3/">3</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/36/">36</a>
+                    </span>
+                </li></ul></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>

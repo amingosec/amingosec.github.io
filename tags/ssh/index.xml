@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SSH - Tag - </title>
+        <link>https://amingosec.github.io/tags/ssh/</link>
+        <description>SSH - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/ssh/" rel="self" type="application/rss+xml" /><item>
+    <title>VS Code extension 推薦</title>
+    <link>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</link>
+    <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
+    <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。
+一般設定 Settings Sync
+vs code icon
+extension
+Live Server
+remote ssh
+excel viewer
+vscode-sqlite
+icon
+waka time 用來追蹤 coding 時的活動狀況。
+Regex Previewer 身為資訊人員多會遇到的正則表示，這個 extension 提供了相當方便的編輯方式。
+資安相關 base64 decode 解base64
+url decode 解url encode
+Hex Editor 讓 VS Code 有看跟編輯 raw hexadecimal 的功能。
+參考連結 https://towardsdatascience.com/best-vs-code-extensions-of-2022-e9b49990cb4b]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>PowerShell - 使用 Where-Object 過慮輸出內容 - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="PowerShell - 使用 Where-Object 過慮輸出內容" />
+<meta property="og:description" content="說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。
+在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。
+Containment Operators -contains：包含特定值 -notcontains：不包含特定值 Matching Operators -like：字串符合萬用字元特徵 -notlike：字串不符合萬用字元特徵 Equality Operators -eq：完全符合值 -ne：不符合值 範例 下面指令可以將想要的 hotfix 輸出出來。
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34;} 當然，Where-Object 也可以使用多條件來查詢。利用-and 跟 -or兩個參數來達到
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34; -or $_.HotFixID -eq &#34;KB3080149&#34;} 利用大於等於條件 -ge ，找大於等於特定日期後安裝的 hotfix
+Get-Hotfix | Where-Object {$_.InstalledOn -ge &#34;2022/05/01&#34;} 取得 Status 是 Running 的服務。
+Get-Service | Where-Object {$_.Status -eq &#34;Running&#34;} 結論 在使用 PowerShell 取得一些資訊時，善用 Where-Object 可以相當快速的取得相要的內容，是個需要好好熟悉的指令。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-19T16:59:16+00:00" />
+<meta property="article:modified_time" content="2022-05-19T16:59:16+00:00" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PowerShell - 使用 Where-Object 過慮輸出內容"/>
+<meta name="twitter:description" content="說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。
+在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。
+Containment Operators -contains：包含特定值 -notcontains：不包含特定值 Matching Operators -like：字串符合萬用字元特徵 -notlike：字串不符合萬用字元特徵 Equality Operators -eq：完全符合值 -ne：不符合值 範例 下面指令可以將想要的 hotfix 輸出出來。
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34;} 當然，Where-Object 也可以使用多條件來查詢。利用-and 跟 -or兩個參數來達到
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34; -or $_.HotFixID -eq &#34;KB3080149&#34;} 利用大於等於條件 -ge ，找大於等於特定日期後安裝的 hotfix
+Get-Hotfix | Where-Object {$_.InstalledOn -ge &#34;2022/05/01&#34;} 取得 Status 是 Running 的服務。
+Get-Service | Where-Object {$_.Status -eq &#34;Running&#34;} 結論 在使用 PowerShell 取得一些資訊時，善用 Where-Object 可以相當快速的取得相要的內容，是個需要好好熟悉的指令。"/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/" /><link rel="prev" href="https://amingosec.github.io/posts/excel-remove-duplicates/" /><link rel="next" href="https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell - 使用 Where-Object 過慮輸出內容",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/amingosec.github.io\/posts\/powershell-use-where-object-to-filter-results\/"
+        },"genre": "posts","keywords": "PowerShell","wordcount":  82 ,
+        "url": "https:\/\/amingosec.github.io\/posts\/powershell-use-where-object-to-filter-results\/","datePublished": "2022-05-19T16:59:16+00:00","dateModified": "2022-05-19T16:59:16+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">PowerShell - 使用 Where-Object 過慮輸出內容</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-05-19">2022-05-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;82 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#說明">說明</a>
+      <ul>
+        <li><a href="#containment-operators">Containment Operators</a></li>
+        <li><a href="#matching-operators">Matching Operators</a></li>
+        <li><a href="#equality-operators">Equality Operators</a></li>
+      </ul>
+    </li>
+    <li><a href="#範例">範例</a></li>
+    <li><a href="#結論">結論</a></li>
+    <li><a href="#延伸閱讀">延伸閱讀</a></li>
+    <li><a href="#參考資料">參考資料</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="說明">說明</h2>
+<p>PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。</p>
+<p>在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。</p>
+<h3 id="containment-operators">Containment Operators</h3>
+<ul>
+<li><code>-contains</code>：包含特定值</li>
+<li><code>-notcontains</code>：不包含特定值</li>
+</ul>
+<h3 id="matching-operators">Matching Operators</h3>
+<ul>
+<li><code>-like</code>：字串符合萬用字元特徵</li>
+<li><code>-notlike</code>：字串不符合萬用字元特徵</li>
+</ul>
+<h3 id="equality-operators">Equality Operators</h3>
+<ul>
+<li><code>-eq</code>：完全符合值</li>
+<li><code>-ne</code>：不符合值</li>
+</ul>
+<h2 id="範例">範例</h2>
+<p>下面指令可以將想要的 hotfix 輸出出來。</p>
+<pre tabindex="0"><code>Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34;} 
+</code></pre><p>當然，Where-Object 也可以使用多條件來查詢。利用<code>-and</code> 跟 <code>-or</code>兩個參數來達到</p>
+<pre tabindex="0"><code>Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34; -or $_.HotFixID -eq &#34;KB3080149&#34;} 
+</code></pre><p>利用大於等於條件 <code>-ge</code> ，找大於等於特定日期後安裝的 hotfix</p>
+<pre tabindex="0"><code>Get-Hotfix | Where-Object {$_.InstalledOn -ge &#34;2022/05/01&#34;} 
+</code></pre><p>取得 Status 是 Running 的服務。</p>
+<pre tabindex="0"><code>Get-Service | Where-Object {$_.Status -eq &#34;Running&#34;} 
+</code></pre><h2 id="結論">結論</h2>
+<p>在使用 PowerShell 取得一些資訊時，善用 <code>Where-Object</code> 可以相當快速的取得相要的內容，是個需要好好熟悉的指令。</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/powershell-get-filehash/" target="_blank" rel="noopener noreffer ">PowerShell – 取得檔案hash值</a></li>
+<li><a href="https://amingosec.blog/using-powershell-to-check-system-up-down-time/" target="_blank" rel="noopener noreffer ">PowerShell-使用powershell查找電腦開關機狀況</a></li>
+<li><a href="https://amingosec.blog/using-powershell-to-check-scheduledtasks/" target="_blank" rel="noopener noreffer ">Powershell-查詢ScheduledTasks</a></li>
+</ul>
+<h2 id="參考資料">參考資料</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.2" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.2</a></li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-05-19</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/" data-title="PowerShell - 使用 Where-Object 過慮輸出內容" data-hashtags="PowerShell"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/" data-hashtag="PowerShell"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/" data-title="PowerShell - 使用 Where-Object 過慮輸出內容"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/" data-title="PowerShell - 使用 Where-Object 過慮輸出內容"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/" data-title="PowerShell - 使用 Where-Object 過慮輸出內容"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/excel-remove-duplicates/" class="prev" rel="prev" title="Excel 刪除重覆值或取得唯一值"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Excel 刪除重覆值或取得唯一值</a>
+            <a href="/posts/kali-linux-upgrade-and-check-version/" class="next" rel="next" title="Kali Linux 升級跟版本確認">Kali Linux 升級跟版本確認<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

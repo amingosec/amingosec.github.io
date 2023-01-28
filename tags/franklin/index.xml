@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>franklin - Tag - </title>
+        <link>https://amingosec.github.io/tags/franklin/</link>
+        <description>franklin - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 19 Jan 2022 01:01:03 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/franklin/" rel="self" type="application/rss+xml" /><item>
+    <title>Custom Styles</title>
+    <link>https://amingosec.github.io/posts/wp-global-styles-pub%2ffranklin/</link>
+    <pubDate>Wed, 19 Jan 2022 01:01:03 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/wp-global-styles-pub%2ffranklin/</guid>
+    <description><![CDATA[{&ldquo;version&rdquo;:2,&ldquo;isGlobalStylesUserThemeJSON&rdquo;:true}]]></description>
+</item>
+</channel>
+</rss>

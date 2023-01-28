@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>malicious payload - Tag - </title>
+        <link>https://amingosec.github.io/tags/malicious-payload/</link>
+        <description>malicious payload - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/malicious-payload/" rel="self" type="application/rss+xml" /><item>
+    <title>資安名詞-病毒相關名詞</title>
+    <link>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E-comments/</link>
+    <pubDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E-comments/</guid>
+    <description><![CDATA[[轉]藍隊訓練 – 資安工作筆記 - Feb 5, 2022
+[…] 病毒相關名詞 […]]]></description>
+</item>
+<item>
+    <title>資安名詞-病毒相關名詞</title>
+    <link>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</link>
+    <pubDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</guid>
+    <description><![CDATA[Attack Vectors Attack Vectors指攻擊途徑，也就是攻擊者進入到網路或系統的方式，對防禦方來講，可說是曝露在外可受攻擊的路徑。
+常見的attack vectors 包含社交工程、漏洞利用或內部威&hellip;等
+Malicious Payload 在資安領域中，payload指的是會產經傷害的惡意程式碼或指攻擊的指令。
+virus 病毒感染主機檔案，用以傳播
+Trojan 木馬，為偽裝成正常程式的惡意程式，通常不會自我複製，會包含間諜程式或後門程式，讓受駭主機可以遠端被操控。
+Worm 可以自我複製的惡意程式，可以安裝後門程式。
+Logic bomb 木馬的一種，在特定條件下(時間、日期)發作，通常為惡意行為。
+延伸閱讀 資安名詞-Sheep dip 勒索病毒IR 參考資料 https://www.cloudflare.com/learning/security/glossary/attack-vector/ https://www.cloudflare.com/learning/security/glossary/malicious-payload/ ]]></description>
+</item>
+</channel>
+</rss>

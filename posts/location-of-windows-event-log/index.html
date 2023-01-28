@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Windows Event Log位置 - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="Windows Event Log位置" />
+<meta property="og:description" content="在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。
+Event Log 位置 windows event log預設位置為： %SystemRoot%\System32\winevt\Logs\ ，如果沒有看到或需要進行調整的話可以到註冊檔中確認與調整，註冊檔位置： HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog。
+幾個重要的event log 以下是進行事件查找時常會用到的幾個 log ，但是 log 是否被紀錄下來取決於稽核原則的設定，因此，記得進行良好的稽核原則設定，以利後續事件的查找。
+System.evtx 在 System 中有主機運作的相關訊息。
+Security.evtx 在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
+Application.evtx Application log
+Windows PowerShell.evtx 在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
+MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。
+延伸閱讀 Windows IR 方向 IIS log 位置 參考資料 https://docs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amingosec.github.io/posts/location-of-windows-event-log/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-22T06:52:27+00:00" />
+<meta property="article:modified_time" content="2022-01-22T06:52:27+00:00" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows Event Log位置"/>
+<meta name="twitter:description" content="在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。
+Event Log 位置 windows event log預設位置為： %SystemRoot%\System32\winevt\Logs\ ，如果沒有看到或需要進行調整的話可以到註冊檔中確認與調整，註冊檔位置： HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog。
+幾個重要的event log 以下是進行事件查找時常會用到的幾個 log ，但是 log 是否被紀錄下來取決於稽核原則的設定，因此，記得進行良好的稽核原則設定，以利後續事件的查找。
+System.evtx 在 System 中有主機運作的相關訊息。
+Security.evtx 在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
+Application.evtx Application log
+Windows PowerShell.evtx 在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
+MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。
+延伸閱讀 Windows IR 方向 IIS log 位置 參考資料 https://docs."/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/location-of-windows-event-log/" /><link rel="prev" href="https://amingosec.github.io/posts/wp-global-styles-pub%2ffranklin/" /><link rel="next" href="https://amingosec.github.io/posts/location-of-windows-event-log-comments/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Windows Event Log位置",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/amingosec.github.io\/posts\/location-of-windows-event-log\/"
+        },"genre": "posts","keywords": "Audit Log, 資訊安全, 資安鑑識, LOG","wordcount":  72 ,
+        "url": "https:\/\/amingosec.github.io\/posts\/location-of-windows-event-log\/","datePublished": "2022-01-22T06:52:27+00:00","dateModified": "2022-01-22T06:52:27+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Windows Event Log位置</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-01-22">2022-01-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;72 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#event-log-位置">Event Log 位置</a></li>
+    <li><a href="#幾個重要的event-log">幾個重要的event log</a>
+      <ul>
+        <li><a href="#systemevtx">System.evtx</a></li>
+        <li><a href="#securityevtx">Security.evtx</a></li>
+        <li><a href="#applicationevtx">Application.evtx</a></li>
+        <li><a href="#windows-powershellevtx">Windows PowerShell.evtx</a></li>
+        <li><a href="#msexchange-managementevtx">MSExchange Management.evtx</a></li>
+      </ul>
+    </li>
+    <li><a href="#延伸閱讀">延伸閱讀</a></li>
+    <li><a href="#參考資料">參考資料</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。</p>
+<h2 id="event-log-位置">Event Log 位置</h2>
+<p>windows event log預設位置為： <code>%SystemRoot%\System32\winevt\Logs\</code> ，如果沒有看到或需要進行調整的話可以到註冊檔中確認與調整，註冊檔位置： <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog</code>。</p>
+<h2 id="幾個重要的event-log">幾個重要的event log</h2>
+<p>以下是進行事件查找時常會用到的幾個 log ，但是 log 是否被紀錄下來取決於稽核原則的設定，因此，記得進行良好的稽核原則設定，以利後續事件的查找。</p>
+<h3 id="systemevtx">System.evtx</h3>
+<p>在 System 中有主機運作的相關訊息。</p>
+<h3 id="securityevtx">Security.evtx</h3>
+<p>在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。</p>
+<h3 id="applicationevtx">Application.evtx</h3>
+<p>Application log</p>
+<h3 id="windows-powershellevtx">Windows PowerShell.evtx</h3>
+<p>在 Windows PowerShell 中有 PowerShell 執行的相關訊息。</p>
+<h3 id="msexchange-managementevtx">MSExchange Management.evtx</h3>
+<p>MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/windows-ir/" target="_blank" rel="noopener noreffer ">Windows IR 方向</a></li>
+<li><a href="https://amingosec.blog/2022/01/26/iis-log-%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">IIS log 位置</a></li>
+</ul>
+<h2 id="參考資料">參考資料</h2>
+<p><a href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/application-management/move-event-viewer-log-files" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/troubleshoot/windows-server/application-management/move-event-viewer-log-files</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-22</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/location-of-windows-event-log/" data-title="Windows Event Log位置" data-hashtags="Audit Log,資訊安全,資安鑑識,LOG"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/location-of-windows-event-log/" data-hashtag="Audit Log"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/location-of-windows-event-log/" data-title="Windows Event Log位置"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/location-of-windows-event-log/" data-title="Windows Event Log位置"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/location-of-windows-event-log/" data-title="Windows Event Log位置"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/log/">LOG</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/wp-global-styles-pub%2ffranklin/" class="prev" rel="prev" title="Custom Styles"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Custom Styles</a>
+            <a href="/posts/location-of-windows-event-log-comments/" class="next" rel="next" title="Windows Event Log位置">Windows Event Log位置<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

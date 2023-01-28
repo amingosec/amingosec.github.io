@@ -1,0 +1,127 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>未分類 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/</link>
+        <description>未分類 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 26 Aug 2022 16:56:37 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/" rel="self" type="application/rss+xml" /><item>
+    <title>4個必知重點讓你的遠端會議更輕鬆</title>
+    <link>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</link>
+    <pubDate>Fri, 26 Aug 2022 16:56:37 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</guid>
+    <description><![CDATA[隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。
+在疫情間建立起遠端會議的模式讓會議的時間地點更有彈性，方便性的提升讓更多人習慣使用遠端開會。
+在進行遠端會議時，注意以下5個要點，會讓你開會起來更顯專業與輕鬆。
+耳麥的選擇與設定 視訊鏡頭的設定 簡報投影的方式 準備好備案 耳麥的選擇與設定 在遠端會議中耳麥可說是最重要的部份，看過太多的會議因為收不到聲音而拖了快半小時還無法開會。
+目前自己使用的方法是Apple 的 3.5 mm耳麥加上他們家的type c 轉 3.5 mm的轉接頭，在大部份的情境下都相當適用，也有不錯的品質。
+幾次經驗下來，發現回歸傳統的 3.5 mm 有線耳麥是相當好的選擇。收音穩定也不會有藍芽耳機要開會到一半充電的問題。
+但在使用 3.5 mm 耳麥上會遇到規格不同的問題。有分為 CTIA/OMTP兩種規格，一般廠商不會特別說明，如果耳麥的規格跟電腦不同，就會出現只有聲音，但麥克風無法使用的狀況。因此除了買兩種規格的轉接頭外，建議使用可支援兩種規格的USB網卡，加上平常使用的耳麥，就可以達到通訊的效果。
+所以怕麻煩或沒有特別想法下，可以參考我的做法，CP值不一定最好，但沒出什麼大差錯，省了不少工。
+視訊鏡頭的設定 轉到遠端會議時後，少了面對面的接觸難免多了生疏，加上有時會議會希望能看到人，增加參與人的專注度，鏡頭的設定就相當重要了。在感受上來說，開啟鏡頭的會議更可以感受到對會議的重視跟專業。
+視訊鏡頭設定上需要注意兩部份
+虛擬背景 鏡頭蓋 依使用的視訊軟體不同，會有各種虛擬背景可以選，最基本的會有模糊背景的選項。因此可以在會議前設定好自己的背景確認一下效果再進入會議室。
+另外增加了鏡頭後隨之而來的隱私問題不可不防，鏡頭蓋是相當簡單的商品之一，在筆電上貼上一個鏡頭貼，不使用時直接蓋上相當的好用。如果會議中不想開鏡頭，不小心打開了鏡頭蓋就可避免這個錯誤。
+簡報投影的方式 在投影簡報時，如會果沒有接投影機，沒有第二個螢幕，遇到狀況是投影的結果把整的螢幕佔滿，沒有辦法看到會議中的對話。
+如果使用Teams的話，建議使用PPT的投影到teams中，會有不錯的效果。
+如果是使用其他的會議軟體，建議使用投影到視窗，再利用分享視窗的方式讓報告呈現出來。就可以達到分享視窗加同時看到會議內容的結果。
+準備好備案 之前參加一個線上產品發表，最後在發表前因為原本使用的會議系統出包無法使用，臨時通知所有參加的人換另一個連結，但因為沒有測試好，拖了半小時以上。
+這就就是備案的重要，不論是舉辦會議，還是參加會議，建議把所有會用的軟硬體都找好備案，並想好備案轉換方法，在遇到問題時立刻轉換。
+在WFH期間遇到了不少會議與工作上原本的系統與軟體無法使用，需要找備案狀況，都因為有了準備而安然渡過。]]></description>
+</item>
+<item>
+    <title>Windows-找尋已連線過的Wifi 密碼</title>
+    <link>https://amingosec.github.io/posts/get-the-stored-wifi-password-on-windows/</link>
+    <pubDate>Tue, 27 Apr 2021 01:19:42 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/get-the-stored-wifi-password-on-windows/</guid>
+    <description><![CDATA[利用netsh wlan指令找出連線過的Wifi名稱
+netsh wlan show profiles
+再利用以下指令，針對想查詢的wlan名稱顯示明碼的Key，[WLAN Name]請換成想查詢的名稱
+netsh wlan show profiles name=&quot;[WLAN Name]&quot; key=clear]]></description>
+</item>
+<item>
+    <title>Red team-後滲透清除入侵軌跡</title>
+    <link>https://amingosec.github.io/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1-comments/</link>
+    <pubDate>Sat, 24 Apr 2021 17:26:23 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1-comments/</guid>
+    <description><![CDATA[Redteam-內網橫向移動思路和技巧 – 資安工作筆記 - Feb 1, 2022
+[…] Red team-後滲透清除入侵軌跡 […]]]></description>
+</item>
+<item>
+    <title>Red team-後滲透清除入侵軌跡</title>
+    <link>https://amingosec.github.io/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/</link>
+    <pubDate>Sat, 24 Apr 2021 17:26:23 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/</guid>
+    <description><![CDATA[說明 在渗透完成之後，為了降低被發現的機率，攻擊者需要將自己的入侵軌跡清除。當然如果時間不夠，目標又有可利用的漏洞，直接作加密勒索一波也是常見的方式。
+以下提供了windows軌跡清除的方式。
+windows Windows 主要清除的內容為event log跟recent的內容。
+wevtutil el 列出系統中所有日誌名稱 wevtutil cl system 清理系統日誌 wevtutil cl application 清理應用程式日誌 wevtutil cl security 清理安全性日誌 除了系統日誌外，如果問標是Web，也記得一併刪除wed access log。
+延伸閱讀 資訊安全-Wevtutil 日誌指令 RedTeam攻擊技巧和安全防禦 Redteam-紅隊作戰執行手冊 [轉]lonelysec-OSCP心得分享 參考文章 https://mp.weixin.qq.com/s/SWMWVezAVzykkjTuRRDxJw]]></description>
+</item>
+<item>
+    <title>從紅隊角度看Mittre Att&amp;amp;ck</title>
+    <link>https://amingosec.github.io/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/</link>
+    <pubDate>Sat, 24 Apr 2021 08:25:25 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/</guid>
+    <description><![CDATA[link.medium.com/ILX1KSadIfb]]></description>
+</item>
+<item>
+    <title>Exchenge Server 漏洞-ProxyLogon</title>
+    <link>https://amingosec.github.io/posts/exchenge-server-%E6%BC%8F%E6%B4%9E-proxylogon/</link>
+    <pubDate>Sat, 17 Apr 2021 05:10:35 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/exchenge-server-%E6%BC%8F%E6%B4%9E-proxylogon/</guid>
+    <description><![CDATA[近期相當有名的漏洞，經由幾個CVE組合可達到RCE。
+介紹網站 https://proxylogon.com/
+https://github.com/praetorian-inc/proxylogon-exploit
+緩解措施 微軟針對此漏洞提出了以下的緩解措施。
+https://github.com/microsoft/CSS-Exchange/tree/main/Security
+參考網站 https://www.microsoft.com/security/blog/2021/03/25/analyzing-attacks-taking-advantage-of-the-exchange-server-vulnerabilities/]]></description>
+</item>
+<item>
+    <title>密碼破解-密碼噴灑攻擊</title>
+    <link>https://amingosec.github.io/posts/%E5%AF%86%E7%A2%BC%E5%99%B4%E7%81%91%E6%94%BB%E6%93%8A-comments/</link>
+    <pubDate>Sat, 10 Apr 2021 15:18:35 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E5%AF%86%E7%A2%BC%E5%99%B4%E7%81%91%E6%94%BB%E6%93%8A-comments/</guid>
+    <description><![CDATA[撞庫攻擊 – 資安工作筆記 - Feb 0, 2022
+[…] 密碼噴灑攻擊 […]
+[…] 密碼破解-密碼噴灑攻擊 […]
+[…] 密碼破解-密碼噴灑攻擊 […]]]></description>
+</item>
+<item>
+    <title>密碼破解-密碼噴灑攻擊</title>
+    <link>https://amingosec.github.io/posts/%E5%AF%86%E7%A2%BC%E5%99%B4%E7%81%91%E6%94%BB%E6%93%8A/</link>
+    <pubDate>Sat, 10 Apr 2021 15:18:35 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E5%AF%86%E7%A2%BC%E5%99%B4%E7%81%91%E6%94%BB%E6%93%8A/</guid>
+    <description><![CDATA[說明 在密碼噴濺攻擊中，攻擊者會使用許多不同帳戶與服務中最常見的密碼，去嘗試存取任何他們能找到的密碼保護資產。這些攻擊通常可能橫跨許多不同組織和識別提供者。舉例來說，攻擊者會使用 Mailsniper 這類容易取得的工具組去羅列出數個組織中的所有使用者，然後嘗試用「P@$$w0rd」和「Password1」去登入這些帳戶。
+偵測方式 這個攻擊手法，邏輯跟暴力破解相反。因此針對同帳號短時間內登入錯誤的偵測方式會無法有效偵測。
+但可針對同一來源IP，登入多個帳號失敗來偵測。同時也可以看登入的帳號是否有連續性。
+防禦方式 利用密碼管理工具，產生亂數密碼 將常見弱密碼設定為不可使用的密碼 攻擊案例 https://doubleoctopus.com/security-wiki/threats-and-tools/password-spraying/
+https://technews.tw/2020/01/10/iranian-hackers-have-been-password-spraying-the-us-grid/
+https://www.bnext.com.tw/article/52521/citrix-hacker-iran
+延伸閱讀 [轉]保障AD管理群組與帳號安全 [轉]內網橫向移動思路和技巧 參考資料 https://www.microsoft.com/zh-tw/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/]]></description>
+</item>
+<item>
+    <title>課程分享-免費逆向教學</title>
+    <link>https://amingosec.github.io/posts/%E5%85%8D%E8%B2%BB%E9%80%86%E5%90%91%E6%95%99%E5%AD%B8/</link>
+    <pubDate>Sun, 04 Apr 2021 15:57:03 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E5%85%8D%E8%B2%BB%E9%80%86%E5%90%91%E6%95%99%E5%AD%B8/</guid>
+    <description><![CDATA[介紹 A FREE comprehensive reverse engineering course covering x86, x64, 32-bit ARM &amp; 64-bit ARM architectures.
+網頁連結 https://github.com/mytechnotalent/Reverse-Engineering?fbclid=IwAR0xlXSnR5zyRNEmQ2B2PRD3mLjL59ynh0zsYr7lj2UD8rOG5w1-FHsPDN4]]></description>
+</item>
+<item>
+    <title>github跟raw.githubusercontent.com</title>
+    <link>https://amingosec.github.io/posts/github%E8%B7%9Fraw-githubusercontent-com/</link>
+    <pubDate>Sat, 19 Sep 2020 16:25:39 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/github%E8%B7%9Fraw-githubusercontent-com/</guid>
+    <description><![CDATA[在看到不少Powershell攻擊指令時，都會raw.githubusercontent.com下載東西，其實是在github上的code點raw看到的URL，除了一開始的domain不同外，後面的路徑是相同的。]]></description>
+</item>
+</channel>
+</rss>

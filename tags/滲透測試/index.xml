@@ -1,0 +1,123 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>滲透測試 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/</link>
+        <description>滲透測試 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/" rel="self" type="application/rss+xml" /><item>
+    <title>工具介紹-Weevely (kali linux web shell產生工具)</title>
+    <link>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell-comments/</link>
+    <pubDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell-comments/</guid>
+    <description><![CDATA[[轉]瞭解MDR EDR EPP XDR – 資安工作筆記 - Feb 3, 2022
+[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
+[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
+[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
+[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
+[…] 工具介紹-Weevely (kali linux web shell產生工具) […]
+[…] 工具介紹-Weevely (kali linux web shell產生工具) […]]]></description>
+</item>
+<item>
+    <title>工具介紹-Weevely (kali linux web shell產生工具)</title>
+    <link>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell/</link>
+    <pubDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell/</guid>
+    <description><![CDATA[Weevely是使用python寫成的webshell管理工具，可產生php webshell。
+產生Webshell 使用以下指令產生webshell，要注意密碼用特殊字元有時會造成連線失敗。
+如果要產生圖片檔，以jpg命名結尾就可以了。
+weevely generate 567 hello.php 連線Webshell 上傳後使用以下指令連線後門，然後進入一個互動式的shell
+weevely http://urltowebshell/hello.php 567 如果是使用jpg的檔案，一樣直接連線該檔案就行。
+利用Webshell下載檔案 從遠端下載檔案，rpath是遠端路行 lpath是要存的本地路徑(都要包含檔名)
+file.download rpath lpath [-vector]
+利用Webshell上傳檔案 使用:file_upload2web指令可以檔案上傳到目標主機
+:file_upload2web lpath rpath
+:file\_upload2web /home/kali/Desktop/test.exe test.exe 延伸閱讀 資安監控-rever shell監控方法 工具介紹-Python-Backdoor 網頁攻擊手法-上傳弱點 參考資料 https://www.kali.org/tools/weevely https://securityonline.info/weevely-tutorial-php-webshell/ https://github.com/epinna/weevely3 ]]></description>
+</item>
+<item>
+    <title>資訊安全-內網橫向移動(Lateral Movement)介紹</title>
+    <link>https://amingosec.github.io/posts/what-is-lateral-movement-comments/</link>
+    <pubDate>Sat, 31 Jul 2021 13:57:24 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/what-is-lateral-movement-comments/</guid>
+    <description><![CDATA[網頁攻擊手法-上傳弱點 – 資安工作筆記 - Mar 3, 2022
+[…] 資訊安全-內網橫向移動(Lateral Movement)介紹 […]]]></description>
+</item>
+<item>
+    <title>資訊安全-內網橫向移動(Lateral Movement)介紹</title>
+    <link>https://amingosec.github.io/posts/what-is-lateral-movement/</link>
+    <pubDate>Sat, 31 Jul 2021 13:57:24 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/what-is-lateral-movement/</guid>
+    <description><![CDATA[介紹 攻擊者初步取得內網權限後，藉助跳板機接通過各種方式來獲取目標系統許可權，進一步入侵內網其他伺服器。包含取得內網使用者密碼，網域權限…等。最後再從中取得重要資料或加密勒索，達到入侵目的。
+相較於內外網連線稱為南北向，內網的連線常被稱為東西向連線。而內網橫向移動主要就在這東西向間，從內網的一台跳到另一台並達到入侵目標。
+在知道帳密下，橫向方式可利用微軟的遠端執行功能來完成。impacket有python寫成的利用工具可以使用。
+IPC PsExec WIM WinRM 除了上述協定外，也可以用目標弱點來達到入侵的目的。
+延伸閱讀 工具介紹-Weevely (kali linux web shell產生工具) Red team-後滲透清除入侵軌跡 自動化滲透測試框架-OWASP Nettacker 滲透利器 | 提權輔助工具箱 參考連結 www.gushiciku.cn/pl/p5OX/zh-tw
+​【安全科普】企业内网中的横向移动（一） - 嘶吼 RoarTalk – 回归最本质的信息安全,互联网安全新媒体,4hou.com
+https://github.com/SecureAuthCorp/impacket]]></description>
+</item>
+<item>
+    <title>[轉]紅隊攻防基礎建設-神隱之路</title>
+    <link>https://amingosec.github.io/posts/%E7%B4%85%E9%9A%8A%E6%94%BB%E9%98%B2%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-%E7%A5%9E%E9%9A%B1%E4%B9%8B%E8%B7%AF/</link>
+    <pubDate>Sat, 08 May 2021 02:16:18 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E7%B4%85%E9%9A%8A%E6%94%BB%E9%98%B2%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-%E7%A5%9E%E9%9A%B1%E4%B9%8B%E8%B7%AF/</guid>
+    <description><![CDATA[一些攻擊手法
+https://www.anquanke.com/post/id/239640]]></description>
+</item>
+<item>
+    <title>工具介紹-Netcat指令</title>
+    <link>https://amingosec.github.io/posts/netcat-nc-commands-comments/</link>
+    <pubDate>Tue, 04 May 2021 15:21:58 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/netcat-nc-commands-comments/</guid>
+    <description><![CDATA[工具介紹-hping 使用 – 資安工作筆記 - Feb 0, 2022
+[…] 工具介紹-Netcat指令 […]
+[…] 工具介紹-Netcat指令 […]]]></description>
+</item>
+<item>
+    <title>工具介紹-Netcat指令</title>
+    <link>https://amingosec.github.io/posts/netcat-nc-commands/</link>
+    <pubDate>Tue, 04 May 2021 15:21:58 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/netcat-nc-commands/</guid>
+    <description><![CDATA[netcat 可分兩種執行模式client mode和server mode。可以使用client mode去確認TCP/UDP port是否開啟。
+跟遠端主機特定Port建立連線 確認是特定主機3389 Port是否有開，有時可以取代telnet
+nc -nv 192.168.0.1 3389 -n 表示不解析名稱 -v 表示所給的值 在本機監聽特定Port的連線 以下指令在本機8080port
+nc -nlvp 8080 延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 參考文章 https://blog.gtwang.org/linux/linux-utility-netcat-examples https://myapollo.com.tw/zh-tw/linux-command-nc/ ]]></description>
+</item>
+<item>
+    <title>滲透測試-提權輔助工具箱</title>
+    <link>https://amingosec.github.io/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/</link>
+    <pubDate>Sat, 01 May 2021 16:05:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/</guid>
+    <description><![CDATA[Redteam-內網橫向移動思路和技巧 – 資安工作筆記 - Feb 1, 2022
+[…] 滲透利器 | 提權輔助工具箱 […]]]></description>
+</item>
+<item>
+    <title>滲透測試-提權輔助工具箱</title>
+    <link>https://amingosec.github.io/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1/</link>
+    <pubDate>Sat, 01 May 2021 16:05:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1/</guid>
+    <description><![CDATA[[caption id=&ldquo;attachment_913&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;868&rdquo;] Photo by Anete Lusina on Pexels.com[/caption]
+說明 此篇文章作者整理了9款輔助提權的工具，在攻擊時可以參考使用。
+介紹 作为技术宅的我，日常最大的爱好就是逛论坛。某日看到论坛里有一款基于主机的漏洞扫描工具，用来查找主机上公开EXP的CVE。嗯嗯，我想还是叫提权辅助工具可能会更顺口一些。在我印象中，类似的工具其实还蛮多的，比如我们熟知的Linux_Exploit_Suggester和Windows-Exploit-Suggester。
+我花了一点时间，整理了 9 款提权辅助工具，不敢独享，特整理成文。如果你对提权有那么点想法，我相信这些工具是可以帮助到你的。
+文章連結 mp.weixin.qq.com/s/FSKB-S__WnP1U57BW01rLA
+延伸閱讀 自動化滲透測試框架-OWASP Nettacker Lab-建立Metasploitable 滲透練習Lab ]]></description>
+</item>
+<item>
+    <title>Red team-紅藍攻防實戰演練總盤點</title>
+    <link>https://amingosec.github.io/posts/2021hw%E5%8F%82%E8%80%83%E7%BA%A2%E8%93%9D%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98%E6%BC%94%E4%B9%A0%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Sat, 24 Apr 2021 17:29:51 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/2021hw%E5%8F%82%E8%80%83%E7%BA%A2%E8%93%9D%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98%E6%BC%94%E4%B9%A0%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[介紹 最近参加的几家机构的防守方防护方案评估，部分防守方缺乏对攻击者的正确认知，攻击者的手法已经比较高超了，不扫描，不落地，污染日志等都很普及了。同时也要正确认知对手：攻防演练中，攻击者并非无所不能，他们面临着和防御方一样的问题：时间紧，任务重。所以攻击者的攻击目标，攻击手法也是有迹可循的。
+內容 文章中提到，對防守方來說，網路層的ACL較為有效，而應用層的阻擋較容易繞過。
+文章連結 https://mp.weixin.qq.com/s/dgUxj8_D68d9iR3ekGueuw]]></description>
+</item>
+</channel>
+</rss>

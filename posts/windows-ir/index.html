@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>在 Windows 系統上進行Incident Response 的重點 - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="在 Windows 系統上進行Incident Response 的重點" />
+<meta property="og:description" content="在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
+在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
+Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
+在 Windows Event Log 分析時可以檢查的幾個重點：
+系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
+Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
+GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
+https://eventlogxp.com" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amingosec.github.io/posts/windows-ir/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-04T12:42:48+00:00" />
+<meta property="article:modified_time" content="2021-05-04T12:42:48+00:00" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在 Windows 系統上進行Incident Response 的重點"/>
+<meta name="twitter:description" content="在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
+在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
+Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
+在 Windows Event Log 分析時可以檢查的幾個重點：
+系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
+Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
+GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
+https://eventlogxp.com"/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/windows-ir/" /><link rel="prev" href="https://amingosec.github.io/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/" /><link rel="next" href="https://amingosec.github.io/posts/windows-ir-comments/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "在 Windows 系統上進行Incident Response 的重點",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/amingosec.github.io\/posts\/windows-ir\/"
+        },"genre": "posts","keywords": "eDiscovery, 資訊安全, 資安產品, 資安鑑識, Incident Response, Windows","wordcount":  121 ,
+        "url": "https:\/\/amingosec.github.io\/posts\/windows-ir\/","datePublished": "2021-05-04T12:42:48+00:00","dateModified": "2021-05-04T12:42:48+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">在 Windows 系統上進行Incident Response 的重點</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-05-04">2021-05-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;121 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#檢查-windwos-event-log">檢查 Windwos Event Log</a>
+      <ul>
+        <li><a href="#遠端登入事件">遠端登入事件</a></li>
+        <li><a href="#process執行分析">Process執行分析</a></li>
+        <li><a href="#gui-的日誌工具">GUI 的日誌工具</a></li>
+        <li><a href="#powershell-日誌操作">PowerShell 日誌操作</a></li>
+        <li><a href="#windows-日誌刪除日誌集中化">Windows 日誌刪除日誌集中化</a></li>
+      </ul>
+    </li>
+    <li><a href="#檢查帳戶">檢查帳戶</a></li>
+    <li><a href="#檢查網路連線">檢查網路連線</a></li>
+    <li><a href="#檢查porcess">檢查Porcess</a></li>
+    <li><a href="#檢查啟動跟服務">檢查啟動跟服務</a></li>
+    <li><a href="#檢查工作排程器">檢查「工作排程器」</a>
+      <ul>
+        <li><a href="#使用-powershell-查詢">使用 PowerShell 查詢</a></li>
+      </ul>
+    </li>
+    <li><a href="#檢查檔案">檢查檔案</a></li>
+    <li><a href="#檢查註冊檔">檢查註冊檔</a></li>
+    <li><a href="#其他">其他</a></li>
+    <li><a href="#延伸閱讀">延伸閱讀</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。</p>
+<p>在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。</p>
+<ol>
+<li>Windows Event Log</li>
+<li>帳戶</li>
+<li>網路連線</li>
+<li>Process</li>
+<li>啟動與Serveice</li>
+<li>工作排程</li>
+<li>檔案</li>
+<li>註冊檔</li>
+</ol>
+<h2 id="檢查-windwos-event-log">檢查 Windwos Event Log</h2>
+<p>Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考<a href="https://amingosec.blog/2021/05/26/%e5%be%ae%e8%bb%9f%e5%bb%ba%e8%ad%b0-%e7%9b%a3%e6%8e%a7ad%e6%94%b6%e9%a7%ad%e8%b7%a1%e8%ad%89/" target="_blank" rel="noopener noreffer ">微軟建議-監控AD受駭跡證</a>。</p>
+<p>在 Windows Event Log 分析時可以檢查的幾個重點：</p>
+<ol>
+<li>系統登出入 Log</li>
+<li>Process Log</li>
+<li>PowerShell Log</li>
+<li>Application Log</li>
+<li>防毒軟體 Log</li>
+<li>防火牆 Log</li>
+</ol>
+<h3 id="遠端登入事件">遠端登入事件</h3>
+<p>分析遠端登入事件可參考<a href="http://woshub.com/rdp-connection-logs-forensics-windows/" target="_blank" rel="noopener noreffer ">Tracking and Analyzing Remote Desktop Activity Logs in Windows</a></p>
+<h3 id="process執行分析">Process執行分析</h3>
+<p>分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。</p>
+<h3 id="gui-的日誌工具">GUI 的日誌工具</h3>
+<p>針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。</p>
+<p><a href="https://eventlogxp.com" target="_blank" rel="noopener noreffer ">https://eventlogxp.com</a></p>
+<h3 id="powershell-日誌操作">PowerShell 日誌操作</h3>
+<p><a href="https://amingosec.blog/2021/06/11/%e4%bd%bf%e7%94%a8powershell%e6%9f%a5%e6%89%be%e9%9b%bb%e8%85%a6%e9%96%8b%e9%97%9c%e6%a9%9f%e7%8b%80%e6%b3%81/" target="_blank" rel="noopener noreffer ">使用powershell查找電腦開關機狀況</a></p>
+<h3 id="windows-日誌刪除日誌集中化">Windows 日誌刪除日誌集中化</h3>
+<p>攻擊者往往會在攻擊後將入侵軌跡刪除，平時能將 Log 集中保存與管理再利用SIEM建立關聯規則告警，不但可達到即時告警，事後也能有完整的資料可以取得，瞭解事件全貌。</p>
+<h2 id="檢查帳戶">檢查帳戶</h2>
+<ol>
+<li>可疑帳戶的建立</li>
+<li>是否有帳戶權限異常</li>
+</ol>
+<h2 id="檢查網路連線">檢查網路連線</h2>
+<p>TCPView - 可看目前電腦中所建立的連線狀況，呈現即時資訊。</p>
+<p>檢查重點</p>
+<ol>
+<li>連線建立的 Process</li>
+<li>來源位址</li>
+<li>目標位址</li>
+<li>連結埠</li>
+</ol>
+<h2 id="檢查porcess">檢查Porcess</h2>
+<h2 id="檢查啟動跟服務">檢查啟動跟服務</h2>
+<h2 id="檢查工作排程器">檢查「工作排程器」</h2>
+<p>在搜尋中輸入「Task Scheduler」或「工作排程器」可以開啟在Windows上的排程，從中查找是否有異常的排程內容。</p>
+<h3 id="使用-powershell-查詢">使用 PowerShell 查詢</h3>
+<p><a href="https://amingosec.blog/2021/04/28/%e5%88%a9%e7%94%a8powershell-%e6%9f%a5%e8%a9%a2scheduledtasks/" target="_blank" rel="noopener noreffer ">利用Powershell 查詢ScheduledTasks</a></p>
+<h2 id="檢查檔案">檢查檔案</h2>
+<ol>
+<li>確認檔案的MAC時間</li>
+<li>檔案的動靜態分析</li>
+</ol>
+<p>檔案的異動絕非一般使用 Windows 檔案總管來確認(當然要是可以直接看出來也很好)，請取得MFT檔來分析。</p>
+<h2 id="檢查註冊檔">檢查註冊檔</h2>
+<p>windows 註冊檔的資料夾位置<code>%SystemRoot%\System32\Config</code></p>
+<h2 id="其他">其他</h2>
+<p>除了Windows提供的工具外，最近發現osquery是一個相當不錯的工具，可利用他Standalone的版本來對主機進行query，取得上述所需要的資料。</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2022/01/22/windows-event-log%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">資訊安全-Windows Event Log位置</a></li>
+<li><a href="https://amingosec.blog/2022/01/26/iis-log-%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">IIS log 位置</a></li>
+<li><a href="https://amingosec.blog/2021/05/26/%e5%be%ae%e8%bb%9f%e5%bb%ba%e8%ad%b0-%e7%9b%a3%e6%8e%a7ad%e6%94%b6%e9%a7%ad%e8%b7%a1%e8%ad%89/" target="_blank" rel="noopener noreffer ">資安監控-微軟建議監控AD受駭跡證</a></li>
+<li><a href="https://amingosec.blog/2022/03/01/%e5%b7%a5%e5%85%b7%e4%bb%8b%e7%b4%b9-osquery/" target="_blank" rel="noopener noreffer ">工具介紹-osquery</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-05-04</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/windows-ir/" data-title="在 Windows 系統上進行Incident Response 的重點" data-hashtags="eDiscovery,資訊安全,資安產品,資安鑑識,Incident Response,Windows"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/windows-ir/" data-hashtag="eDiscovery"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/windows-ir/" data-title="在 Windows 系統上進行Incident Response 的重點"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/windows-ir/" data-title="在 Windows 系統上進行Incident Response 的重點"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/windows-ir/" data-title="在 Windows 系統上進行Incident Response 的重點"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ediscovery/">eDiscovery</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/">資安產品</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/incident-response/">Incident Response</a>,&nbsp;<a href="/tags/windows/">Windows</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E6%B8%97%E9%80%8F%E5%88%A9%E5%99%A8-%E6%8F%90%E6%9D%83%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%AE%B1-comments/" class="prev" rel="prev" title="滲透測試-提權輔助工具箱"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>滲透測試-提權輔助工具箱</a>
+            <a href="/posts/windows-ir-comments/" class="next" rel="next" title="在 Windows 系統上進行Incident Response 的重點">在 Windows 系統上進行Incident Response 的重點<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

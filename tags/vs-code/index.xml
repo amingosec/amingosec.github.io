@@ -1,0 +1,42 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>VS Code - Tag - </title>
+        <link>https://amingosec.github.io/tags/vs-code/</link>
+        <description>VS Code - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 03 May 2022 16:09:50 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/vs-code/" rel="self" type="application/rss+xml" /><item>
+    <title>VS Code extensions 推薦 for markdown</title>
+    <link>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</link>
+    <pubDate>Tue, 03 May 2022 16:09:50 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</guid>
+    <description><![CDATA[使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。
+Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of contents 跟 Easily add/update/remove section numbering 都是相當實用的功能。
+Markdown PDF 再來推薦的是 Markdown PDF 顧名思義是讓 Markdown 轉成 PDF 的工具。但不只 pdf，連 html，png，jpeg 都可以匯出。
+Markdown Paste Markdown 雖然好用，但要把圖片加入文章中還是有些不方便，Markdown Paste 可說是讓這工作簡輕了不少，他的好用就直接看下圖的 demo 吧。
+Markdown Extended 除了 Markdown 的基本語法外 Markdown Extended 提供了更多延伸語法讓使用者使用。其中表格整理的功能讓 markdown 在編輯表格時相當的方便省時。
+結論 以上提供了幾個用 VS Code 來編輯 Markdown 時常用的 extension 可以讓整體的使用變的更順手，如果有其他推薦的也歡迎在下方留言說明。]]></description>
+</item>
+<item>
+    <title>VS Code extension 推薦</title>
+    <link>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</link>
+    <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
+    <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。
+一般設定 Settings Sync
+vs code icon
+extension
+Live Server
+remote ssh
+excel viewer
+vscode-sqlite
+icon
+waka time 用來追蹤 coding 時的活動狀況。
+Regex Previewer 身為資訊人員多會遇到的正則表示，這個 extension 提供了相當方便的編輯方式。
+資安相關 base64 decode 解base64
+url decode 解url encode
+Hex Editor 讓 VS Code 有看跟編輯 raw hexadecimal 的功能。
+參考連結 https://towardsdatascience.com/best-vs-code-extensions-of-2022-e9b49990cb4b]]></description>
+</item>
+</channel>
+</rss>

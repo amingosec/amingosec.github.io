@@ -1,0 +1,30 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>APT - Tag - </title>
+        <link>https://amingosec.github.io/tags/apt/</link>
+        <description>APT - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/apt/" rel="self" type="application/rss+xml" /><item>
+    <title>資安名詞-Cyber Kill Chain</title>
+    <link>https://amingosec.github.io/posts/cyber-kill-chain-comments/</link>
+    <pubDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/cyber-kill-chain-comments/</guid>
+    <description><![CDATA[SSCP – Methodology of an Attack – 資安工作筆記 - Mar 6, 2022
+[…] 資安名詞-Cyber Kill Chain […]]]></description>
+</item>
+<item>
+    <title>資安名詞-Cyber Kill Chain</title>
+    <link>https://amingosec.github.io/posts/cyber-kill-chain/</link>
+    <pubDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/cyber-kill-chain/</guid>
+    <description><![CDATA[介紹 Cyber Kill Chain由洛馬發展出來，中文有人翻譯成「網路狙殺鏈」但通常還是直接念英文較為順口。
+Cyber Kill Chain主要是說明APT攻擊時的流程，進行資安鑑識時可輔助解析攻擊的過程，對防守方來說，也可用來檢視在各階段防禦的狀態。
+同時可參考Mittre Att&amp;ck 針對Kill Chain中的各環節所列出的攻擊技巧。
+步驟 Reconnaissance Weaponization Delivery Exploition Installation Command and Control Action on Objective 防守方角度來看Cyber Kill Chain 如果Cyber Kill Chain為攻擊方攻擊時的步驟，那對防守方來說，打斷Cyber Kill Chain可說是防御APT攻擊的手段。
+以下為說明Cyber Kill Chain與利用其防禦的影片
+https://youtu.be/II91fiUax2g
+延伸閱讀 SSCP – Methodology of an Attack 參考網站 洛馬的官網介紹 MITRE ATT&amp;CK® eccouncil Cyber Kill Chain介紹 ]]></description>
+</item>
+</channel>
+</rss>

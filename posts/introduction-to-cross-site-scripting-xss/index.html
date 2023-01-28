@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>網頁攻擊手法-XSS 介紹 - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="網頁攻擊手法-XSS 介紹" />
+<meta property="og:description" content="介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。
+在owasp top 10-2017中改到第七名
+https://www.owasp.org/index.php/Top_10-2017_Top_10
+https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
+可分為stored、reflected。
+可使用的方法 加入或用 的error呼叫 利用編碼的方試bypass 練習網站 alert(1) to win
+prompt(1) to win
+利用工具 beef xss framework 滿不錯用的，kali跟backbox都有，
+XSS hunter也有提供攻擊payload，並把結果回覆分析，相當有用
+要防禦的話，除了在client side也請記得一定要在server side進行相關安全性設定。
+延伸閱讀 SQL injection Lab - alert(1) to win Lab - prompt(1) to win (XSS) " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-07-10T03:00:11+00:00" />
+<meta property="article:modified_time" content="2018-07-10T03:00:11+00:00" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="網頁攻擊手法-XSS 介紹"/>
+<meta name="twitter:description" content="介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。
+在owasp top 10-2017中改到第七名
+https://www.owasp.org/index.php/Top_10-2017_Top_10
+https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
+可分為stored、reflected。
+可使用的方法 加入或用 的error呼叫 利用編碼的方試bypass 練習網站 alert(1) to win
+prompt(1) to win
+利用工具 beef xss framework 滿不錯用的，kali跟backbox都有，
+XSS hunter也有提供攻擊payload，並把結果回覆分析，相當有用
+要防禦的話，除了在client side也請記得一定要在server side進行相關安全性設定。
+延伸閱讀 SQL injection Lab - alert(1) to win Lab - prompt(1) to win (XSS) "/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/" /><link rel="prev" href="https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number-comments/" /><link rel="next" href="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss-comments/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "網頁攻擊手法-XSS 介紹",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/amingosec.github.io\/posts\/introduction-to-cross-site-scripting-xss\/"
+        },"genre": "posts","keywords": "beef, 資訊安全, XSS, XSS hunter, 滲透測試","wordcount":  48 ,
+        "url": "https:\/\/amingosec.github.io\/posts\/introduction-to-cross-site-scripting-xss\/","datePublished": "2018-07-10T03:00:11+00:00","dateModified": "2018-07-10T03:00:11+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">網頁攻擊手法-XSS 介紹</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2018-07-10">2018-07-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;48 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#介紹">介紹</a></li>
+    <li><a href="#可使用的方法">可使用的方法</a></li>
+    <li><a href="#練習網站">練習網站</a></li>
+    <li><a href="#利用工具">利用工具</a></li>
+    <li><a href="#延伸閱讀">延伸閱讀</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="介紹">介紹</h2>
+<p>Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。</p>
+<p>在<a href="https://www.owasp.org/index.php/Top_10-2017_Top_10" target="_blank" rel="noopener noreffer ">owasp top 10-2017</a>中改到第七名</p>
+<p><a href="https://www.owasp.org/index.php/Top" target="_blank" rel="noopener noreffer ">https://www.owasp.org/index.php/Top</a>_10-2017_Top_10</p>
+<p><a href="https://www.owasp.org/index.php/Top" target="_blank" rel="noopener noreffer ">https://www.owasp.org/index.php/Top</a>_10-2017_A7-Cross-Site_Scripting_(XSS)</p>
+<p>可分為stored、reflected。</p>
+<h2 id="可使用的方法">可使用的方法</h2>
+<ul>
+<li>加入<!-- raw HTML omitted -->或用<!-- raw HTML omitted --> 的error呼叫</li>
+<li>利用編碼的方試bypass</li>
+</ul>
+<h2 id="練習網站">練習網站</h2>
+<p><a href="https://www.alf.nu/alert1" target="_blank" rel="noopener noreffer ">alert(1) to win</a></p>
+<p><a href="http://prompt.ml/0" target="_blank" rel="noopener noreffer ">prompt(1) to win</a></p>
+<h2 id="利用工具">利用工具</h2>
+<p>beef xss framework 滿不錯用的，kali跟backbox都有，</p>
+<p>XSS hunter也有提供攻擊payload，並把結果回覆分析，相當有用</p>
+<p>要防禦的話，除了在client side也請記得一定要在server side進行相關安全性設定。</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="http://amingosec.blog/2018/09/09/sql-injection/" target="_blank" rel="noopener noreffer ">SQL injection</a></li>
+<li><a href="http://amingosec.blog/2018/08/01/alert1-to-win/" target="_blank" rel="noopener noreffer ">Lab - alert(1) to win</a></li>
+<li><a href="http://amingosec.blog/2018/07/25/prompt1-to-win-xss/" target="_blank" rel="noopener noreffer ">Lab - prompt(1) to win (XSS)</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2018-07-10</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/" data-title="網頁攻擊手法-XSS 介紹" data-hashtags="beef,資訊安全,XSS,XSS hunter,滲透測試"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/" data-hashtag="beef"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/" data-title="網頁攻擊手法-XSS 介紹"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/" data-title="網頁攻擊手法-XSS 介紹"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/" data-title="網頁攻擊手法-XSS 介紹"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/beef/">beef</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/xss-hunter/">XSS hunter</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number-comments/" class="prev" rel="prev" title="Network-一些常用的埠號 port number"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Network-一些常用的埠號 port number</a>
+            <a href="/posts/introduction-to-cross-site-scripting-xss-comments/" class="next" rel="next" title="網頁攻擊手法-XSS 介紹">網頁攻擊手法-XSS 介紹<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

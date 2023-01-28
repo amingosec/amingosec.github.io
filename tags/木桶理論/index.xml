@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>木桶理論 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E6%9C%A8%E6%A1%B6%E7%90%86%E8%AB%96/</link>
+        <description>木桶理論 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 13 Jun 2018 02:43:39 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%9C%A8%E6%A1%B6%E7%90%86%E8%AB%96/" rel="self" type="application/rss+xml" /><item>
+    <title>什麼是木桶理論？</title>
+    <link>https://amingosec.github.io/posts/what-is-wooden-barrel-theory-comments/</link>
+    <pubDate>Wed, 13 Jun 2018 02:43:39 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/what-is-wooden-barrel-theory-comments/</guid>
+    <description><![CDATA[資安名詞-異地備援 – 資安工作筆記 - Feb 5, 2022
+[…] 資安名詞-木桶理論 […]]]></description>
+</item>
+<item>
+    <title>什麼是木桶理論？</title>
+    <link>https://amingosec.github.io/posts/what-is-wooden-barrel-theory/</link>
+    <pubDate>Wed, 13 Jun 2018 02:43:39 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/what-is-wooden-barrel-theory/</guid>
+    <description><![CDATA[木桶理論在資訊安全上的應用，如同木桶的容量是取決於最低的一支木條，資安的安全等級取決於最弱的系統。 可以想像木桶做的再大，但如果有一邊或是有一個木條特別低，那麼再多的水也無法裝，只能到最低的木條的容量。 因此從企業資訊安全的角度來看，不能只針對特定系統來加強，而是應全面性的評估。
+延伸閱讀 資安名詞-惡意中繼站 資訊安全-基本概念 ]]></description>
+</item>
+</channel>
+</rss>

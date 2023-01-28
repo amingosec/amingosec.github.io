@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+	<meta name="generator" content="Hugo 0.110.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title></title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="" />
+<meta property="og:description" content="This is 資安工作筆記" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://amingosec.github.io/" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="This is 資安工作筆記"/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title=""><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https:\/\/amingosec.github.io\/","inLanguage": "zh-TW","description": "This is 資安工作筆記","name": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/">PowerShell - 修改網卡設定</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-28">2018-10-28</time></span></div><div class="content">可以使用以下兩個指令來設定IP與dns
+Set-NetIPAddress Set-DnsClientServerAddress
+例如： ps c:/&gt;set-NetIPAddress -InputObject lan1 -IPAddress 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.254
+ps c:/&gt;Set-DnsClientServerAddress -InputObject lan1 -ServerAddresses (&#34;10.0.0.1&#34;,&#34;10.0.0.2&#34;) ``` 參考資料 [https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps) [https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps) [https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/](https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/) </div><div class="post-footer">
+        <a href="/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/powershell-get-filehash/">PowerShell - 取得檔案hash值</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-27">2018-10-27</time></span></div><div class="content">說明 在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-filehash指令來取得檔案的hash值。
+參數如下
+ps c:/&gt;get-filehash \[-path\] \[-algorithm\] Example:
+ps c:/&gt;get-filehash c:/test/test.txt -algorithm md5 如果 -algorithm參數不給，會直接使用SHA 256
+支援的algorithm如下
+SHA1 SHA256 SHA384 SHA512 MD5 如果檔案位置太長，可以直接用拖拽的，將檔案拉到powershell中，會直接取得檔案路徑。
+取得資料夾內所有檔案hash值 如果要使用powershell取得資料夾內所有檔案的hash值也可以很快的做到，結合Get-ChildItem即可。參考下面指令，結果會直接在shell中輸出。
+Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) 如果還想要將結果另外存檔的話，可以使用結合export-csv &ldquo;filename.csv&quot;來將檔案輸出。
+Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) | export-csv &#34;.\\filename.csv&#34; 延伸閱讀 小知識-產生hash值的方式 Powershell-查詢ScheduledTasks PowerShell-設定IP位置 參考資料 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.2 </div><div class="post-footer">
+        <a href="/posts/powershell-get-filehash/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/hash/">hash</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/sha1/">sha1</a>,&nbsp;<a href="/tags/sha256/">sha256</a>,&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/windows-ntp%E8%A8%AD%E5%AE%9A/">Windows-NTP設定</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-25">2018-10-25</time></span></div><div class="content">利用Reg設定Windows ntp值，可寫在BAT檔中，但需要admin權限
+REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /d 0x00000e10 /t REG_DWORD /f 接受誤差 在預設的狀況下，與NTP Server誤差過大時，不會進行校時。如果沒有設定有可能會因為有誤差而沒有校時成功。
+#接受誤差，總是校時 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config /v MaxPosPhaseCorrection /d 0xFFFFFFFF /t REG_DWORD /f
+REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Config /v MaxNegPhaseCorrection /d 0xFFFFFFFF /t REG_DWORD /f ``` 延伸閱讀 ---- * [Windows 忘記密碼-利用Kali Linux](https://amingosec.blog/2020/08/15/windows-%e5%bf%98%e8%a8%98%e5%af%86%e7%a2%bc-%e5%88%a9%e7%94%a8kali-linux/) * [資安鑑識-Windows IR 方向](https://amingosec.blog/2021/05/04/windows-ir/) </div><div class="post-footer">
+        <a href="/posts/windows-ntp%E8%A8%AD%E5%AE%9A/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/ntp/">ntp</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/centos-%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%9D-ifconfig/">CentOS - ip command</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-13">2018-10-13</time></span></div><div class="content">在安裝CentOS時使用最小安裝，一登入時想使用ifconfig查一下網路狀況，沒想到找不到這個指令。查了一下，原來已經改成要使用ip addr。
+BTW ip addr在kali 上也可以用。
+延伸閱讀 Kali-客製化Kali Linux 工具介紹-在Kali Linux上安裝openvas </div><div class="post-footer">
+        <a href="/posts/centos-%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%9D-ifconfig/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/centos/">CentOS</a>,&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/kali-linux/">Kali Linux</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-dns-tunneling-comments/">攻擊手法-DNS tunneling</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-12">2018-10-12</time></span></div><div class="content">名詞介紹-Domain Name Service (DNS) – 資安工作筆記 - Feb 4, 2022
+[…] DNS tunneling […]</div><div class="post-footer">
+        <a href="/posts/introduction-to-dns-tunneling-comments/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">DNS</a>,&nbsp;<a href="/tags/domain/">domain</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-dns-tunneling/">攻擊手法-DNS tunneling</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-12">2018-10-12</time></span></div><div class="content">主要是利用dns 查詢的功能將backdoor的payload傳到受害電腦。
+首先攻擊者會註冊一個Domain，並將Domain指到攻擊者的主機。其次在受害者的主機上，執行的攻擊程式會開始進行DNS query。因為DNS query行為較容易被允許的，當受害主機進行查詢時，就可藉由DNS回傳攻擊payload建立起後門。
+因為DNS tunneling的行為非直接跟C2 server連線，所以較不容易被發現。
+延伸閱讀 名詞介紹-Domain Name Service (DNS)
+參考資料 https://www.paloaltonetworks.com/cyberpedia/what-is-dns-tunneling </div><div class="post-footer">
+        <a href="/posts/introduction-to-dns-tunneling/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">DNS</a>,&nbsp;<a href="/tags/domain/">domain</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><ul class="pagination"><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/25/">25</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/26/">26</a>
+                    </span>
+                </li><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/page/27/">27</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/28/">28</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/29/">29</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/36/">36</a>
+                    </span>
+                </li></ul></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

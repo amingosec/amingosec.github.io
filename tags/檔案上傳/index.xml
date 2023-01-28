@@ -1,0 +1,44 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>檔案上傳 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/</link>
+        <description>檔案上傳 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 30 Mar 2022 16:10:42 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/" rel="self" type="application/rss+xml" /><item>
+    <title>PortSwigger-檔案上傳漏洞 lab 4</title>
+    <link>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</link>
+    <pubDate>Wed, 30 Mar 2022 16:10:42 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</guid>
+    <description><![CDATA[Lab: Web shell upload via extension blacklist bypass
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，此Lab主要在於限制使用者上傳php檔，讓攻擊者練習利用php其他副檔名.php5來上傳。同時因為.php5並非系統預設可執行的檔案，因此也需利用.htaccess檔的調整來達到攻擊的目標。
+此lab可使用與上一個lab相同的webshell。
+可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
+可以試著上傳.php結尾的shell，會發現無法上傳，得到如下圖的回應。 將副檔名改成.php5後即可成功上傳。結果如下圖。 直接存取/files/avatars/shell.php5後沒有將/home/carlos/secret的內容回傳，所以判斷是無法執行副檔名為.php5的檔案造成的。 再上傳.htaccess檔案，讓該路徑可以執行.php5檔案。檔案內容如下。 AddType application/x-httpd-php .php5 上傳後再次存取/files/avatars/shell.php5即可取得此Lab的Flag。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 PortSwigger-檔案上傳漏洞 lab 3 網頁攻擊手法-檔案上傳弱點 ]]></description>
+</item>
+<item>
+    <title>PortSwigger-檔案上傳漏洞 lab 3</title>
+    <link>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal-comments/</link>
+    <pubDate>Sun, 20 Mar 2022 13:33:54 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal-comments/</guid>
+    <description><![CDATA[PortSwigger-檔案上傳漏洞 lab 4 - 資安工作筆記 - Mar 4, 2022
+[…] PortSwigger-檔案上傳漏洞 lab 3 […]
+[…] PortSwigger-檔案上傳漏洞 lab 3 […]
+[…] PortSwigger-檔案上傳漏洞 lab 3 […]]]></description>
+</item>
+<item>
+    <title>PortSwigger-檔案上傳漏洞 lab 3</title>
+    <link>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/</link>
+    <pubDate>Sun, 20 Mar 2022 13:33:54 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/</guid>
+    <description><![CDATA[Lab: Web shell upload via path traversal
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，此Lab主要在於限制使用者上傳資料夾的執行權限，讓shell上傳後無法正常執行，用來防止此類攻擊。但因此lab中存有路徑走訪的弱點，可以結合此弱點將檔案上傳到其他可執行的路徑，來進行攻擊。
+此lab可使用與上一個lab相同的webshell。
+可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
+上傳shell並連線後發現無法執行，因為資料夾無執行權限。 在HTTP history中將上傳的HTTP request傳到Burp Repeater中。 在Burp Repeater中修改上傳路徑到可執行的路徑，filename=&quot;../shell.php&quot;。如果直接上傳會發現回傳的結果跟直接上傳相同。 因為server對路徑走訪有些許防範，因此利用URL encoding來進行混淆，改為filename=&quot;..%2fshell.php&quot; 從response中可看到avatars/../shell.php，表示有成功將路徑值帶入。 皆下來，連到上傳路徑/files/shell.php (/files/avatars/../shell.php)後，flag會直接出現在browser中，提交就可以完成此lab。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 網頁攻擊手法-檔案上傳弱點 ]]></description>
+</item>
+</channel>
+</rss>

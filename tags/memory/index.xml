@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Memory - Tag - </title>
+        <link>https://amingosec.github.io/tags/memory/</link>
+        <description>Memory - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 18 May 2021 12:30:06 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/memory/" rel="self" type="application/rss+xml" /><item>
+    <title>資安鑑識-Memory Analyzing</title>
+    <link>https://amingosec.github.io/posts/memory-analyzing/</link>
+    <pubDate>Tue, 18 May 2021 12:30:06 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/memory-analyzing/</guid>
+    <description><![CDATA[主要利用volatility framework 2.6執行
+識別system profile python vol.py -f %image\_name% imageinfo pslist
+pstree
+cmdscan
+延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? 藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst ]]></description>
+</item>
+</channel>
+</rss>

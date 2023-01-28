@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>BackBox Linux - Tag - </title>
+        <link>https://amingosec.github.io/tags/backbox-linux/</link>
+        <description>BackBox Linux - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 28 Jun 2018 06:13:49 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/backbox-linux/" rel="self" type="application/rss+xml" /><item>
+    <title>工具介紹-penetration testing 作業系統</title>
+    <link>https://amingosec.github.io/posts/penetration-testing%E5%B7%A5%E5%85%B7/</link>
+    <pubDate>Thu, 28 Jun 2018 06:13:49 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/penetration-testing%E5%B7%A5%E5%85%B7/</guid>
+    <description><![CDATA[ 其實標題不太知道要打什麼，既然是想介紹滲透測試的OS就打這樣好了。
+Kali Linux 由offensive security維護，並提供使用Kali進行滲透的認證。
+BackBox 進行滲透時，太過依賴同一個工具不太好，最近發現除了Kail外BackBox也是個不錯的工具，BackBox是基於ubuntu建成，如果想免費下載的話，在斗內的金額填零即可。 https://backbox.org
+延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 ]]></description>
+</item>
+</channel>
+</rss>

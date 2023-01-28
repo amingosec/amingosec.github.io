@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>檔案上傳漏洞 - Tag - </title>
+        <link>https://amingosec.github.io/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/</link>
+        <description>檔案上傳漏洞 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/" rel="self" type="application/rss+xml" /><item>
+    <title>PortSwigger-檔案上傳漏洞 lab 6</title>
+    <link>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</link>
+    <pubDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</guid>
+    <description><![CDATA[Lab: Remote code execution via polyglot web shell upload
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。 此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。 步驟 如同之前的 lab 先找到上傳後可被存取的路徑。 因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。 需要將 payload 加到圖片檔中來執行。 下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行sudo apt install libimage-exiftool-perl來安裝。 exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 FLAG_START 、 FLAG_END加以區別。 將產生的payload.]]></description>
+</item>
+<item>
+    <title>PortSwigger-檔案上傳漏洞 lab 5</title>
+    <link>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</link>
+    <pubDate>Mon, 04 Apr 2022 02:38:09 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</guid>
+    <description><![CDATA[Lab: Web shell upload via obfuscated file extension
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
+說明 相較於上一題，此Lab重點在練習副檔名的混淆手法，讓攻擊者可以上傳shell到有副檔名檢查網站。可以達到此攻擊的原因來自於判斷程式跟執行程式方式的差異，例如在判斷時，會把混淆過的副檔名當成真正的檔名而允許上傳，但在執行時，會轉為正真的攻擊檔案來執行。參考portswigger網站所列出的方式即可達成目標。
+步驟 此lab可使用與上一個lab相同的webshell。 可以先上傳一個正常的檔案，看一下檔案會被存放的位置。 利用burpsuite可看到位置在/files/avatars/資料夾下。 直接上傳webshell後，會出現無法上傳的錯誤訊息；從下圖的錯誤訊息中可以看出，僅可上傳jpg &amp; png兩種類型的檔案，因此利用混淆副檔名來bypass。 將一開始上傳的request傳到Burp Repeater 在filename的內容改為&quot;exploit.php%00.jpg&quot;。最後的結果如右，filename=&quot;exploit.php%00.jpg&quot; 傳出請求後，會看到下圖的結果。可以看到最後server上傳的是shell.php。 最後後再次存取/files/avatars/shell.php5即可取得此Lab的Flag。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 PortSwigger-檔案上傳漏洞 lab 2 PortSwigger-檔案上傳漏洞 lab 3 PortSwigger-檔案上傳漏洞 lab 4 網頁攻擊手法-檔案上傳弱點 ]]></description>
+</item>
+</channel>
+</rss>

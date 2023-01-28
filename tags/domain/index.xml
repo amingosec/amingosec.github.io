@@ -1,0 +1,38 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>domain - Tag - </title>
+        <link>https://amingosec.github.io/tags/domain/</link>
+        <description>domain - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/domain/" rel="self" type="application/rss+xml" /><item>
+    <title>攻擊手法-DNS tunneling</title>
+    <link>https://amingosec.github.io/posts/introduction-to-dns-tunneling-comments/</link>
+    <pubDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-dns-tunneling-comments/</guid>
+    <description><![CDATA[名詞介紹-Domain Name Service (DNS) – 資安工作筆記 - Feb 4, 2022
+[…] DNS tunneling […]]]></description>
+</item>
+<item>
+    <title>攻擊手法-DNS tunneling</title>
+    <link>https://amingosec.github.io/posts/introduction-to-dns-tunneling/</link>
+    <pubDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/introduction-to-dns-tunneling/</guid>
+    <description><![CDATA[主要是利用dns 查詢的功能將backdoor的payload傳到受害電腦。
+首先攻擊者會註冊一個Domain，並將Domain指到攻擊者的主機。其次在受害者的主機上，執行的攻擊程式會開始進行DNS query。因為DNS query行為較容易被允許的，當受害主機進行查詢時，就可藉由DNS回傳攻擊payload建立起後門。
+因為DNS tunneling的行為非直接跟C2 server連線，所以較不容易被發現。
+延伸閱讀 名詞介紹-Domain Name Service (DNS)
+參考資料 https://www.paloaltonetworks.com/cyberpedia/what-is-dns-tunneling ]]></description>
+</item>
+<item>
+    <title>工具介紹 - 子網域查找工具</title>
+    <link>https://amingosec.github.io/posts/how-to-find-subdomain/</link>
+    <pubDate>Tue, 28 Aug 2018 14:51:58 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/how-to-find-subdomain/</guid>
+    <description><![CDATA[sublist3r apt-get update apt-get install sublist3r
+網站工具 dnsdumpster 內容詳細，同時也提供domain mapping與xlsx檔下載。 DNStable DNStable滿完整的，還提供分類。 pentest-tools 除了sub domain查找外還有不少工具，每天提供每費點數試用，超過要錢。好處為找到後可以與網站提供的其他工具一同使用。
+其他 https://github.com/We5ter/Scanners-Box Scanners-Box各種掃描工具]]></description>
+</item>
+</channel>
+</rss>

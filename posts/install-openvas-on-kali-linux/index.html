@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>工具介紹-在Kali Linux上安裝openvas - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="工具介紹-在Kali Linux上安裝openvas" />
+<meta property="og:description" content="openvas為一個開源的弱掃工具，有名的付費工具為nessus 在Kali Linux上安裝openvas(依照kali Linux的教學) 更新 # apt-get update # apt-get dist-upgrade 安裝 # apt-get install openvas # openvas-setup (setup弱點資料庫) 完成後會直接開啟瀏覽器，加入例外後即可進入openvas的網站。 注意，openvas的帳密在執行openvas-setup時會自動設定，請記下來，進入後在administrator的地方換密碼，或是直接用以下指令換密碼 openvasmd &ndash;user=admin &ndash;new-password=yourpassword 官網：http://www.openvas.org
+延伸閱讀 工具介紹-Weevely (kali linux web shell產生工具) " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amingosec.github.io/posts/install-openvas-on-kali-linux/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-06-30T10:18:33+00:00" />
+<meta property="article:modified_time" content="2018-06-30T10:18:33+00:00" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="工具介紹-在Kali Linux上安裝openvas"/>
+<meta name="twitter:description" content="openvas為一個開源的弱掃工具，有名的付費工具為nessus 在Kali Linux上安裝openvas(依照kali Linux的教學) 更新 # apt-get update # apt-get dist-upgrade 安裝 # apt-get install openvas # openvas-setup (setup弱點資料庫) 完成後會直接開啟瀏覽器，加入例外後即可進入openvas的網站。 注意，openvas的帳密在執行openvas-setup時會自動設定，請記下來，進入後在administrator的地方換密碼，或是直接用以下指令換密碼 openvasmd &ndash;user=admin &ndash;new-password=yourpassword 官網：http://www.openvas.org
+延伸閱讀 工具介紹-Weevely (kali linux web shell產生工具) "/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/install-openvas-on-kali-linux/" /><link rel="prev" href="https://amingosec.github.io/posts/penetration-testing%E5%B7%A5%E5%85%B7/" /><link rel="next" href="https://amingosec.github.io/posts/install-openvas-on-kali-linux-comments/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "工具介紹-在Kali Linux上安裝openvas",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/amingosec.github.io\/posts\/install-openvas-on-kali-linux\/"
+        },"genre": "posts","keywords": "openvas, 弱點掃瞄, 滲透測試","wordcount":  31 ,
+        "url": "https:\/\/amingosec.github.io\/posts\/install-openvas-on-kali-linux\/","datePublished": "2018-06-30T10:18:33+00:00","dateModified": "2018-06-30T10:18:33+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">工具介紹-在Kali Linux上安裝openvas</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2018-06-30">2018-06-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;31 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#延伸閱讀">延伸閱讀</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>openvas為一個開源的弱掃工具，有名的付費工具為nessus 在Kali Linux上安裝openvas(依照kali Linux的<a href="https://www.kali.org/penetration-testing/openvas-vulnerability-scanning/" target="_blank" rel="noopener noreffer ">教學</a>) 更新 # apt-get update # apt-get dist-upgrade 安裝 # apt-get install openvas # openvas-setup (setup弱點資料庫) 完成後會直接開啟瀏覽器，加入例外後即可進入openvas的網站。 <img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://amingosec.blog/wp-content/uploads/2018/06/openvas-1.jpeg"
+        data-srcset="https://amingosec.blog/wp-content/uploads/2018/06/openvas-1.jpeg, https://amingosec.blog/wp-content/uploads/2018/06/openvas-1.jpeg 1.5x, https://amingosec.blog/wp-content/uploads/2018/06/openvas-1.jpeg 2x"
+        data-sizes="auto"
+        alt="https://amingosec.blog/wp-content/uploads/2018/06/openvas-1.jpeg"
+        title="openvas-1" /> 注意，openvas的帳密在執行openvas-setup時會自動設定，請記下來，進入後在administrator的地方換密碼，或是直接用以下指令換密碼 openvasmd &ndash;user=admin &ndash;new-password=yourpassword 官網：<a href="http://www.openvas.org" target="_blank" rel="noopener noreffer ">http://www.openvas.org</a></p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="http://amingosec.blog/2022/02/07/%e5%b7%a5%e5%85%b7%e4%bb%8b%e7%b4%b9-weevely-kali-linux-web-shell%e7%94%a2%e7%94%9f%e5%b7%a5%e5%85%b7/" target="_blank" rel="noopener noreffer ">工具介紹-Weevely (kali linux web shell產生工具)</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2018-06-30</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/install-openvas-on-kali-linux/" data-title="工具介紹-在Kali Linux上安裝openvas" data-hashtags="openvas,弱點掃瞄,滲透測試"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/install-openvas-on-kali-linux/" data-hashtag="openvas"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/install-openvas-on-kali-linux/" data-title="工具介紹-在Kali Linux上安裝openvas"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/install-openvas-on-kali-linux/" data-title="工具介紹-在Kali Linux上安裝openvas"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/install-openvas-on-kali-linux/" data-title="工具介紹-在Kali Linux上安裝openvas"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/openvas/">openvas</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/penetration-testing%E5%B7%A5%E5%85%B7/" class="prev" rel="prev" title="工具介紹-penetration testing 作業系統"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>工具介紹-penetration testing 作業系統</a>
+            <a href="/posts/install-openvas-on-kali-linux-comments/" class="next" rel="next" title="工具介紹-在Kali Linux上安裝openvas">工具介紹-在Kali Linux上安裝openvas<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

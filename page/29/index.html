@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+	<meta name="generator" content="Hugo 0.110.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title></title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="" />
+<meta property="og:description" content="This is 資安工作筆記" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://amingosec.github.io/" /><meta property="og:site_name" content="資安工作筆記" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="This is 資安工作筆記"/>
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title=""><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https:\/\/amingosec.github.io\/","inLanguage": "zh-TW","description": "This is 資安工作筆記","name": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">資安工作筆記</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">資安工作筆記</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">工具介紹-nmap使用</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-26">2018-08-26</time></span></div><div class="content">nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn
+Port Scanning 狀態：open，close、filtered、unfiltered、open|filtered、closed|filtered -sT TCP scan -sU UTP scan -sA ACK scanning 可以確定是否有防火牆檔著 -sX Xmas scan
+OS fingerprinting -sV -O
+其他指令 -vv 列出詳細掃瞄狀態
+延伸閱讀 工具介紹-hping 使用 工具介紹-Netcat指令 Nmap Cheat Sheet 參考資料 https://nmap.org/docs/discovery.pdf https://nmap.org/docs/nmap-mindmap.pdf https://rookiehunting.wordpress.com/2022/02/02/nmap-a-brief-introduction/ </div><div class="post-footer">
+        <a href="/posts/nmap%E4%BD%BF%E7%94%A8/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/nmap/">nmap</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/">關於資安事件因應</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-11">2018-08-11</time></span></div><div class="content">關於事件因應，常會聽到各種不同的說法，參加了幾個課程有的講師認為應該在發現有問題時直接隔離主機，以防問題病毒擴散；有的認為應該放著，好好檢查找出問題根源一次解決。這兩種完全不同的方向，好像都有理，但又相互矛盾，但目前看到最正確的做法是，依照公司SOP操作。 依照公司SOP感覺沒有回答問題，但又確實重要。試想，所請來的資安顧問跟公司內部人員，誰會更瞭解公司設備的重要性？訂便當系統、教育訓練系統受感染了，要斷隨時可以斷，不會有事，但今天出事的如果是公司主要營運的系統直接隔離的損失可能更大。而公司所有系統，資安人員不一定每個都熟，依經驗，依感覺冒然處理都不是好方法，這就是SOP的重要性了。 但我想，更重要的是SOP的產生。公司是否有平時有計畫與確實演練都是在面對資安件事時能將損害降到最低的重要因素。</div><div class="post-footer">
+        <a href="/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/incident-response/">Incident Response</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/alert1-to-win-comments/">Lab - alert(1) to win</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-01">2018-08-01</time></span></div><div class="content">網頁攻擊手法-XSS 介紹 – 資安工作筆記 - Mar 0, 2022
+[…] Lab – alert(1) to win […]</div><div class="post-footer">
+        <a href="/posts/alert1-to-win-comments/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/owasp-top-10/">owasp top 10</a>,&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/alert1-to-win/">Lab - alert(1) to win</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-01">2018-08-01</time></span></div><div class="content">Level 0-Warmup &quot;);alert(1)//
+Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
+%22)alert(1)//
+Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
+可以直接關閉script來開啟另一個alert</div><div class="post-footer">
+        <a href="/posts/alert1-to-win/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/owasp-top-10/">owasp top 10</a>,&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/prompt1-to-win-xss-comments/">Lab - prompt(1) to win (XSS)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-25">2018-07-25</time></span></div><div class="content">網頁攻擊手法-XSS 介紹 – 資安工作筆記 - Mar 0, 2022
+[…] Lab – prompt(1) to win (XSS) […]</div><div class="post-footer">
+        <a href="/posts/prompt1-to-win-xss-comments/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/prompt1-to-win-xss/">Lab - prompt(1) to win (XSS)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-25">2018-07-25</time></span></div><div class="content">在不少等級中都有出現input.replace 的function，使用方法可以參考https://www.w3schools.com/jsref/jsref_replace.asp，有對replace method說明，有所了解後會對prompt(1)的思路比較有想法。
+Level 1 &lt;body/onload=prompt(1)//</div><div class="post-footer">
+        <a href="/posts/prompt1-to-win-xss/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><ul class="pagination"><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/27/">27</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/28/">28</a>
+                    </span>
+                </li><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/page/29/">29</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/30/">30</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/31/">31</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/36/">36</a>
+                    </span>
+                </li></ul></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

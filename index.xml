@@ -3,43 +3,9 @@
         <title></title>
         <link>https://amingosec.github.io/</link>
         <description>This is 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 26 Jan 2023 00:02:41 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</lastBuildDate>
             <atom:link href="https://amingosec.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>PortSwigger 檔案上傳漏洞 lab 2</title>
-    <link>https://amingosec.github.io/posts/portswigger-file-upload-lab-2/</link>
-    <pubDate>Thu, 26 Jan 2023 00:02:41 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/portswigger-file-upload-lab-2/</guid>
-    <description><![CDATA[名稱 Web shell upload via Content-Type restriction bypass
-Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
-說明 相較於上一題，這個lab針對上傳的內容做了Content-Type的檢查，練習利用burpsuit修改Content-Type來繞過檢查的目標。
-因為此lab只是利用Content-Type檢查，webshell 不用調整，可使用上一個 lab 的 shell。
-一樣先上傳一個正常的檔案，確認檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。 在上傳 shell 前啟動 proxy intercept，將上傳的 Content-Type 修改成 image/jpeg 後再進行 forward。 上傳成功後，連線shell，flag會直接出現在browser中，提交就可以完成此lab。 ]]></description>
-</item>
-<item>
-    <title>Learning Resource</title>
-    <link>https://amingosec.github.io/posts/learning-resource/</link>
-    <pubDate>Wed, 25 Jan 2023 23:44:24 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/learning-resource/</guid>
-    <description><![CDATA[在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。
-Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的Learning Path，雖說大多是介紹微軟的工具，但所包含的內容相當的廣，很適合初學者學習。
-這邊列出幾個我覺得滿實用的 Learning Path。
-Introduction to version control with Git - Learn | Microsoft Docs Introduction to GitHub - Learn | Microsoft Docs Introduction to Docker containers - Learn | Microsoft Docs Introduction to Kubernetes on Azure - Learn | Microsoft Docs ]]></description>
-</item>
-<item>
-    <title>PortSwigger 檔案上傳漏洞 lab 1</title>
-    <link>https://amingosec.github.io/posts/portswigger-file-upload-lab-1/</link>
-    <pubDate>Mon, 23 Jan 2023 23:25:58 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/portswigger-file-upload-lab-1/</guid>
-    <description><![CDATA[名稱 Lab：remote code execution via web shell upload
-目標 利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
-說明 題目特別說明沒有任何的檢查，算是滿基本的上傳漏洞練習，webshell跟路徑都準備好了，讓攻擊者練習上傳漏洞需要注意的兩點。
-將檔案順利上傳到目標主機。 找到目標主機上傳檔案後的位置並呼叫檔案。 因此，利用burpsuite，可看到檔案被上傳到/files/avatars/資料夾下，假設上傳的檔名為shell.php，可直接利用browser去連/files/avatars/shell.php的頁面，會直接出現flag。最後將flag提交到最上面的banner就可以過關了。]]></description>
-</item>
-<item>
     <title>Windows Event Log</title>
     <link>https://amingosec.github.io/posts/windows-event-log/</link>
     <pubDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</pubDate>
@@ -59,6 +25,139 @@ Windows PowerShell.evtx
 windows rdp
 Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx
 MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。]]></description>
+</item>
+<item>
+    <title>4個必知重點讓你的遠端會議更輕鬆</title>
+    <link>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</link>
+    <pubDate>Fri, 26 Aug 2022 16:56:37 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</guid>
+    <description><![CDATA[隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。
+在疫情間建立起遠端會議的模式讓會議的時間地點更有彈性，方便性的提升讓更多人習慣使用遠端開會。
+在進行遠端會議時，注意以下5個要點，會讓你開會起來更顯專業與輕鬆。
+耳麥的選擇與設定 視訊鏡頭的設定 簡報投影的方式 準備好備案 耳麥的選擇與設定 在遠端會議中耳麥可說是最重要的部份，看過太多的會議因為收不到聲音而拖了快半小時還無法開會。
+目前自己使用的方法是Apple 的 3.5 mm耳麥加上他們家的type c 轉 3.5 mm的轉接頭，在大部份的情境下都相當適用，也有不錯的品質。
+幾次經驗下來，發現回歸傳統的 3.5 mm 有線耳麥是相當好的選擇。收音穩定也不會有藍芽耳機要開會到一半充電的問題。
+但在使用 3.5 mm 耳麥上會遇到規格不同的問題。有分為 CTIA/OMTP兩種規格，一般廠商不會特別說明，如果耳麥的規格跟電腦不同，就會出現只有聲音，但麥克風無法使用的狀況。因此除了買兩種規格的轉接頭外，建議使用可支援兩種規格的USB網卡，加上平常使用的耳麥，就可以達到通訊的效果。
+所以怕麻煩或沒有特別想法下，可以參考我的做法，CP值不一定最好，但沒出什麼大差錯，省了不少工。
+視訊鏡頭的設定 轉到遠端會議時後，少了面對面的接觸難免多了生疏，加上有時會議會希望能看到人，增加參與人的專注度，鏡頭的設定就相當重要了。在感受上來說，開啟鏡頭的會議更可以感受到對會議的重視跟專業。
+視訊鏡頭設定上需要注意兩部份
+虛擬背景 鏡頭蓋 依使用的視訊軟體不同，會有各種虛擬背景可以選，最基本的會有模糊背景的選項。因此可以在會議前設定好自己的背景確認一下效果再進入會議室。
+另外增加了鏡頭後隨之而來的隱私問題不可不防，鏡頭蓋是相當簡單的商品之一，在筆電上貼上一個鏡頭貼，不使用時直接蓋上相當的好用。如果會議中不想開鏡頭，不小心打開了鏡頭蓋就可避免這個錯誤。
+簡報投影的方式 在投影簡報時，如會果沒有接投影機，沒有第二個螢幕，遇到狀況是投影的結果把整的螢幕佔滿，沒有辦法看到會議中的對話。
+如果使用Teams的話，建議使用PPT的投影到teams中，會有不錯的效果。
+如果是使用其他的會議軟體，建議使用投影到視窗，再利用分享視窗的方式讓報告呈現出來。就可以達到分享視窗加同時看到會議內容的結果。
+準備好備案 之前參加一個線上產品發表，最後在發表前因為原本使用的會議系統出包無法使用，臨時通知所有參加的人換另一個連結，但因為沒有測試好，拖了半小時以上。
+這就就是備案的重要，不論是舉辦會議，還是參加會議，建議把所有會用的軟硬體都找好備案，並想好備案轉換方法，在遇到問題時立刻轉換。
+在WFH期間遇到了不少會議與工作上原本的系統與軟體無法使用，需要找備案狀況，都因為有了準備而安然渡過。]]></description>
+</item>
+<item>
+    <title>Learning Resource</title>
+    <link>https://amingosec.github.io/posts/learning-resource/</link>
+    <pubDate>Sun, 10 Jul 2022 21:10:16 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/learning-resource/</guid>
+    <description><![CDATA[在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。
+Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的Learning Path，雖說大多是介紹微軟的工具，但所包含的內容相當的廣，很適合初學者學習。
+這邊列出幾個我覺得滿實用的 Learning Path。
+Introduction to version control with Git - Learn | Microsoft Docs Introduction to GitHub - Learn | Microsoft Docs Introduction to Docker containers - Learn | Microsoft Docs Introduction to Kubernetes on Azure - Learn | Microsoft Docs ]]></description>
+</item>
+<item>
+    <title>Kali Linux 升級跟版本確認</title>
+    <link>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</link>
+    <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
+    <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。
+升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令
+方法 1
+lsb_release -a 方法 2
+cat /etc/os-release ]]></description>
+</item>
+<item>
+    <title>PowerShell - 使用 Where-Object 過慮輸出內容</title>
+    <link>https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/</link>
+    <pubDate>Thu, 19 May 2022 16:59:16 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/</guid>
+    <description><![CDATA[說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。
+在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。
+Containment Operators -contains：包含特定值 -notcontains：不包含特定值 Matching Operators -like：字串符合萬用字元特徵 -notlike：字串不符合萬用字元特徵 Equality Operators -eq：完全符合值 -ne：不符合值 範例 下面指令可以將想要的 hotfix 輸出出來。
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34;} 當然，Where-Object 也可以使用多條件來查詢。利用-and 跟 -or兩個參數來達到
+Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34; -or $_.HotFixID -eq &#34;KB3080149&#34;} 利用大於等於條件 -ge ，找大於等於特定日期後安裝的 hotfix
+Get-Hotfix | Where-Object {$_.InstalledOn -ge &#34;2022/05/01&#34;} 取得 Status 是 Running 的服務。
+Get-Service | Where-Object {$_.Status -eq &#34;Running&#34;} 結論 在使用 PowerShell 取得一些資訊時，善用 Where-Object 可以相當快速的取得相要的內容，是個需要好好熟悉的指令。]]></description>
+</item>
+<item>
+    <title>Excel 刪除重覆值或取得唯一值</title>
+    <link>https://amingosec.github.io/posts/excel-remove-duplicates/</link>
+    <pubDate>Wed, 18 May 2022 07:13:18 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/excel-remove-duplicates/</guid>
+    <description><![CDATA[在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重覆值刪除的功能，選取有重覆值的欄，再點選 Remove Duplicates 就可以了。
+操作說明 選取資料欄。 找到 Remove Duplicates (Data &gt; Data tools &gt; Remove Duplicates) 按下去，再選想套用的欄，就會將有重覆的資料刪除，只保留唯一的值。 結尾 這算是相當實用的功能，雖然只是小動作，但學起來後，在日常工作中相信可以增加不少生產力。]]></description>
+</item>
+<item>
+    <title>postgresql 計算日期</title>
+    <link>https://amingosec.github.io/posts/postgresql-date-calculate/</link>
+    <pubDate>Sun, 15 May 2022 14:46:13 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/postgresql-date-calculate/</guid>
+    <description><![CDATA[使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的日期與時間。
+date_trunc 會回傳計算後時期的0分0秒，再利用這個為基準找到想要的時間。
+範例 本月份第一天
+date_trunc(&#39;month&#39;, current_date) 上月份第一天
+date_trunc(&#39;month&#39;, current_date - interval &#39;1&#39; month) 今年第一天
+date_trunc(&#39;year&#39;, current_date) 結論 之前為了這個日期的計算可說是煞費苦心，瞭解後其實內容沒有這麼難，把一些心得記錄下來，也希望之後需要時有地方可以找。]]></description>
+</item>
+<item>
+    <title>VS Code extensions 推薦 for markdown</title>
+    <link>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</link>
+    <pubDate>Tue, 03 May 2022 16:09:50 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</guid>
+    <description><![CDATA[使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。
+Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of contents 跟 Easily add/update/remove section numbering 都是相當實用的功能。
+Markdown PDF 再來推薦的是 Markdown PDF 顧名思義是讓 Markdown 轉成 PDF 的工具。但不只 pdf，連 html，png，jpeg 都可以匯出。
+Markdown Paste Markdown 雖然好用，但要把圖片加入文章中還是有些不方便，Markdown Paste 可說是讓這工作簡輕了不少，他的好用就直接看下圖的 demo 吧。
+Markdown Extended 除了 Markdown 的基本語法外 Markdown Extended 提供了更多延伸語法讓使用者使用。其中表格整理的功能讓 markdown 在編輯表格時相當的方便省時。
+結論 以上提供了幾個用 VS Code 來編輯 Markdown 時常用的 extension 可以讓整體的使用變的更順手，如果有其他推薦的也歡迎在下方留言說明。]]></description>
+</item>
+<item>
+    <title>利用 Linux command 取得檔案 hash 值</title>
+    <link>https://amingosec.github.io/posts/linux-hash-command/</link>
+    <pubDate>Sun, 01 May 2022 03:21:15 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/linux-hash-command/</guid>
+    <description><![CDATA[hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異動，比較是否為相同的檔案。之前介紹了 Windows 中取得檔案 hash 值的方式。在這邊列出幾個 Linux 上取得 hash 值的指令。
+下面指令 &lt;your file&gt; 需要換成要產生 hash 值的檔名，或是使用 * 來產生當前路徑下所有檔案的 hash 值。
+md5sum 使用 md5sum 取得檔案的 MD5 值。
+md5sum &lt;your file&gt; sha1sum 用 sha1sum 取得檔案的 SHA1 值。
+sha1sum &lt;your file&gt; sha256sum 使用 sha256sum 取得檔案的 SHA256 值。
+sha256sum &lt;your file&gt; 結論 利用上述提到的幾個指令，可以產生檔案 hash 值，整體來說算簡單好記。指令加上 file path 即可。
+延伸閱讀 PowerShell-取得檔案hash值 小知識-產生檔案 hash 值的方式 工具介紹-osquery 參考資料 wiki: Hash_function ]]></description>
+</item>
+<item>
+    <title>VS Code extension 推薦</title>
+    <link>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</link>
+    <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
+    <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。
+一般設定 Settings Sync
+vs code icon
+extension
+Live Server
+remote ssh
+excel viewer
+vscode-sqlite
+icon
+waka time 用來追蹤 coding 時的活動狀況。
+Regex Previewer 身為資訊人員多會遇到的正則表示，這個 extension 提供了相當方便的編輯方式。
+資安相關 base64 decode 解base64
+url decode 解url encode
+Hex Editor 讓 VS Code 有看跟編輯 raw hexadecimal 的功能。
+參考連結 https://towardsdatascience.com/best-vs-code-extensions-of-2022-e9b49990cb4b]]></description>
 </item>
 </channel>
 </rss>
