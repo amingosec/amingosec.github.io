@@ -5,9 +5,9 @@
             <loc>https://amingosec.github.io/</loc><lastmod>2023-01-22T20:13:06&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/</loc><lastmod>2023-01-22T20:13:06&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/windows-event-log/</loc><lastmod>2023-01-22T20:13:06&#43;08:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</loc><lastmod>2022-08-27T00:56:37&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/</loc><lastmod>2022-08-27T00:56:37&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E5%B7%A5%E4%BD%9C%E7%BF%92%E6%85%A3/</loc><lastmod>2022-08-27T00:56:37&#43;08:00</lastmod></url><url>
+            <loc>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</loc><lastmod>2022-08-27T00:56:37&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/learning-resource/</loc><lastmod>2022-07-10T21:10:16&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/kali-linux/</loc><lastmod>2022-05-25T06:39:02&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</loc><lastmod>2022-05-25T06:39:02&#43;00:00</lastmod></url><url>
@@ -33,7 +33,6 @@
             <loc>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</loc><lastmod>2022-03-30T16:10:42&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/</loc><lastmod>2022-03-30T16:10:42&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/microsoft-edge-browsing-history-location/</loc><lastmod>2022-03-22T13:55:42&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/1673/</loc><lastmod>2022-03-20T15:01:03&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/</loc><lastmod>2022-03-20T13:33:54&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/portswigger-file-upload-lab-2/</loc><lastmod>2022-03-20T16:15:10&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/audit-log/</loc><lastmod>2022-03-13T04:25:23&#43;00:00</lastmod></url><url>
@@ -51,9 +50,6 @@
             <loc>https://amingosec.github.io/posts/introduction-to-osquery/</loc><lastmod>2022-02-28T23:30:30&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/</loc><lastmod>2022-02-28T23:30:30&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/</loc><lastmod>2022-02-28T23:30:30&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/1407/</loc><lastmod>2022-02-17T15:19:32&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/1404/</loc><lastmod>2022-02-17T15:05:52&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/tags/primary/</loc><lastmod>2022-02-17T15:05:52&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/</loc><lastmod>2022-02-11T08:33:18&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/what-is-credential-stuffing/</loc><lastmod>2022-02-11T08:33:18&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/webshell/</loc><lastmod>2022-02-07T13:28:06&#43;00:00</lastmod></url><url>
@@ -70,8 +66,6 @@
             <loc>https://amingosec.github.io/tags/iis/</loc><lastmod>2022-01-26T12:39:52&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/location-of-iis-log-files/</loc><lastmod>2022-01-26T12:39:52&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/location-of-windows-event-log/</loc><lastmod>2022-01-22T06:52:27&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/wp-global-styles-pub%2ffranklin/</loc><lastmod>2022-01-19T01:01:03&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/tags/franklin/</loc><lastmod>2022-01-19T01:01:03&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command/</loc><lastmod>2021-11-01T16:42:48&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/what-is-sheep-dip/</loc><lastmod>2021-10-23T12:01:07&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/private-ip-address/</loc><lastmod>2021-10-23T11:53:25&#43;00:00</lastmod></url><url>
@@ -111,9 +105,7 @@
             <loc>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks/</loc><lastmod>2021-04-28T12:34:50&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/get-the-stored-wifi-password-on-windows/</loc><lastmod>2021-04-27T01:19:42&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/</loc><lastmod>2021-04-27T01:19:42&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/860/</loc><lastmod>2021-04-25T04:10:38&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E8%B3%87%E5%AE%89%E7%9B%B8%E9%97%9C%E7%B6%B2%E7%AB%99/</loc><lastmod>2021-04-25T04:07:57&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/2021hw%E5%8F%82%E8%80%83%E7%BA%A2%E8%93%9D%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98%E6%BC%94%E4%B9%A0%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/</loc><lastmod>2021-04-24T17:29:51&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/</loc><lastmod>2021-04-24T17:26:23&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/</loc><lastmod>2021-04-24T08:25:25&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/exchenge-server-%E6%BC%8F%E6%B4%9E-proxylogon/</loc><lastmod>2021-04-17T05:10:35&#43;00:00</lastmod></url><url>
@@ -139,7 +131,6 @@
             <loc>https://amingosec.github.io/posts/666/</loc><lastmod>2020-02-11T04:16:50&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/10-find-exec-multiple-commands-examples-in-linux-unix-golinuxcloud/</loc><lastmod>2020-02-11T03:29:04&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/github-xp4xbox-python-backdoor-this-program-is-an-non-object-oriented-opensource-hidden-and-undetectable-backdoor-reverse-shell-rat-for-windows-made-in-python-3-which-contains-many-features-such-a/</loc><lastmod>2020-02-07T06:16:33&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/639/</loc><lastmod>2020-02-01T15:35:38&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E4%B8%8B%E8%BC%89%E9%80%A3%E7%B5%90/</loc><lastmod>2020-02-01T15:31:27&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/attack-vectors/</loc><lastmod>2020-01-28T16:03:10&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/malicious-payload/</loc><lastmod>2020-01-28T16:03:10&#43;00:00</lastmod></url><url>
@@ -159,7 +150,6 @@
             <loc>https://amingosec.github.io/posts/dns-flood-attack/</loc><lastmod>2019-12-28T08:48:10&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/dns%E6%94%BE%E5%A4%A7%E6%94%BB%E6%93%8A%E7%B0%A1%E4%BB%8B/</loc><lastmod>2019-12-28T08:41:46&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/tcsec-orange-book/</loc><lastmod>2019-09-28T01:15:34&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/535/</loc><lastmod>2019-09-26T14:49:37&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99/</loc><lastmod>2019-09-26T00:40:53&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/incident-response-for-ransomeare/</loc><lastmod>2019-08-30T16:11:57&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/redteam%E6%94%BB%E6%93%8A%E6%8A%80%E5%B7%A7%E5%92%8C%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6/</loc><lastmod>2019-04-16T16:19:27&#43;00:00</lastmod></url><url>
@@ -232,7 +222,7 @@
             <loc>https://amingosec.github.io/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/</loc><lastmod>2018-05-30T03:42:38&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/rbl/</loc><lastmod>2018-05-30T03:42:38&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E7%A4%BE%E4%BA%A4%E5%B7%A5%E7%A8%8B/</loc><lastmod>2018-05-30T03:42:38&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/%E4%B8%8B%E8%BC%89windows-vm/</loc><lastmod>2018-05-29T15:25:38&#43;00:00</lastmod></url><url>
+            <loc>https://amingosec.github.io/posts/download-windows-vm/</loc><lastmod>2018-05-29T15:25:38&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/gdpr%E4%B8%AD%E7%9A%84%E6%9B%B4%E6%AD%A3%E6%AC%8A%E5%8F%8A%E5%88%AA%E9%99%A4%E6%AC%8A%E8%A2%AB%E9%81%BA%E6%9C%9B%E6%AC%8A/</loc><lastmod>2018-05-29T06:55:04&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E5%90%88%E8%A6%8F/</loc><lastmod>2018-05-29T06:55:04&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/ddos/</loc><lastmod>2018-05-16T11:32:45&#43;00:00</lastmod></url><url>
@@ -251,5 +241,4 @@
             <loc>https://amingosec.github.io/tags/backup-site/</loc><lastmod>2018-04-15T06:37:25&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</loc><lastmod>2018-04-15T06:37:25&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</loc><lastmod>2018-04-15T06:37:25&#43;00:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/posts/home/</loc><lastmod>2017-12-17T02:41:31&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/categories/</loc></url></urlset>

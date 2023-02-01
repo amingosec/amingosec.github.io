@@ -27,7 +27,7 @@ Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx
 MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。]]></description>
 </item>
 <item>
-    <title>4個必知重點讓你的遠端會議更輕鬆</title>
+    <title>讓你的遠端會議更輕鬆的幾個重點</title>
     <link>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</link>
     <pubDate>Sat, 27 Aug 2022 00:56:37 &#43;0800</pubDate>
     <author>Author</author>

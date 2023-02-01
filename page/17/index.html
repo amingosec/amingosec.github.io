@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-heart'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-blog'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-tags'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-pen'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,56 +48,55 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-heart'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-blog'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-tags'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-pen'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99/">資安練習網站</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-09-26">2019-09-26</time></span></div><div class="content">滲透測試的手法是有一定的攻擊性的，非經允許是不可在他人電腦上使用。因此有練習的靶場相當的重要。以下整理幾個練習的網站，都相當的推薦。
-PortSwigger https://portswigger.net/
-PortSwigger主要是針對web application漏洞進行教學。有完整的說明內容與練習，是相當適合新手的地方。
-CTF網站 https://www.root-me.org/?page=news&amp;lang=en https://www.pentesterlab.com/ https://picoctf.org Try Hack Me https://tryhackme.com/
-有完整有訓練路徑，不只紅隊相關練習，從基礎的內容開始講起。
-Hack the box Hack the box：https://www.hackthebox.eu/
-提供各靶機讓人練習，註冊需要一點技巧。
-OSCP相關機器整理 針對OSCP證照考試，將相關的Lab整理出來。
-https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=0</div><div class="post-footer">
-        <a href="/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/incident-response-for-ransomeare/">幾個進行 Ransomware Incident Response 的重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-08-30">2019-08-30</time></span></div><div class="content">Ransomware 算是相當常見的攻擊方式，自從永恒之藍漏洞被利用後廣泛被大家得知。
-傳播方式 通常可能的傳播方式：
-通過社交工程，釣魚郵件誘導受害者下載檔案後執行並傳播 利用主機上RCR漏洞來進行傳播 利用主機上Web或第三方套件漏洞來進行傳播 利用弱密碼登入主機進行傳播 感染 Ransomware 的特點 如果感染Ransomware 會有以下兩個明顯特點。
-各類檔案出現可疑的副檔名 會有明顯的提示要求付贖金 Ransomware IR 目的 並不建議支付贖金，這會讓駭客認為此方法有效，開啟其他攻擊 同時支付贖金不一定能讓檔案 找到入侵的原因，找到漏洞，進行修補(一般來說在重要資料有保存的前題下進行重灌） 發現被感染時的處理要點 不能關機！不能關機！不能關機！ 為了防止持續傳播，可以受駭主機網路線拔除 可利用副檔名找是否有解密工具 在沒有100%保證可解密下，別自己解 依尋公司政策處理 針對 Ransomware 的預防 針對重要檔案進行備份 限制445、3389埠連線行為(此為目前常見的傳播行為) 定期進行更新 Incident Response 範例 http://blog.nsfocus.net/emergency-response-case-study/ https://blog.csdn.net/qq_27446553/article/details/81102198
-http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%8820170503%EF%BC%89/ https://mp.weixin.qq.com/s?src=11&timestamp=1533106387&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4h8eCCyQEr8A9hbHaIHPrqR-WiIdoJPqMsmSVic4-gs*sd3j613UabGbt6z9mQT6p5fWutdawPYrht-VlixmLLS&amp;new=1 https://mp.weixin.qq.com/s?src=11&timestamp=1533106458&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4hJcF-gDfZJVqz2bzHZt6fF_EmCrKm_DXOl3CMpdqrFZwBPOuAKr1TQcF7qG2x72YvsE8D1nglxXyYenvA2HLqY&new=1 </div><div class="post-footer">
-        <a href="/posts/incident-response-for-ransomeare/">Read More</a><div class="post-tags">
+        <a href="/posts/fuzzing-%E4%BB%8B%E7%B4%B9/">Fuzzing 介紹</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-27">2019-01-27</time></span></div><div class="content">https://labs.mwrinfosecurity.com/blog/what-the-fuzz/</div><div class="post-footer">
+        <a href="/posts/fuzzing-%E4%BB%8B%E7%B4%B9/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/redteam%E6%94%BB%E6%93%8A%E6%8A%80%E5%B7%A7%E5%92%8C%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6/">RedTeam攻擊技巧和安全防禦</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-04-16">2019-04-16</time></span></div><div class="content">說明 RedTeam(紅隊)的起源於軍事領域，紅隊用以模擬敵人建立起接近真實的情況，以驗證自身訓練成效。在資安領域中也引入此一概念，建立起模擬對組織網路攻擊的駭客-RedTeam，用以確保防守者-BlueTeam是否有弱點存在，以達前期修補之效。
-文章連結 www.secpulse.com/archives/103664.html</div><div class="post-footer">
-        <a href="/posts/redteam%E6%94%BB%E6%93%8A%E6%8A%80%E5%B7%A7%E5%92%8C%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/shellshock%E4%BB%8B%E7%B4%B9%E8%88%87%E6%AA%A2%E6%B8%AC/">ShellShock介紹與檢測</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-12">2019-01-12</time></span></div><div class="content">參考臺大計中的說明 http://www.cc.ntu.edu.tw/chinese/epaper/0036/20160321_3610.html</div><div class="post-footer">
+        <a href="/posts/shellshock%E4%BB%8B%E7%B4%B9%E8%88%87%E6%AA%A2%E6%B8%AC/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/shellshock/">shellshock</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/the-red-team-guide-chapter-10-powershell-for-red-teams-by-chiheb-chebbi-how-to-download-project/">[The Red team Guide] Chapter 10: Powershell for Red Teams by Chiheb Chebbi - how to, download, project</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-04-10">2019-04-10</time></span></div><div class="content">[THE RED TEAM GUIDE] CHAPTER 10: POWERSHELL FOR RED TEAMS INTRODUCTION PowerShell is a task-based command-line shell and scripting language; it is designed spec — Read on www.peerlyst.com/posts/the-red-team-guide-chapter-10-powershell-for-red-teams-chiheb-chebbi</div><div class="post-footer">
-        <a href="/posts/the-red-team-guide-chapter-10-powershell-for-red-teams-by-chiheb-chebbi-how-to-download-project/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/rever-shell%E7%9B%A3%E6%8E%A7%E6%96%B9%E6%B3%95/">資安監控-rever shell監控方法</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-11-03">2018-11-03</time></span></div><div class="content">rever shell或是webshell，可說是外網滲透的最後一步，也是內網滲透的第一步，取得shell後就有機會用來往目標組織更進一步的入侵。 也因此在於這個階段的攻防可說是相當重要，也是近期EDR興起的重要原因。
+延伸閱讀 網頁安全(Web Security) [轉]瞭解MDR EDR EPP XDR PHP revers shell
+參考資料 https://mp.weixin.qq.com/s?__biz=MzIyMzE5NTQ3Ng==&amp;mid=2650601015&amp;idx=1&amp;sn=a91e8f4ad308391288839fe52c4ee799</div><div class="post-footer">
+        <a href="/posts/rever-shell%E7%9B%A3%E6%8E%A7%E6%96%B9%E6%B3%95/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/red-team-tips-vincent-yiu/">Red Team Tips</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-04-10">2019-04-10</time></span></div><div class="content">說明 紅隊縯練的一些技巧，原文連結如下
-文章連結 vincentyiu.co.uk/red-team-tips/</div><div class="post-footer">
-        <a href="/posts/red-team-tips-vincent-yiu/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/nginx%E8%A8%AD%E5%AE%9A%E6%AA%94%E5%AD%B8%E7%BF%92/">nginx設定檔學習</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-11-03">2018-11-03</time></span></div><div class="content">https://nginxconfig.io/ 最近看到的，似乎不錯</div><div class="post-footer">
+        <a href="/posts/nginx%E8%A8%AD%E5%AE%9A%E6%AA%94%E5%AD%B8%E7%BF%92/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/pt%E7%B7%B4%E7%BF%92%E5%B9%B3%E5%8F%B0/">PT練習平台</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-30">2019-01-30</time></span></div><div class="content">說明 記錄一些練習PT技巧的平台，注意這些平台大多包含漏洞，不適合在正式環境運作。
-網站 https://www.pentesterlab.com/ http://www.dvwa.co.uk/ https://sourceforge.net/projects/metasploitable/ Github上的專案 https://github.com/WebGoat https://github.com/WebGoat/WebGoat-Legacy https://github.com/Medicean/VulApps https://github.com/Audi-1/sqli-labs https://github.com/cr0hn/vulnerable-node https://github.com/SecGen/SecGen </div><div class="post-footer">
-        <a href="/posts/pt%E7%B7%B4%E7%BF%92%E5%B9%B3%E5%8F%B0/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+        <a href="/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/">PowerShell - 修改網卡設定</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-28">2018-10-28</time></span></div><div class="content">可以使用以下兩個指令來設定IP與dns
+Set-NetIPAddress Set-DnsClientServerAddress
+例如： ps c:/&gt;set-NetIPAddress -InputObject lan1 -IPAddress 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.254
+ps c:/&gt;Set-DnsClientServerAddress -InputObject lan1 -ServerAddresses (&#34;10.0.0.1&#34;,&#34;10.0.0.2&#34;) ``` 參考資料 [https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps) [https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps) [https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/](https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/) </div><div class="post-footer">
+        <a href="/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/powershell-get-filehash/">PowerShell - 取得檔案hash值</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-10-27">2018-10-27</time></span></div><div class="content">說明 在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-filehash指令來取得檔案的hash值。
+參數如下
+ps c:/&gt;get-filehash \[-path\] \[-algorithm\] Example:
+ps c:/&gt;get-filehash c:/test/test.txt -algorithm md5 如果 -algorithm參數不給，會直接使用SHA 256
+支援的algorithm如下
+SHA1 SHA256 SHA384 SHA512 MD5 如果檔案位置太長，可以直接用拖拽的，將檔案拉到powershell中，會直接取得檔案路徑。
+取得資料夾內所有檔案hash值 如果要使用powershell取得資料夾內所有檔案的hash值也可以很快的做到，結合Get-ChildItem即可。參考下面指令，結果會直接在shell中輸出。
+Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) 如果還想要將結果另外存檔的話，可以使用結合export-csv &ldquo;filename.csv&quot;來將檔案輸出。
+Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) | export-csv &#34;.\\filename.csv&#34; 延伸閱讀 小知識-產生hash值的方式 Powershell-查詢ScheduledTasks PowerShell-設定IP位置 參考資料 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.2 </div><div class="post-footer">
+        <a href="/posts/powershell-get-filehash/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/hash/">hash</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/sha1/">sha1</a>,&nbsp;<a href="/tags/sha256/">sha256</a>,&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -128,7 +127,7 @@ http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%882
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/25/">25</a>
+                        <a href="/page/24/">24</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

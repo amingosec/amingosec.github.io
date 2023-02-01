@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-heart'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-blog'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-tags'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-pen'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,39 +48,13 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-heart'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-blog'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-tags'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-pen'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/1404/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-17">2022-02-17</time></span></div><div class="content"></div><div class="post-footer">
-        <a href="/posts/1404/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/primary/">Primary</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/what-is-credential-stuffing/">攻擊手法-Credential stuffing</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-11">2022-02-11</time></span></div><div class="content">說明 Credential stuffing為密碼破解的一種手法，利用在外部取得的帳密，在目標網站登入位置進行密碼噴灑、撞庫或其他爆力密碼破解方式。
-延伸閱讀 密碼破解-撞庫攻擊 密碼破解-密碼噴灑攻擊 參考網站 https://owasp.org/www-community/attacks/Credential_stuffing
-https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/</div><div class="post-footer">
-        <a href="/posts/what-is-credential-stuffing/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/">密碼破解</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-weevely-php-webshell/">工具介紹-Weevely (kali linux web shell產生工具)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-07">2022-02-07</time></span></div><div class="content">Weevely是使用python寫成的webshell管理工具，可產生php webshell。
-產生Webshell 使用以下指令產生webshell，要注意密碼用特殊字元有時會造成連線失敗。
-如果要產生圖片檔，以jpg命名結尾就可以了。
-weevely generate 567 hello.php 連線Webshell 上傳後使用以下指令連線後門，然後進入一個互動式的shell
-weevely http://urltowebshell/hello.php 567 如果是使用jpg的檔案，一樣直接連線該檔案就行。
-利用Webshell下載檔案 從遠端下載檔案，rpath是遠端路行 lpath是要存的本地路徑(都要包含檔名)
-file.download rpath lpath [-vector]
-利用Webshell上傳檔案 使用:file_upload2web指令可以檔案上傳到目標主機
-:file_upload2web lpath rpath
-:file\_upload2web /home/kali/Desktop/test.exe test.exe 延伸閱讀 資安監控-rever shell監控方法 工具介紹-Python-Backdoor 網頁攻擊手法-上傳弱點 參考資料 https://www.kali.org/tools/weevely https://securityonline.info/weevely-tutorial-php-webshell/ https://github.com/epinna/weevely3 </div><div class="post-footer">
-        <a href="/posts/introduction-to-weevely-php-webshell/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/webshell/">webshell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">密碼破解-撞庫攻擊</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-06">2022-02-06</time></span></div><div class="content">撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。
 偵測與防範的手法 2階段驗證(2FA)，是能有效防止的一種方式。
@@ -122,6 +96,34 @@ https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/quick-create-por
 https://www.w3schools.com/php/php_file_upload.asp</div><div class="post-footer">
         <a href="/posts/windows-server-iis-%E8%B7%91-php/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/windows/">Windows</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/location-of-iis-log-files/">資訊安全-IIS log 位置</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-26">2022-01-26</time></span></div><div class="content">說明 Log時間是UTC，要查詢相關log記得注意時區問題。 每天一個log檔，event會即時寫入該天log檔內。 IIS 預設log路徑為 %SystemDrive%\inetpub\logs\LogFiles\，在資料夾中，各網站會有一個子資料夾如：W3SVC1，網站的 log 會在資料夾中以 u_exyymmdd.log 的log檔呈現。
+W3SVC 後面的數字是 IIS 的網站 ID
+Log檔名說明：
+名稱格式：u_exyymmdd.log yy:西元年份後2碼，2022年會以22表示 mm:月份 dd:日期 延伸閱讀 資訊安全-Windows Event Log位置 Windows IR 方向 資訊安全-基本概念 參考資料 Managing IIS Log File Storage | Microsoft Docs</div><div class="post-footer">
+        <a href="/posts/location-of-iis-log-files/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/iis/">IIS</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/location-of-windows-event-log/">Windows Event Log位置</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-22">2022-01-22</time></span></div><div class="content">在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。
+Event Log 位置 windows event log預設位置為： %SystemRoot%\System32\winevt\Logs\ ，如果沒有看到或需要進行調整的話可以到註冊檔中確認與調整，註冊檔位置： HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog。
+幾個重要的event log 以下是進行事件查找時常會用到的幾個 log ，但是 log 是否被紀錄下來取決於稽核原則的設定，因此，記得進行良好的稽核原則設定，以利後續事件的查找。
+System.evtx 在 System 中有主機運作的相關訊息。
+Security.evtx 在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
+Application.evtx Application log
+Windows PowerShell.evtx 在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
+MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。
+延伸閱讀 Windows IR 方向 IIS log 位置 參考資料 https://docs.</div><div class="post-footer">
+        <a href="/posts/location-of-windows-event-log/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/log/">LOG</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-windows-wevtutil-command/">資訊安全-Wevtutil 日誌指令</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-01">2021-11-01</time></span></div><div class="content">Windows 日誌匯出指令
+wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored.
+延伸閱讀 資訊安全-Windows Event Log位置 資訊安全-IIS log 位置 參考資料 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil</div><div class="post-footer">
+        <a href="/posts/introduction-to-windows-wevtutil-command/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/windows/">Windows</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -152,7 +154,7 @@ https://www.w3schools.com/php/php_file_upload.asp</div><div class="post-footer">
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/25/">25</a>
+                        <a href="/page/24/">24</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

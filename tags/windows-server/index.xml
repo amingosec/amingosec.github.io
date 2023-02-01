@@ -46,13 +46,13 @@ wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration inform
 </item>
 <item>
     <title>下載windows vm</title>
-    <link>https://amingosec.github.io/posts/%E4%B8%8B%E8%BC%89windows-vm/</link>
+    <link>https://amingosec.github.io/posts/download-windows-vm/</link>
     <pubDate>Tue, 29 May 2018 15:25:38 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E4%B8%8B%E8%BC%89windows-vm/</guid>
-    <description><![CDATA[https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ 可下載來進行測試 密碼：Passw0rd!
-Server 試用版 可直接下載VM來使用
-https://www.microsoft.com/zh-tw/evalcenter/try]]></description>
+    <guid>https://amingosec.github.io/posts/download-windows-vm/</guid>
+    <description><![CDATA[介紹 如果手邊臨時需要建 VM，但又沒有 windows 的安裝 image 時，可以使用微軟提供的測試 VM。到下面的連結中，選擇想要的 VM 檔下載即可。
+密碥為 Passw0rd!
+下載位置 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ https://www.microsoft.com/zh-tw/evalcenter/try ]]></description>
 </item>
 </channel>
 </rss>

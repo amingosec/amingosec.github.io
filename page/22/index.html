@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-heart'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-blog'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-tags'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-pen'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,55 +48,67 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-heart'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-blog'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-tags'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-pen'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/install-openvas-on-kali-linux/">工具介紹-在Kali Linux上安裝openvas</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-30">2018-06-30</time></span></div><div class="content">openvas為一個開源的弱掃工具，有名的付費工具為nessus 在Kali Linux上安裝openvas(依照kali Linux的教學) 更新 # apt-get update # apt-get dist-upgrade 安裝 # apt-get install openvas # openvas-setup (setup弱點資料庫) 完成後會直接開啟瀏覽器，加入例外後即可進入openvas的網站。 注意，openvas的帳密在執行openvas-setup時會自動設定，請記下來，進入後在administrator的地方換密碼，或是直接用以下指令換密碼 openvasmd &ndash;user=admin &ndash;new-password=yourpassword 官網：http://www.openvas.org
-延伸閱讀 工具介紹-Weevely (kali linux web shell產生工具) </div><div class="post-footer">
-        <a href="/posts/install-openvas-on-kali-linux/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/openvas/">openvas</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/what-is-file-upload-vulnerability/">攻擊手法-檔案上傳漏洞</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-04">2018-06-04</time></span></div><div class="content">說明 在現在的網路環境中，越來越多網站提供上傳檔案的功能，不論是上傳照片、履歷、作品集&hellip;等，如當發果沒有良好的設計，很容易就會產生檔案上傳漏洞。
+Server在回應Client的請求時，如果是可執行的檔案，會回應執行後的結果。此時，如果攻擊者利用上傳的功能，將檔案傳到Server上，並且請求Server執行成功時，即可攻擊成功。因此檔案上傳漏洞有兩個重要的條件。
+繞過上傳限制將檔案上傳 對上傳的檔案正確的請求 發現網站可以上傳資料時，可以製做該網站可用的shell來上傳，達到遠端操作的功能。如果該網站可以用php，可以透過kali的weevely 來產生php shell，上傳後來進行連線。
+部份網站會使用副檔名檢查來防止上傳，但很容易被更改副檔名後繞過。
+檔案上傳漏洞的危害 如果弱點被利用成功，很有可能讓攻擊者可進行遠端執行。且因為執行網頁服務的權限有時相當大，可直接讓攻擊者得到高權限來進一步進行橫向移動或其他攻擊。
+同時，如果目標主機存在路徑走訪的漏洞，會讓攻擊者有機會將檔案上傳到其他路徑，較不容易被察覺。
+延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 工具介紹-Weevely (kali linux web shell產生工具) 資訊安全-內網橫向移動(Lateral Movement)介紹 參考連結 https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload </div><div class="post-footer">
+        <a href="/posts/what-is-file-upload-vulnerability/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shell/">shell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/penetration-testing%E5%B7%A5%E5%85%B7/">工具介紹-penetration testing 作業系統</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-28">2018-06-28</time></span></div><div class="content"> 其實標題不太知道要打什麼，既然是想介紹滲透測試的OS就打這樣好了。
-Kali Linux 由offensive security維護，並提供使用Kali進行滲透的認證。
-BackBox 進行滲透時，太過依賴同一個工具不太好，最近發現除了Kail外BackBox也是個不錯的工具，BackBox是基於ubuntu建成，如果想免費下載的話，在斗內的金額填零即可。 https://backbox.org
-延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 </div><div class="post-footer">
-        <a href="/posts/penetration-testing%E5%B7%A5%E5%85%B7/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/backbox-linux/">BackBox Linux</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/metasploitable-%E5%BB%BA%E7%AB%8B/">Lab-建立Metasploitable 滲透練習Lab</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-03">2018-06-03</time></span></div><div class="content">Kali Linux 下載位置 https://www.kali.org/downloads/
+username root and password toor
+登入後開啟終端機更新
+#apt-get update
+#apt-get dist-upgrade
+#updatedb
+Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/
+下載後用VirtualBox匯入映象檔，以下面帳密使用
+username msfadmin and password msfadmin
+Windows 10 VM https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+可下載來進行測試
+offensive security 說明
+https://www.offensive-security.com/metasploit-unleashed/requirements/
+延伸閱讀 [轉]lonelysec-OSCP心得分享 練習網站 </div><div class="post-footer">
+        <a href="/posts/metasploitable-%E5%BB%BA%E7%AB%8B/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/metasploitable/">Metasploitable</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/">名詞介紹-YARA Rules</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-21">2018-06-21</time></span></div><div class="content">YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。
-YARA Elements YARA rules包含以下幾個元件：
-Metadata Strings Conditions Imports 參考連結 YARA Rules Guide: Learning this Malware Research Tool malware detection using yara YARA 文件 </div><div class="post-footer">
-        <a href="/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/yara/">yara</a>,&nbsp;<a href="/tags/%E6%83%A1%E6%84%8F%E7%A8%8B%E5%BC%8F%E8%AD%98%E5%88%A5/">惡意程式識別</a></div></div>
+        <a href="/posts/%E8%B3%87%E8%A8%8A%E6%90%9C%E9%9B%86%E7%B6%B2%E7%AB%99%E8%88%87%E5%B7%A5%E5%85%B7/">資訊搜集網站與工具</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-03">2018-06-03</time></span></div><div class="content">目標資訊 http://whois.domaintools.com https://www.netcraft.com https://talosintelligence.com
+DNS查詢 https://www.robtex.com
+Subdomain Knock Subdomain Scan https://github.com/guelfoweb/knock 使用下面指令安裝 # git clone https://github.com/guelfoweb/knock.git
+其他軟體或指令 dirb (資料夾內容查詢) nslookup maltego(installed in kali) wappalyzer 瀏覽器插件
+該注意的資料 以下為information gathering該注意的資訊 版本、目標server上其他的系統 login.xxx phpinfo robots.txt(會存該網站不想給google看的資料) config.ini tset</div><div class="post-footer">
+        <a href="/posts/%E8%B3%87%E8%A8%8A%E6%90%9C%E9%9B%86%E7%B6%B2%E7%AB%99%E8%88%87%E5%B7%A5%E5%85%B7/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/information-gathering/">information gathering</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E5%BC%B1%E9%BB%9Elab%E6%9E%B6%E8%A8%AD/">弱點主機架設</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-20">2018-06-20</time></span></div><div class="content">metasploitable2 知名常用的弱點主機，但似乎不太穩，一開始的db設定需要一些調整 https://sourceforge.net/projects/metasploitable/
-vulnhub https://www.vulnhub.com</div><div class="post-footer">
-        <a href="/posts/%E5%BC%B1%E9%BB%9Elab%E6%9E%B6%E8%A8%AD/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/">Email-查看自家的網域有沒有被認定為拉圾信-RBL</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-05-30">2018-05-30</time></span></div><div class="content">RBL是Realtime Blackhole List的簡稱 http://www.anti-abuse.org/multi-rbl-check/ 輸入後看下方各組織是否有列為垃圾信，都是綠色就ok</div><div class="post-footer">
+        <a href="/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%A4%BE%E4%BA%A4%E5%B7%A5%E7%A8%8B/">社交工程</a>,&nbsp;<a href="/tags/rbl/">RBL</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/get-file-hash-in-windows/">Windows 產生檔案 hash 值的方式</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-20">2018-06-20</time></span></div><div class="content">hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。
-在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒白名單會是個好方法。
-使用 certuil 指令 產生 MD5 certuil -hashfile &lt;your/file&gt; MD5 產生 sha1 certuil -hashfile &lt;your/file&gt; SHA1 產生 sha256 certuil -hashfile &lt;your/file&gt; SHA256 使用 PowerShell 在 PowerShell中可以使用Get-filehash指令來取得檔案 hash 值
-get-filehash [-path] [-algorithm] 取得 md5 get-filehash c:/test/test.txt -algorithm md5 其他完整說明可見另一篇文章 PowerShell-取得檔案hash值
-使用 osquery osquery 是 facebook 發展的 open source 軟體，也提供取得檔案 hash 值的方法，可以參考工具介紹 - osquery一文的說明。
-延伸閱讀 工具介紹-osquery 取得檔案hash值-PowerShell 資訊安全-基本概念 </div><div class="post-footer">
-        <a href="/posts/get-file-hash-in-windows/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/hash/">hash</a>,&nbsp;<a href="/tags/md5/">md5</a>,&nbsp;<a href="/tags/sha1/">sha1</a>,&nbsp;<a href="/tags/sha256/">sha256</a></div></div>
+        <a href="/posts/download-windows-vm/">下載windows vm</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-05-29">2018-05-29</time></span></div><div class="content">介紹 如果手邊臨時需要建 VM，但又沒有 windows 的安裝 image 時，可以使用微軟提供的測試 VM。到下面的連結中，選擇想要的 VM 檔下載即可。
+密碥為 Passw0rd!
+下載位置 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ https://www.microsoft.com/zh-tw/evalcenter/try </div><div class="post-footer">
+        <a href="/posts/download-windows-vm/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E5%BC%B1%E9%BB%9E%E5%88%A9%E7%94%A8/">Exploit db 介紹</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-17">2018-06-17</time></span></div><div class="content">說明 Exploit db 針對一些 cve 有提供 poc 的語法，讓攻擊者可以用來測試目標是否有存有弱點。有commend line的功能。
-網站連結 https://www.exploit-db.com </div><div class="post-footer">
-        <a href="/posts/%E5%BC%B1%E9%BB%9E%E5%88%A9%E7%94%A8/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/gdpr%E4%B8%AD%E7%9A%84%E6%9B%B4%E6%AD%A3%E6%AC%8A%E5%8F%8A%E5%88%AA%E9%99%A4%E6%AC%8A%E8%A2%AB%E9%81%BA%E6%9C%9B%E6%AC%8A/">GDPR中的更正權及刪除權(被遺望權)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-05-29">2018-05-29</time></span></div><div class="content">最近剛好跟朋友聊到GDPR中的這項權利。被列在第16,17條中 但是在公司角度來看，僅需提供使用者刪除的選項即可，但也需讓使用者瞭解，這將讓公司無法提供服務。</div><div class="post-footer">
+        <a href="/posts/gdpr%E4%B8%AD%E7%9A%84%E6%9B%B4%E6%AD%A3%E6%AC%8A%E5%8F%8A%E5%88%AA%E9%99%A4%E6%AC%8A%E8%A2%AB%E9%81%BA%E6%9C%9B%E6%AC%8A/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%90%88%E8%A6%8F/">合規</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -122,10 +134,6 @@ get-filehash [-path] [-algorithm] 取得 md5 get-filehash c:/test/test.txt -algo
                 </li><li class="page-item ">
                     <span class="page-link">
                         <a href="/page/24/">24</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/25/">25</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

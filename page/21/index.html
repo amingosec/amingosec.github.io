@@ -33,7 +33,7 @@
             <a href="/" title="">資安工作筆記</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-heart'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-blog'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-tags'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-pen'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -48,56 +48,52 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-heart'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-blog'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-tags'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-pen'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/prompt1-to-win-xss/">Lab - prompt(1) to win (XSS)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-25">2018-07-25</time></span></div><div class="content">在不少等級中都有出現input.replace 的function，使用方法可以參考https://www.w3schools.com/jsref/jsref_replace.asp，有對replace method說明，有所了解後會對prompt(1)的思路比較有想法。
-Level 1 &lt;body/onload=prompt(1)//</div><div class="post-footer">
-        <a href="/posts/prompt1-to-win-xss/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/">名詞介紹-YARA Rules</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-21">2018-06-21</time></span></div><div class="content">YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。
+YARA Elements YARA rules包含以下幾個元件：
+Metadata Strings Conditions Imports 參考連結 YARA Rules Guide: Learning this Malware Research Tool malware detection using yara YARA 文件 </div><div class="post-footer">
+        <a href="/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/yara/">yara</a>,&nbsp;<a href="/tags/%E6%83%A1%E6%84%8F%E7%A8%8B%E5%BC%8F%E8%AD%98%E5%88%A5/">惡意程式識別</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">File Inclusion 漏洞練習</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-24">2018-07-24</time></span></div><div class="content">如果在metasploitable2上使用這個漏洞，需先將php.ini檔做設定。 allow_url_fopen = On allow_url_include = On (反過來說，如果將上面兩行設成Off，將可以有效的防止這個漏洞) 確認事項
-弱點主機與攻擊主機可以互連 在攻擊主機上先建立好revers shell檔，放入www資料夾中(通常會用txt檔，以免自己看時執行) 開啟nc 在弱點主機url的&quot;page=&ldquo;後輸入攻擊主機shell的網址 確認nc有監聽到 解決方法： 除了如上所說外，當php使用get 時，參數使用白名單的方法，名單外的以Error回應。 參考資料： https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_(OTG-AUTHZ-001)</div><div class="post-footer">
-        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/file-inclusion/">file inclusion</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/%E5%BC%B1%E9%BB%9Elab%E6%9E%B6%E8%A8%AD/">弱點主機架設</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-20">2018-06-20</time></span></div><div class="content">metasploitable2 知名常用的弱點主機，但似乎不太穩，一開始的db設定需要一些調整 https://sourceforge.net/projects/metasploitable/
+vulnhub https://www.vulnhub.com</div><div class="post-footer">
+        <a href="/posts/%E5%BC%B1%E9%BB%9Elab%E6%9E%B6%E8%A8%AD/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-cross-site-scripting-xss/">網頁攻擊手法-XSS 介紹</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-10">2018-07-10</time></span></div><div class="content">介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。
-在owasp top 10-2017中改到第七名
-https://www.owasp.org/index.php/Top_10-2017_Top_10
-https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
-可分為stored、reflected。
-可使用的方法 加入或用 的error呼叫 利用編碼的方試bypass 練習網站 alert(1) to win
-prompt(1) to win
-利用工具 beef xss framework 滿不錯用的，kali跟backbox都有，
-XSS hunter也有提供攻擊payload，並把結果回覆分析，相當有用
-要防禦的話，除了在client side也請記得一定要在server side進行相關安全性設定。
-延伸閱讀 SQL injection Lab - alert(1) to win Lab - prompt(1) to win (XSS) </div><div class="post-footer">
-        <a href="/posts/introduction-to-cross-site-scripting-xss/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/beef/">beef</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/xss-hunter/">XSS hunter</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/get-file-hash-in-windows/">Windows 產生檔案 hash 值的方式</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-20">2018-06-20</time></span></div><div class="content">hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。
+在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒白名單會是個好方法。
+使用 certuil 指令 產生 MD5 certuil -hashfile &lt;your/file&gt; MD5 產生 sha1 certuil -hashfile &lt;your/file&gt; SHA1 產生 sha256 certuil -hashfile &lt;your/file&gt; SHA256 使用 PowerShell 在 PowerShell中可以使用Get-filehash指令來取得檔案 hash 值
+get-filehash [-path] [-algorithm] 取得 md5 get-filehash c:/test/test.txt -algorithm md5 其他完整說明可見另一篇文章 PowerShell-取得檔案hash值
+使用 osquery osquery 是 facebook 發展的 open source 軟體，也提供取得檔案 hash 值的方法，可以參考工具介紹 - osquery一文的說明。
+延伸閱讀 工具介紹-osquery 取得檔案hash值-PowerShell 資訊安全-基本概念 </div><div class="post-footer">
+        <a href="/posts/get-file-hash-in-windows/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/hash/">hash</a>,&nbsp;<a href="/tags/md5/">md5</a>,&nbsp;<a href="/tags/sha1/">sha1</a>,&nbsp;<a href="/tags/sha256/">sha256</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/">Network-一些常用的埠號 port number</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-10">2018-07-10</time></span></div><div class="content">在應用層中，每個服務都有預設的port number，當然也可以依自己的需求指定使用，曾經也是有看過https走TCP/80，或是RDP走TCP/1234。
-FTP 20 FTP 21 SSH 22 Telnet 23 SMTP 25 TACACS+ 49 IPSec ESP 50 IPSec AH 51 DNS 53 TFTP 69 HTTP 80 POP3 110 NTP 123 nbns 137 smb over netbios 139 SNMP 161 SNMP 162 NTP 123￼LDAP 389 TLS SSL 443(tcp) L2TP1701 (UDP) PPTP 1723(tcp) IMAP4 143(tcp) windows 遠端 3389 延伸閱讀 Network-私有IP位置 Network-135、137、138、139、445說明 </div><div class="post-footer">
-        <a href="/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/port-number/">port number</a></div></div>
+        <a href="/posts/%E5%BC%B1%E9%BB%9E%E5%88%A9%E7%94%A8/">Exploit db 介紹</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-17">2018-06-17</time></span></div><div class="content">說明 Exploit db 針對一些 cve 有提供 poc 的語法，讓攻擊者可以用來測試目標是否有存有弱點。有commend line的功能。
+網站連結 https://www.exploit-db.com </div><div class="post-footer">
+        <a href="/posts/%E5%BC%B1%E9%BB%9E%E5%88%A9%E7%94%A8/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/">憑證過期問題</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-04">2018-07-04</time></span></div><div class="content">最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證匯入電腦都不行，直到發現了一件事，使用者的電腦日期比憑證的啟用日期還早，原來是很久沒使用電腦了，日期正常後就好了。</div><div class="post-footer">
-        <a href="/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E6%86%91%E8%AD%89/">憑證</a></div></div>
+        <a href="/posts/what-is-wooden-barrel-theory/">什麼是木桶理論？</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-13">2018-06-13</time></span></div><div class="content">木桶理論在資訊安全上的應用，如同木桶的容量是取決於最低的一支木條，資安的安全等級取決於最弱的系統。 可以想像木桶做的再大，但如果有一邊或是有一個木條特別低，那麼再多的水也無法裝，只能到最低的木條的容量。 因此從企業資訊安全的角度來看，不能只針對特定系統來加強，而是應全面性的評估。
+延伸閱讀 資安名詞-惡意中繼站 資訊安全-基本概念 </div><div class="post-footer">
+        <a href="/posts/what-is-wooden-barrel-theory/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E6%9C%A8%E6%A1%B6%E7%90%86%E8%AB%96/">木桶理論</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/openvas%E4%BD%BF%E7%94%A8/">工具介紹-openvas使用</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-02">2018-07-02</time></span></div><div class="content">如果還沒有安裝，可以參考之前的文章，工具介紹-在Kali Linux上安裝openvas。
-1.使用Wizard掃描 開啟openvas後，第一次使用可以用wizard來進行弱點掃瞄 點選scans-&gt;task找到紫色的wizard點了之後輸入要掃的網站即可。</div><div class="post-footer">
-        <a href="/posts/openvas%E4%BD%BF%E7%94%A8/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/openvas/">openvas</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/active-directory-attack/">Active Directory Attack</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-11">2018-06-11</time></span></div><div class="content">針對AD的攻擊 https://www.c0d3xpl0it.com/2018/06/active-directory-attack-dcsync.html</div><div class="post-footer">
+        <a href="/posts/active-directory-attack/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/active-directory-attack/">Active Directory Attack</a>,&nbsp;<a href="/tags/ad/">AD</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -125,10 +121,8 @@ FTP 20 FTP 21 SSH 22 Telnet 23 SMTP 25 TACACS+ 49 IPSec ESP 50 IPSec AH 51 DNS 5
                         <a href="/page/23/">23</a>
                     </span>
                 </li><li class="page-item ">
-                    <span class="page-link" aria-hidden="true">&hellip;</span>
-                </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/25/">25</a>
+                        <a href="/page/24/">24</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
