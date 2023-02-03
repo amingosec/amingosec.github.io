@@ -55,6 +55,30 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-hping-command/">工具介紹-hping 使用</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-13">2020-01-13</time></span></div><div class="content">介紹 hping是一個command line的工具，使用起來跟Ping很像，但功能更強大，可以自由的讓使用者產生封包和分析TCP/IP的協定。
+安裝方式 如果使用Kali Linux所提供的VM，已經內建安裝，可直接使用。
+hping3下載：http://www.hping.org/hping3-20051105.tar.gz
+下載後以root安裝
+使用方試 以命令列的方式執行
+#hping3
+測試1： SYN Flooding(每秒10個封包)
+hping 目標主機IP –i u100000 –S –a 偽造來源IP
+測試2 ：偽造IP的ICMP封包(每秒10個封包)
+hping 目標主機IP –i u100000 –1 –a 偽造來源IP
+註：-1為數字非英文
+測試3：不正常TCP Flag組合封包(每秒10個封包)
+(a)SYN+FIN
+hping 目標主機IP –i u100000 –S –F –a 偽造來源IP
+(b)X’mas
+hping 目標主機IP –i u100000 –F –S –R –P –A –U –a 偽造來源IP
+測試4：偽造IP的UDP封包
+hping目標主機IP –i u100000 –2 –a 偽造來源IP
+測試5：偽造IP內含CodeRed封包
+hping 目標主機IP –i u100000 –d [封包datasize] –E [filename] –a [偽造來源IP]</div><div class="post-footer">
+        <a href="/posts/introduction-to-hping-command/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/mittre-attck-%E9%98%B2%E5%BE%A1%E9%80%83%E9%80%B8/">Mittre att&amp;ck 防御逃逸</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-29">2019-12-29</time></span></div><div class="content">blog.topsec.com.cn/attck-之防御逃逸/</div><div class="post-footer">
         <a href="/posts/mittre-attck-%E9%98%B2%E5%BE%A1%E9%80%83%E9%80%B8/">Read More</a><div class="post-tags">
@@ -93,15 +117,6 @@ Hack the box Hack the box：https://www.hackthebox.eu/
 OSCP相關機器整理 針對OSCP證照考試，將相關的Lab整理出來。
 https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=0</div><div class="post-footer">
         <a href="/posts/%E7%B7%B4%E7%BF%92%E7%B6%B2%E7%AB%99/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/incident-response-for-ransomeare/">幾個進行 Ransomware Incident Response 的重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-08-30">2019-08-30</time></span></div><div class="content">Ransomware 算是相當常見的攻擊方式，自從永恒之藍漏洞被利用後廣泛被大家得知。
-傳播方式 通常可能的傳播方式：
-通過社交工程，釣魚郵件誘導受害者下載檔案後執行並傳播 利用主機上RCR漏洞來進行傳播 利用主機上Web或第三方套件漏洞來進行傳播 利用弱密碼登入主機進行傳播 感染 Ransomware 的特點 如果感染Ransomware 會有以下兩個明顯特點。
-各類檔案出現可疑的副檔名 會有明顯的提示要求付贖金 Ransomware IR 目的 並不建議支付贖金，這會讓駭客認為此方法有效，開啟其他攻擊 同時支付贖金不一定能讓檔案 找到入侵的原因，找到漏洞，進行修補(一般來說在重要資料有保存的前題下進行重灌） 發現被感染時的處理要點 不能關機！不能關機！不能關機！ 為了防止持續傳播，可以受駭主機網路線拔除 可利用副檔名找是否有解密工具 在沒有100%保證可解密下，別自己解 依尋公司政策處理 針對 Ransomware 的預防 針對重要檔案進行備份 限制445、3389埠連線行為(此為目前常見的傳播行為) 定期進行更新 Incident Response 範例 http://blog.nsfocus.net/emergency-response-case-study/ https://blog.csdn.net/qq_27446553/article/details/81102198
-http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%8820170503%EF%BC%89/ https://mp.weixin.qq.com/s?src=11&timestamp=1533106387&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4h8eCCyQEr8A9hbHaIHPrqR-WiIdoJPqMsmSVic4-gs*sd3j613UabGbt6z9mQT6p5fWutdawPYrht-VlixmLLS&amp;new=1 https://mp.weixin.qq.com/s?src=11&timestamp=1533106458&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4hJcF-gDfZJVqz2bzHZt6fF_EmCrKm_DXOl3CMpdqrFZwBPOuAKr1TQcF7qG2x72YvsE8D1nglxXyYenvA2HLqY&new=1 </div><div class="post-footer">
-        <a href="/posts/incident-response-for-ransomeare/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

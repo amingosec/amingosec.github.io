@@ -55,6 +55,12 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/">PortSwigger-檔案上傳漏洞 lab 6</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-15">2022-04-15</time></span></div><div class="content">Lab: Remote code execution via polyglot web shell upload
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。 此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。 步驟 如同之前的 lab 先找到上傳後可被存取的路徑。 因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。 需要將 payload 加到圖片檔中來執行。 下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行sudo apt install libimage-exiftool-perl來安裝。 exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 FLAG_START 、 FLAG_END加以區別。 將產生的payload.</div><div class="post-footer">
+        <a href="/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/">檔案上傳漏洞</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/lab-web-shell-upload-via-obfuscated-file-extension/">PortSwigger-檔案上傳漏洞 lab 5</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-04">2022-04-04</time></span></div><div class="content">Lab: Web shell upload via obfuscated file extension
 Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。
@@ -100,13 +106,6 @@ Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/car
 可以先上傳一個正常的檔案，看一下檔案會被存放的位置。利用burpsuite可看到位置在/files/avatars/資料夾下。
 上傳shell前啟動proxy intercept，將上傳的Content-Type修改成image/jpeg後再進行forward。 上傳成功後，連線shell，flag會直接出現在browser中，提交就可以完成此lab。 延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 網頁攻擊手法-檔案上傳弱點 </div><div class="post-footer">
         <a href="/posts/portswigger-file-upload-lab-2/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time/">工具介紹-TurnedOnTimesView-取得windows 開關機資訊</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-13">2022-03-13</time></span></div><div class="content">除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。
-TUrnedOnTimesView透過windows event log來比對開關機資訊。
-EventID 41 (Microsoft-Windows-Kernel-Power): 系統重啟前未完整關機。 可能造成的原因包含系統未回應、系統crash，或是未預期的斷電。 EventID 42 (Microsoft-Windows-Kernel-Power): 系統進入睡眠 EventID 1 (Microsoft-Windows-Power-Troubleshooter): 系統從睡眠中開啟. EventID 1074 (USER32): The process xxx has initiated the xxx of computer xxx on behalf of user xxx for the following reason: xxx EventID 6005 (EventLog): 稽核記錄開始。 EventID 6006 (EventLog): 稽核記錄停止。 參考連結 https://www.nirsoft.net/utils/computer_turned_on_times.html </div><div class="post-footer">
-        <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/log/">LOG</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

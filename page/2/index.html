@@ -55,6 +55,12 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/excel-remove-duplicates/">Excel 刪除重覆值或取得唯一值</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-18">2022-05-18</time></span></div><div class="content">在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重覆值刪除的功能，選取有重覆值的欄，再點選 Remove Duplicates 就可以了。
+操作說明 選取資料欄。 找到 Remove Duplicates (Data &gt; Data tools &gt; Remove Duplicates) 按下去，再選想套用的欄，就會將有重覆的資料刪除，只保留唯一的值。 結尾 這算是相當實用的功能，雖然只是小動作，但學起來後，在日常工作中相信可以增加不少生產力。</div><div class="post-footer">
+        <a href="/posts/excel-remove-duplicates/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/postgresql-date-calculate/">postgresql 計算日期</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-15">2022-05-15</time></span></div><div class="content">使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的日期與時間。
 date_trunc 會回傳計算後時期的0分0秒，再利用這個為基準找到想要的時間。
@@ -127,12 +133,6 @@ cv_ad_options = { ad_slot_id: &ldquo;54888aec73ae1608938c913a5c3d75ca&rdquo;, ad
 「無框行動」顧名思義就是希望能打破傳統電信的合約框架，帶給你不綁約的電信自由，不綁約可以帶給你的比想要中還更多。無框行動成立於新加坡，主要股東包括紅杉資本印度、美國矽谷創投等世界級投資公司，並持續擴展海外市場。台灣是我們的海外據點第一站，並已陸續插旗在澳洲、印尼等市場，誓言要將電信自由概念席捲全球。</div><div class="post-footer">
         <a href="/posts/introduction-to-circles-life/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/">PortSwigger-檔案上傳漏洞 lab 6</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-15">2022-04-15</time></span></div><div class="content">Lab: Remote code execution via polyglot web shell upload
-Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。 此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。 步驟 如同之前的 lab 先找到上傳後可被存取的路徑。 因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。 需要將 payload 加到圖片檔中來執行。 下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行sudo apt install libimage-exiftool-perl來安裝。 exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 FLAG_START 、 FLAG_END加以區別。 將產生的payload.</div><div class="post-footer">
-        <a href="/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/">檔案上傳漏洞</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

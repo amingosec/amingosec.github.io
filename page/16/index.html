@@ -55,6 +55,15 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/incident-response-for-ransomeare/">幾個進行 Ransomware Incident Response 的重點</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-08-30">2019-08-30</time></span></div><div class="content">Ransomware 算是相當常見的攻擊方式，自從永恒之藍漏洞被利用後廣泛被大家得知。
+傳播方式 通常可能的傳播方式：
+通過社交工程，釣魚郵件誘導受害者下載檔案後執行並傳播 利用主機上RCR漏洞來進行傳播 利用主機上Web或第三方套件漏洞來進行傳播 利用弱密碼登入主機進行傳播 感染 Ransomware 的特點 如果感染Ransomware 會有以下兩個明顯特點。
+各類檔案出現可疑的副檔名 會有明顯的提示要求付贖金 Ransomware IR 目的 並不建議支付贖金，這會讓駭客認為此方法有效，開啟其他攻擊 同時支付贖金不一定能讓檔案 找到入侵的原因，找到漏洞，進行修補(一般來說在重要資料有保存的前題下進行重灌） 發現被感染時的處理要點 不能關機！不能關機！不能關機！ 為了防止持續傳播，可以受駭主機網路線拔除 可利用副檔名找是否有解密工具 在沒有100%保證可解密下，別自己解 依尋公司政策處理 針對 Ransomware 的預防 針對重要檔案進行備份 限制445、3389埠連線行為(此為目前常見的傳播行為) 定期進行更新 Incident Response 範例 http://blog.nsfocus.net/emergency-response-case-study/ https://blog.csdn.net/qq_27446553/article/details/81102198
+http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%8820170503%EF%BC%89/ https://mp.weixin.qq.com/s?src=11&timestamp=1533106387&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4h8eCCyQEr8A9hbHaIHPrqR-WiIdoJPqMsmSVic4-gs*sd3j613UabGbt6z9mQT6p5fWutdawPYrht-VlixmLLS&amp;new=1 https://mp.weixin.qq.com/s?src=11&timestamp=1533106458&ver=1033&signature=8P_AjLzeMd_GnPg0SwF4o6I06Sx804FDLw6PUkEch4hJcF-gDfZJVqz2bzHZt6fF_EmCrKm_DXOl3CMpdqrFZwBPOuAKr1TQcF7qG2x72YvsE8D1nglxXyYenvA2HLqY&new=1 </div><div class="post-footer">
+        <a href="/posts/incident-response-for-ransomeare/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/redteam%E6%94%BB%E6%93%8A%E6%8A%80%E5%B7%A7%E5%92%8C%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6/">RedTeam攻擊技巧和安全防禦</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-04-16">2019-04-16</time></span></div><div class="content">說明 RedTeam(紅隊)的起源於軍事領域，紅隊用以模擬敵人建立起接近真實的情況，以驗證自身訓練成效。在資安領域中也引入此一概念，建立起模擬對組織網路攻擊的駭客-RedTeam，用以確保防守者-BlueTeam是否有弱點存在，以達前期修補之效。
 文章連結 www.secpulse.com/archives/103664.html</div><div class="post-footer">
@@ -89,12 +98,6 @@ Breaking stuff for a living Moving beyond known techniques Hunt forgotten knowle
 參考文章 portswigger - so you want to be a web security researcher </div><div class="post-footer">
         <a href="/posts/how-to-become-a-cyber-security-researcher/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E5%B7%A5%E4%BD%9C/">資安工作</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/what-is-rdp-tunneling/">攻擊手法-RDP tunneling介紹與防範</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-01-28">2019-01-28</time></span></div><div class="content">介紹 利用受害者電腦對c2 Server建立起ssh連線行，進一步建立tunnel從c2 Server RDP連線至受害者主機。
-A Microsoft Windows component, RDP was designed to provide administrators, engineers, and users with remote access to systems. However, threat actors have been using the technology for nefarious purposes, and the trend continues, especially since an RDP attack is usually more difficult to detect than a backdoor. 說明How it works? Inbound RDP Tunneling , a common utility used to tunnel RDP sessions is PuTTY Link, commonly known as Plink.</div><div class="post-footer">
-        <a href="/posts/what-is-rdp-tunneling/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

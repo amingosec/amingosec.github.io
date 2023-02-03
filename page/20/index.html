@@ -55,6 +55,12 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">File Inclusion 漏洞練習</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-24">2018-07-24</time></span></div><div class="content">如果在metasploitable2上使用這個漏洞，需先將php.ini檔做設定。 allow_url_fopen = On allow_url_include = On (反過來說，如果將上面兩行設成Off，將可以有效的防止這個漏洞) 確認事項
+弱點主機與攻擊主機可以互連 在攻擊主機上先建立好revers shell檔，放入www資料夾中(通常會用txt檔，以免自己看時執行) 開啟nc 在弱點主機url的&quot;page=&ldquo;後輸入攻擊主機shell的網址 確認nc有監聽到 解決方法： 除了如上所說外，當php使用get 時，參數使用白名單的方法，名單外的以Error回應。 參考資料： https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_(OTG-AUTHZ-001)</div><div class="post-footer">
+        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/file-inclusion/">file inclusion</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/introduction-to-cross-site-scripting-xss/">網頁攻擊手法-XSS 介紹</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-10">2018-07-10</time></span></div><div class="content">介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。
 在owasp top 10-2017中改到第七名
@@ -92,14 +98,6 @@ FTP 20 FTP 21 SSH 22 Telnet 23 SMTP 25 TACACS+ 49 IPSec ESP 50 IPSec AH 51 DNS 5
 延伸閱讀 工具介紹-Weevely (kali linux web shell產生工具) </div><div class="post-footer">
         <a href="/posts/install-openvas-on-kali-linux/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/openvas/">openvas</a>,&nbsp;<a href="/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/">弱點掃瞄</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/penetration-testing%E5%B7%A5%E5%85%B7/">工具介紹-penetration testing 作業系統</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-28">2018-06-28</time></span></div><div class="content"> 其實標題不太知道要打什麼，既然是想介紹滲透測試的OS就打這樣好了。
-Kali Linux 由offensive security維護，並提供使用Kali進行滲透的認證。
-BackBox 進行滲透時，太過依賴同一個工具不太好，最近發現除了Kail外BackBox也是個不錯的工具，BackBox是基於ubuntu建成，如果想免費下載的話，在斗內的金額填零即可。 https://backbox.org
-延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 </div><div class="post-footer">
-        <a href="/posts/penetration-testing%E5%B7%A5%E5%85%B7/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/backbox-linux/">BackBox Linux</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

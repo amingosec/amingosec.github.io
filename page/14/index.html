@@ -55,6 +55,13 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/demilitarized-zone-dmz/">資安名詞-Demilitarized Zone (DMZ)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-26">2020-01-26</time></span></div><div class="content">DMZ為外部網路使用者提供有限度的連線存取，讓外部使用者能最小限度使用組織所提供的公開資源(如網站)，並且與內部網路(LAN)區隔。一般來說，會使用Firewall隔出DMZ區。同時，DMZ區主機亦會限制存取內部網路資源，避免DMZ區受駭時，造成內網資安的威脅。
+在現在的資安觀念上，除了基本的網段區隔外，零信任也是重要的觀念。
+延伸閱讀 資訊安全-內網橫向移動(Lateral Movement)介紹 工具介紹-Weevely (kali linux web shell產生工具) </div><div class="post-footer">
+        <a href="/posts/demilitarized-zone-dmz/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dmz/">DMZ￼</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/ftp%E4%BB%8B%E7%B4%B9/">Network - FTP介紹</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-26">2020-01-26</time></span></div><div class="content">使用Port
 主動傳輸時：21/tcp為指令使用，20/tcp為資料傳輸使用
@@ -105,30 +112,6 @@ Target Appropriation
 延伸閱讀 資安名詞-Cyber Kill Chain </div><div class="post-footer">
         <a href="/posts/sscp-methodology-of-an-attack/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cyber-kill-chain/">Cyber Kill Chain</a>,&nbsp;<a href="/tags/sscp/">SSCP</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-hping-command/">工具介紹-hping 使用</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-13">2020-01-13</time></span></div><div class="content">介紹 hping是一個command line的工具，使用起來跟Ping很像，但功能更強大，可以自由的讓使用者產生封包和分析TCP/IP的協定。
-安裝方式 如果使用Kali Linux所提供的VM，已經內建安裝，可直接使用。
-hping3下載：http://www.hping.org/hping3-20051105.tar.gz
-下載後以root安裝
-使用方試 以命令列的方式執行
-#hping3
-測試1： SYN Flooding(每秒10個封包)
-hping 目標主機IP –i u100000 –S –a 偽造來源IP
-測試2 ：偽造IP的ICMP封包(每秒10個封包)
-hping 目標主機IP –i u100000 –1 –a 偽造來源IP
-註：-1為數字非英文
-測試3：不正常TCP Flag組合封包(每秒10個封包)
-(a)SYN+FIN
-hping 目標主機IP –i u100000 –S –F –a 偽造來源IP
-(b)X’mas
-hping 目標主機IP –i u100000 –F –S –R –P –A –U –a 偽造來源IP
-測試4：偽造IP的UDP封包
-hping目標主機IP –i u100000 –2 –a 偽造來源IP
-測試5：偽造IP內含CodeRed封包
-hping 目標主機IP –i u100000 –d [封包datasize] –E [filename] –a [偽造來源IP]</div><div class="post-footer">
-        <a href="/posts/introduction-to-hping-command/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

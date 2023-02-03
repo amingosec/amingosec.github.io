@@ -55,6 +55,11 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/">Network - 常見HTTP status codes整理</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-30">2018-08-30</time></span></div><div class="content">403 表示路徑正確，但沒有權限存取 404 表示路徑不存在 500 表示程式只接受特定的字元或符號(可透過使用正確的符號完成注入)</div><div class="post-footer">
+        <a href="/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/http-status-codes/">HTTP status codes</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/how-to-find-subdomain/">工具介紹 - 子網域查找工具</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-08-28">2018-08-28</time></span></div><div class="content">sublist3r apt-get update apt-get install sublist3r
 網站工具 dnsdumpster 內容詳細，同時也提供domain mapping與xlsx檔下載。 DNStable DNStable滿完整的，還提供分類。 pentest-tools 除了sub domain查找外還有不少工具，每天提供每費點數試用，超過要錢。好處為找到後可以與網站提供的其他工具一同使用。
@@ -90,12 +95,6 @@ Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
 Level 1 &lt;body/onload=prompt(1)//</div><div class="post-footer">
         <a href="/posts/prompt1-to-win-xss/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/xss/">XSS</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">File Inclusion 漏洞練習</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-07-24">2018-07-24</time></span></div><div class="content">如果在metasploitable2上使用這個漏洞，需先將php.ini檔做設定。 allow_url_fopen = On allow_url_include = On (反過來說，如果將上面兩行設成Off，將可以有效的防止這個漏洞) 確認事項
-弱點主機與攻擊主機可以互連 在攻擊主機上先建立好revers shell檔，放入www資料夾中(通常會用txt檔，以免自己看時執行) 開啟nc 在弱點主機url的&quot;page=&ldquo;後輸入攻擊主機shell的網址 確認nc有監聽到 解決方法： 除了如上所說外，當php使用get 時，參數使用白名單的方法，名單外的以Error回應。 參考資料： https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_(OTG-AUTHZ-001)</div><div class="post-footer">
-        <a href="/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/file-inclusion/">file inclusion</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

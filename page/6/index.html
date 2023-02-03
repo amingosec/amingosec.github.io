@@ -55,6 +55,13 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/introduction-to-windows-wevtutil-command/">資訊安全-Wevtutil 日誌指令</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-01">2021-11-01</time></span></div><div class="content">Windows 日誌匯出指令
+wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored.
+延伸閱讀 資訊安全-Windows Event Log位置 資訊安全-IIS log 位置 參考資料 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil</div><div class="post-footer">
+        <a href="/posts/introduction-to-windows-wevtutil-command/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/windows/">Windows</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/what-is-sheep-dip/">資安名詞-Sheep dip</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-10-23">2021-10-23</time></span></div><div class="content">Sheep-dip 是指在外部可攜設備要在內部使用時，先行在上面檢查是否有病毒的機器。在經過Sheep-dip設備檢查確認沒有問題後，才可以進到內網使用。
 除了自己建一個設備來用之外，目前相似的產品有CDR
@@ -126,20 +133,6 @@ https://www.nirsoft.net/utils/computer_turned_on_times.html
 延伸閱讀 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 參考連結 https://steachs.</div><div class="post-footer">
         <a href="/posts/using-powershell-to-check-system-up-down-time/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/monitoring-active-directory-for-signs-of-compromise/">資安監控- 監控 AD 的受駭跡證</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-26">2021-05-26</time></span></div><div class="content">本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。
-介紹 資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。
-Account Logon Events Account Management Directory Service Access Logon Events Object Access Policy Change Privilege Use Process Tracking System Events 使用 Auditpol.exe 設定 Windows 稽核原則 依微軟的說明，Auditpol.exe 較能正確回傳稽核原則的設定值。
-參考以下指令，可列出所有稽核原則設定值。
-auditpol /get /category:\* 參考以下指令，可設定logon的稽核原則內容。
-auditpol /set /subcategory:&#34;logon&#34; /success:enable /failure:enable 使用 Group policy 設定稽核原則 開啟群組原則設定，開到以下的路徑，將想要開啟的稽核原則開啟即可。
-Computer Configuration\Windows Settings\Security Settings\Local Policies\Audit Policy
-Local Group Policy Editor
-微軟建議的稽核原則設定 https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
-在監控上常用到的幾個Event ID 除了微軟建議監的 Event ID中的說明外，特別列出以下實務上常用的幾個Event ID。</div><div class="post-footer">
-        <a href="/posts/monitoring-active-directory-for-signs-of-compromise/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ad/">AD</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
