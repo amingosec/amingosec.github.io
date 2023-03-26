@@ -55,6 +55,17 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/what-is-file-upload-vulnerability/">攻擊手法-檔案上傳漏洞</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-04">2018-06-04</time></span></div><div class="content">說明 在現在的網路環境中，越來越多網站提供上傳檔案的功能，不論是上傳照片、履歷、作品集&hellip;等，如當發果沒有良好的設計，很容易就會產生檔案上傳漏洞。
+Server在回應Client的請求時，如果是可執行的檔案，會回應執行後的結果。此時，如果攻擊者利用上傳的功能，將檔案傳到Server上，並且請求Server執行成功時，即可攻擊成功。因此檔案上傳漏洞有兩個重要的條件。
+繞過上傳限制將檔案上傳 對上傳的檔案正確的請求 發現網站可以上傳資料時，可以製做該網站可用的shell來上傳，達到遠端操作的功能。如果該網站可以用php，可以透過kali的weevely 來產生php shell，上傳後來進行連線。
+部份網站會使用副檔名檢查來防止上傳，但很容易被更改副檔名後繞過。
+檔案上傳漏洞的危害 如果弱點被利用成功，很有可能讓攻擊者可進行遠端執行。且因為執行網頁服務的權限有時相當大，可直接讓攻擊者得到高權限來進一步進行橫向移動或其他攻擊。
+同時，如果目標主機存在路徑走訪的漏洞，會讓攻擊者有機會將檔案上傳到其他路徑，較不容易被察覺。
+延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 工具介紹-Weevely (kali linux web shell產生工具) 資訊安全-內網橫向移動(Lateral Movement)介紹 參考連結 https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload </div><div class="post-footer">
+        <a href="/posts/what-is-file-upload-vulnerability/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shell/">shell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/metasploitable-%E5%BB%BA%E7%AB%8B/">Lab-建立Metasploitable 滲透練習Lab</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-03">2018-06-03</time></span></div><div class="content">Kali Linux 下載位置 https://www.kali.org/downloads/
 username root and password toor
@@ -98,12 +109,6 @@ Subdomain Knock Subdomain Scan https://github.com/guelfoweb/knock 使用下面�
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-05-16">2018-05-16</time></span></div><div class="content">https://ithome.com.tw/news/110135 Mirai利用IoT裝置發起DDoS攻擊，達到1.5TB等級 https://www.ithome.com.tw/news/119922 Mirai 的變種，由業餘駭客所做成 http://www.securitynewspaper.com/2016/06/28/large-cctv-botnet-leveraged-ddos-attacks/</div><div class="post-footer">
         <a href="/posts/mirai%E7%B6%B2%E8%B7%AF-ddos%E6%94%BB%E6%93%8A/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/ddos/">DDoS</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/mirai/">Mirai</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/layer-2-attack/">Layer 2 attack</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-22">2018-04-22</time></span></div><div class="content">ARP attack Spoffing attack Vlan hopping
-Brute force attacks Ddos attacks Botnet attacks</div><div class="post-footer">
-        <a href="/posts/layer-2-attack/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ccna/">CCNA</a>,&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
