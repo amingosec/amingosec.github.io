@@ -4,19 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>工具介紹-hping 使用 - 資安工作筆記</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="工具介紹-hping 使用" />
+        <title>工具介紹-hping 使用 - 資安工作筆記</title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="工具介紹-hping 使用" />
 <meta property="og:description" content="介紹 hping是一個command line的工具，使用起來跟Ping很像，但功能更強大，可以自由的讓使用者產生封包和分析TCP/IP的協定。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/posts/introduction-to-hping-command/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://amingosec.github.io/posts/introduction-to-hping-command/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-01-13T07:27:39+00:00" />
-<meta property="article:modified_time" content="2020-01-13T07:27:39+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2020-01-13T07:27:39+00:00" /><meta property="og:site_name" content="資安工作筆記" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="工具介紹-hping 使用"/>
 <meta name="twitter:description" content="介紹 hping是一個command line的工具，使用起來跟Ping很像，但功能更強大，可以自由的讓使用者產生封包和分析TCP/IP的協定。"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/introduction-to-hping-command/" /><link rel="prev" href="http://example.org/posts/mittre-attck-%E9%98%B2%E5%BE%A1%E9%80%83%E9%80%B8/" /><link rel="next" href="http://example.org/posts/sscp-methodology-of-an-attack/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/introduction-to-hping-command/" /><link rel="prev" href="https://amingosec.github.io/posts/mittre-attck-%E9%98%B2%E5%BE%A1%E9%80%83%E9%80%B8/" /><link rel="next" href="https://amingosec.github.io/posts/sscp-methodology-of-an-attack/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -26,9 +26,9 @@
         "inLanguage": "zh-TW",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/example.org\/posts\/introduction-to-hping-command\/"
+            "@id": "https:\/\/amingosec.github.io\/posts\/introduction-to-hping-command\/"
         },"genre": "posts","keywords": "資訊安全","wordcount":  511 ,
-        "url": "http:\/\/example.org\/posts\/introduction-to-hping-command\/","datePublished": "2020-01-13T07:27:39+00:00","dateModified": "2020-01-13T07:27:39+00:00","publisher": {
+        "url": "https:\/\/amingosec.github.io\/posts\/introduction-to-hping-command\/","datePublished": "2020-01-13T07:27:39+00:00","dateModified": "2020-01-13T07:27:39+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -129,7 +129,7 @@ hping 目標主機IP –i u100000 –d [封包datasize] –E [filename] –a [�
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用" data-hashtags="資訊安全"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/posts/introduction-to-hping-command/" data-hashtag="資訊安全"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用" data-hashtags="資訊安全"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/introduction-to-hping-command/" data-hashtag="資訊安全"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://amingosec.github.io/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/introduction-to-hping-command/" data-title="工具介紹-hping 使用"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>

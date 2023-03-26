@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>AD - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/ad/</link>
+        <link>https://amingosec.github.io/tags/ad/</link>
         <description>AD - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 26 May 2021 07:24:33 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/ad/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 26 May 2021 07:24:33 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/ad/" rel="self" type="application/rss+xml" /><item>
     <title>資安監控- 監控 AD 的受駭跡證</title>
-    <link>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</link>
+    <link>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</link>
     <pubDate>Wed, 26 May 2021 07:24:33 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
+    <guid>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
     <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。 介紹 資安監控可以有效的發現場域內需要注意]]></description>
 </item>
 </channel>

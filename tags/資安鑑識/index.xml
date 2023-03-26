@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>資安鑑識 - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/</link>
+        <link>https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/</link>
         <description>資安鑑識 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-osquery</title>
-    <link>http://example.org/posts/introduction-to-osquery/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-osquery/</link>
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-osquery/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
     <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢]]></description>
 </item>
 <item>
     <title>Windows Event Log位置</title>
-    <link>http://example.org/posts/location-of-windows-event-log/</link>
+    <link>https://amingosec.github.io/posts/location-of-windows-event-log/</link>
     <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/location-of-windows-event-log/</guid>
+    <guid>https://amingosec.github.io/posts/location-of-windows-event-log/</guid>
     <description><![CDATA[在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系]]></description>
 </item>
 <item>
     <title>工具介紹-Microsoft Network Monitor</title>
-    <link>http://example.org/posts/introduction-to-microsoft-network-monitor/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</link>
     <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-microsoft-network-monitor/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</guid>
     <description><![CDATA[說明 Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路]]></description>
 </item>
 <item>
     <title>PowerShell-使用powershell查找電腦開關機狀況</title>
-    <link>http://example.org/posts/using-powershell-to-check-system-up-down-time/</link>
+    <link>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</link>
     <pubDate>Thu, 10 Jun 2021 16:05:03 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/using-powershell-to-check-system-up-down-time/</guid>
+    <guid>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</guid>
     <description><![CDATA[說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間 Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果]]></description>
 </item>
 <item>
     <title>資安監控- 監控 AD 的受駭跡證</title>
-    <link>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</link>
+    <link>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</link>
     <pubDate>Wed, 26 May 2021 07:24:33 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
+    <guid>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
     <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。 介紹 資安監控可以有效的發現場域內需要注意]]></description>
 </item>
 <item>
     <title>資安鑑識-Memory Analyzing</title>
-    <link>http://example.org/posts/memory-analyzing/</link>
+    <link>https://amingosec.github.io/posts/memory-analyzing/</link>
     <pubDate>Tue, 18 May 2021 12:30:06 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/memory-analyzing/</guid>
+    <guid>https://amingosec.github.io/posts/memory-analyzing/</guid>
     <description><![CDATA[主要利用volatility framework 2.6執行 識別system profile python vol.py -f %image\_name% imageinfo pslist pstree cmdscan 延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]:]]></description>
 </item>
 <item>
     <title>工具介紹-PsTools</title>
-    <link>http://example.org/posts/pstools/</link>
+    <link>https://amingosec.github.io/posts/pstools/</link>
     <pubDate>Thu, 06 May 2021 05:38:30 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/pstools/</guid>
+    <guid>https://amingosec.github.io/posts/pstools/</guid>
     <description><![CDATA[PsExec：執行遠端電腦上的指令 PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，或是Regedit等特定的系統工具程式。舉例來]]></description>
 </item>
 <item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
-    <link>http://example.org/posts/windows-ir/</link>
+    <link>https://amingosec.github.io/posts/windows-ir/</link>
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/windows-ir/</guid>
+    <guid>https://amingosec.github.io/posts/windows-ir/</guid>
     <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
 </item>
 <item>
     <title>名詞介紹-YARA Rules</title>
-    <link>http://example.org/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</link>
+    <link>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</link>
     <pubDate>Thu, 21 Jun 2018 01:57:56 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</guid>
+    <guid>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</guid>
     <description><![CDATA[YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。 YARA Elements YARA rules包含以下幾個元件： Metadata Strings Conditions Imports 參考連]]></description>
 </item>
 </channel>

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>file inclusion - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/file-inclusion/</link>
+        <link>https://amingosec.github.io/tags/file-inclusion/</link>
         <description>file inclusion - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 24 Jul 2018 15:34:09 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/file-inclusion/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 24 Jul 2018 15:34:09 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/file-inclusion/" rel="self" type="application/rss+xml" /><item>
     <title>File Inclusion 漏洞練習</title>
-    <link>http://example.org/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/</link>
+    <link>https://amingosec.github.io/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/</link>
     <pubDate>Tue, 24 Jul 2018 15:34:09 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/</guid>
+    <guid>https://amingosec.github.io/posts/remote-file-inclusion-%E6%BC%8F%E6%B4%9E%E7%B7%B4%E7%BF%92/</guid>
     <description><![CDATA[如果在metasploitable2上使用這個漏洞，需先將php.ini檔做設定。 allow_url_fopen = On allow_url_include = On (反過來說，如果將上面兩行設成Off，將可以有]]></description>
 </item>
 </channel>

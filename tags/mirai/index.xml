@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Mirai - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/mirai/</link>
+        <link>https://amingosec.github.io/tags/mirai/</link>
         <description>Mirai - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 16 May 2018 11:32:45 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/mirai/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 16 May 2018 11:32:45 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/mirai/" rel="self" type="application/rss+xml" /><item>
     <title>Mirai網路 DDoS攻擊</title>
-    <link>http://example.org/posts/mirai%E7%B6%B2%E8%B7%AF-ddos%E6%94%BB%E6%93%8A/</link>
+    <link>https://amingosec.github.io/posts/mirai%E7%B6%B2%E8%B7%AF-ddos%E6%94%BB%E6%93%8A/</link>
     <pubDate>Wed, 16 May 2018 11:32:45 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/mirai%E7%B6%B2%E8%B7%AF-ddos%E6%94%BB%E6%93%8A/</guid>
+    <guid>https://amingosec.github.io/posts/mirai%E7%B6%B2%E8%B7%AF-ddos%E6%94%BB%E6%93%8A/</guid>
     <description><![CDATA[https://ithome.com.tw/news/110135 Mirai利用IoT裝置發起DDoS攻擊，達到1.5TB等級 https://www.ithome.com.tw/news/119922 Mirai 的變種，由業餘駭客所做成 http://www.securitynewspaper.com/2016/06/28/large-cctv-botnet-leveraged-ddos-attacks/]]></description>
 </item>
 </channel>

@@ -1,86 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>網路管理 - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/</link>
+        <link>https://amingosec.github.io/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/</link>
         <description>網路管理 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
     <title>Windows-Windows Server IIS 上建立PHP網站</title>
-    <link>http://example.org/posts/windows-server-iis-%E8%B7%91-php/</link>
+    <link>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</link>
     <pubDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/windows-server-iis-%E8%B7%91-php/</guid>
+    <guid>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</guid>
     <description><![CDATA[分享最近在IIS上使用Web Platform Installer安裝的經驗。 OS：Server 2016 PHP：8.0 1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools 2. 安裝VC++ Runtime 如果沒]]></description>
 </item>
 <item>
     <title>Network-私有IP位置</title>
-    <link>http://example.org/posts/private-ip-address/</link>
+    <link>https://amingosec.github.io/posts/private-ip-address/</link>
     <pubDate>Sat, 23 Oct 2021 11:53:25 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/private-ip-address/</guid>
+    <guid>https://amingosec.github.io/posts/private-ip-address/</guid>
     <description><![CDATA[私有IPv4 RFC1918 name IP address range Number of addresses Largest CIDR block (subnet mask) Host ID size Mask bits Classful description 24-bit block 10.0.0.0 – 10.255.255.255 16777216 10.0.0.0/8 (255.0.0.0) 24 bits 8 bits single class A network 20-bit block 172.16.0.0 – 172.31.255.255 1048576 172.16.0.0/12 (255.240.0.0) 20 bits 12 bits 16 contiguous class B networks 16-bit block 192.168.0.0 – 192.168.255.255 65536 192.168.0.0/16 (255.255.0.0) 16 bits 16]]></description>
 </item>
 <item>
     <title>工具介紹-Microsoft Network Monitor</title>
-    <link>http://example.org/posts/introduction-to-microsoft-network-monitor/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</link>
     <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-microsoft-network-monitor/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</guid>
     <description><![CDATA[說明 Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路]]></description>
 </item>
 <item>
     <title>Network-反向代理</title>
-    <link>http://example.org/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
+    <link>https://amingosec.github.io/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
     <pubDate>Fri, 07 May 2021 17:19:40 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
+    <guid>https://amingosec.github.io/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
     <description><![CDATA[說明 反向代理 Reverse Proxy顧名思意，是相較Proxy的行為反向執行。代替Server將請求回傳給Client。 也就是說Client端所請求的對]]></description>
 </item>
 <item>
     <title>Network-135、137、138、139、445說明</title>
-    <link>http://example.org/posts/about-ports-135-137-138-139-445/</link>
+    <link>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</link>
     <pubDate>Wed, 05 May 2021 16:54:20 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/about-ports-135-137-138-139-445/</guid>
+    <guid>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</guid>
     <description><![CDATA[這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更]]></description>
 </item>
 <item>
     <title>Windows-NTP設定</title>
-    <link>http://example.org/posts/windows-ntp%E8%A8%AD%E5%AE%9A/</link>
+    <link>https://amingosec.github.io/posts/windows-ntp%E8%A8%AD%E5%AE%9A/</link>
     <pubDate>Thu, 25 Oct 2018 01:27:21 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/windows-ntp%E8%A8%AD%E5%AE%9A/</guid>
+    <guid>https://amingosec.github.io/posts/windows-ntp%E8%A8%AD%E5%AE%9A/</guid>
     <description><![CDATA[利用Reg設定Windows ntp值，可寫在BAT檔中，但需要admin權限 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /d 0x00000e10 /t REG_DWORD /f 接受誤差 在預設的狀況下，與NTP Server]]></description>
 </item>
 <item>
     <title>Network - 常見HTTP status codes整理</title>
-    <link>http://example.org/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/</link>
+    <link>https://amingosec.github.io/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/</link>
     <pubDate>Thu, 30 Aug 2018 08:11:07 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/</guid>
+    <guid>https://amingosec.github.io/posts/server%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF/</guid>
     <description><![CDATA[403 表示路徑正確，但沒有權限存取 404 表示路徑不存在 500 表示程式只接受特定的字元或符號(可透過使用正確的符號完成注入)]]></description>
 </item>
 <item>
     <title>Network-一些常用的埠號 port number</title>
-    <link>http://example.org/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</link>
+    <link>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</link>
     <pubDate>Tue, 10 Jul 2018 00:20:53 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</guid>
+    <guid>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</guid>
     <description><![CDATA[在應用層中，每個服務都有預設的port number，當然也可以依自己的需求指定使用，曾經也是有看過https走TCP/80，或是RDP走TC]]></description>
 </item>
 <item>
     <title>憑證過期問題</title>
-    <link>http://example.org/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</link>
+    <link>https://amingosec.github.io/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</link>
     <pubDate>Wed, 04 Jul 2018 02:18:00 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</guid>
+    <guid>https://amingosec.github.io/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</guid>
     <description><![CDATA[最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證]]></description>
 </item>
 <item>
     <title>Windows 產生檔案 hash 值的方式</title>
-    <link>http://example.org/posts/get-file-hash-in-windows/</link>
+    <link>https://amingosec.github.io/posts/get-file-hash-in-windows/</link>
     <pubDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/get-file-hash-in-windows/</guid>
+    <guid>https://amingosec.github.io/posts/get-file-hash-in-windows/</guid>
     <description><![CDATA[hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。 在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒]]></description>
 </item>
 </channel>

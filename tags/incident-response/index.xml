@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Incident Response - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/incident-response/</link>
+        <link>https://amingosec.github.io/tags/incident-response/</link>
         <description>Incident Response - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 12:42:48 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/incident-response/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 12:42:48 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/incident-response/" rel="self" type="application/rss+xml" /><item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
-    <link>http://example.org/posts/windows-ir/</link>
+    <link>https://amingosec.github.io/posts/windows-ir/</link>
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/windows-ir/</guid>
+    <guid>https://amingosec.github.io/posts/windows-ir/</guid>
     <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
 </item>
 <item>
     <title>關於資安事件因應</title>
-    <link>http://example.org/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</link>
+    <link>https://amingosec.github.io/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</link>
     <pubDate>Sat, 11 Aug 2018 13:50:43 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</guid>
+    <guid>https://amingosec.github.io/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</guid>
     <description><![CDATA[關於事件因應，常會聽到各種不同的說法，參加了幾個課程有的講師認為應該在發現有問題時直接隔離主機，以防問題病毒擴散；有的認為應該放著，好好檢查]]></description>
 </item>
 </channel>

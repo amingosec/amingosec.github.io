@@ -1,86 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>所有文章 - 資安工作筆記</title>
-        <link>http://example.org/posts/</link>
+        <link>https://amingosec.github.io/posts/</link>
         <description>所有文章 | 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 02 Feb 2023 22:21:19 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 02 Feb 2023 22:21:19 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Rakuten Kobo 電子書</title>
-    <link>http://example.org/posts/rakuten-kobo/</link>
+    <link>https://amingosec.github.io/posts/rakuten-kobo/</link>
     <pubDate>Thu, 02 Feb 2023 22:21:19 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/rakuten-kobo/</guid>
+    <guid>https://amingosec.github.io/posts/rakuten-kobo/</guid>
     <description><![CDATA[樂天 kobo 是全球前幾名的電子書商，也是我常購買電子書的地方。相較其他電子書他給我的感覺是有較好的排版針對電子閱讀方式有所優化。 kobo 部落格會有【一週]]></description>
 </item>
 <item>
     <title>Windows Event Log</title>
-    <link>http://example.org/posts/windows-event-log/</link>
+    <link>https://amingosec.github.io/posts/windows-event-log/</link>
     <pubDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/windows-event-log/</guid>
+    <guid>https://amingosec.github.io/posts/windows-event-log/</guid>
     <description><![CDATA[Event Log Location %SystemRoot%\System32\winevt\Logs\ 三種主要取得 Event Log 的方法： Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx 在 System 中有主機運作的相關訊息。 Security.evtx 在]]></description>
 </item>
 <item>
     <title>讓你的遠端會議更輕鬆的幾個重點</title>
-    <link>http://example.org/posts/tips-for-improving-your-remote-meetings/</link>
+    <link>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</link>
     <pubDate>Sat, 27 Aug 2022 00:56:37 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/tips-for-improving-your-remote-meetings/</guid>
+    <guid>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</guid>
     <description><![CDATA[隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。在疫情間建立起遠端會議的]]></description>
 </item>
 <item>
     <title>Learning Resource</title>
-    <link>http://example.org/posts/learning-resource/</link>
+    <link>https://amingosec.github.io/posts/learning-resource/</link>
     <pubDate>Sun, 10 Jul 2022 21:10:16 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/learning-resource/</guid>
+    <guid>https://amingosec.github.io/posts/learning-resource/</guid>
     <description><![CDATA[在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。 Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的L]]></description>
 </item>
 <item>
     <title>Kali Linux 升級跟版本確認</title>
-    <link>http://example.org/posts/kali-linux-upgrade-and-check-version/</link>
+    <link>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</link>
     <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/kali-linux-upgrade-and-check-version/</guid>
+    <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
     <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。 升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令 方法 1 lsb_release -a]]></description>
 </item>
 <item>
     <title>PowerShell - 使用 Where-Object 過慮輸出內容</title>
-    <link>http://example.org/posts/powershell-use-where-object-to-filter-results/</link>
+    <link>https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/</link>
     <pubDate>Thu, 19 May 2022 16:59:16 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/powershell-use-where-object-to-filter-results/</guid>
+    <guid>https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/</guid>
     <description><![CDATA[說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。 在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operater]]></description>
 </item>
 <item>
     <title>Excel 刪除重覆值或取得唯一值</title>
-    <link>http://example.org/posts/excel-remove-duplicates/</link>
+    <link>https://amingosec.github.io/posts/excel-remove-duplicates/</link>
     <pubDate>Wed, 18 May 2022 07:13:18 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/excel-remove-duplicates/</guid>
+    <guid>https://amingosec.github.io/posts/excel-remove-duplicates/</guid>
     <description><![CDATA[在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重]]></description>
 </item>
 <item>
     <title>postgresql 計算日期</title>
-    <link>http://example.org/posts/postgresql-date-calculate/</link>
+    <link>https://amingosec.github.io/posts/postgresql-date-calculate/</link>
     <pubDate>Sun, 15 May 2022 14:46:13 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/postgresql-date-calculate/</guid>
+    <guid>https://amingosec.github.io/posts/postgresql-date-calculate/</guid>
     <description><![CDATA[使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的]]></description>
 </item>
 <item>
     <title>VS Code extensions 推薦 for markdown</title>
-    <link>http://example.org/posts/vs-code-extensions-for-markdown/</link>
+    <link>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</link>
     <pubDate>Tue, 03 May 2022 16:09:50 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/vs-code-extensions-for-markdown/</guid>
+    <guid>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</guid>
     <description><![CDATA[使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。 Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of]]></description>
 </item>
 <item>
     <title>利用 Linux command 取得檔案 hash 值</title>
-    <link>http://example.org/posts/linux-hash-command/</link>
+    <link>https://amingosec.github.io/posts/linux-hash-command/</link>
     <pubDate>Sun, 01 May 2022 03:21:15 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/linux-hash-command/</guid>
+    <guid>https://amingosec.github.io/posts/linux-hash-command/</guid>
     <description><![CDATA[hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異動]]></description>
 </item>
 </channel>

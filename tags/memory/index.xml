@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Memory - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/memory/</link>
+        <link>https://amingosec.github.io/tags/memory/</link>
         <description>Memory - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 18 May 2021 12:30:06 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/memory/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 18 May 2021 12:30:06 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/memory/" rel="self" type="application/rss+xml" /><item>
     <title>資安鑑識-Memory Analyzing</title>
-    <link>http://example.org/posts/memory-analyzing/</link>
+    <link>https://amingosec.github.io/posts/memory-analyzing/</link>
     <pubDate>Tue, 18 May 2021 12:30:06 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/memory-analyzing/</guid>
+    <guid>https://amingosec.github.io/posts/memory-analyzing/</guid>
     <description><![CDATA[主要利用volatility framework 2.6執行 識別system profile python vol.py -f %image\_name% imageinfo pslist pstree cmdscan 延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]:]]></description>
 </item>
 </channel>

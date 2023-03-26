@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>惡意中繼站 - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/%E6%83%A1%E6%84%8F%E4%B8%AD%E7%B9%BC%E7%AB%99/</link>
+        <link>https://amingosec.github.io/tags/%E6%83%A1%E6%84%8F%E4%B8%AD%E7%B9%BC%E7%AB%99/</link>
         <description>惡意中繼站 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 20 Apr 2018 03:23:59 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E6%83%A1%E6%84%8F%E4%B8%AD%E7%B9%BC%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 20 Apr 2018 03:23:59 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%83%A1%E6%84%8F%E4%B8%AD%E7%B9%BC%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
     <title>資安名詞-惡意中繼站, C2</title>
-    <link>http://example.org/posts/what-is-command-and-control-server-c2/</link>
+    <link>https://amingosec.github.io/posts/what-is-command-and-control-server-c2/</link>
     <pubDate>Fri, 20 Apr 2018 03:23:59 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/what-is-command-and-control-server-c2/</guid>
+    <guid>https://amingosec.github.io/posts/what-is-command-and-control-server-c2/</guid>
     <description><![CDATA[惡意中繼站是指具備命令與控制能力的伺服器 (Command &amp; Control, C&amp;C)或叫C2 server。 通常為被駭客入侵的主機，並用利用此受駭主機來對其他入侵後]]></description>
 </item>
 </channel>

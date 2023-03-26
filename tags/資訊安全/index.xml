@@ -1,86 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>資訊安全 - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/</link>
+        <link>https://amingosec.github.io/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/</link>
         <description>資訊安全 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 25 May 2022 06:39:02 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 25 May 2022 06:39:02 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/" rel="self" type="application/rss+xml" /><item>
     <title>Kali Linux 升級跟版本確認</title>
-    <link>http://example.org/posts/kali-linux-upgrade-and-check-version/</link>
+    <link>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</link>
     <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/kali-linux-upgrade-and-check-version/</guid>
+    <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
     <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。 升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令 方法 1 lsb_release -a]]></description>
 </item>
 <item>
     <title>Excel 刪除重覆值或取得唯一值</title>
-    <link>http://example.org/posts/excel-remove-duplicates/</link>
+    <link>https://amingosec.github.io/posts/excel-remove-duplicates/</link>
     <pubDate>Wed, 18 May 2022 07:13:18 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/excel-remove-duplicates/</guid>
+    <guid>https://amingosec.github.io/posts/excel-remove-duplicates/</guid>
     <description><![CDATA[在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重]]></description>
 </item>
 <item>
     <title>利用 Linux command 取得檔案 hash 值</title>
-    <link>http://example.org/posts/linux-hash-command/</link>
+    <link>https://amingosec.github.io/posts/linux-hash-command/</link>
     <pubDate>Sun, 01 May 2022 03:21:15 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/linux-hash-command/</guid>
+    <guid>https://amingosec.github.io/posts/linux-hash-command/</guid>
     <description><![CDATA[hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異動]]></description>
 </item>
 <item>
     <title>VS Code extension 推薦</title>
-    <link>http://example.org/posts/top-vscode-extensions-for-cyber-security-work/</link>
+    <link>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</link>
     <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/top-vscode-extensions-for-cyber-security-work/</guid>
+    <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
     <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的ext]]></description>
 </item>
 <item>
     <title>獨立線路的另一個選擇 - 無框行動 Circles.Life</title>
-    <link>http://example.org/posts/introduction-to-circles-life/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-circles-life/</link>
     <pubDate>Sun, 17 Apr 2022 05:13:22 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-circles-life/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-circles-life/</guid>
     <description><![CDATA[在執行資安工作時，不論是事件、惡意程式分析或滲透，都會需要獨立的線路。尤其是在家工作時，相較牽新的線路，使用 4G 網路會是很好的選擇，而**無框]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 6</title>
-    <link>http://example.org/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</link>
+    <link>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</link>
     <pubDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</guid>
+    <guid>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</guid>
     <description><![CDATA[Lab: Remote code execution via polyglot web shell upload Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容sub]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 5</title>
-    <link>http://example.org/posts/lab-web-shell-upload-via-obfuscated-file-extension/</link>
+    <link>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</link>
     <pubDate>Mon, 04 Apr 2022 02:38:09 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/lab-web-shell-upload-via-obfuscated-file-extension/</guid>
+    <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</guid>
     <description><![CDATA[Lab: Web shell upload via obfuscated file extension Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subs]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 4</title>
-    <link>http://example.org/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</link>
+    <link>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</link>
     <pubDate>Wed, 30 Mar 2022 16:10:42 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</guid>
+    <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</guid>
     <description><![CDATA[Lab: Web shell upload via extension blacklist bypass Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subs]]></description>
 </item>
 <item>
     <title>Microsoft Edge 瀏覽記錄位置</title>
-    <link>http://example.org/posts/microsoft-edge-browsing-history-location/</link>
+    <link>https://amingosec.github.io/posts/microsoft-edge-browsing-history-location/</link>
     <pubDate>Tue, 22 Mar 2022 13:55:42 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/microsoft-edge-browsing-history-location/</guid>
+    <guid>https://amingosec.github.io/posts/microsoft-edge-browsing-history-location/</guid>
     <description><![CDATA[說明 Edge的瀏覽記錄位置如下，檔案名稱為History，以SQLite的型式儲存。 C:\Users\\AppData\Local\Microsoft\Edge\User Data\Default\ 取得資料後可以使用讀取SQLite的工具，如SQLi]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 3</title>
-    <link>http://example.org/posts/portswigger-lab-web-shell-upload-via-path-traversal/</link>
+    <link>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/</link>
     <pubDate>Sun, 20 Mar 2022 13:33:54 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/portswigger-lab-web-shell-upload-via-path-traversal/</guid>
+    <guid>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/</guid>
     <description><![CDATA[Lab: Web shell upload via path traversal Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsm]]></description>
 </item>
 </channel>

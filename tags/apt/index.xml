@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>APT - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/apt/</link>
+        <link>https://amingosec.github.io/tags/apt/</link>
         <description>APT - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/apt/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/apt/" rel="self" type="application/rss+xml" /><item>
     <title>資安名詞-Cyber Kill Chain</title>
-    <link>http://example.org/posts/cyber-kill-chain/</link>
+    <link>https://amingosec.github.io/posts/cyber-kill-chain/</link>
     <pubDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/cyber-kill-chain/</guid>
+    <guid>https://amingosec.github.io/posts/cyber-kill-chain/</guid>
     <description><![CDATA[介紹 Cyber Kill Chain由洛馬發展出來，中文有人翻譯成「網路狙殺鏈」但通常還是直接念英文較為順口。 Cyber Kill Chain主要是說明APT攻擊時的流程，進行]]></description>
 </item>
 </channel>

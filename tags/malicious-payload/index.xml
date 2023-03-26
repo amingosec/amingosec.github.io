@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>malicious payload - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/malicious-payload/</link>
+        <link>https://amingosec.github.io/tags/malicious-payload/</link>
         <description>malicious payload - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/malicious-payload/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/malicious-payload/" rel="self" type="application/rss+xml" /><item>
     <title>資安名詞-病毒相關名詞</title>
-    <link>http://example.org/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</link>
+    <link>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</link>
     <pubDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</guid>
+    <guid>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</guid>
     <description><![CDATA[Attack Vectors Attack Vectors指攻擊途徑，也就是攻擊者進入到網路或系統的方式，對防禦方來講，可說是曝露在外可受攻擊的路徑。 常見的attack vectors 包含社交]]></description>
 </item>
 </channel>

@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>domain - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/domain/</link>
+        <link>https://amingosec.github.io/tags/domain/</link>
         <description>domain - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/domain/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/domain/" rel="self" type="application/rss+xml" /><item>
     <title>攻擊手法-DNS tunneling</title>
-    <link>http://example.org/posts/introduction-to-dns-tunneling/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-dns-tunneling/</link>
     <pubDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-dns-tunneling/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-dns-tunneling/</guid>
     <description><![CDATA[主要是利用dns 查詢的功能將backdoor的payload傳到受害電腦。 首先攻擊者會註冊一個Domain，並將Domain指到攻擊者的主機]]></description>
 </item>
 <item>
     <title>工具介紹 - 子網域查找工具</title>
-    <link>http://example.org/posts/how-to-find-subdomain/</link>
+    <link>https://amingosec.github.io/posts/how-to-find-subdomain/</link>
     <pubDate>Tue, 28 Aug 2018 14:51:58 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/how-to-find-subdomain/</guid>
+    <guid>https://amingosec.github.io/posts/how-to-find-subdomain/</guid>
     <description><![CDATA[sublist3r apt-get update apt-get install sublist3r 網站工具 dnsdumpster 內容詳細，同時也提供domain mapping與xlsx檔下載。 DNStable DNStable滿完整的，還提供分類。 pentest-tools 除了sub d]]></description>
 </item>
 </channel>

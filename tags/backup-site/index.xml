@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>backup site - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/backup-site/</link>
+        <link>https://amingosec.github.io/tags/backup-site/</link>
         <description>backup site - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 15 Apr 2018 06:37:25 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/backup-site/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 15 Apr 2018 06:37:25 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/backup-site/" rel="self" type="application/rss+xml" /><item>
     <title>資安名詞-異地備援</title>
-    <link>http://example.org/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</link>
+    <link>https://amingosec.github.io/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</link>
     <pubDate>Sun, 15 Apr 2018 06:37:25 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</guid>
+    <guid>https://amingosec.github.io/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</guid>
     <description><![CDATA[備援種類 Cold Site：建築物、不一定有公同設施 WarmSite：建築物、公用設施、IT設備 Hot Site：建築物、公用設施、IT設備、資料 Mobile Sit]]></description>
 </item>
 </channel>

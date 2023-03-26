@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>upgrade - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/upgrade/</link>
+        <link>https://amingosec.github.io/tags/upgrade/</link>
         <description>upgrade - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 25 May 2022 06:39:02 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/upgrade/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 25 May 2022 06:39:02 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/upgrade/" rel="self" type="application/rss+xml" /><item>
     <title>Kali Linux 升級跟版本確認</title>
-    <link>http://example.org/posts/kali-linux-upgrade-and-check-version/</link>
+    <link>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</link>
     <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/kali-linux-upgrade-and-check-version/</guid>
+    <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
     <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。 升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令 方法 1 lsb_release -a]]></description>
 </item>
 </channel>

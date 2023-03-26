@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>密碼破解 - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/</link>
+        <link>https://amingosec.github.io/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/</link>
         <description>密碼破解 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 11 Feb 2022 08:33:18 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 11 Feb 2022 08:33:18 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/" rel="self" type="application/rss+xml" /><item>
     <title>攻擊手法-Credential stuffing</title>
-    <link>http://example.org/posts/what-is-credential-stuffing/</link>
+    <link>https://amingosec.github.io/posts/what-is-credential-stuffing/</link>
     <pubDate>Fri, 11 Feb 2022 08:33:18 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/what-is-credential-stuffing/</guid>
+    <guid>https://amingosec.github.io/posts/what-is-credential-stuffing/</guid>
     <description><![CDATA[說明 Credential stuffing為密碼破解的一種手法，利用在外部取得的帳密，在目標網站登入位置進行密碼噴灑、撞庫或其他爆力密碼破解方式。 延伸閱讀 密碼破]]></description>
 </item>
 <item>
     <title>密碼破解-撞庫攻擊</title>
-    <link>http://example.org/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</link>
+    <link>https://amingosec.github.io/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</link>
     <pubDate>Sun, 06 Feb 2022 03:39:07 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</guid>
+    <guid>https://amingosec.github.io/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</guid>
     <description><![CDATA[撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。 偵測與防範的手]]></description>
 </item>
 </channel>

@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Cyber Kill Chain - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/cyber-kill-chain/</link>
+        <link>https://amingosec.github.io/tags/cyber-kill-chain/</link>
         <description>Cyber Kill Chain - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sat, 25 Jan 2020 14:21:20 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/cyber-kill-chain/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sat, 25 Jan 2020 14:21:20 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/cyber-kill-chain/" rel="self" type="application/rss+xml" /><item>
     <title>SSCP - Methodology of an Attack</title>
-    <link>http://example.org/posts/sscp-methodology-of-an-attack/</link>
+    <link>https://amingosec.github.io/posts/sscp-methodology-of-an-attack/</link>
     <pubDate>Sat, 25 Jan 2020 14:21:20 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/sscp-methodology-of-an-attack/</guid>
+    <guid>https://amingosec.github.io/posts/sscp-methodology-of-an-attack/</guid>
     <description><![CDATA[說明 在SSCP中說明攻擊者攻擊成功會經過的步驟，這些過程跟cyber kill chain有相似的地方，可相互對照。 Target Acquisition Target Analysis Target Access Target Appropriation Target Acquisition 在攻擊前取得目]]></description>
 </item>
 <item>
     <title>資安名詞-Cyber Kill Chain</title>
-    <link>http://example.org/posts/cyber-kill-chain/</link>
+    <link>https://amingosec.github.io/posts/cyber-kill-chain/</link>
     <pubDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/cyber-kill-chain/</guid>
+    <guid>https://amingosec.github.io/posts/cyber-kill-chain/</guid>
     <description><![CDATA[介紹 Cyber Kill Chain由洛馬發展出來，中文有人翻譯成「網路狙殺鏈」但通常還是直接念英文較為順口。 Cyber Kill Chain主要是說明APT攻擊時的流程，進行]]></description>
 </item>
 </channel>

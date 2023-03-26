@@ -1,54 +1,54 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Kali Linux - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/kali-linux/</link>
+        <link>https://amingosec.github.io/tags/kali-linux/</link>
         <description>Kali Linux - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 25 May 2022 06:39:02 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/kali-linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 25 May 2022 06:39:02 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/kali-linux/" rel="self" type="application/rss+xml" /><item>
     <title>Kali Linux 升級跟版本確認</title>
-    <link>http://example.org/posts/kali-linux-upgrade-and-check-version/</link>
+    <link>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</link>
     <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/kali-linux-upgrade-and-check-version/</guid>
+    <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
     <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。 升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令 方法 1 lsb_release -a]]></description>
 </item>
 <item>
     <title>工具介紹-Weevely (kali linux web shell產生工具)</title>
-    <link>http://example.org/posts/introduction-to-weevely-php-webshell/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell/</link>
     <pubDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-weevely-php-webshell/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell/</guid>
     <description><![CDATA[Weevely是使用python寫成的webshell管理工具，可產生php webshell。 產生Webshell 使用以下指令產生websh]]></description>
 </item>
 <item>
     <title>[轉]lonelysec-OSCP心得分享</title>
-    <link>http://example.org/posts/oscp-experience-sharing-from-lonelysec/</link>
+    <link>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec/</link>
     <pubDate>Sat, 03 Apr 2021 03:13:43 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/oscp-experience-sharing-from-lonelysec/</guid>
+    <guid>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec/</guid>
     <description><![CDATA[介紹 OSCP是有名的滲透證照，以下為網路上有人分享OSCP心得。 文章連結 https://lonelysec.com/offensive-security-certified-professional-oscp-%E8%80%83%E8%A9%A6%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/ 延伸閱讀 The Journey to Try Harder: TJnull’s Preparation Guide for PWK/OSCP | NetSec Focus 建立Metaspl]]></description>
 </item>
 <item>
     <title>工具介紹-openvas使用</title>
-    <link>http://example.org/posts/openvas%E4%BD%BF%E7%94%A8/</link>
+    <link>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Mon, 02 Jul 2018 05:38:11 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/openvas%E4%BD%BF%E7%94%A8/</guid>
+    <guid>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[如果還沒有安裝，可以參考之前的文章，工具介紹-在Kali Linux上安裝openvas。 1.使用Wizard掃描 開啟openvas後，第一次]]></description>
 </item>
 <item>
     <title>工具介紹-penetration testing 作業系統</title>
-    <link>http://example.org/posts/penetration-testing%E5%B7%A5%E5%85%B7/</link>
+    <link>https://amingosec.github.io/posts/penetration-testing%E5%B7%A5%E5%85%B7/</link>
     <pubDate>Thu, 28 Jun 2018 06:13:49 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/penetration-testing%E5%B7%A5%E5%85%B7/</guid>
+    <guid>https://amingosec.github.io/posts/penetration-testing%E5%B7%A5%E5%85%B7/</guid>
     <description><![CDATA[其實標題不太知道要打什麼，既然是想介紹滲透測試的OS就打這樣好了。 Kali Linux 由offensive security維護，並提供使用Kali進行滲透的]]></description>
 </item>
 <item>
     <title>Lab-建立Metasploitable 滲透練習Lab</title>
-    <link>http://example.org/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</link>
+    <link>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</link>
     <pubDate>Sun, 03 Jun 2018 04:45:31 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</guid>
+    <guid>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</guid>
     <description><![CDATA[Kali Linux 下載位置 https://www.kali.org/downloads/ username root and password toor 登入後開啟終端機更新 #apt-get update #apt-get dist-upgrade #updatedb Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/ 下載後用VirtualBox匯入映象檔，以下面帳密使用 username msfadmin and password msfadmin Windows 10 VM https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ 可]]></description>
 </item>
 </channel>

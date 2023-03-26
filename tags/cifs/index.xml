@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>CIFS - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/cifs/</link>
+        <link>https://amingosec.github.io/tags/cifs/</link>
         <description>CIFS - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 05 May 2021 16:54:20 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/cifs/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 05 May 2021 16:54:20 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/cifs/" rel="self" type="application/rss+xml" /><item>
     <title>Network-135、137、138、139、445說明</title>
-    <link>http://example.org/posts/about-ports-135-137-138-139-445/</link>
+    <link>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</link>
     <pubDate>Wed, 05 May 2021 16:54:20 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/about-ports-135-137-138-139-445/</guid>
+    <guid>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</guid>
     <description><![CDATA[這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更]]></description>
 </item>
 </channel>

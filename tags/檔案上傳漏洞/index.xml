@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>檔案上傳漏洞 - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/</link>
+        <link>https://amingosec.github.io/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/</link>
         <description>檔案上傳漏洞 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/" rel="self" type="application/rss+xml" /><item>
     <title>PortSwigger-檔案上傳漏洞 lab 6</title>
-    <link>http://example.org/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</link>
+    <link>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</link>
     <pubDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</guid>
+    <guid>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</guid>
     <description><![CDATA[Lab: Remote code execution via polyglot web shell upload Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容sub]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 5</title>
-    <link>http://example.org/posts/lab-web-shell-upload-via-obfuscated-file-extension/</link>
+    <link>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</link>
     <pubDate>Mon, 04 Apr 2022 02:38:09 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/lab-web-shell-upload-via-obfuscated-file-extension/</guid>
+    <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</guid>
     <description><![CDATA[Lab: Web shell upload via obfuscated file extension Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subs]]></description>
 </item>
 </channel>

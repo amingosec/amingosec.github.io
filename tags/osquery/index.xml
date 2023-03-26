@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>osquery - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/osquery/</link>
+        <link>https://amingosec.github.io/tags/osquery/</link>
         <description>osquery - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/osquery/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/osquery/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-osquery</title>
-    <link>http://example.org/posts/introduction-to-osquery/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-osquery/</link>
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-osquery/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
     <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢]]></description>
 </item>
 </channel>

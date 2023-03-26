@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>postgresql - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/postgresql/</link>
+        <link>https://amingosec.github.io/tags/postgresql/</link>
         <description>postgresql - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 15 May 2022 14:46:13 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/postgresql/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 15 May 2022 14:46:13 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/postgresql/" rel="self" type="application/rss+xml" /><item>
     <title>postgresql 計算日期</title>
-    <link>http://example.org/posts/postgresql-date-calculate/</link>
+    <link>https://amingosec.github.io/posts/postgresql-date-calculate/</link>
     <pubDate>Sun, 15 May 2022 14:46:13 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/postgresql-date-calculate/</guid>
+    <guid>https://amingosec.github.io/posts/postgresql-date-calculate/</guid>
     <description><![CDATA[使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的]]></description>
 </item>
 </channel>

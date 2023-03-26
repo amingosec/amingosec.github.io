@@ -1,30 +1,30 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>XSS - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/xss/</link>
+        <link>https://amingosec.github.io/tags/xss/</link>
         <description>XSS - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/xss/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/xss/" rel="self" type="application/rss+xml" /><item>
     <title>Lab - alert(1) to win</title>
-    <link>http://example.org/posts/alert1-to-win/</link>
+    <link>https://amingosec.github.io/posts/alert1-to-win/</link>
     <pubDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/alert1-to-win/</guid>
+    <guid>https://amingosec.github.io/posts/alert1-to-win/</guid>
     <description><![CDATA[介紹 alert(1) to win 是一個練習 xss 攻擊的一個地方，讓人可以從基本的 lab 開始瞭解 xss 攻擊的手法。 Level 0-Warmup &#34;);alert(1)// Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞]]></description>
 </item>
 <item>
     <title>Lab - prompt(1) to win (XSS)</title>
-    <link>http://example.org/posts/prompt1-to-win-xss/</link>
+    <link>https://amingosec.github.io/posts/prompt1-to-win-xss/</link>
     <pubDate>Wed, 25 Jul 2018 06:22:01 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/prompt1-to-win-xss/</guid>
+    <guid>https://amingosec.github.io/posts/prompt1-to-win-xss/</guid>
     <description><![CDATA[在不少等級中都有出現input.replace 的function，使用方法可以參考https://www.w3schools.com/jsr]]></description>
 </item>
 <item>
     <title>網頁攻擊手法-XSS 介紹</title>
-    <link>http://example.org/posts/introduction-to-cross-site-scripting-xss/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</link>
     <pubDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-cross-site-scripting-xss/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</guid>
     <description><![CDATA[介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類]]></description>
 </item>
 </channel>

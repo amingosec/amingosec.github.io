@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>VS Code - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/vs-code/</link>
+        <link>https://amingosec.github.io/tags/vs-code/</link>
         <description>VS Code - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 03 May 2022 16:09:50 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/vs-code/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 03 May 2022 16:09:50 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/vs-code/" rel="self" type="application/rss+xml" /><item>
     <title>VS Code extensions 推薦 for markdown</title>
-    <link>http://example.org/posts/vs-code-extensions-for-markdown/</link>
+    <link>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</link>
     <pubDate>Tue, 03 May 2022 16:09:50 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/vs-code-extensions-for-markdown/</guid>
+    <guid>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</guid>
     <description><![CDATA[使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。 Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of]]></description>
 </item>
 <item>
     <title>VS Code extension 推薦</title>
-    <link>http://example.org/posts/top-vscode-extensions-for-cyber-security-work/</link>
+    <link>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</link>
     <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/top-vscode-extensions-for-cyber-security-work/</guid>
+    <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
     <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的ext]]></description>
 </item>
 </channel>

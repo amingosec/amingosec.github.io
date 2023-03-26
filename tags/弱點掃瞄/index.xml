@@ -1,38 +1,38 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>弱點掃瞄 - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/</link>
+        <link>https://amingosec.github.io/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/</link>
         <description>弱點掃瞄 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-Shodan</title>
-    <link>http://example.org/posts/introduction-to-shodan/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-shodan/</link>
     <pubDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-shodan/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-shodan/</guid>
     <description><![CDATA[Shodan常被稱為駭客的google，會在網路上掃公開網路上的訊息，並建立成資料庫。使用者利用shodan取得資料可減少在資料取得時的足跡]]></description>
 </item>
 <item>
     <title>工具介紹-nmap使用</title>
-    <link>http://example.org/posts/nmap%E4%BD%BF%E7%94%A8/</link>
+    <link>https://amingosec.github.io/posts/nmap%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Sun, 26 Aug 2018 01:43:01 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/nmap%E4%BD%BF%E7%94%A8/</guid>
+    <guid>https://amingosec.github.io/posts/nmap%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn Port Scanning 狀態：open，close、filtere]]></description>
 </item>
 <item>
     <title>工具介紹-openvas使用</title>
-    <link>http://example.org/posts/openvas%E4%BD%BF%E7%94%A8/</link>
+    <link>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Mon, 02 Jul 2018 05:38:11 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/openvas%E4%BD%BF%E7%94%A8/</guid>
+    <guid>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[如果還沒有安裝，可以參考之前的文章，工具介紹-在Kali Linux上安裝openvas。 1.使用Wizard掃描 開啟openvas後，第一次]]></description>
 </item>
 <item>
     <title>工具介紹-在Kali Linux上安裝openvas</title>
-    <link>http://example.org/posts/install-openvas-on-kali-linux/</link>
+    <link>https://amingosec.github.io/posts/install-openvas-on-kali-linux/</link>
     <pubDate>Sat, 30 Jun 2018 10:18:33 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/install-openvas-on-kali-linux/</guid>
+    <guid>https://amingosec.github.io/posts/install-openvas-on-kali-linux/</guid>
     <description><![CDATA[openvas為一個開源的弱掃工具，有名的付費工具為nessus 在Kali Linux上安裝openvas(依照kali Linux的教學) 更新]]></description>
 </item>
 </channel>

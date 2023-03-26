@@ -1,38 +1,38 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Network - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/network/</link>
+        <link>https://amingosec.github.io/tags/network/</link>
         <description>Network - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Mar 2022 05:35:02 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/network/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Mar 2022 05:35:02 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/network/" rel="self" type="application/rss+xml" /><item>
     <title>工具使用-Cmder字體重疊調整</title>
-    <link>http://example.org/posts/slove-cmder-font-overlap-problem/</link>
+    <link>https://amingosec.github.io/posts/slove-cmder-font-overlap-problem/</link>
     <pubDate>Mon, 07 Mar 2022 05:35:02 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/slove-cmder-font-overlap-problem/</guid>
+    <guid>https://amingosec.github.io/posts/slove-cmder-font-overlap-problem/</guid>
     <description><![CDATA[在使用cmder時，有時會出現字體重疊的問題，原因是設定中將長字串固定長度造成的，可以在設定調整。 可以參考下圖，在設定中General-&g]]></description>
 </item>
 <item>
     <title>Network-135、137、138、139、445說明</title>
-    <link>http://example.org/posts/about-ports-135-137-138-139-445/</link>
+    <link>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</link>
     <pubDate>Wed, 05 May 2021 16:54:20 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/about-ports-135-137-138-139-445/</guid>
+    <guid>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</guid>
     <description><![CDATA[這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更]]></description>
 </item>
 <item>
     <title>需要知道的幾個 PowerShell 中 IP Address 相關指令</title>
-    <link>http://example.org/posts/powershell-ip-address-commands-must-to-know/</link>
+    <link>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know/</link>
     <pubDate>Fri, 17 Apr 2020 06:47:03 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/powershell-ip-address-commands-must-to-know/</guid>
+    <guid>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know/</guid>
     <description><![CDATA[在 Windows 中除了 CMD 指令外，還有強大的 PowerShell 可以使用，除了支援 CMD 的操作外，還提供了更多指令內容。本文介紹幾個主機 IP 相關指令。 取得 IP 狀態 Get-NetIPAddress Get-NetIPAddress 會取得主機各 ip]]></description>
 </item>
 <item>
     <title>IP Security (IPsec)介紹</title>
-    <link>http://example.org/posts/what-is-ipsec/</link>
+    <link>https://amingosec.github.io/posts/what-is-ipsec/</link>
     <pubDate>Sun, 26 Jan 2020 15:09:05 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/what-is-ipsec/</guid>
+    <guid>https://amingosec.github.io/posts/what-is-ipsec/</guid>
     <description><![CDATA[在IP層運作，提供Layer 3的安全(RFC 2401) https://heranonazure.wordpress.com/2019/10/11/ip-security-ipsec-basics/ https://tools.ietf.org/html/rfc2401]]></description>
 </item>
 </channel>

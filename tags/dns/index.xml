@@ -1,38 +1,38 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>dns - 標籤 - 資安工作筆記</title>
-        <link>http://example.org/tags/dns/</link>
+        <link>https://amingosec.github.io/tags/dns/</link>
         <description>dns - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Mar 2022 03:53:25 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/dns/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Mar 2022 03:53:25 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/dns/" rel="self" type="application/rss+xml" /><item>
     <title>Network - DNS over HTTPS (DoH)介紹</title>
-    <link>http://example.org/posts/waht-is-dns-over-https-doh/</link>
+    <link>https://amingosec.github.io/posts/waht-is-dns-over-https-doh/</link>
     <pubDate>Mon, 07 Mar 2022 03:53:25 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/waht-is-dns-over-https-doh/</guid>
+    <guid>https://amingosec.github.io/posts/waht-is-dns-over-https-doh/</guid>
     <description><![CDATA[DNS over HTTPS 是利用HTTPS協定來提供名稱解析的服務。以達到私密性與安全性的目標。 提供DoH服務的Server稱為DoH Server，而使用DoH]]></description>
 </item>
 <item>
     <title>名詞介紹-Domain Name Service (DNS)</title>
-    <link>http://example.org/posts/dns/</link>
+    <link>https://amingosec.github.io/posts/dns/</link>
     <pubDate>Sat, 25 Jan 2020 14:43:12 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/dns/</guid>
+    <guid>https://amingosec.github.io/posts/dns/</guid>
     <description><![CDATA[DNS提供將Domain name進行解析成IP的服務，需使用53/TCP、53/UDP(通常為UDP)進行連線。 DNS查詢 在電腦在需要連線D]]></description>
 </item>
 <item>
     <title>攻擊手法-DNS tunneling</title>
-    <link>http://example.org/posts/introduction-to-dns-tunneling/</link>
+    <link>https://amingosec.github.io/posts/introduction-to-dns-tunneling/</link>
     <pubDate>Fri, 12 Oct 2018 17:23:47 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/introduction-to-dns-tunneling/</guid>
+    <guid>https://amingosec.github.io/posts/introduction-to-dns-tunneling/</guid>
     <description><![CDATA[主要是利用dns 查詢的功能將backdoor的payload傳到受害電腦。 首先攻擊者會註冊一個Domain，並將Domain指到攻擊者的主機]]></description>
 </item>
 <item>
     <title>工具介紹 - 子網域查找工具</title>
-    <link>http://example.org/posts/how-to-find-subdomain/</link>
+    <link>https://amingosec.github.io/posts/how-to-find-subdomain/</link>
     <pubDate>Tue, 28 Aug 2018 14:51:58 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/how-to-find-subdomain/</guid>
+    <guid>https://amingosec.github.io/posts/how-to-find-subdomain/</guid>
     <description><![CDATA[sublist3r apt-get update apt-get install sublist3r 網站工具 dnsdumpster 內容詳細，同時也提供domain mapping與xlsx檔下載。 DNStable DNStable滿完整的，還提供分類。 pentest-tools 除了sub d]]></description>
 </item>
 </channel>
