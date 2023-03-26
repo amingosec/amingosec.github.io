@@ -1,17 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>DMZ￼ - Tag - </title>
-        <link>https://amingosec.github.io/tags/dmz/</link>
-        <description>DMZ￼ - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 26 Jan 2020 16:35:11 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/dmz/" rel="self" type="application/rss+xml" /><item>
+        <title>DMZ￼ - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/dmz/</link>
+        <description>DMZ￼ - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 26 Jan 2020 16:35:11 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/dmz/" rel="self" type="application/rss+xml" /><item>
     <title>資安名詞-Demilitarized Zone (DMZ)</title>
-    <link>https://amingosec.github.io/posts/demilitarized-zone-dmz/</link>
+    <link>http://example.org/posts/demilitarized-zone-dmz/</link>
     <pubDate>Sun, 26 Jan 2020 16:35:11 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/demilitarized-zone-dmz/</guid>
-    <description><![CDATA[DMZ為外部網路使用者提供有限度的連線存取，讓外部使用者能最小限度使用組織所提供的公開資源(如網站)，並且與內部網路(LAN)區隔。一般來說，會使用Firewall隔出DMZ區。同時，DMZ區主機亦會限制存取內部網路資源，避免DMZ區受駭時，造成內網資安的威脅。
-在現在的資安觀念上，除了基本的網段區隔外，零信任也是重要的觀念。
-延伸閱讀 資訊安全-內網橫向移動(Lateral Movement)介紹 工具介紹-Weevely (kali linux web shell產生工具) ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/demilitarized-zone-dmz/</guid>
+    <description><![CDATA[DMZ為外部網路使用者提供有限度的連線存取，讓外部使用者能最小限度使用組織所提供的公開資源(如網站)，並且與內部網路(LAN)區隔。一般來說]]></description>
 </item>
 </channel>
 </rss>

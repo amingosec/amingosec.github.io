@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>合規 - Tag - </title>
-        <link>https://amingosec.github.io/tags/%E5%90%88%E8%A6%8F/</link>
-        <description>合規 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 17 Apr 2018 08:04:48 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E5%90%88%E8%A6%8F/" rel="self" type="application/rss+xml" /><item>
+        <title>合規 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/%E5%90%88%E8%A6%8F/</link>
+        <description>合規 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 17 Apr 2018 08:04:48 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%90%88%E8%A6%8F/" rel="self" type="application/rss+xml" /><item>
     <title>資安相關條文</title>
-    <link>https://amingosec.github.io/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/</link>
+    <link>http://example.org/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/</link>
     <pubDate>Tue, 17 Apr 2018 08:04:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/</guid>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/</guid>
     <description><![CDATA[金融機構辦理電腦系統資訊安全評估辦法 行動裝置應用程式注意事項 電子票證應用安全強度準則 http://law.moj.gov.tw全國法規資料庫]]></description>
 </item>
 </channel>

@@ -1,20 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>md5 - Tag - </title>
-        <link>https://amingosec.github.io/tags/md5/</link>
-        <description>md5 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/md5/" rel="self" type="application/rss+xml" /><item>
+        <title>md5 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/md5/</link>
+        <description>md5 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/md5/" rel="self" type="application/rss+xml" /><item>
     <title>Windows 產生檔案 hash 值的方式</title>
-    <link>https://amingosec.github.io/posts/get-file-hash-in-windows/</link>
+    <link>http://example.org/posts/get-file-hash-in-windows/</link>
     <pubDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/get-file-hash-in-windows/</guid>
-    <description><![CDATA[hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。
-在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒白名單會是個好方法。
-使用 certuil 指令 產生 MD5 certuil -hashfile &lt;your/file&gt; MD5 產生 sha1 certuil -hashfile &lt;your/file&gt; SHA1 產生 sha256 certuil -hashfile &lt;your/file&gt; SHA256 使用 PowerShell 在 PowerShell中可以使用Get-filehash指令來取得檔案 hash 值
-get-filehash [-path] [-algorithm] 取得 md5 get-filehash c:/test/test.txt -algorithm md5 其他完整說明可見另一篇文章 PowerShell-取得檔案hash值
-使用 osquery osquery 是 facebook 發展的 open source 軟體，也提供取得檔案 hash 值的方法，可以參考工具介紹 - osquery一文的說明。
-延伸閱讀 工具介紹-osquery 取得檔案hash值-PowerShell 資訊安全-基本概念 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/get-file-hash-in-windows/</guid>
+    <description><![CDATA[hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。 在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒]]></description>
 </item>
 </channel>
 </rss>

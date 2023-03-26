@@ -1,134 +1,79 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>資安鑑識 - Tag - </title>
-        <link>https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/</link>
-        <description>資安鑑識 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/" rel="self" type="application/rss+xml" /><item>
+        <title>資安鑑識 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/</link>
+        <description>資安鑑識 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-osquery</title>
-    <link>https://amingosec.github.io/posts/introduction-to-osquery/</link>
+    <link>http://example.org/posts/introduction-to-osquery/</link>
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
-    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
-除了安裝版外，也提供免安裝版。
-osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
-取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
-osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
-osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
-取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
-可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
-c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
-+---------------------------+------------------------------------------------------------------+ | name | action | +---------------------------+------------------------------------------------------------------+ | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1.]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-osquery/</guid>
+    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢]]></description>
 </item>
 <item>
     <title>Windows Event Log位置</title>
-    <link>https://amingosec.github.io/posts/location-of-windows-event-log/</link>
+    <link>http://example.org/posts/location-of-windows-event-log/</link>
     <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/location-of-windows-event-log/</guid>
-    <description><![CDATA[在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。
-Event Log 位置 windows event log預設位置為： %SystemRoot%\System32\winevt\Logs\ ，如果沒有看到或需要進行調整的話可以到註冊檔中確認與調整，註冊檔位置： HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog。
-幾個重要的event log 以下是進行事件查找時常會用到的幾個 log ，但是 log 是否被紀錄下來取決於稽核原則的設定，因此，記得進行良好的稽核原則設定，以利後續事件的查找。
-System.evtx 在 System 中有主機運作的相關訊息。
-Security.evtx 在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。
-Application.evtx Application log
-Windows PowerShell.evtx 在 Windows PowerShell 中有 PowerShell 執行的相關訊息。
-MSExchange Management.evtx MSExchange Management log 記錄了 Exchange 的操控行為，如果需調查的主機是 Exchange Server，此 Log 可能會有一些弱點被利用的資訊。
-延伸閱讀 Windows IR 方向 IIS log 位置 參考資料 https://docs.]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/location-of-windows-event-log/</guid>
+    <description><![CDATA[在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系]]></description>
 </item>
 <item>
     <title>工具介紹-Microsoft Network Monitor</title>
-    <link>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</link>
+    <link>http://example.org/posts/introduction-to-microsoft-network-monitor/</link>
     <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</guid>
-    <description><![CDATA[說明 Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路界面卡。
-開啟後左下角是選擇要聽的網卡，確認好之後，點選左上方的New Capture。
-點選New Capture後會開啟新的頁面，再點選上方的Start，開始錄包。
-執行結果如下圖
-結論 整體使用起來相當直覺，工具沒有好壞，主要看使用起來熟不熟悉，如果有封包分析的需求可以下載來使用看看。
-下載連結 https://www.microsoft.com/en-us/download/details.aspx?id=4865
-延伸閱讀 工具介紹-Wireshark 解密Https 流量 工具介紹-Tcpdump指令介紹 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-microsoft-network-monitor/</guid>
+    <description><![CDATA[說明 Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路]]></description>
 </item>
 <item>
     <title>PowerShell-使用powershell查找電腦開關機狀況</title>
-    <link>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</link>
+    <link>http://example.org/posts/using-powershell-to-check-system-up-down-time/</link>
     <pubDate>Thu, 10 Jun 2021 16:05:03 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</guid>
-    <description><![CDATA[說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間
-Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果要存到特定檔案，可在後面加入&gt;來進行輸出
-Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap &gt; log.log 也可以使用 event id 27 來確認 boot time
-Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.message -like “The boot type*”} 或是
-Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like “27”} 其他方式 可以使用nirsoft的工具，TurnedOnTimesView ，來查找開關機狀態。
-https://www.nirsoft.net/utils/computer_turned_on_times.html
-延伸閱讀 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 參考連結 https://steachs.]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/using-powershell-to-check-system-up-down-time/</guid>
+    <description><![CDATA[說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間 Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果]]></description>
 </item>
 <item>
     <title>資安監控- 監控 AD 的受駭跡證</title>
-    <link>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</link>
+    <link>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</link>
     <pubDate>Wed, 26 May 2021 07:24:33 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
-    <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。
-介紹 資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。
-Account Logon Events Account Management Directory Service Access Logon Events Object Access Policy Change Privilege Use Process Tracking System Events 使用 Auditpol.exe 設定 Windows 稽核原則 依微軟的說明，Auditpol.exe 較能正確回傳稽核原則的設定值。
-參考以下指令，可列出所有稽核原則設定值。
-auditpol /get /category:\* 參考以下指令，可設定logon的稽核原則內容。
-auditpol /set /subcategory:&#34;logon&#34; /success:enable /failure:enable 使用 Group policy 設定稽核原則 開啟群組原則設定，開到以下的路徑，將想要開啟的稽核原則開啟即可。
-Computer Configuration\Windows Settings\Security Settings\Local Policies\Audit Policy
-Local Group Policy Editor
-微軟建議的稽核原則設定 https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
-在監控上常用到的幾個Event ID 除了微軟建議監的 Event ID中的說明外，特別列出以下實務上常用的幾個Event ID。]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
+    <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。 介紹 資安監控可以有效的發現場域內需要注意]]></description>
 </item>
 <item>
     <title>資安鑑識-Memory Analyzing</title>
-    <link>https://amingosec.github.io/posts/memory-analyzing/</link>
+    <link>http://example.org/posts/memory-analyzing/</link>
     <pubDate>Tue, 18 May 2021 12:30:06 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/memory-analyzing/</guid>
-    <description><![CDATA[主要利用volatility framework 2.6執行
-識別system profile python vol.py -f %image\_name% imageinfo pslist
-pstree
-cmdscan
-延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate? 藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/memory-analyzing/</guid>
+    <description><![CDATA[主要利用volatility framework 2.6執行 識別system profile python vol.py -f %image\_name% imageinfo pslist pstree cmdscan 延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]:]]></description>
 </item>
 <item>
     <title>工具介紹-PsTools</title>
-    <link>https://amingosec.github.io/posts/pstools/</link>
+    <link>http://example.org/posts/pstools/</link>
     <pubDate>Thu, 06 May 2021 05:38:30 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/pstools/</guid>
-    <description><![CDATA[PsExec：執行遠端電腦上的指令
-PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，或是Regedit等特定的系統工具程式。舉例來說，若我們欲在名稱為iThome的遠端電腦上，執行test.exe程式，則可鍵入「psexec \\iThome -u user -p passwd -c c:\test.exe」，其中user與passwd為系統管理員帳號及密碼，而這兩個也是PsTools的公用參數；至於-c則代表先將應用程式test.exe，複製到遠端電腦後再執行。值得注意的是，若使用者未指定欲執行的應用程式路徑，則會使用預設的原始目錄，亦即Windows根目錄（％SystemRoot％）。
-遠端RPC指令
-相關連結 https://www.itprotoday.com/compute-engines/psexec
-https://docs.microsoft.com/en-us/sysinternals/downloads/pstools]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/pstools/</guid>
+    <description><![CDATA[PsExec：執行遠端電腦上的指令 PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，或是Regedit等特定的系統工具程式。舉例來]]></description>
 </item>
 <item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
-    <link>https://amingosec.github.io/posts/windows-ir/</link>
+    <link>http://example.org/posts/windows-ir/</link>
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-ir/</guid>
-    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
-在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
-Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
-在 Windows Event Log 分析時可以檢查的幾個重點：
-系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
-Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
-GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
-https://eventlogxp.com]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/windows-ir/</guid>
+    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
 </item>
 <item>
     <title>名詞介紹-YARA Rules</title>
-    <link>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</link>
+    <link>http://example.org/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</link>
     <pubDate>Thu, 21 Jun 2018 01:57:56 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</guid>
-    <description><![CDATA[YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。
-YARA Elements YARA rules包含以下幾個元件：
-Metadata Strings Conditions Imports 參考連結 YARA Rules Guide: Learning this Malware Research Tool malware detection using yara YARA 文件 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</guid>
+    <description><![CDATA[YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。 YARA Elements YARA rules包含以下幾個元件： Metadata Strings Conditions Imports 參考連]]></description>
 </item>
 </channel>
 </rss>

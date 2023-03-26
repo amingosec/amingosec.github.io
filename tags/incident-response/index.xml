@@ -1,30 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Incident Response - Tag - </title>
-        <link>https://amingosec.github.io/tags/incident-response/</link>
-        <description>Incident Response - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 12:42:48 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/incident-response/" rel="self" type="application/rss+xml" /><item>
+        <title>Incident Response - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/incident-response/</link>
+        <description>Incident Response - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 12:42:48 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/incident-response/" rel="self" type="application/rss+xml" /><item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
-    <link>https://amingosec.github.io/posts/windows-ir/</link>
+    <link>http://example.org/posts/windows-ir/</link>
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-ir/</guid>
-    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
-在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
-Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
-在 Windows Event Log 分析時可以檢查的幾個重點：
-系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
-Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
-GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
-https://eventlogxp.com]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/windows-ir/</guid>
+    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
 </item>
 <item>
     <title>關於資安事件因應</title>
-    <link>https://amingosec.github.io/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</link>
+    <link>http://example.org/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</link>
     <pubDate>Sat, 11 Aug 2018 13:50:43 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</guid>
-    <description><![CDATA[關於事件因應，常會聽到各種不同的說法，參加了幾個課程有的講師認為應該在發現有問題時直接隔離主機，以防問題病毒擴散；有的認為應該放著，好好檢查找出問題根源一次解決。這兩種完全不同的方向，好像都有理，但又相互矛盾，但目前看到最正確的做法是，依照公司SOP操作。 依照公司SOP感覺沒有回答問題，但又確實重要。試想，所請來的資安顧問跟公司內部人員，誰會更瞭解公司設備的重要性？訂便當系統、教育訓練系統受感染了，要斷隨時可以斷，不會有事，但今天出事的如果是公司主要營運的系統直接隔離的損失可能更大。而公司所有系統，資安人員不一定每個都熟，依經驗，依感覺冒然處理都不是好方法，這就是SOP的重要性了。 但我想，更重要的是SOP的產生。公司是否有平時有計畫與確實演練都是在面對資安件事時能將損害降到最低的重要因素。]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E9%97%9C%E6%96%BC%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%9B%A0%E6%87%89/</guid>
+    <description><![CDATA[關於事件因應，常會聽到各種不同的說法，參加了幾個課程有的講師認為應該在發現有問題時直接隔離主機，以防問題病毒擴散；有的認為應該放著，好好檢查]]></description>
 </item>
 </channel>
 </rss>

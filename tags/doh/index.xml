@@ -1,19 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>DOH - Tag - </title>
-        <link>https://amingosec.github.io/tags/doh/</link>
-        <description>DOH - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Mar 2022 03:53:25 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/doh/" rel="self" type="application/rss+xml" /><item>
+        <title>DOH - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/doh/</link>
+        <description>DOH - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Mar 2022 03:53:25 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/doh/" rel="self" type="application/rss+xml" /><item>
     <title>Network - DNS over HTTPS (DoH)介紹</title>
-    <link>https://amingosec.github.io/posts/waht-is-dns-over-https-doh/</link>
+    <link>http://example.org/posts/waht-is-dns-over-https-doh/</link>
     <pubDate>Mon, 07 Mar 2022 03:53:25 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/waht-is-dns-over-https-doh/</guid>
-    <description><![CDATA[DNS over HTTPS 是利用HTTPS協定來提供名稱解析的服務。以達到私密性與安全性的目標。
-提供DoH服務的Server稱為DoH Server，而使用DoH服務的Client稱為DoH Client。
-DoH Client 可使用以下的URI Tamplate來跟DoH Server進行 IN A Records解析。
-&#34;https://dnsserver.example.net/dns-query{?dns}&#34; 使用google doh 因為rfc8484需要進行base64後才可使用，較為不便，google doh服務提供了API呼叫的方式。
-&#34;https://dns.google/resovle?name=yourdomaim.com&#34; 延伸閱讀 名詞介紹-Domain Name Service (DNS) 參考資料 https://datatracker.ietf.org/doc/html/rfc8484 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/waht-is-dns-over-https-doh/</guid>
+    <description><![CDATA[DNS over HTTPS 是利用HTTPS協定來提供名稱解析的服務。以達到私密性與安全性的目標。 提供DoH服務的Server稱為DoH Server，而使用DoH]]></description>
 </item>
 </channel>
 </rss>

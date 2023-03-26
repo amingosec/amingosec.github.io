@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>社交工程 - Tag - </title>
-        <link>https://amingosec.github.io/tags/%E7%A4%BE%E4%BA%A4%E5%B7%A5%E7%A8%8B/</link>
-        <description>社交工程 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 30 May 2018 03:42:38 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E7%A4%BE%E4%BA%A4%E5%B7%A5%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
+        <title>社交工程 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/%E7%A4%BE%E4%BA%A4%E5%B7%A5%E7%A8%8B/</link>
+        <description>社交工程 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 30 May 2018 03:42:38 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E7%A4%BE%E4%BA%A4%E5%B7%A5%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
     <title>Email-查看自家的網域有沒有被認定為拉圾信-RBL</title>
-    <link>https://amingosec.github.io/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/</link>
+    <link>http://example.org/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/</link>
     <pubDate>Wed, 30 May 2018 03:42:38 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/</guid>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/</guid>
     <description><![CDATA[RBL是Realtime Blackhole List的簡稱 http://www.anti-abuse.org/multi-rbl-check/ 輸入後看下方各組織是否有列為垃圾信，都是綠色就ok]]></description>
 </item>
 </channel>

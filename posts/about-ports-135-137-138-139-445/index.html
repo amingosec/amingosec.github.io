@@ -4,57 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Network-135、137、138、139、445說明 - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="Network-135、137、138、139、445說明" />
-<meta property="og:description" content="這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更多瞭解。
-TCP/135 RPC 在許多「網管」眼裡，135埠是最讓人捉摸不透的埠，因為他們中的大多數都無法明確地了解到135埠的真正作用，也不清楚該埠到底會有哪些潛在的危險。直到一種名為「IEen」的專業遠程控制工具出現，人們才清楚135埠究竟會有什麼樣的潛在安全威脅。
-IEen工具能夠藉助135埠輕鬆連接到Internet上的其他工作站，並遠程控制該工作站的IE瀏覽器。例如，在瀏覽器中執行的任何操作，包括瀏覽頁面內容、輸入帳號密碼、輸入搜索關鍵字等，都會被IEen工具監控到。甚至在網上銀行中輸入的各種密碼信息，都能被IEen工具清楚地獲得。除了可以對遠程工作站上的IE瀏覽器進行*作、控制外，IEen工具通過135埠幾乎可以對所有的藉助DCOM開發技術設計出來的應用程式進行遠程控制，例如 IEen工具也能輕鬆進入到正在運行Excel的計算機中，直接對Excel進行各種編輯*作。
-怎麼樣？135埠對外開放是不是很危險呀？當然，這種危險畢竟是理論上的，要想真正地通過135埠入侵其他系統，還必須提前知道對方的IP位址、帳號和密碼等。只要你嚴格保密好這些資訊，你的計算機被IEen工具攻擊的可能性幾乎不存在。
-為什麼IEen工具能利用135埠攻擊其他計算機呢？原來該工具採用了一種DCOM技術，可以直接對其他工作站的DCOM程序進行遠程控制。DCOM技術與對方計算機進行通信時，會自動調用目標主機中的RPC服務，而RPC服務將自動詢問目標主機中的135埠，當前有哪些埠可以被用來通信。如此一來，目標主機就會提供一個可用的服務埠作為數據傳輸通道使用。在這一通信過程中，135埠的作用其實就是為RPC通信提供一種服務埠的映射功能。說簡單一點，135埠就是RPC通信中的橋樑。
-NetBIOS (Network Basic Input/Output System) 簡介 在討論port 137/138/139前，有必要簡單說一下NetBIOS協定，他是由IBM發展的網路通訊協定。NetBIOS提供以下三種功能。
-Name Service：主要功能類似DNS，提供IP與Hostname的註冊與對應解析。 Datagram：透過unicast、multicast 和 broadcast 提供無需連線，不可信賴的訊息傳遞。 Session：相較於Datagram，Session提供了點對點，可信類的訊息傳遞。 上述NetBIOS的三個功能就分別對應了port 137/138/139。
-NetBIOS Service
-Port
-Name service
-port 137/TCP and port 137/UDP
-Datagram service
-port 138/UDP
-Session service
-port 139/TCP
-TCP/UDP 137 NetBIOS-NS 如前面所說，NetBIOS-NS主要作用是在區域網中提供computer的hostname與IP位址註冊與查詢服務，一般安裝了NetBIOS協議後，會自動處於開放狀態。在Windows 系統中使用 Windows Internet Name Service (WINS)來提供此功能。
-要是非法入侵者知道目標主機的IP位址，並向該地址的137埠發送一個連接請求時，就可能獲得目標主機的相關名稱訊息。例如目標主機的hostname，註冊該目標主機的用戶信息，目標主機本次開機、關機時間等。此外非法入侵者還能知道目標主機是否是作為文件伺服器或主域控制器來使用。
-NetBIOS-NS較常的見的為對廣播IP 137 Port進行連線，用以發現各台電腦。同時也有針對特定IP進行詢問的方式，進一步可去瞭解NetBIOS的節點類型。
-UDP 138 NetBIOS-Datagram 如前面所說，NetBIOS-Datagram 透過unicast、multicast 和 broadcast 提供無需連線，不可信賴的訊息傳遞。
-TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居訪問區域網中的共享文件或共享印表機時就能發揮作用。" />
+        <title>Network-135、137、138、139、445說明 - 資安工作筆記</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Network-135、137、138、139、445說明" />
+<meta property="og:description" content="這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://amingosec.github.io/posts/about-ports-135-137-138-139-445/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://example.org/posts/about-ports-135-137-138-139-445/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-05-05T16:54:20+00:00" />
-<meta property="article:modified_time" content="2021-05-05T16:54:20+00:00" /><meta property="og:site_name" content="資安工作筆記" />
+<meta property="article:modified_time" content="2021-05-05T16:54:20+00:00" /><meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Network-135、137、138、139、445說明"/>
-<meta name="twitter:description" content="這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更多瞭解。
-TCP/135 RPC 在許多「網管」眼裡，135埠是最讓人捉摸不透的埠，因為他們中的大多數都無法明確地了解到135埠的真正作用，也不清楚該埠到底會有哪些潛在的危險。直到一種名為「IEen」的專業遠程控制工具出現，人們才清楚135埠究竟會有什麼樣的潛在安全威脅。
-IEen工具能夠藉助135埠輕鬆連接到Internet上的其他工作站，並遠程控制該工作站的IE瀏覽器。例如，在瀏覽器中執行的任何操作，包括瀏覽頁面內容、輸入帳號密碼、輸入搜索關鍵字等，都會被IEen工具監控到。甚至在網上銀行中輸入的各種密碼信息，都能被IEen工具清楚地獲得。除了可以對遠程工作站上的IE瀏覽器進行*作、控制外，IEen工具通過135埠幾乎可以對所有的藉助DCOM開發技術設計出來的應用程式進行遠程控制，例如 IEen工具也能輕鬆進入到正在運行Excel的計算機中，直接對Excel進行各種編輯*作。
-怎麼樣？135埠對外開放是不是很危險呀？當然，這種危險畢竟是理論上的，要想真正地通過135埠入侵其他系統，還必須提前知道對方的IP位址、帳號和密碼等。只要你嚴格保密好這些資訊，你的計算機被IEen工具攻擊的可能性幾乎不存在。
-為什麼IEen工具能利用135埠攻擊其他計算機呢？原來該工具採用了一種DCOM技術，可以直接對其他工作站的DCOM程序進行遠程控制。DCOM技術與對方計算機進行通信時，會自動調用目標主機中的RPC服務，而RPC服務將自動詢問目標主機中的135埠，當前有哪些埠可以被用來通信。如此一來，目標主機就會提供一個可用的服務埠作為數據傳輸通道使用。在這一通信過程中，135埠的作用其實就是為RPC通信提供一種服務埠的映射功能。說簡單一點，135埠就是RPC通信中的橋樑。
-NetBIOS (Network Basic Input/Output System) 簡介 在討論port 137/138/139前，有必要簡單說一下NetBIOS協定，他是由IBM發展的網路通訊協定。NetBIOS提供以下三種功能。
-Name Service：主要功能類似DNS，提供IP與Hostname的註冊與對應解析。 Datagram：透過unicast、multicast 和 broadcast 提供無需連線，不可信賴的訊息傳遞。 Session：相較於Datagram，Session提供了點對點，可信類的訊息傳遞。 上述NetBIOS的三個功能就分別對應了port 137/138/139。
-NetBIOS Service
-Port
-Name service
-port 137/TCP and port 137/UDP
-Datagram service
-port 138/UDP
-Session service
-port 139/TCP
-TCP/UDP 137 NetBIOS-NS 如前面所說，NetBIOS-NS主要作用是在區域網中提供computer的hostname與IP位址註冊與查詢服務，一般安裝了NetBIOS協議後，會自動處於開放狀態。在Windows 系統中使用 Windows Internet Name Service (WINS)來提供此功能。
-要是非法入侵者知道目標主機的IP位址，並向該地址的137埠發送一個連接請求時，就可能獲得目標主機的相關名稱訊息。例如目標主機的hostname，註冊該目標主機的用戶信息，目標主機本次開機、關機時間等。此外非法入侵者還能知道目標主機是否是作為文件伺服器或主域控制器來使用。
-NetBIOS-NS較常的見的為對廣播IP 137 Port進行連線，用以發現各台電腦。同時也有針對特定IP進行詢問的方式，進一步可去瞭解NetBIOS的節點類型。
-UDP 138 NetBIOS-Datagram 如前面所說，NetBIOS-Datagram 透過unicast、multicast 和 broadcast 提供無需連線，不可信賴的訊息傳遞。
-TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居訪問區域網中的共享文件或共享印表機時就能發揮作用。"/>
-<meta name="application-name" content="資安工作筆記">
-<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="twitter:description" content="這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/about-ports-135-137-138-139-445/" /><link rel="prev" href="https://amingosec.github.io/posts/netcat-nc-commands/" /><link rel="next" href="https://amingosec.github.io/posts/pstools/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/about-ports-135-137-138-139-445/" /><link rel="prev" href="http://example.org/posts/netcat-nc-commands/" /><link rel="next" href="http://example.org/posts/pstools/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -64,25 +26,25 @@ TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居�
         "inLanguage": "zh-TW",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/amingosec.github.io\/posts\/about-ports-135-137-138-139-445\/"
-        },"genre": "posts","keywords": "CIFS, 網路管理, NetBIOS, Network, SMB, WINS","wordcount":  81 ,
-        "url": "https:\/\/amingosec.github.io\/posts\/about-ports-135-137-138-139-445\/","datePublished": "2021-05-05T16:54:20+00:00","dateModified": "2021-05-05T16:54:20+00:00","publisher": {
+            "@id": "http:\/\/example.org\/posts\/about-ports-135-137-138-139-445\/"
+        },"genre": "posts","keywords": "CIFS, 網路管理, NetBIOS, Network, SMB, WINS","wordcount":  1866 ,
+        "url": "http:\/\/example.org\/posts\/about-ports-135-137-138-139-445\/","datePublished": "2021-05-05T16:54:20+00:00","dateModified": "2021-05-05T16:54:20+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
-                "name": "Author"
+                "name": "作者"
             },"description": ""
     }
     </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="">資安工作筆記</a>
+            <a href="/" title="資安工作筆記">My cool site</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/tags/"><i class='fa fa-tags'></i> tags </a><a class="menu-item" href="/posts/"><i class='fa fa-pen'></i> all post </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> tags </a><a class="menu-item" href="/categories/"> 分類 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a></div>
         </div>
@@ -91,27 +53,27 @@ TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居�
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="">資安工作筆記</a>
+                <a href="/" title="資安工作筆記">My cool site</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/tags/" title=""><i class='fa fa-tags'></i>tags</a><a class="menu-item" href="/posts/" title=""><i class='fa fa-pen'></i>all post</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">tags</a><a class="menu-item" href="/categories/" title="">分類</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
 </header><main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
+            <h2 class="toc-title">目錄</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Network-135、137、138、139、445說明</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-05-05">2021-05-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;81 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-05-05">2021-05-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 1866 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 4 分鐘&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
-                    <span>Contents</span>
+                    <span>目錄</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
@@ -168,12 +130,12 @@ TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居�
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2021-05-05</span>
+                <span>更新於 2021-05-05</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明" data-hashtags="CIFS,網路管理,NetBIOS,Network,SMB,WINS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/about-ports-135-137-138-139-445/" data-hashtag="CIFS"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明" data-hashtags="CIFS,網路管理,NetBIOS,Network,SMB,WINS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/posts/about-ports-135-137-138-139-445/" data-hashtag="CIFS"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/about-ports-135-137-138-139-445/" data-title="Network-135、137、138、139、445說明"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -181,7 +143,7 @@ TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居�
     <div class="post-info-more">
         <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cifs/">CIFS</a>,&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/netbios/">NetBIOS</a>,&nbsp;<a href="/tags/network/">Network</a>,&nbsp;<a href="/tags/smb/">SMB</a>,&nbsp;<a href="/tags/wins/">WINS</a></section>
         <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主頁</a></span>
         </section>
     </div>
 
@@ -190,15 +152,15 @@ TCP/139 NetBIOS-Session 139埠是一種TCP埠，該埠在你通過網上鄰居�
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> 強力驅動 | 主題 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到頂部">
                 <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看評論">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"複製到剪貼板","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

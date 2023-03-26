@@ -1,45 +1,31 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>XSS - Tag - </title>
-        <link>https://amingosec.github.io/tags/xss/</link>
-        <description>XSS - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/xss/" rel="self" type="application/rss+xml" /><item>
+        <title>XSS - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/xss/</link>
+        <description>XSS - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/xss/" rel="self" type="application/rss+xml" /><item>
     <title>Lab - alert(1) to win</title>
-    <link>https://amingosec.github.io/posts/alert1-to-win/</link>
+    <link>http://example.org/posts/alert1-to-win/</link>
     <pubDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/alert1-to-win/</guid>
-    <description><![CDATA[介紹 alert(1) to win 是一個練習 xss 攻擊的一個地方，讓人可以從基本的 lab 開始瞭解 xss 攻擊的手法。
-Level 0-Warmup &#34;);alert(1)// Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
-%22)alert(1)// Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
-可以直接關閉script來開啟另一個alert]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/alert1-to-win/</guid>
+    <description><![CDATA[介紹 alert(1) to win 是一個練習 xss 攻擊的一個地方，讓人可以從基本的 lab 開始瞭解 xss 攻擊的手法。 Level 0-Warmup &#34;);alert(1)// Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞]]></description>
 </item>
 <item>
     <title>Lab - prompt(1) to win (XSS)</title>
-    <link>https://amingosec.github.io/posts/prompt1-to-win-xss/</link>
+    <link>http://example.org/posts/prompt1-to-win-xss/</link>
     <pubDate>Wed, 25 Jul 2018 06:22:01 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/prompt1-to-win-xss/</guid>
-    <description><![CDATA[在不少等級中都有出現input.replace 的function，使用方法可以參考https://www.w3schools.com/jsref/jsref_replace.asp，有對replace method說明，有所了解後會對prompt(1)的思路比較有想法。
-Level 1 &lt;body/onload=prompt(1)//]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/prompt1-to-win-xss/</guid>
+    <description><![CDATA[在不少等級中都有出現input.replace 的function，使用方法可以參考https://www.w3schools.com/jsr]]></description>
 </item>
 <item>
     <title>網頁攻擊手法-XSS 介紹</title>
-    <link>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</link>
+    <link>http://example.org/posts/introduction-to-cross-site-scripting-xss/</link>
     <pubDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</guid>
-    <description><![CDATA[介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。
-在owasp top 10-2017中改到第七名
-https://www.owasp.org/index.php/Top_10-2017_Top_10
-https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
-可分為stored、reflected。
-可使用的方法 加入或用 的error呼叫 利用編碼的方試bypass 練習網站 alert(1) to win
-prompt(1) to win
-利用工具 beef xss framework 滿不錯用的，kali跟backbox都有，
-XSS hunter也有提供攻擊payload，並把結果回覆分析，相當有用
-要防禦的話，除了在client side也請記得一定要在server side進行相關安全性設定。
-延伸閱讀 SQL injection Lab - alert(1) to win Lab - prompt(1) to win (XSS) ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-cross-site-scripting-xss/</guid>
+    <description><![CDATA[介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類]]></description>
 </item>
 </channel>
 </rss>

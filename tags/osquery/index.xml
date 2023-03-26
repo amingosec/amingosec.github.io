@@ -1,24 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>osquery - Tag - </title>
-        <link>https://amingosec.github.io/tags/osquery/</link>
-        <description>osquery - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/osquery/" rel="self" type="application/rss+xml" /><item>
+        <title>osquery - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/osquery/</link>
+        <description>osquery - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/osquery/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-osquery</title>
-    <link>https://amingosec.github.io/posts/introduction-to-osquery/</link>
+    <link>http://example.org/posts/introduction-to-osquery/</link>
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
-    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
-除了安裝版外，也提供免安裝版。
-osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
-取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
-osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
-osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
-取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
-可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
-c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
-+---------------------------+------------------------------------------------------------------+ | name | action | +---------------------------+------------------------------------------------------------------+ | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1.]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-osquery/</guid>
+    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢]]></description>
 </item>
 </channel>
 </rss>

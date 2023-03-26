@@ -1,64 +1,39 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>資安監控 - Tag - </title>
-        <link>https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/</link>
-        <description>資安監控 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/" rel="self" type="application/rss+xml" /><item>
+        <title>資安監控 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/</link>
+        <description>資安監控 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-osquery</title>
-    <link>https://amingosec.github.io/posts/introduction-to-osquery/</link>
+    <link>http://example.org/posts/introduction-to-osquery/</link>
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
-    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的schema。
-除了安裝版外，也提供免安裝版。
-osqueryi 使用 安裝好後使用osqueryi指令進入進行操作interface。
-取得檔案 hash value 以下以hash schema來示範。對hash schema查詢時，必需使用where來指定檔案，或資料夾。使用資料夾時會回傳資料夾內所有檔案hash值。
-osqueryi &#34;SELECT \* FROM hash WHERE path = &#39;path/to/file&#39; &#34; 上面指令可以列出檔案的hash值，並把所有欄位列出。
-osqueryi &#34;SELECT \* FROM hash WHERE directory = &#39;path/to/directory&#39; &#34; 上面指令可以列出路徑中所有檔案的hash值，並把所有欄位列出。
-取得排程資訊 利用 scheduled_tasks 可以取得 Windows 上的排程資料
-可以參考以下指令將 state 是 ready 跟 running 的 task 把 name 跟 action 列出來。
-c:\&gt;osqueryi &#34;select name, action from scheduled_tasks where state in (&#39;ready&#39;,&#39;running&#39;)&#34; 輸出結果參考
-+---------------------------+------------------------------------------------------------------+ | name | action | +---------------------------+------------------------------------------------------------------+ | Adobe Acrobat Update Task | C:\Program Files (x86)\Common Files\Adobe\ARM\1.]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-osquery/</guid>
+    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢]]></description>
 </item>
 <item>
     <title>資安監控- 監控 AD 的受駭跡證</title>
-    <link>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</link>
+    <link>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</link>
     <pubDate>Wed, 26 May 2021 07:24:33 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
-    <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。
-介紹 資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。
-Account Logon Events Account Management Directory Service Access Logon Events Object Access Policy Change Privilege Use Process Tracking System Events 使用 Auditpol.exe 設定 Windows 稽核原則 依微軟的說明，Auditpol.exe 較能正確回傳稽核原則的設定值。
-參考以下指令，可列出所有稽核原則設定值。
-auditpol /get /category:\* 參考以下指令，可設定logon的稽核原則內容。
-auditpol /set /subcategory:&#34;logon&#34; /success:enable /failure:enable 使用 Group policy 設定稽核原則 開啟群組原則設定，開到以下的路徑，將想要開啟的稽核原則開啟即可。
-Computer Configuration\Windows Settings\Security Settings\Local Policies\Audit Policy
-Local Group Policy Editor
-微軟建議的稽核原則設定 https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
-在監控上常用到的幾個Event ID 除了微軟建議監的 Event ID中的說明外，特別列出以下實務上常用的幾個Event ID。]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
+    <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。 介紹 資安監控可以有效的發現場域內需要注意]]></description>
 </item>
 <item>
     <title>名詞介紹-瞭解MDR EDR EPP XDR</title>
-    <link>https://amingosec.github.io/posts/introduction-to-mdr-edr-epp-xdr/</link>
+    <link>http://example.org/posts/introduction-to-mdr-edr-epp-xdr/</link>
     <pubDate>Tue, 11 May 2021 10:11:33 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-mdr-edr-epp-xdr/</guid>
-    <description><![CDATA[說明 MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。
-EDR：Endpoint Detection and Response 故名思意針對端點還的行為進行監控，並提供回應的功能，讓使用者可以遠端網網、取證、調查&hellip;等
-EPP：Endpoint Protection Platform 在過去只有EDR的狀況下，大多只有監控與提供事件回應的功能，但是EPP除了EDR的效果外，還提供了即時阻擋的功能。
-MDR：Managed Detection and Response MDR相較於EDR跟EPP，MDR不是技術或產品，而是一項服務。大多指代管EDR的內容，相較於自己建立EDR進行監控與事件處理，委外代管可減輕組織內的技術要求，算是近期較為流行的方式。
-XDR：X代表多設備或跨設備(各家定義不同) 有不同的定義，大多指跨不同的資安設備，整合端點、網路、Email等監控設備的資訊，發現更完整的攻擊狀況。
-延伸閱讀 資安監控-rever shell監控方法 工具介紹-Weevely (kali linux web shell產生工具) 參考資料 www.netsurion.com/articles/understanding-mdr-edr-epp-and-xdr]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-mdr-edr-epp-xdr/</guid>
+    <description><![CDATA[說明 MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。 EDR：Endpoint Detection and Response 故名思意針對端點還的行]]></description>
 </item>
 <item>
     <title>Windows Server Update Services (WSUS) 介紹</title>
-    <link>https://amingosec.github.io/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</link>
+    <link>http://example.org/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</link>
     <pubDate>Thu, 06 May 2021 16:11:44 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</guid>
-    <description><![CDATA[WSUS是windows提供更新管理的Server
-影片說明 https://www.youtube.com/watch?v=Yv0qjxdX5yw
-文章連結 https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+ 相關攻擊手法 https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</guid>
+    <description><![CDATA[WSUS是windows提供更新管理的Server 影片說明 https://www.youtube.com/watch?v=Yv0qjxdX5yw 文章連結 https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+ 相關攻擊手法 https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/]]></description>
 </item>
 </channel>
 </rss>

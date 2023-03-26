@@ -1,22 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>資安產品 - Tag - </title>
-        <link>https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/</link>
-        <description>資安產品 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 12:42:48 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/" rel="self" type="application/rss+xml" /><item>
+        <title>資安產品 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/</link>
+        <description>資安產品 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 12:42:48 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%B3%87%E5%AE%89%E7%94%A2%E5%93%81/" rel="self" type="application/rss+xml" /><item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
-    <link>https://amingosec.github.io/posts/windows-ir/</link>
+    <link>http://example.org/posts/windows-ir/</link>
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-ir/</guid>
-    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
-在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
-Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
-在 Windows Event Log 分析時可以檢查的幾個重點：
-系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
-Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
-GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
-https://eventlogxp.com]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/windows-ir/</guid>
+    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
 </item>
 </channel>
 </rss>

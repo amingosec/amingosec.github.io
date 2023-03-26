@@ -1,46 +1,39 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>弱點掃瞄 - Tag - </title>
-        <link>https://amingosec.github.io/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/</link>
-        <description>弱點掃瞄 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/" rel="self" type="application/rss+xml" /><item>
+        <title>弱點掃瞄 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/</link>
+        <description>弱點掃瞄 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%BC%B1%E9%BB%9E%E6%8E%83%E7%9E%84/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-Shodan</title>
-    <link>https://amingosec.github.io/posts/introduction-to-shodan/</link>
+    <link>http://example.org/posts/introduction-to-shodan/</link>
     <pubDate>Thu, 16 Jul 2020 01:41:59 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-shodan/</guid>
-    <description><![CDATA[Shodan常被稱為駭客的google，會在網路上掃公開網路上的訊息，並建立成資料庫。使用者利用shodan取得資料可減少在資料取得時的足跡。 付費版的shodan有提供更完整的功能，加上shodan常有特價，可以抓準時機來買一下。
-延伸閱讀 自動化滲透測試框架-OWASP Nettacker 紅隊工具整理 參考資料 Shodan Pentesting Guide – TurgenSec Community — Read on community.turgensec.com/shodan-pentesting-guide/]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-shodan/</guid>
+    <description><![CDATA[Shodan常被稱為駭客的google，會在網路上掃公開網路上的訊息，並建立成資料庫。使用者利用shodan取得資料可減少在資料取得時的足跡]]></description>
 </item>
 <item>
     <title>工具介紹-nmap使用</title>
-    <link>https://amingosec.github.io/posts/nmap%E4%BD%BF%E7%94%A8/</link>
+    <link>http://example.org/posts/nmap%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Sun, 26 Aug 2018 01:43:01 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/nmap%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn
-Port Scanning 狀態：open，close、filtered、unfiltered、open|filtered、closed|filtered -sT TCP scan -sU UTP scan -sA ACK scanning 可以確定是否有防火牆檔著 -sX Xmas scan
-OS fingerprinting -sV -O
-其他指令 -vv 列出詳細掃瞄狀態
-延伸閱讀 工具介紹-hping 使用 工具介紹-Netcat指令 Nmap Cheat Sheet 參考資料 https://nmap.org/docs/discovery.pdf https://nmap.org/docs/nmap-mindmap.pdf https://rookiehunting.wordpress.com/2022/02/02/nmap-a-brief-introduction/ ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/nmap%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn Port Scanning 狀態：open，close、filtere]]></description>
 </item>
 <item>
     <title>工具介紹-openvas使用</title>
-    <link>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</link>
+    <link>http://example.org/posts/openvas%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Mon, 02 Jul 2018 05:38:11 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[如果還沒有安裝，可以參考之前的文章，工具介紹-在Kali Linux上安裝openvas。
-1.使用Wizard掃描 開啟openvas後，第一次使用可以用wizard來進行弱點掃瞄 點選scans-&gt;task找到紫色的wizard點了之後輸入要掃的網站即可。]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/openvas%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[如果還沒有安裝，可以參考之前的文章，工具介紹-在Kali Linux上安裝openvas。 1.使用Wizard掃描 開啟openvas後，第一次]]></description>
 </item>
 <item>
     <title>工具介紹-在Kali Linux上安裝openvas</title>
-    <link>https://amingosec.github.io/posts/install-openvas-on-kali-linux/</link>
+    <link>http://example.org/posts/install-openvas-on-kali-linux/</link>
     <pubDate>Sat, 30 Jun 2018 10:18:33 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/install-openvas-on-kali-linux/</guid>
-    <description><![CDATA[openvas為一個開源的弱掃工具，有名的付費工具為nessus 在Kali Linux上安裝openvas(依照kali Linux的教學) 更新 # apt-get update # apt-get dist-upgrade 安裝 # apt-get install openvas # openvas-setup (setup弱點資料庫) 完成後會直接開啟瀏覽器，加入例外後即可進入openvas的網站。 注意，openvas的帳密在執行openvas-setup時會自動設定，請記下來，進入後在administrator的地方換密碼，或是直接用以下指令換密碼 openvasmd &ndash;user=admin &ndash;new-password=yourpassword 官網：http://www.openvas.org
-延伸閱讀 工具介紹-Weevely (kali linux web shell產生工具) ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/install-openvas-on-kali-linux/</guid>
+    <description><![CDATA[openvas為一個開源的弱掃工具，有名的付費工具為nessus 在Kali Linux上安裝openvas(依照kali Linux的教學) 更新]]></description>
 </item>
 </channel>
 </rss>

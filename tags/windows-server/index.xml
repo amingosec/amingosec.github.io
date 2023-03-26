@@ -1,58 +1,47 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>windows server - Tag - </title>
-        <link>https://amingosec.github.io/tags/windows-server/</link>
-        <description>windows server - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/windows-server/" rel="self" type="application/rss+xml" /><item>
+        <title>windows server - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/windows-server/</link>
+        <description>windows server - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/windows-server/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
-    <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</link>
+    <link>http://example.org/posts/using-turnedontimesview-to-get-windows-off-on-time/</link>
     <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</guid>
-    <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。
-TUrnedOnTimesView透過windows event log來比對開關機資訊。
-EventID 41 (Microsoft-Windows-Kernel-Power): 系統重啟前未完整關機。 可能造成的原因包含系統未回應、系統crash，或是未預期的斷電。 EventID 42 (Microsoft-Windows-Kernel-Power): 系統進入睡眠 EventID 1 (Microsoft-Windows-Power-Troubleshooter): 系統從睡眠中開啟. EventID 1074 (USER32): The process xxx has initiated the xxx of computer xxx on behalf of user xxx for the following reason: xxx EventID 6005 (EventLog): 稽核記錄開始。 EventID 6006 (EventLog): 稽核記錄停止。 參考連結 https://www.nirsoft.net/utils/computer_turned_on_times.html ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/using-turnedontimesview-to-get-windows-off-on-time/</guid>
+    <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。 TUrnedOnTimesView透過windows]]></description>
 </item>
 <item>
     <title>資訊安全-IIS log 位置</title>
-    <link>https://amingosec.github.io/posts/location-of-iis-log-files/</link>
+    <link>http://example.org/posts/location-of-iis-log-files/</link>
     <pubDate>Wed, 26 Jan 2022 12:39:52 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/location-of-iis-log-files/</guid>
-    <description><![CDATA[說明 Log時間是UTC，要查詢相關log記得注意時區問題。 每天一個log檔，event會即時寫入該天log檔內。 IIS 預設log路徑為 %SystemDrive%\inetpub\logs\LogFiles\，在資料夾中，各網站會有一個子資料夾如：W3SVC1，網站的 log 會在資料夾中以 u_exyymmdd.log 的log檔呈現。
-W3SVC 後面的數字是 IIS 的網站 ID
-Log檔名說明：
-名稱格式：u_exyymmdd.log yy:西元年份後2碼，2022年會以22表示 mm:月份 dd:日期 延伸閱讀 資訊安全-Windows Event Log位置 Windows IR 方向 資訊安全-基本概念 參考資料 Managing IIS Log File Storage | Microsoft Docs]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/location-of-iis-log-files/</guid>
+    <description><![CDATA[說明 Log時間是UTC，要查詢相關log記得注意時區問題。 每天一個log檔，event會即時寫入該天log檔內。 IIS 預設log路徑為 %Syst]]></description>
 </item>
 <item>
     <title>資訊安全-Wevtutil 日誌指令</title>
-    <link>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command/</link>
+    <link>http://example.org/posts/introduction-to-windows-wevtutil-command/</link>
     <pubDate>Mon, 01 Nov 2021 16:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command/</guid>
-    <description><![CDATA[Windows 日誌匯出指令
-wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored.
-延伸閱讀 資訊安全-Windows Event Log位置 資訊安全-IIS log 位置 參考資料 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-windows-wevtutil-command/</guid>
+    <description><![CDATA[Windows 日誌匯出指令 wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored. 延伸閱讀 資訊安全-Windows Event Log位置 資]]></description>
 </item>
 <item>
     <title>Windows Server Update Services (WSUS) 介紹</title>
-    <link>https://amingosec.github.io/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</link>
+    <link>http://example.org/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</link>
     <pubDate>Thu, 06 May 2021 16:11:44 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</guid>
-    <description><![CDATA[WSUS是windows提供更新管理的Server
-影片說明 https://www.youtube.com/watch?v=Yv0qjxdX5yw
-文章連結 https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+ 相關攻擊手法 https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</guid>
+    <description><![CDATA[WSUS是windows提供更新管理的Server 影片說明 https://www.youtube.com/watch?v=Yv0qjxdX5yw 文章連結 https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+ 相關攻擊手法 https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/]]></description>
 </item>
 <item>
     <title>下載windows vm</title>
-    <link>https://amingosec.github.io/posts/download-windows-vm/</link>
+    <link>http://example.org/posts/download-windows-vm/</link>
     <pubDate>Tue, 29 May 2018 15:25:38 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/download-windows-vm/</guid>
-    <description><![CDATA[介紹 如果手邊臨時需要建 VM，但又沒有 windows 的安裝 image 時，可以使用微軟提供的測試 VM。到下面的連結中，選擇想要的 VM 檔下載即可。
-密碥為 Passw0rd!
-下載位置 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ https://www.microsoft.com/zh-tw/evalcenter/try ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/download-windows-vm/</guid>
+    <description><![CDATA[介紹 如果手邊臨時需要建 VM，但又沒有 windows 的安裝 image 時，可以使用微軟提供的測試 VM。到下面的連結中，選擇想要的 VM 檔下載即可。 密碥為 Passw0rd! 下載位置 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ https://www.microsoft.com/zh-tw/evalcenter/try]]></description>
 </item>
 </channel>
 </rss>

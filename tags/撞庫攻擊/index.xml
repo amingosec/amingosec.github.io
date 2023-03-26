@@ -1,24 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>撞庫攻擊 - Tag - </title>
-        <link>https://amingosec.github.io/tags/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</link>
-        <description>撞庫攻擊 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 06 Feb 2022 03:39:07 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/" rel="self" type="application/rss+xml" /><item>
+        <title>撞庫攻擊 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</link>
+        <description>撞庫攻擊 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 06 Feb 2022 03:39:07 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/" rel="self" type="application/rss+xml" /><item>
     <title>密碼破解-撞庫攻擊</title>
-    <link>https://amingosec.github.io/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</link>
+    <link>http://example.org/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</link>
     <pubDate>Sun, 06 Feb 2022 03:39:07 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</guid>
-    <description><![CDATA[撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。
-偵測與防範的手法 2階段驗證(2FA)，是能有效防止的一種方式。
-除了2FA外，或是網站不支援2FA時(那種網站也別用了)，使用者能否在不同網站使用不同密碼也是很重要的。
-因此管理員會在政策上要求定期更改密碼，並且密碼不可與前幾代相同。利用這個方式來讓使用者換成不同的密碼。
-密碼管理軟體 其實很多道理人都懂，但常常為了方便而選擇相同的密碼。此時密碼管理軟體就很重要了。利用軟體自動產生高強度的密碼，登入時自動幫你輸入，不但不用記錄，還達到密碼強度要求，相當的方便好用。
-Log集中監控 在企業中使用SIEM建立關連規則來監控是可以監控到攻擊的行為。如內部使用者能使用不用密碼，在攻擊時會產生多次登入失敗。或是攻擊者在非正常登入來源登入都是可以監控的點。
-延伸閱讀 密碼噴灑攻擊
-[轉]保障AD管理群組與帳號安全
-[轉]內網橫向移動思路和技巧
-支持 如果你喜歡這網站，請加入追蹤，可以收到最新的更新訊息。]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</guid>
+    <description><![CDATA[撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。 偵測與防範的手]]></description>
 </item>
 </channel>
 </rss>

@@ -1,57 +1,31 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Windows - Tag - </title>
-        <link>https://amingosec.github.io/tags/windows/</link>
-        <description>Windows - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/windows/" rel="self" type="application/rss+xml" /><item>
+        <title>Windows - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/windows/</link>
+        <description>Windows - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/windows/" rel="self" type="application/rss+xml" /><item>
     <title>Windows-Windows Server IIS 上建立PHP網站</title>
-    <link>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</link>
+    <link>http://example.org/posts/windows-server-iis-%E8%B7%91-php/</link>
     <pubDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</guid>
-    <description><![CDATA[分享最近在IIS上使用Web Platform Installer安裝的經驗。
-OS：Server 2016
-PHP：8.0
-1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools
-2. 安裝VC++ Runtime 如果沒有安裝的話，之後會出現error code 500。可安裝最新的x86版本，下載連結如下：
-https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
-3. 安裝Web Platform Installer 之後會透過Web Platform安裝PHP，下載連結如下：
-https://www.microsoft.com/web/downloads/platform.aspx
-4. 安裝PHP 進到IIS Manager，在左邊connections中選取自己的Hostname，再選取Web Platform Installer，圖中紅框處。
-進到Web Platform Installer後，選擇Product，再選擇想要安裝的PHP版本後，選擇Add，再點選下面的Install，如下圖紅框。
-之後再點選I Accept開始安裝
-5. 測試PHP安裝 在安裝好後，建立一個新檔案，輸入內容&lt;?php phpinfo(); ?&gt;
-將檔案存成C:\inetpub\wwwroot\Phpinfo.php
-存好檔後，開啟Broswer，進到http://localhost/phpinfo.php，會出現PHP的設定畫面，表示安裝完成。
-6. 其他事項 如果要使用php上傳檔案，請先確認php.ini檔案中的值file_uploads = On，同時上傳目標資料夾要有可寫入權限。
-延申閱讀 IIS log 位置 參考資料 https://docs.microsoft.com/en-us/iis/application-frameworks/scenario-build-a-php-website-on-iis/configuring-step-1-install-iis-and-php
-https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/quick-create-portal
-https://www.w3schools.com/php/php_file_upload.asp]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/windows-server-iis-%E8%B7%91-php/</guid>
+    <description><![CDATA[分享最近在IIS上使用Web Platform Installer安裝的經驗。 OS：Server 2016 PHP：8.0 1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools 2. 安裝VC++ Runtime 如果沒]]></description>
 </item>
 <item>
     <title>資訊安全-Wevtutil 日誌指令</title>
-    <link>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command/</link>
+    <link>http://example.org/posts/introduction-to-windows-wevtutil-command/</link>
     <pubDate>Mon, 01 Nov 2021 16:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command/</guid>
-    <description><![CDATA[Windows 日誌匯出指令
-wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored.
-延伸閱讀 資訊安全-Windows Event Log位置 資訊安全-IIS log 位置 參考資料 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/introduction-to-windows-wevtutil-command/</guid>
+    <description><![CDATA[Windows 日誌匯出指令 wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored. 延伸閱讀 資訊安全-Windows Event Log位置 資]]></description>
 </item>
 <item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
-    <link>https://amingosec.github.io/posts/windows-ir/</link>
+    <link>http://example.org/posts/windows-ir/</link>
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/windows-ir/</guid>
-    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。
-在進行 Windows 主機上 IR 時主要可以分為以下幾個方向。
-Windows Event Log 帳戶 網路連線 Process 啟動與Serveice 工作排程 檔案 註冊檔 檢查 Windwos Event Log Windows提供日誌功能，將主機執行行為進行記錄。日誌記錄的內容受稽核原則的設定值掌控，除了預設開啟的內容，微軟有另行建議可開啟的稽核內容，可參考微軟建議-監控AD受駭跡證。
-在 Windows Event Log 分析時可以檢查的幾個重點：
-系統登出入 Log Process Log PowerShell Log Application Log 防毒軟體 Log 防火牆 Log 遠端登入事件 分析遠端登入事件可參考Tracking and Analyzing Remote Desktop Activity Logs in Windows
-Process執行分析 分析Event ID 4688，可注意有沒有異常的parent process 呼叫行為。
-GUI 的日誌工具 針對windows log除了使用預設的event viewer外，event log explorer 也是較多人使用的工具。
-https://eventlogxp.com]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/windows-ir/</guid>
+    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
 </item>
 </channel>
 </rss>

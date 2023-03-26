@@ -1,19 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>nmap - Tag - </title>
-        <link>https://amingosec.github.io/tags/nmap/</link>
-        <description>nmap - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 26 Aug 2018 01:43:01 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/nmap/" rel="self" type="application/rss+xml" /><item>
+        <title>nmap - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/nmap/</link>
+        <description>nmap - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 26 Aug 2018 01:43:01 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/nmap/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-nmap使用</title>
-    <link>https://amingosec.github.io/posts/nmap%E4%BD%BF%E7%94%A8/</link>
+    <link>http://example.org/posts/nmap%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Sun, 26 Aug 2018 01:43:01 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/nmap%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn
-Port Scanning 狀態：open，close、filtered、unfiltered、open|filtered、closed|filtered -sT TCP scan -sU UTP scan -sA ACK scanning 可以確定是否有防火牆檔著 -sX Xmas scan
-OS fingerprinting -sV -O
-其他指令 -vv 列出詳細掃瞄狀態
-延伸閱讀 工具介紹-hping 使用 工具介紹-Netcat指令 Nmap Cheat Sheet 參考資料 https://nmap.org/docs/discovery.pdf https://nmap.org/docs/nmap-mindmap.pdf https://rookiehunting.wordpress.com/2022/02/02/nmap-a-brief-introduction/ ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/nmap%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[nmap主要功用 host discorvery Port scanning OS fingerprinting host discorvery -sn 只進行host discorvery 不進行port scan (之前的版本為-sP) nmap 10.10.10.0/24 -sn Port Scanning 狀態：open，close、filtere]]></description>
 </item>
 </channel>
 </rss>

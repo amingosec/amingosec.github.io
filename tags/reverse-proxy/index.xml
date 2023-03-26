@@ -1,18 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Reverse Proxy - Tag - </title>
-        <link>https://amingosec.github.io/tags/reverse-proxy/</link>
-        <description>Reverse Proxy - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 07 May 2021 17:19:40 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/reverse-proxy/" rel="self" type="application/rss+xml" /><item>
+        <title>Reverse Proxy - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/reverse-proxy/</link>
+        <description>Reverse Proxy - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 07 May 2021 17:19:40 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/reverse-proxy/" rel="self" type="application/rss+xml" /><item>
     <title>Network-反向代理</title>
-    <link>https://amingosec.github.io/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
+    <link>http://example.org/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
     <pubDate>Fri, 07 May 2021 17:19:40 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
-    <description><![CDATA[說明 反向代理 Reverse Proxy顧名思意，是相較Proxy的行為反向執行。代替Server將請求回傳給Client。
-也就是說Client端所請求的對向不是真正的Server，而是Reverse Proxy。因此對Server來說可以達到隱藏真實IP的功能。
-同時利用Reverse Proxy，也可以達到Loadbalance的效果。是WAF跟CDN所運用到的技術。
-參考網站 https://www.anquanke.com/post/id/150436 https://github.com/Passer6y/Reverse_proxy ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
+    <description><![CDATA[說明 反向代理 Reverse Proxy顧名思意，是相較Proxy的行為反向執行。代替Server將請求回傳給Client。 也就是說Client端所請求的對]]></description>
 </item>
 </channel>
 </rss>

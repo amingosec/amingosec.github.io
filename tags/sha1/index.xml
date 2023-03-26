@@ -1,36 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>sha1 - Tag - </title>
-        <link>https://amingosec.github.io/tags/sha1/</link>
-        <description>sha1 - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sat, 27 Oct 2018 16:16:54 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/sha1/" rel="self" type="application/rss+xml" /><item>
+        <title>sha1 - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/sha1/</link>
+        <description>sha1 - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sat, 27 Oct 2018 16:16:54 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/sha1/" rel="self" type="application/rss+xml" /><item>
     <title>PowerShell - 取得檔案hash值</title>
-    <link>https://amingosec.github.io/posts/powershell-get-filehash/</link>
+    <link>http://example.org/posts/powershell-get-filehash/</link>
     <pubDate>Sat, 27 Oct 2018 16:16:54 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/powershell-get-filehash/</guid>
-    <description><![CDATA[說明 在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-filehash指令來取得檔案的hash值。
-參數如下
-ps c:/&gt;get-filehash \[-path\] \[-algorithm\] Example:
-ps c:/&gt;get-filehash c:/test/test.txt -algorithm md5 如果 -algorithm參數不給，會直接使用SHA 256
-支援的algorithm如下
-SHA1 SHA256 SHA384 SHA512 MD5 如果檔案位置太長，可以直接用拖拽的，將檔案拉到powershell中，會直接取得檔案路徑。
-取得資料夾內所有檔案hash值 如果要使用powershell取得資料夾內所有檔案的hash值也可以很快的做到，結合Get-ChildItem即可。參考下面指令，結果會直接在shell中輸出。
-Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) 如果還想要將結果另外存檔的話，可以使用結合export-csv &ldquo;filename.csv&quot;來將檔案輸出。
-Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) | export-csv &#34;.\\filename.csv&#34; 延伸閱讀 小知識-產生hash值的方式 Powershell-查詢ScheduledTasks PowerShell-設定IP位置 參考資料 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.2 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/powershell-get-filehash/</guid>
+    <description><![CDATA[說明 在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-fileha]]></description>
 </item>
 <item>
     <title>Windows 產生檔案 hash 值的方式</title>
-    <link>https://amingosec.github.io/posts/get-file-hash-in-windows/</link>
+    <link>http://example.org/posts/get-file-hash-in-windows/</link>
     <pubDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/get-file-hash-in-windows/</guid>
-    <description><![CDATA[hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。
-在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒白名單會是個好方法。
-使用 certuil 指令 產生 MD5 certuil -hashfile &lt;your/file&gt; MD5 產生 sha1 certuil -hashfile &lt;your/file&gt; SHA1 產生 sha256 certuil -hashfile &lt;your/file&gt; SHA256 使用 PowerShell 在 PowerShell中可以使用Get-filehash指令來取得檔案 hash 值
-get-filehash [-path] [-algorithm] 取得 md5 get-filehash c:/test/test.txt -algorithm md5 其他完整說明可見另一篇文章 PowerShell-取得檔案hash值
-使用 osquery osquery 是 facebook 發展的 open source 軟體，也提供取得檔案 hash 值的方法，可以參考工具介紹 - osquery一文的說明。
-延伸閱讀 工具介紹-osquery 取得檔案hash值-PowerShell 資訊安全-基本概念 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/get-file-hash-in-windows/</guid>
+    <description><![CDATA[hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。 在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒]]></description>
 </item>
 </channel>
 </rss>

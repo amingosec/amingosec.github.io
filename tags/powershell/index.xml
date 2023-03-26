@@ -1,87 +1,55 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>PowerShell - Tag - </title>
-        <link>https://amingosec.github.io/tags/powershell/</link>
-        <description>PowerShell - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 19 May 2022 16:59:16 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/powershell/" rel="self" type="application/rss+xml" /><item>
+        <title>PowerShell - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/powershell/</link>
+        <description>PowerShell - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 19 May 2022 16:59:16 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/powershell/" rel="self" type="application/rss+xml" /><item>
     <title>PowerShell - 使用 Where-Object 過慮輸出內容</title>
-    <link>https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/</link>
+    <link>http://example.org/posts/powershell-use-where-object-to-filter-results/</link>
     <pubDate>Thu, 19 May 2022 16:59:16 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/</guid>
-    <description><![CDATA[說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。
-在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。
-Containment Operators -contains：包含特定值 -notcontains：不包含特定值 Matching Operators -like：字串符合萬用字元特徵 -notlike：字串不符合萬用字元特徵 Equality Operators -eq：完全符合值 -ne：不符合值 範例 下面指令可以將想要的 hotfix 輸出出來。
-Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34;} 當然，Where-Object 也可以使用多條件來查詢。利用-and 跟 -or兩個參數來達到
-Get-Hotfix | Where-Object {$_.HotFixID -eq &#34;KB2999226&#34; -or $_.HotFixID -eq &#34;KB3080149&#34;} 利用大於等於條件 -ge ，找大於等於特定日期後安裝的 hotfix
-Get-Hotfix | Where-Object {$_.InstalledOn -ge &#34;2022/05/01&#34;} 取得 Status 是 Running 的服務。
-Get-Service | Where-Object {$_.Status -eq &#34;Running&#34;} 結論 在使用 PowerShell 取得一些資訊時，善用 Where-Object 可以相當快速的取得相要的內容，是個需要好好熟悉的指令。]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/powershell-use-where-object-to-filter-results/</guid>
+    <description><![CDATA[說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。 在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operater]]></description>
 </item>
 <item>
     <title>PowerShell-使用powershell查找電腦開關機狀況</title>
-    <link>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</link>
+    <link>http://example.org/posts/using-powershell-to-check-system-up-down-time/</link>
     <pubDate>Thu, 10 Jun 2021 16:05:03 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</guid>
-    <description><![CDATA[說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間
-Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果要存到特定檔案，可在後面加入&gt;來進行輸出
-Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap &gt; log.log 也可以使用 event id 27 來確認 boot time
-Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.message -like “The boot type*”} 或是
-Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like “27”} 其他方式 可以使用nirsoft的工具，TurnedOnTimesView ，來查找開關機狀態。
-https://www.nirsoft.net/utils/computer_turned_on_times.html
-延伸閱讀 工具介紹-TurnedOnTimesView-取得windows 開關機資訊 參考連結 https://steachs.]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/using-powershell-to-check-system-up-down-time/</guid>
+    <description><![CDATA[說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間 Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果]]></description>
 </item>
 <item>
     <title>Powershell-查詢ScheduledTasks</title>
-    <link>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks/</link>
+    <link>http://example.org/posts/using-powershell-to-check-scheduledtasks/</link>
     <pubDate>Wed, 28 Apr 2021 12:34:50 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/using-powershell-to-check-scheduledtasks/</guid>
-    <description><![CDATA[指令
-Get-ScheduledTask 列出所有 ScheduledTask
-Get-ScheduledTask -TaskName &#34;SystemScan&#34; 針對特定Task名稱列出
-Get-ScheduledTask -TaskPath &#34;\\UpdateTasks\\\*&#34; 列出特定路徑的Task
-Get-ScheduledTask -TaskPath &#34;\\Microsoft\\Windows\\Work Folders\\&#34;,&#34;\\Microsoft\\Windows\\Workplace Join\\&#34; 其他跟 ScheduledTask 相關指令 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?view=windowsserver2019-ps]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/using-powershell-to-check-scheduledtasks/</guid>
+    <description><![CDATA[指令 Get-ScheduledTask 列出所有 ScheduledTask Get-ScheduledTask -TaskName &#34;SystemScan&#34; 針對特定Task名稱列出 Get-ScheduledTask -TaskPath &#34;\\UpdateTasks\\\*&#34; 列出特定路徑的Task Get-ScheduledTask -TaskPath &#34;\\Microsoft\\Windows\\Work Folders\\&#34;,&#34;\\Microsoft\\Windows\\Workplace Join\\&#34; 其他跟 ScheduledTask 相關指令 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?view=windowsserver2019-ps]]></description>
 </item>
 <item>
     <title>需要知道的幾個 PowerShell 中 IP Address 相關指令</title>
-    <link>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know/</link>
+    <link>http://example.org/posts/powershell-ip-address-commands-must-to-know/</link>
     <pubDate>Fri, 17 Apr 2020 06:47:03 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/powershell-ip-address-commands-must-to-know/</guid>
-    <description><![CDATA[在 Windows 中除了 CMD 指令外，還有強大的 PowerShell 可以使用，除了支援 CMD 的操作外，還提供了更多指令內容。本文介紹幾個主機 IP 相關指令。
-取得 IP 狀態 Get-NetIPAddress Get-NetIPAddress 會取得主機各 ip 相關的資料。
-Get-NetIPConfiguration Get-NetIPConfiguration 一樣可以取得 ip 資訊，整體內容跟 ipconfig 的結果較為相近。
-設定 IP Address Set-NetIPAddress Set-NetIPAddress 可以設定主機 IP 位置。
-結論 PowerShell 是相當好用的工具。如果可以多熟悉相關指令，可以讓工作或日常維運更為輕鬆。
-參考資料 how-to-change-ip-address-using-set-netipaddress set-netipaddress ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/powershell-ip-address-commands-must-to-know/</guid>
+    <description><![CDATA[在 Windows 中除了 CMD 指令外，還有強大的 PowerShell 可以使用，除了支援 CMD 的操作外，還提供了更多指令內容。本文介紹幾個主機 IP 相關指令。 取得 IP 狀態 Get-NetIPAddress Get-NetIPAddress 會取得主機各 ip]]></description>
 </item>
 <item>
     <title>PowerShell - 修改網卡設定</title>
-    <link>https://amingosec.github.io/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/</link>
+    <link>http://example.org/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/</link>
     <pubDate>Sun, 28 Oct 2018 03:23:45 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/</guid>
-    <description><![CDATA[可以使用以下兩個指令來設定IP與dns
-Set-NetIPAddress Set-DnsClientServerAddress
-例如： ps c:/&gt;set-NetIPAddress -InputObject lan1 -IPAddress 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.254
-ps c:/&gt;Set-DnsClientServerAddress -InputObject lan1 -ServerAddresses (&#34;10.0.0.1&#34;,&#34;10.0.0.2&#34;) ``` 參考資料 [https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps) [https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps) [https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/](https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/) ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E4%BF%AE%E6%94%B9%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A-powershell/</guid>
+    <description><![CDATA[可以使用以下兩個指令來設定IP與dns Set-NetIPAddress Set-DnsClientServerAddress 例如： ps c:/&gt;set-NetIPAddress -InputObject lan1 -IPAddress 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.254 ps c:/&gt;Set-DnsClientServerAddress -InputObject lan1 -ServerAddresses (&#34;10.0.0.1&#34;,&#34;10.0.0.2&#34;) ``` 參考資料 [https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipaddress?view=win10-ps) [https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/dnsclient/set-dnsclientserveraddress?view=win10-ps) [https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/](https://www.ntweekly.com/2016/11/15/set-windows-server-core-2016-ip-address-using-powershell/)]]></description>
 </item>
 <item>
     <title>PowerShell - 取得檔案hash值</title>
-    <link>https://amingosec.github.io/posts/powershell-get-filehash/</link>
+    <link>http://example.org/posts/powershell-get-filehash/</link>
     <pubDate>Sat, 27 Oct 2018 16:16:54 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/powershell-get-filehash/</guid>
-    <description><![CDATA[說明 在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-filehash指令來取得檔案的hash值。
-參數如下
-ps c:/&gt;get-filehash \[-path\] \[-algorithm\] Example:
-ps c:/&gt;get-filehash c:/test/test.txt -algorithm md5 如果 -algorithm參數不給，會直接使用SHA 256
-支援的algorithm如下
-SHA1 SHA256 SHA384 SHA512 MD5 如果檔案位置太長，可以直接用拖拽的，將檔案拉到powershell中，會直接取得檔案路徑。
-取得資料夾內所有檔案hash值 如果要使用powershell取得資料夾內所有檔案的hash值也可以很快的做到，結合Get-ChildItem即可。參考下面指令，結果會直接在shell中輸出。
-Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) 如果還想要將結果另外存檔的話，可以使用結合export-csv &ldquo;filename.csv&quot;來將檔案輸出。
-Get-FileHash (Get-ChildItem &#34;pathtofile\\\*.\*&#34; -Recurse -Force) | export-csv &#34;.\\filename.csv&#34; 延伸閱讀 小知識-產生hash值的方式 Powershell-查詢ScheduledTasks PowerShell-設定IP位置 參考資料 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.2 ]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/powershell-get-filehash/</guid>
+    <description><![CDATA[說明 在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-fileha]]></description>
 </item>
 </channel>
 </rss>

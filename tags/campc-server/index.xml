@@ -1,19 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>c&amp;amp;c server - Tag - </title>
-        <link>https://amingosec.github.io/tags/campc-server/</link>
-        <description>c&amp;amp;c server - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 20 Apr 2018 03:23:59 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/campc-server/" rel="self" type="application/rss+xml" /><item>
+        <title>c&amp;amp;c server - 標籤 - 資安工作筆記</title>
+        <link>http://example.org/tags/campc-server/</link>
+        <description>c&amp;amp;c server - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 20 Apr 2018 03:23:59 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/campc-server/" rel="self" type="application/rss+xml" /><item>
     <title>資安名詞-惡意中繼站, C2</title>
-    <link>https://amingosec.github.io/posts/what-is-command-and-control-server-c2/</link>
+    <link>http://example.org/posts/what-is-command-and-control-server-c2/</link>
     <pubDate>Fri, 20 Apr 2018 03:23:59 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/what-is-command-and-control-server-c2/</guid>
-    <description><![CDATA[惡意中繼站是指具備命令與控制能力的伺服器 (Command &amp; Control, C&amp;C)或叫C2 server。
-通常為被駭客入侵的主機，並用利用此受駭主機來對其他入侵後的主機進行連線與操作。
-依手法不同，可見為IP或Domain的形式。不論IP或Domain這類情資的都有一定的時效性，有時駭客可能只針對些一案場，或當時的攻擊程式而設定中繼站，因此情資的更新也是相當重要的一環。
-中繼站情資的應用 在應用上，可以監控組織內部的 DNS Server log 、防火牆 log ，跟所收到的情資來比對，看是否有異常的連線行為。同時，如果有 IPS 或是 NGFW 等設備，也會有相關的情資或流量的分析，也需將相關的 log 加入監控，更能清楚的瞭解內部的網路狀況。
-延伸閱讀 網頁攻擊手法-上傳弱點 資安監控-rever shell監控方法 PHP revers shell 參考網站 https://cybersecuritynews.com/command-and-controlc2-server/?fbclid=IwAR0EEW4faI6odNZfZ1_R2y-jU84TGOuFuOze5t_HE9Li-3yxiLLDTokSv2A&amp;amp]]></description>
+    <author>作者</author>
+    <guid>http://example.org/posts/what-is-command-and-control-server-c2/</guid>
+    <description><![CDATA[惡意中繼站是指具備命令與控制能力的伺服器 (Command &amp; Control, C&amp;C)或叫C2 server。 通常為被駭客入侵的主機，並用利用此受駭主機來對其他入侵後]]></description>
 </item>
 </channel>
 </rss>
