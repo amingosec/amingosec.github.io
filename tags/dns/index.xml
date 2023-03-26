@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>DNS - Tag - </title>
+        <title>dns - Tag - </title>
         <link>https://amingosec.github.io/tags/dns/</link>
-        <description>DNS - Tag - </description>
+        <description>dns - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 07 Mar 2022 03:53:25 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/dns/" rel="self" type="application/rss+xml" /><item>
     <title>Network - DNS over HTTPS (DoH)介紹</title>
     <link>https://amingosec.github.io/posts/waht-is-dns-over-https-doh/</link>
@@ -14,6 +14,22 @@
 DoH Client 可使用以下的URI Tamplate來跟DoH Server進行 IN A Records解析。
 &#34;https://dnsserver.example.net/dns-query{?dns}&#34; 使用google doh 因為rfc8484需要進行base64後才可使用，較為不便，google doh服務提供了API呼叫的方式。
 &#34;https://dns.google/resovle?name=yourdomaim.com&#34; 延伸閱讀 名詞介紹-Domain Name Service (DNS) 參考資料 https://datatracker.ietf.org/doc/html/rfc8484 ]]></description>
+</item>
+<item>
+    <title>名詞介紹-Domain Name Service (DNS)</title>
+    <link>https://amingosec.github.io/posts/dns/</link>
+    <pubDate>Sat, 25 Jan 2020 14:43:12 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/dns/</guid>
+    <description><![CDATA[DNS提供將Domain name進行解析成IP的服務，需使用53/TCP、53/UDP(通常為UDP)進行連線。
+DNS查詢 在電腦在需要連線Domain時，會優先查找主機內的hosts file，並利用該資料進行連線。如果沒有找到，將再對所設定的DNS提出Domain查詢的請求。
+Linux 先找/etc/hosts
+windows 先找 C:\windows\System32\drivers\etc\hosts
+依RFC 3330 localhost 會指到127.0.0.1
+DNS設定(Linux) http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux
+延伸閱讀 DNS amplification attack (DNS放大攻擊)簡介 10 DNS Attacks Types and The Mitigate Steps – 2020 DNS tunneling 參考資料 https://tools.ietf.org/html/rfc3330
+https://www.cloudflare.com/learning/dns/what-is-dns/
+https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5%90%8D%E7%A8%B1%E8%A7%A3%E6%9E%90%E9%A0%86%E5%BA%8F-dae00cc9-7e9c-c0cc-8360-477b99cb978a]]></description>
 </item>
 <item>
     <title>攻擊手法-DNS tunneling</title>

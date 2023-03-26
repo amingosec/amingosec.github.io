@@ -6,13 +6,11 @@
         <meta name="robots" content="noodp" />
         <title>名詞介紹-Domain Name Service (DNS) - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="名詞介紹-Domain Name Service (DNS)" />
 <meta property="og:description" content="DNS提供將Domain name進行解析成IP的服務，需使用53/TCP、53/UDP(通常為UDP)進行連線。
-DNS查詢
-在電腦在需要連線Domain時，會優先查找主機內的hosts file，並利用該資料進行連線。如果沒有找到，將再對所設定的DNS提出Domain查詢的請求。
+DNS查詢 在電腦在需要連線Domain時，會優先查找主機內的hosts file，並利用該資料進行連線。如果沒有找到，將再對所設定的DNS提出Domain查詢的請求。
 Linux 先找/etc/hosts
 windows 先找 C:\windows\System32\drivers\etc\hosts
 依RFC 3330 localhost 會指到127.0.0.1
-DNS設定(Linux)
-http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux
+DNS設定(Linux) http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux
 延伸閱讀 DNS amplification attack (DNS放大攻擊)簡介 10 DNS Attacks Types and The Mitigate Steps – 2020 DNS tunneling 參考資料 https://tools.ietf.org/html/rfc3330
 https://www.cloudflare.com/learning/dns/what-is-dns/
 https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5%90%8D%E7%A8%B1%E8%A7%A3%E6%9E%90%E9%A0%86%E5%BA%8F-dae00cc9-7e9c-c0cc-8360-477b99cb978a" />
@@ -23,13 +21,11 @@ https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="名詞介紹-Domain Name Service (DNS)"/>
 <meta name="twitter:description" content="DNS提供將Domain name進行解析成IP的服務，需使用53/TCP、53/UDP(通常為UDP)進行連線。
-DNS查詢
-在電腦在需要連線Domain時，會優先查找主機內的hosts file，並利用該資料進行連線。如果沒有找到，將再對所設定的DNS提出Domain查詢的請求。
+DNS查詢 在電腦在需要連線Domain時，會優先查找主機內的hosts file，並利用該資料進行連線。如果沒有找到，將再對所設定的DNS提出Domain查詢的請求。
 Linux 先找/etc/hosts
 windows 先找 C:\windows\System32\drivers\etc\hosts
 依RFC 3330 localhost 會指到127.0.0.1
-DNS設定(Linux)
-http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux
+DNS設定(Linux) http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux
 延伸閱讀 DNS amplification attack (DNS放大攻擊)簡介 10 DNS Attacks Types and The Mitigate Steps – 2020 DNS tunneling 參考資料 https://tools.ietf.org/html/rfc3330
 https://www.cloudflare.com/learning/dns/what-is-dns/
 https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5%90%8D%E7%A8%B1%E8%A7%A3%E6%9E%90%E9%A0%86%E5%BA%8F-dae00cc9-7e9c-c0cc-8360-477b99cb978a"/>
@@ -47,7 +43,7 @@ https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/amingosec.github.io\/posts\/dns\/"
-        },"genre": "posts","keywords": "未分類","wordcount":  37 ,
+        },"genre": "posts","keywords": "dns","wordcount":  37 ,
         "url": "https:\/\/amingosec.github.io\/posts\/dns\/","datePublished": "2020-01-25T14:43:12+00:00","dateModified": "2020-01-25T14:43:12+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -98,6 +94,8 @@ https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#dns查詢">DNS查詢</a></li>
+    <li><a href="#dns設定linux">DNS設定(Linux)</a></li>
     <li><a href="#延伸閱讀">延伸閱讀</a></li>
     <li><a href="#參考資料">參考資料</a></li>
   </ul>
@@ -111,13 +109,13 @@ https://support.microsoft.com/zh-tw/topic/microsoft-tcp-ip-%E4%B8%BB%E6%A9%9F%E5
         data-sizes="auto"
         alt="https://amingosec.blog/wp-content/uploads/2020/01/img_4661.jpg?w=744"
         title="https://amingosec.blog/wp-content/uploads/2020/01/img_4661.jpg?w=744" /></p>
-<p>DNS查詢</p>
+<h2 id="dns查詢">DNS查詢</h2>
 <p>在電腦在需要連線Domain時，會優先查找主機內的hosts file，並利用該資料進行連線。如果沒有找到，將再對所設定的DNS提出Domain查詢的請求。</p>
 <p>Linux 先找/etc/hosts<br>
 windows 先找 C:\windows\System32\drivers\etc\hosts<br>
 依RFC 3330 localhost 會指到127.0.0.1</p>
-<p>DNS設定(Linux)<br>
-<a href="http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux" target="_blank" rel="noopener noreffer ">http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux</a></p>
+<h2 id="dns設定linux">DNS設定(Linux)</h2>
+<p><a href="http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux" target="_blank" rel="noopener noreffer ">http://www.geekpills.com/operating-system/linux/configure-master-slave-bind-dns-in-linux</a></p>
 <h2 id="延伸閱讀">延伸閱讀</h2>
 <ul>
 <li><a href="https://amingosec.blog/2019/12/28/dns%e6%94%be%e5%a4%a7%e6%94%bb%e6%93%8a%e7%b0%a1%e4%bb%8b/" target="_blank" rel="noopener noreffer ">DNS amplification attack (DNS放大攻擊)簡介</a></li>
@@ -137,13 +135,13 @@ windows 先找 C:\windows\System32\drivers\etc\hosts<br>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)" data-hashtags="未分類"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/dns/" data-hashtag="未分類"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)" data-hashtags="dns"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/dns/" data-hashtag="dns"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://amingosec.github.io/posts/dns/" data-title="名詞介紹-Domain Name Service (DNS)"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">dns</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

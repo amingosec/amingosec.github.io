@@ -35,19 +35,6 @@ wevtutil el 列出系統中所有日誌名稱 wevtutil cl system 清理系統日
     <description><![CDATA[link.medium.com/ILX1KSadIfb]]></description>
 </item>
 <item>
-    <title>Exchenge Server 漏洞-ProxyLogon</title>
-    <link>https://amingosec.github.io/posts/exchenge-server-%E6%BC%8F%E6%B4%9E-proxylogon/</link>
-    <pubDate>Sat, 17 Apr 2021 05:10:35 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/exchenge-server-%E6%BC%8F%E6%B4%9E-proxylogon/</guid>
-    <description><![CDATA[近期相當有名的漏洞，經由幾個CVE組合可達到RCE。
-介紹網站 https://proxylogon.com/
-https://github.com/praetorian-inc/proxylogon-exploit
-緩解措施 微軟針對此漏洞提出了以下的緩解措施。
-https://github.com/microsoft/CSS-Exchange/tree/main/Security
-參考網站 https://www.microsoft.com/security/blog/2021/03/25/analyzing-attacks-taking-advantage-of-the-exchange-server-vulnerabilities/]]></description>
-</item>
-<item>
     <title>密碼破解-密碼噴灑攻擊</title>
     <link>https://amingosec.github.io/posts/%E5%AF%86%E7%A2%BC%E5%99%B4%E7%81%91%E6%94%BB%E6%93%8A/</link>
     <pubDate>Sat, 10 Apr 2021 15:18:35 &#43;0000</pubDate>
@@ -113,6 +100,21 @@ tcpdump -nnSX port 443
     <author>Author</author>
     <guid>https://amingosec.github.io/posts/tycoon-ransomware-java-ransomware-attack-windows-linux-users/</guid>
     <description><![CDATA[針對Linux的勒鎖病毒，Tycoon Ransomware，利用Java Security experts have warned that hackers are using a new multi-platform Java ransomware &ldquo;Tycoon&rdquo; to target Windows and Linux users to lock down the files. — Read on gbhackers.com/tycoon-ransomware/]]></description>
+</item>
+<item>
+    <title>PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒</title>
+    <link>https://amingosec.github.io/posts/powershell-%E7%B7%B4%E7%BF%92-%E7%94%A8-powershell-%E8%A8%AD%E5%AE%9A-windows-%E6%8E%92%E7%A8%8B%E8%B7%91-powershell-%E9%BB%91%E6%9A%97%E5%9F%B7%E8%A1%8C%E7%B7%92/</link>
+    <pubDate>Sat, 30 May 2020 04:34:09 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://amingosec.github.io/posts/powershell-%E7%B7%B4%E7%BF%92-%E7%94%A8-powershell-%E8%A8%AD%E5%AE%9A-windows-%E6%8E%92%E7%A8%8B%E8%B7%91-powershell-%E9%BB%91%E6%9A%97%E5%9F%B7%E8%A1%8C%E7%B7%92/</guid>
+    <description><![CDATA[計劃把原本的手工部署與設定操作逐步轉成 PowerShell Script。這樣做有幾個好處：
+作業標準化，避免人為失誤
+寫成腳本，不管誰來操作結果都一致，不會無人交接手藝失傳，也排除腦殘眼拙手滑出錯的風險，
+大量部署或需重複執行時可節省可觀時間
+例如要部署上百台機器的場合。
+可設定排程自動化部署&hellip;
+— Read on blog.darkthread.net/blog/psfaq-setup-schtask/
+參考網站 https://docs.microsoft.com/en-us/powershell/module/psscheduledjob/?view=powershell-5.1 https://docs.microsoft.com/en-us/powershell/module/psscheduledjob/about/about_scheduled_jobs?view=powershell-5.1 blog.darkthread.net/blog/psfaq-setup-schtask/ ]]></description>
 </item>
 </channel>
 </rss>

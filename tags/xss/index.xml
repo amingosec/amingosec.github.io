@@ -9,10 +9,9 @@
     <pubDate>Wed, 01 Aug 2018 05:54:45 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://amingosec.github.io/posts/alert1-to-win/</guid>
-    <description><![CDATA[Level 0-Warmup &quot;);alert(1)//
-Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
-%22)alert(1)//
-Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
+    <description><![CDATA[介紹 alert(1) to win 是一個練習 xss 攻擊的一個地方，讓人可以從基本的 lab 開始瞭解 xss 攻擊的手法。
+Level 0-Warmup &#34;);alert(1)// Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
+%22)alert(1)// Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
 可以直接關閉script來開啟另一個alert]]></description>
 </item>
 <item>

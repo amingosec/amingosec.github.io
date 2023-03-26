@@ -5,10 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>Lab - alert(1) to win - </title><meta name="Description" content="This is 資安工作筆記"><meta property="og:title" content="Lab - alert(1) to win" />
-<meta property="og:description" content="Level 0-Warmup &quot;);alert(1)//
-Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
-%22)alert(1)//
-Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
+<meta property="og:description" content="介紹 alert(1) to win 是一個練習 xss 攻擊的一個地方，讓人可以從基本的 lab 開始瞭解 xss 攻擊的手法。
+Level 0-Warmup &#34;);alert(1)// Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
+%22)alert(1)// Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
 可以直接關閉script來開啟另一個alert" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://amingosec.github.io/posts/alert1-to-win/" /><meta property="article:section" content="posts" />
@@ -16,10 +15,9 @@ Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
 <meta property="article:modified_time" content="2018-08-01T05:54:45+00:00" /><meta property="og:site_name" content="資安工作筆記" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Lab - alert(1) to win"/>
-<meta name="twitter:description" content="Level 0-Warmup &quot;);alert(1)//
-Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
-%22)alert(1)//
-Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
+<meta name="twitter:description" content="介紹 alert(1) to win 是一個練習 xss 攻擊的一個地方，讓人可以從基本的 lab 開始瞭解 xss 攻擊的手法。
+Level 0-Warmup &#34;);alert(1)// Level 1-Adobe 這關將 &quot; replace為 \&quot;，因此要試著繞過。
+%22)alert(1)// Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
 可以直接關閉script來開啟另一個alert"/>
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -35,7 +33,7 @@ Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/amingosec.github.io\/posts\/alert1-to-win\/"
-        },"genre": "posts","keywords": "owasp top 10, XSS, 滲透測試","wordcount":  14 ,
+        },"genre": "posts","keywords": "owasp top 10, XSS, 滲透測試","wordcount":  25 ,
         "url": "https:\/\/amingosec.github.io\/posts\/alert1-to-win\/","datePublished": "2018-08-01T05:54:45+00:00","dateModified": "2018-08-01T05:54:45+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -77,7 +75,7 @@ Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Lab - alert(1) to win</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2018-08-01">2018-08-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;14 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2018-08-01">2018-08-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;25 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -86,17 +84,20 @@ Level 2-Json 這題使用了Json.stringify，可看一下運作的方式。
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#介紹">介紹</a></li>
     <li><a href="#level-0-warmup">Level 0-Warmup</a></li>
     <li><a href="#level-1-adobe">Level 1-Adobe</a></li>
     <li><a href="#level-2-json">Level 2-Json</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="level-0-warmup">Level 0-Warmup</h2>
-<p><code>&quot;);alert(1)//</code></p>
-<h2 id="level-1-adobe">Level 1-Adobe</h2>
-<p>這關將 <code>&quot;</code> replace為 <code>\&quot;</code>，因此要試著繞過。<br>
-<code>%22)alert(1)//</code></p>
-<h2 id="level-2-json">Level 2-Json</h2>
+            </div><div class="content" id="content"><h2 id="介紹">介紹</h2>
+<p>alert(1) to win 是一個練習 xss 攻擊的一個地方，讓人可以從基本的 lab 開始瞭解 xss 攻擊的手法。</p>
+<h2 id="level-0-warmup">Level 0-Warmup</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&#34;</span>);<span style="color:#a6e22e">alert</span>(<span style="color:#ae81ff">1</span>)<span style="color:#75715e">//
+</span></span></span></code></pre></div><h2 id="level-1-adobe">Level 1-Adobe</h2>
+<p>這關將 <code>&quot;</code> replace為 <code>\&quot;</code>，因此要試著繞過。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#f92672">%</span><span style="color:#ae81ff">22</span>)<span style="color:#a6e22e">alert</span>(<span style="color:#ae81ff">1</span>)<span style="color:#75715e">//
+</span></span></span></code></pre></div><h2 id="level-2-json">Level 2-Json</h2>
 <p>這題使用了<a href="https://www.w3schools.com/js/js_json_stringify.asp" target="_blank" rel="noopener noreffer ">Json.stringify</a>，可看一下運作的方式。</p>
 <p>可以直接關閉script來開啟另一個alert</p>
 </div><div class="post-footer" id="post-footer">

@@ -43,16 +43,6 @@ file.download rpath lpath [-vector]
 延伸閱讀 The Journey to Try Harder: TJnull’s Preparation Guide for PWK/OSCP | NetSec Focus 建立Metasploitable 滲透練習Lab Redteam-紅隊作戰執行手冊 RedTeam攻擊技巧和安全防禦 ]]></description>
 </item>
 <item>
-    <title>CentOS - ip command</title>
-    <link>https://amingosec.github.io/posts/centos-%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%9D-ifconfig/</link>
-    <pubDate>Sat, 13 Oct 2018 06:59:04 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://amingosec.github.io/posts/centos-%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%9D-ifconfig/</guid>
-    <description><![CDATA[在安裝CentOS時使用最小安裝，一登入時想使用ifconfig查一下網路狀況，沒想到找不到這個指令。查了一下，原來已經改成要使用ip addr。
-BTW ip addr在kali 上也可以用。
-延伸閱讀 Kali-客製化Kali Linux 工具介紹-在Kali Linux上安裝openvas ]]></description>
-</item>
-<item>
     <title>工具介紹-openvas使用</title>
     <link>https://amingosec.github.io/posts/openvas%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Mon, 02 Jul 2018 05:38:11 &#43;0000</pubDate>

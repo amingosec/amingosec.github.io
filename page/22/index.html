@@ -55,60 +55,52 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/active-directory-attack/">Active Directory Attack</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-11">2018-06-11</time></span></div><div class="content">針對AD的攻擊 https://www.c0d3xpl0it.com/2018/06/active-directory-attack-dcsync.html</div><div class="post-footer">
-        <a href="/posts/active-directory-attack/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/active-directory-attack/">Active Directory Attack</a>,&nbsp;<a href="/tags/ad/">AD</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+        <a href="/posts/kerberos/">驗證協定-Kerberos</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-22">2018-04-22</time></span></div><div class="content">提供單一或多重驗證(authentication)服務，在Windows 2000之後，預設使用Kerberos進行驗證，無法驗證才會使用NTLM。
+驗證流程 參考資料 https://en.m.wikipedia.org/wiki/Kerberos_(protocol) AAA 授權認證機制 TACACS+</div><div class="post-footer">
+        <a href="/posts/kerberos/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%AD%89%E7%85%A7%E8%80%83%E8%A9%A6/">證照考試</a>,&nbsp;<a href="/tags/sscp/">SSCP</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/what-is-file-upload-vulnerability/">攻擊手法-檔案上傳漏洞</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-04">2018-06-04</time></span></div><div class="content">說明 在現在的網路環境中，越來越多網站提供上傳檔案的功能，不論是上傳照片、履歷、作品集&hellip;等，如當發果沒有良好的設計，很容易就會產生檔案上傳漏洞。
-Server在回應Client的請求時，如果是可執行的檔案，會回應執行後的結果。此時，如果攻擊者利用上傳的功能，將檔案傳到Server上，並且請求Server執行成功時，即可攻擊成功。因此檔案上傳漏洞有兩個重要的條件。
-繞過上傳限制將檔案上傳 對上傳的檔案正確的請求 發現網站可以上傳資料時，可以製做該網站可用的shell來上傳，達到遠端操作的功能。如果該網站可以用php，可以透過kali的weevely 來產生php shell，上傳後來進行連線。
-部份網站會使用副檔名檢查來防止上傳，但很容易被更改副檔名後繞過。
-檔案上傳漏洞的危害 如果弱點被利用成功，很有可能讓攻擊者可進行遠端執行。且因為執行網頁服務的權限有時相當大，可直接讓攻擊者得到高權限來進一步進行橫向移動或其他攻擊。
-同時，如果目標主機存在路徑走訪的漏洞，會讓攻擊者有機會將檔案上傳到其他路徑，較不容易被察覺。
-延伸閱讀 PortSwigger-檔案上傳漏洞 lab 1 工具介紹-Weevely (kali linux web shell產生工具) 資訊安全-內網橫向移動(Lateral Movement)介紹 參考連結 https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload </div><div class="post-footer">
-        <a href="/posts/what-is-file-upload-vulnerability/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shell/">shell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/what-is-command-and-control-server-c2/">資安名詞-惡意中繼站, C2</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-20">2018-04-20</time></span></div><div class="content">惡意中繼站是指具備命令與控制能力的伺服器 (Command &amp; Control, C&amp;C)或叫C2 server。
+通常為被駭客入侵的主機，並用利用此受駭主機來對其他入侵後的主機進行連線與操作。
+依手法不同，可見為IP或Domain的形式。不論IP或Domain這類情資的都有一定的時效性，有時駭客可能只針對些一案場，或當時的攻擊程式而設定中繼站，因此情資的更新也是相當重要的一環。
+中繼站情資的應用 在應用上，可以監控組織內部的 DNS Server log 、防火牆 log ，跟所收到的情資來比對，看是否有異常的連線行為。同時，如果有 IPS 或是 NGFW 等設備，也會有相關的情資或流量的分析，也需將相關的 log 加入監控，更能清楚的瞭解內部的網路狀況。
+延伸閱讀 網頁攻擊手法-上傳弱點 資安監控-rever shell監控方法 PHP revers shell 參考網站 https://cybersecuritynews.com/command-and-controlc2-server/?fbclid=IwAR0EEW4faI6odNZfZ1_R2y-jU84TGOuFuOze5t_HE9Li-3yxiLLDTokSv2A&amp;amp</div><div class="post-footer">
+        <a href="/posts/what-is-command-and-control-server-c2/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/campc-server/">c&amp;amp;c server</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E6%83%A1%E6%84%8F%E4%B8%AD%E7%B9%BC%E7%AB%99/">惡意中繼站</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/metasploitable-%E5%BB%BA%E7%AB%8B/">Lab-建立Metasploitable 滲透練習Lab</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-03">2018-06-03</time></span></div><div class="content">Kali Linux 下載位置 https://www.kali.org/downloads/
-username root and password toor
-登入後開啟終端機更新
-#apt-get update
-#apt-get dist-upgrade
-#updatedb
-Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/
-下載後用VirtualBox匯入映象檔，以下面帳密使用
-username msfadmin and password msfadmin
-Windows 10 VM https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
-可下載來進行測試
-offensive security 說明
-https://www.offensive-security.com/metasploit-unleashed/requirements/
-延伸閱讀 [轉]lonelysec-OSCP心得分享 練習網站 </div><div class="post-footer">
-        <a href="/posts/metasploitable-%E5%BB%BA%E7%AB%8B/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/metasploitable/">Metasploitable</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/cyber-kill-chain/">資安名詞-Cyber Kill Chain</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-18">2018-04-18</time></span></div><div class="content">介紹 Cyber Kill Chain由洛馬發展出來，中文有人翻譯成「網路狙殺鏈」但通常還是直接念英文較為順口。
+Cyber Kill Chain主要是說明APT攻擊時的流程，進行資安鑑識時可輔助解析攻擊的過程，對防守方來說，也可用來檢視在各階段防禦的狀態。
+同時可參考Mittre Att&amp;ck 針對Kill Chain中的各環節所列出的攻擊技巧。
+步驟 Reconnaissance Weaponization Delivery Exploition Installation Command and Control Action on Objective 防守方角度來看Cyber Kill Chain 如果Cyber Kill Chain為攻擊方攻擊時的步驟，那對防守方來說，打斷Cyber Kill Chain可說是防御APT攻擊的手段。
+以下為說明Cyber Kill Chain與利用其防禦的影片
+https://youtu.be/II91fiUax2g
+延伸閱讀 SSCP – Methodology of an Attack 參考網站 洛馬的官網介紹 MITRE ATT&amp;CK® eccouncil Cyber Kill Chain介紹 </div><div class="post-footer">
+        <a href="/posts/cyber-kill-chain/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/apt/">APT</a>,&nbsp;<a href="/tags/cyber-kill-chain/">Cyber Kill Chain</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E8%B3%87%E8%A8%8A%E6%90%9C%E9%9B%86%E7%B6%B2%E7%AB%99%E8%88%87%E5%B7%A5%E5%85%B7/">資訊搜集網站與工具</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-06-03">2018-06-03</time></span></div><div class="content">目標資訊 http://whois.domaintools.com https://www.netcraft.com https://talosintelligence.com
-DNS查詢 https://www.robtex.com
-Subdomain Knock Subdomain Scan https://github.com/guelfoweb/knock 使用下面指令安裝 # git clone https://github.com/guelfoweb/knock.git
-其他軟體或指令 dirb (資料夾內容查詢) nslookup maltego(installed in kali) wappalyzer 瀏覽器插件
-該注意的資料 以下為information gathering該注意的資訊 版本、目標server上其他的系統 login.xxx phpinfo robots.txt(會存該網站不想給google看的資料) config.ini tset</div><div class="post-footer">
-        <a href="/posts/%E8%B3%87%E8%A8%8A%E6%90%9C%E9%9B%86%E7%B6%B2%E7%AB%99%E8%88%87%E5%B7%A5%E5%85%B7/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/information-gathering/">information gathering</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+        <a href="/posts/pt-va-%E5%A0%B1%E5%91%8A/">PT VA 報告</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-18">2018-04-18</time></span></div><div class="content">要確保弱點的可用性，可以將可利用的弱點，與掃到的弱點分開列出。 在進行pt va報告時，以系統為主體報告，雖然可能會出現重複的弱點說明，但會讓承辦人比較清楚。或可以弱點列出，並提出相關系統。 弱點說名後可提出弱點風險與相關修補方案，也可提出一些廠商不錯的地方，以免廠商不開心。</div><div class="post-footer">
+        <a href="/posts/pt-va-%E5%A0%B1%E5%91%8A/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/">未分類</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/">Email-查看自家的網域有沒有被認定為拉圾信-RBL</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-05-30">2018-05-30</time></span></div><div class="content">RBL是Realtime Blackhole List的簡稱 http://www.anti-abuse.org/multi-rbl-check/ 輸入後看下方各組織是否有列為垃圾信，都是綠色就ok</div><div class="post-footer">
-        <a href="/posts/%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%AE%B6%E7%9A%84%E7%B6%B2%E5%9F%9F%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E8%AA%8D%E5%AE%9A%E7%82%BA%E6%8B%89%E5%9C%BE%E4%BF%A1-rbl/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%A4%BE%E4%BA%A4%E5%B7%A5%E7%A8%8B/">社交工程</a>,&nbsp;<a href="/tags/rbl/">RBL</a></div></div>
+        <a href="/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/">資安相關條文</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-17">2018-04-17</time></span></div><div class="content">金融機構辦理電腦系統資訊安全評估辦法 行動裝置應用程式注意事項 電子票證應用安全強度準則 http://law.moj.gov.tw全國法規資料庫</div><div class="post-footer">
+        <a href="/posts/%E7%9B%B8%E9%97%9C%E6%A2%9D%E6%96%87/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%90%88%E8%A6%8F/">合規</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/download-windows-vm/">下載windows vm</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-05-29">2018-05-29</time></span></div><div class="content">介紹 如果手邊臨時需要建 VM，但又沒有 windows 的安裝 image 時，可以使用微軟提供的測試 VM。到下面的連結中，選擇想要的 VM 檔下載即可。
-密碥為 Passw0rd!
-下載位置 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ https://www.microsoft.com/zh-tw/evalcenter/try </div><div class="post-footer">
-        <a href="/posts/download-windows-vm/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+        <a href="/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/">資安名詞-異地備援</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-04-15">2018-04-15</time></span></div><div class="content">備援種類 Cold Site：建築物、不一定有公同設施
+WarmSite：建築物、公用設施、IT設備
+Hot Site：建築物、公用設施、IT設備、資料
+Mobile Site：行動機房
+Multiple Processing Site：在不同地點有相同的設備與資料，Mirro Site
+距離 在「我國機房異地備援機制參考指引v1.0」中提到，2003年資通安全會報中，建議異地備援距離為30公里。但勤業眾信依據921與日本311地震的影響範圍與，提出備援距離要至少需要150-200公里。
+延伸閱讀 資安名詞-木桶理論 資安名詞-Demilitarized Zone (DMZ) 資安名詞-惡意中繼站, C2 </div><div class="post-footer">
+        <a href="/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/backup-site/">backup site</a>,&nbsp;<a href="/tags/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/">異地備援</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/sscp/">SSCP</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -130,10 +122,6 @@ Subdomain Knock Subdomain Scan https://github.com/guelfoweb/knock 使用下面�
                 </li><li class="page-item ">
                     <span class="page-link">
                         <a href="/page/23/">23</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/24/">24</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
