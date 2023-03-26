@@ -3,13 +3,13 @@
         <title>Metasploitable - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/metasploitable/</link>
         <description>Metasploitable - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 03 Jun 2018 04:45:31 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/metasploitable/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Wed, 03 Jan 2018 12:45:31 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/tags/metasploitable/" rel="self" type="application/rss+xml" /><item>
     <title>Lab-建立Metasploitable 滲透練習Lab</title>
     <link>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</link>
-    <pubDate>Sun, 03 Jun 2018 04:45:31 &#43;0000</pubDate>
+    <pubDate>Wed, 03 Jan 2018 12:45:31 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</guid>
-    <description><![CDATA[Kali Linux 下載位置 https://www.kali.org/downloads/ username root and password toor 登入後開啟終端機更新 #apt-get update #apt-get dist-upgrade #updatedb Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/ 下載後用VirtualBox匯入映象檔，以下面帳密使用 username msfadmin and password msfadmin Windows 10 VM https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ 可]]></description>
+    <description><![CDATA[Lab 設計主機如下 Kali Linux (攻擊機) Metasploitable (靶機) Windows 10 (靶機) Kali Linux 下載位置 https://www.kali.org/downloads/ username kali and password kali 登入後開啟終端機更新 #apt-get update #apt-get dist-upgrade #updatedb Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/ 下載後用VirtualB]]></description>
 </item>
 </channel>
 </rss>
