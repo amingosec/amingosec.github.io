@@ -33,7 +33,7 @@
     <pubDate>Sun, 01 May 2022 03:21:15 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/linux-hash-command/</guid>
-    <description><![CDATA[hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異動]]></description>
+    <description><![CDATA[Note hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異]]></description>
 </item>
 <item>
     <title>VS Code extension 推薦</title>
