@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://amingosec.github.io/about/</loc><lastmod>2023-03-27T22:54:57&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/</loc><lastmod>2023-03-26T21:53:19&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/</loc><lastmod>2023-03-26T21:53:19&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/vpn/</loc><lastmod>2023-03-26T21:53:19&#43;08:00</lastmod></url><url>
@@ -234,5 +235,4 @@
             <loc>https://amingosec.github.io/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</loc><lastmod>2018-04-15T06:37:25&#43;00:00</lastmod></url><url>
             <loc>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</loc><lastmod>2018-01-03T12:45:31&#43;08:00</lastmod></url><url>
             <loc>https://amingosec.github.io/tags/metasploitable/</loc><lastmod>2018-01-03T12:45:31&#43;08:00</lastmod></url><url>
-            <loc>https://amingosec.github.io/about/</loc><priority>0</priority></url><url>
             <loc>https://amingosec.github.io/categories/</loc></url></urlset>
