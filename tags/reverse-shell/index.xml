@@ -9,7 +9,7 @@
     <pubDate>Sat, 03 Nov 2018 01:09:59 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/detecting-reverse-shell/</guid>
-    <description><![CDATA[reverse shell或是webshell，可說是外網滲透的最後一步，也是內網滲透的第一步，取得shell後就有機會用來往目標組織更進一步的入侵。 也因]]></description>
+    <description><![CDATA[reverse shell 是外網滲透轉到內網滲透重要一步，取得shell後就有機會用來往目標組織更進一步的入侵。 也因此在於這個階段的攻防可說是相當重要，也是近期E]]></description>
 </item>
 </channel>
 </rss>
