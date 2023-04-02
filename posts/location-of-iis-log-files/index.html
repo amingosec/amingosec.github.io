@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>資訊安全-IIS log 位置 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="資訊安全-IIS log 位置" />
-<meta property="og:description" content="說明 Log時間是UTC，要查詢相關log記得注意時區問題。 每天一個log檔，event會即時寫入該天log檔內。 IIS 預設log路徑為 %Syst" />
+<meta property="og:description" content="說明 IIS 預設log路徑為 %SystemDrive%\inetpub\logs\LogFiles\，在資料夾中，各網站會有一個子資料夾如：W3S" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://amingosec.github.io/posts/location-of-iis-log-files/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-26T12:39:52+00:00" />
 <meta property="article:modified_time" content="2022-01-26T12:39:52+00:00" /><meta property="og:site_name" content="資安工作筆記" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="資訊安全-IIS log 位置"/>
-<meta name="twitter:description" content="說明 Log時間是UTC，要查詢相關log記得注意時區問題。 每天一個log檔，event會即時寫入該天log檔內。 IIS 預設log路徑為 %Syst"/>
+<meta name="twitter:description" content="說明 IIS 預設log路徑為 %SystemDrive%\inetpub\logs\LogFiles\，在資料夾中，各網站會有一個子資料夾如：W3S"/>
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -84,12 +84,12 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="說明">說明</h2>
+<p>IIS 預設log路徑為 <code>%SystemDrive%\inetpub\logs\LogFiles\</code>，在資料夾中，各網站會有一個子資料夾如：<code>W3SVC1</code>，網站的 log 會在資料夾中以 <code>u_exyymmdd.log</code> 的log檔呈現。</p>
 <ul>
+<li>W3SVC 後面的數字是 IIS 的網站 ID</li>
 <li>Log時間是UTC，要查詢相關log記得注意時區問題。</li>
 <li>每天一個log檔，event會即時寫入該天log檔內。</li>
 </ul>
-<p>IIS 預設log路徑為 <code>%SystemDrive%\inetpub\logs\LogFiles\</code>，在資料夾中，各網站會有一個子資料夾如：<code>W3SVC1</code>，網站的 log 會在資料夾中以 <code>u_exyymmdd.log</code> 的log檔呈現。</p>
-<p>W3SVC 後面的數字是 IIS 的網站 ID</p>
 <p>Log檔名說明：</p>
 <ul>
 <li>名稱格式：u_exyymmdd.log</li>
@@ -99,8 +99,8 @@
 </ul>
 <h2 id="延伸閱讀">延伸閱讀</h2>
 <ul>
-<li><a href="https://amingosec.blog/2022/01/22/windows-event-log%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">資訊安全-Windows Event Log位置</a></li>
-<li><a href="https://amingosec.blog/2021/05/04/windows-ir/" target="_blank" rel="noopener noreffer ">Windows IR 方向</a></li>
+<li><a href="/posts/windows-event-log/" rel="">資訊安全-Windows Event Log位置</a></li>
+<li><a href="/posts/windows-ir/" rel="">Windows IR 方向</a></li>
 <li><a href="https://amingosec.blog/2022/02/05/%e8%b3%87%e8%a8%8a%e5%ae%89%e5%85%a8/" target="_blank" rel="noopener noreffer ">資訊安全-基本概念</a></li>
 </ul>
 <h2 id="參考資料">參考資料</h2>

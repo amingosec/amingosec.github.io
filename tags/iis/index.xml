@@ -9,7 +9,7 @@
     <pubDate>Wed, 26 Jan 2022 12:39:52 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/location-of-iis-log-files/</guid>
-    <description><![CDATA[說明 Log時間是UTC，要查詢相關log記得注意時區問題。 每天一個log檔，event會即時寫入該天log檔內。 IIS 預設log路徑為 %Syst]]></description>
+    <description><![CDATA[說明 IIS 預設log路徑為 %SystemDrive%\inetpub\logs\LogFiles\，在資料夾中，各網站會有一個子資料夾如：W3S]]></description>
 </item>
 </channel>
 </rss>
