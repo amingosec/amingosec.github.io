@@ -3,9 +3,17 @@
         <title>資安工作筆記</title>
         <link>https://amingosec.github.io/</link>
         <description>資訊安全相關內容分享</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 26 Mar 2023 21:53:19 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</lastBuildDate>
             <atom:link href="https://amingosec.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Cmder</title>
+    <link>https://amingosec.github.io/posts/cmder/</link>
+    <pubDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://amingosec.github.io/posts/cmder/</guid>
+    <description><![CDATA[介紹 Cmder是一款windows base 的可攜式command line工具。可用來取代內建的cmd.exe甚至powershell。可至Cmde]]></description>
+</item>
+<item>
     <title>VPN 介紹</title>
     <link>https://amingosec.github.io/posts/what-is-vpn/</link>
     <pubDate>Sun, 26 Mar 2023 21:53:19 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/postgresql-date-calculate/</guid>
     <description><![CDATA[使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的]]></description>
-</item>
-<item>
-    <title>VS Code extensions 推薦 for markdown</title>
-    <link>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</link>
-    <pubDate>Tue, 03 May 2022 16:09:50 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</guid>
-    <description><![CDATA[使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。 Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of]]></description>
 </item>
 </channel>
 </rss>

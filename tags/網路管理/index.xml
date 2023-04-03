@@ -3,7 +3,15 @@
         <title>網路管理 - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/</link>
         <description>網路管理 - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+    <title>Cmder</title>
+    <link>https://amingosec.github.io/posts/cmder/</link>
+    <pubDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://amingosec.github.io/posts/cmder/</guid>
+    <description><![CDATA[介紹 Cmder是一款windows base 的可攜式command line工具。可用來取代內建的cmd.exe甚至powershell。可至Cmde]]></description>
+</item>
+<item>
     <title>Windows-Windows Server IIS 上建立PHP網站</title>
     <link>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</link>
     <pubDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</pubDate>
@@ -74,14 +82,6 @@
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</guid>
     <description><![CDATA[最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證]]></description>
-</item>
-<item>
-    <title>Windows 產生檔案 hash 值的方式</title>
-    <link>https://amingosec.github.io/posts/get-file-hash-in-windows/</link>
-    <pubDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://amingosec.github.io/posts/get-file-hash-in-windows/</guid>
-    <description><![CDATA[hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。 在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒]]></description>
 </item>
 </channel>
 </rss>
