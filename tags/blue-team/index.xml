@@ -21,11 +21,11 @@
 </item>
 <item>
     <title>[轉]藍隊訓練</title>
-    <link>https://amingosec.github.io/posts/808/</link>
+    <link>https://amingosec.github.io/posts/blue-team-training/</link>
     <pubDate>Tue, 13 Apr 2021 00:58:26 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>https://amingosec.github.io/posts/808/</guid>
-    <description><![CDATA[這邊列出了藍隊會需要知道的幾個Modules SIEM的部份主要以Azure Sentinel 跟 ELK來說明 共24個Modules Modules Module 1- Incident Response and Security Operations Fundamentals Module 2- TOP 20 Open-source]]></description>
+    <guid>https://amingosec.github.io/posts/blue-team-training/</guid>
+    <description><![CDATA[介紹 這邊列出了藍隊會需要知道的幾個Modules SIEM的部份主要以Azure Sentinel 跟 ELK來說明 共24個Modules Modules Module 1- Incident Response and Security Operations Fundamentals Module 2- TOP]]></description>
 </item>
 </channel>
 </rss>
