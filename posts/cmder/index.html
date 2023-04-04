@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>Cmder - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="Cmder" />
-<meta property="og:description" content="介紹 Cmder是一款windows base 的可攜式command line工具。可用來取代內建的cmd.exe甚至powershell。可至Cmde" />
+<meta property="og:description" content="介紹 Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://amingosec.github.io/posts/cmder/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-04-03T23:52:51+08:00" />
 <meta property="article:modified_time" content="2023-04-03T23:52:51+08:00" /><meta property="og:site_name" content="資安工作筆記" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Cmder"/>
-<meta name="twitter:description" content="介紹 Cmder是一款windows base 的可攜式command line工具。可用來取代內建的cmd.exe甚至powershell。可至Cmde"/>
+<meta name="twitter:description" content="介紹 Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行"/>
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/amingosec.github.io\/posts\/cmder\/"
-        },"genre": "posts","keywords": "cmder, 網路管理","wordcount":  282 ,
+        },"genre": "posts","keywords": "cmder, 網路管理","wordcount":  559 ,
         "url": "https:\/\/amingosec.github.io\/posts\/cmder\/","datePublished": "2023-04-03T23:52:51+08:00","dateModified": "2023-04-03T23:52:51+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,8 +69,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Cmder</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-03">2023-04-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 282 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 1 分鐘&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-03">2023-04-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 559 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 2 分鐘&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目錄</span>
@@ -85,8 +85,9 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="介紹">介紹</h2>
-<p>Cmder是一款windows base 的可攜式command line工具。可用來取代內建的cmd.exe甚至powershell。可至<a href="https://cmder.net/" target="_blank" rel="noopener noreffer ">Cmder官網</a>下載。</p>
-<p>在下載時有分兩種版本，mini的跟full版本，差別在full版本多了git for windows，如果本身有裝的話，下載mini的版本就行了。</p>
+<p>Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行命令行指令，可用來取代內建的cmd.exe甚至powershell。可至<a href="https://cmder.net/" target="_blank" rel="noopener noreffer ">Cmder官網</a>下載。而Cmder的兩個版本，mini和full版本，讓人可依不同的情況來下載使用。兩個版本的差別在full版本多了git for windows，如果本身有裝git的話，下載mini的版本就行了。</p>
+<p>如果您只是需要基本的命令行功能，那麼mini版本可能就足夠了。這個版本的大小比較小，下載和安裝都很快速，而且它包含了Cmder的基本功能，比如命令題示字元、輸入自動完成和主題等。</p>
+<p>但是如果您需要更多的功能，例如在Windows命令行中使用Git，那麼建議您下載full版本。這個版本包含了Git for Windows，這是一個在Windows上運行的Git版本，它提供了許多Git命令行工具，讓您可以在Windows上方便地使用Git。</p>
 <h2 id="操作">操作</h2>
 <p>在Cmder中可以自訂自己的環境變數，在Settings-&gt;Startup-&gt;Environment中可以設定想要的路徑，這樣不用調整系統的環境變數就可以使用了。</p>
 <h2 id="延伸閱讀">延伸閱讀</h2>
