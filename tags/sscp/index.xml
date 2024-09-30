@@ -9,7 +9,16 @@
     <pubDate>Sat, 25 Jan 2020 14:21:20 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/sscp-methodology-of-an-attack/</guid>
-    <description><![CDATA[說明 在SSCP中說明攻擊者攻擊成功會經過的步驟，這些過程跟cyber kill chain有相似的地方，可相互對照。 Target Acquisition Target Analysis Target Access Target Appropriation Target Acquisition 在攻擊前取得目]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>在SSCP中說明攻擊者攻擊成功會經過的步驟，這些過程跟cyber kill chain有相似的地方，可相互對照。</p>
+<ul>
+<li>Target Acquisition</li>
+<li>Target Analysis</li>
+<li>Target Access</li>
+<li>Target Appropriation</li>
+</ul>
+<p>Target Acquisition<br>
+在攻擊前取得目標資訊，公開非公開都是。</p>]]></description>
 </item>
 <item>
     <title>驗證協定-Kerberos</title>
@@ -17,7 +26,7 @@
     <pubDate>Sun, 22 Apr 2018 07:49:22 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/kerberos/</guid>
-    <description><![CDATA[提供單一或多重驗證(authentication)服務，在Windows 2000之後，預設使用Kerberos進行驗證，無法驗證才會使用NT]]></description>
+    <description><![CDATA[<p>提供單一或多重驗證(authentication)服務，在Windows 2000之後，預設使用Kerberos進行驗證，無法驗證才會使用NTLM。</p>]]></description>
 </item>
 <item>
     <title>資安名詞-異地備援</title>
@@ -25,7 +34,12 @@
     <pubDate>Sun, 15 Apr 2018 06:37:25 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E7%95%B0%E5%9C%B0%E5%82%99%E6%8F%B4/</guid>
-    <description><![CDATA[備援種類 Cold Site：建築物、不一定有公同設施 WarmSite：建築物、公用設施、IT設備 Hot Site：建築物、公用設施、IT設備、資料 Mobile Sit]]></description>
+    <description><![CDATA[<h2 id="備援種類">備援種類</h2>
+<p>Cold Site：建築物、不一定有公同設施</p>
+<p>WarmSite：建築物、公用設施、IT設備</p>
+<p>Hot Site：建築物、公用設施、IT設備、資料</p>
+<p>Mobile Site：行動機房</p>
+<p>Multiple Processing Site：在不同地點有相同的設備與資料，Mirro Site</p>]]></description>
 </item>
 </channel>
 </rss>

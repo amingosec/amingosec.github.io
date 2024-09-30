@@ -9,7 +9,24 @@
     <pubDate>Wed, 03 Jan 2018 12:45:31 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/metasploitable-%E5%BB%BA%E7%AB%8B/</guid>
-    <description><![CDATA[Lab 設計主機如下 Kali Linux (攻擊機) Metasploitable (靶機) Windows 10 (靶機) Kali Linux 下載位置 https://www.kali.org/downloads/ username kali and password kali 登入後開啟終端機更新 #apt-get update #apt-get dist-upgrade #updatedb Metasploitable 下載位置 https://sourceforge.net/projects/metasploitable/ 下載後用VirtualB]]></description>
+    <description><![CDATA[<p>Lab 設計主機如下</p>
+<ol>
+<li>Kali Linux (攻擊機)</li>
+<li>Metasploitable (靶機)</li>
+<li>Windows 10 (靶機)</li>
+</ol>
+<h2 id="kali-linux">Kali Linux</h2>
+<h3 id="下載位置">下載位置</h3>
+<p><a href="https://www.kali.org/downloads/" target="_blank" rel="noopener noreffer ">https://www.kali.org/downloads/</a></p>
+<p>username <strong>kali</strong> and password <strong>kali</strong></p>
+<p>登入後開啟終端機更新</p>
+<p>#apt-get update</p>
+<p>#apt-get dist-upgrade</p>
+<p>#updatedb</p>
+<h2 id="metasploitable">Metasploitable</h2>
+<h3 id="下載位置-1">下載位置</h3>
+<p><a href="https://sourceforge.net/projects/metasploitable/" target="_blank" rel="noopener noreffer ">https://sourceforge.net/projects/metasploitable/</a></p>
+<p>下載後用VirtualBox匯入映象檔，以下面帳密使用</p>]]></description>
 </item>
 </channel>
 </rss>

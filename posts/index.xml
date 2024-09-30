@@ -3,13 +3,28 @@
         <title>所有文章 - 資安工作筆記</title>
         <link>https://amingosec.github.io/posts/</link>
         <description>所有文章 | 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 30 Sep 2024 23:01:58 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Cli Command</title>
+    <link>https://amingosec.github.io/posts/azure-cli-command/</link>
+    <pubDate>Mon, 30 Sep 2024 23:01:58 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://amingosec.github.io/posts/azure-cli-command/</guid>
+    <description><![CDATA[<h1 id="azure-cli">Azure Cli</h1>
+<p>列出幾個常用到的Azure Cli 指令，方便Azuer 的維運。</p>
+<h2 id="login">login</h2>
+<p>在安裝好Azure Cli後，使用以下指令Azure</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">login</span>
+</span></span></code></pre></div><h2 id="確認-subscription">確認 Subscription</h2>
+<p>登入後可使用 account 指令確認一下環境</p>]]></description>
+</item>
+<item>
     <title>Cmder</title>
     <link>https://amingosec.github.io/posts/cmder/</link>
     <pubDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/cmder/</guid>
-    <description><![CDATA[介紹 Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行命令行指令，可用來取代內建的cmd.exe甚至powershell。可至<a href="https://cmder.net/" target="_blank" rel="noopener noreffer ">Cmder官網</a>下載。而Cmder的兩個版本，mini和full版本，讓人可依不同的情況來下載使用。兩個版本的差別在full版本多了git for windows，如果本身有裝git的話，下載mini的版本就行了。</p>]]></description>
 </item>
 <item>
     <title>VPN 介紹</title>
@@ -17,7 +32,7 @@
     <pubDate>Sun, 26 Mar 2023 21:53:19 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/what-is-vpn/</guid>
-    <description><![CDATA[virtual private network (VPN) 讓使用者可以在較不安全、或公開的網路環境中，建立一個加密的連線，達到私有網路的功能。也因此 VPN 提高了使用者的私密性。在現今各家廠商針對]]></description>
+    <description><![CDATA[<p>virtual private network (VPN) 讓使用者可以在較不安全、或公開的網路環境中，建立一個加密的連線，達到私有網路的功能。也因此 VPN 提高了使用者的私密性。在現今各家廠商針對上網行為的追蹤與網絡攻擊的環境下，VPN 成為了保護個人上網安全和隱私的重要工具之一。如果想直接看推薦的 VPN 可直接到「如何選擇 VPN 」的章節。</p>]]></description>
 </item>
 <item>
     <title>Rakuten Kobo 電子書</title>
@@ -25,7 +40,8 @@
     <pubDate>Thu, 02 Feb 2023 22:21:19 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/rakuten-kobo/</guid>
-    <description><![CDATA[樂天 kobo 是全球前幾名的電子書商，也是我常購買電子書的地方。相較其他電子書他給我的感覺是有較好的排版針對電子閱讀方式有所優化。 kobo 部落格會有【一週]]></description>
+    <description><![CDATA[<p>樂天 kobo 是全球前幾名的電子書商，也是我常購買電子書的地方。相較其他電子書他給我的感覺是有較好的排版針對電子閱讀方式有所優化。</p>
+<p><a href="https://afftck.com/track/clicks/1390/c627c2bf910526dcf088ec35dc2e9753743940cf70e8e2fd113ff408660756ee?subid_1=blog&amp;t=https%3A%2F%2Fwww.kobo.com%2Fzh%2Fblog" target="_blank" rel="noopener noreffer ">kobo 部落格</a>會有【一週99書單】讓讀者用 99 元的價格購書，想買電子書的話別錯過。同時也推薦下面幾本自己看過的書。</p>]]></description>
 </item>
 <item>
     <title>Windows Event Log</title>
@@ -33,7 +49,37 @@
     <pubDate>Sun, 22 Jan 2023 20:13:06 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-event-log/</guid>
-    <description><![CDATA[Event Log Location %SystemRoot%\System32\winevt\Logs\ 三種主要取得 Event Log 的方法： Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx 在 System 中有主機運作的相關訊息。 Security.evtx 在]]></description>
+    <description><![CDATA[<h2 id="event-log-location">Event Log Location</h2>
+<p><code>%SystemRoot%\System32\winevt\Logs\</code></p>
+<p>三種主要取得 Event Log 的方法：</p>
+<ol>
+<li>Event Viewer (GUI-based application)</li>
+<li>Wevtutil.exe (command-line tool)</li>
+<li>Get-WinEvent (PowerShell cmdlet)</li>
+</ol>
+<h2 id="常使用的-log">常使用的 Log</h2>
+<ul>
+<li>Security.evtx</li>
+<li>System.evtx</li>
+<li>Application.evtx</li>
+<li>Windows PowerShell.evtx</li>
+<li>Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx</li>
+</ul>
+<h2 id="特殊狀況log">特殊狀況Log</h2>
+<ul>
+<li>MSExchange Management.evtx</li>
+<li>IIS Log</li>
+<li>FireWall Log</li>
+</ul>
+<h2 id="log-說明">Log 說明</h2>
+<ul>
+<li>
+<p>System.evtx</p>
+<p>在 System 中有主機運作的相關訊息。</p>
+</li>
+<li>
+<p>Security.evtx</p>
+<p>在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。</p>]]></description>
 </item>
 <item>
     <title>讓你的遠端會議更輕鬆的幾個重點</title>
@@ -41,7 +87,7 @@
     <pubDate>Sat, 27 Aug 2022 00:56:37 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/tips-for-improving-your-remote-meetings/</guid>
-    <description><![CDATA[隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。在疫情間建立起遠端會議的]]></description>
+    <description><![CDATA[<p>隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。在疫情間建立起遠端會議的模式讓會議的時間地點更有彈性，方便性的提升讓更多人習慣使用遠端開會。</p>]]></description>
 </item>
 <item>
     <title>Learning Resource</title>
@@ -49,7 +95,9 @@
     <pubDate>Sun, 10 Jul 2022 21:10:16 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/learning-resource/</guid>
-    <description><![CDATA[在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。 Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的L]]></description>
+    <description><![CDATA[<p>在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。</p>
+<h2 id="microsoft-learn">Microsoft Learn</h2>
+<p>Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的Learning Path，雖說大多是介紹微軟的工具，但所包含的內容相當的廣，很適合初學者學習。</p>]]></description>
 </item>
 <item>
     <title>Kali Linux 升級跟版本確認</title>
@@ -57,7 +105,17 @@
     <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
-    <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。 升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令 方法 1 lsb_release -a]]></description>
+    <description><![CDATA[<p>Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。</p>
+<h2 id="升級指令">升級指令</h2>
+<pre tabindex="0"><code>sudo apt update
+sudo apt full-upgrade -y 
+</code></pre><h2 id="確認版本指令">確認版本指令</h2>
+<p>確認版本可以使用以下兩個指令</p>
+<p>方法 1</p>
+<pre tabindex="0"><code>lsb_release -a 
+</code></pre><p>方法 2</p>
+<pre tabindex="0"><code>cat /etc/os-release 
+</code></pre>]]></description>
 </item>
 <item>
     <title>PowerShell - 使用 Where-Object 過慮輸出內容</title>
@@ -65,7 +123,26 @@
     <pubDate>Thu, 19 May 2022 16:59:16 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/powershell-use-where-object-to-filter-results/</guid>
-    <description><![CDATA[說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。 在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operater]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。</p>
+<p>在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。</p>
+<h3 id="containment-operators">Containment Operators</h3>
+<ul>
+<li><code>-contains</code>：包含特定值</li>
+<li><code>-notcontains</code>：不包含特定值</li>
+</ul>
+<h3 id="matching-operators">Matching Operators</h3>
+<ul>
+<li><code>-like</code>：字串符合萬用字元特徵</li>
+<li><code>-notlike</code>：字串不符合萬用字元特徵</li>
+</ul>
+<h3 id="equality-operators">Equality Operators</h3>
+<ul>
+<li><code>-eq</code>：完全符合值</li>
+<li><code>-ne</code>：不符合值</li>
+</ul>
+<h2 id="範例">範例</h2>
+<p>下面指令可以將想要的 hotfix 輸出出來。</p>]]></description>
 </item>
 <item>
     <title>Excel 刪除重覆值或取得唯一值</title>
@@ -73,15 +150,7 @@
     <pubDate>Wed, 18 May 2022 07:13:18 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/excel-remove-duplicates/</guid>
-    <description><![CDATA[在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重]]></description>
-</item>
-<item>
-    <title>postgresql 計算日期</title>
-    <link>https://amingosec.github.io/posts/postgresql-date-calculate/</link>
-    <pubDate>Sun, 15 May 2022 14:46:13 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://amingosec.github.io/posts/postgresql-date-calculate/</guid>
-    <description><![CDATA[使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的]]></description>
+    <description><![CDATA[<p>在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重覆值刪除的功能，選取有重覆值的欄，再點選 Remove Duplicates 就可以了。</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -1,15 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>windows server - 標籤 - 資安工作筆記</title>
+        <title>Windows Server - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/windows-server/</link>
-        <description>windows server - 標籤 - 資安工作筆記</description>
+        <description>Windows Server - 標籤 - 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/windows-server/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-TurnedOnTimesView-取得windows 開關機資訊</title>
     <link>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</link>
     <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</guid>
-    <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。 TUrnedOnTimesView透過windows]]></description>
+    <description><![CDATA[<p>除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。</p>
+<p>TUrnedOnTimesView透過windows event log來比對開關機資訊。</p>]]></description>
 </item>
 <item>
     <title>資訊安全-IIS log 位置</title>
@@ -17,7 +18,8 @@
     <pubDate>Wed, 26 Jan 2022 12:39:52 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/location-of-iis-log-files/</guid>
-    <description><![CDATA[說明 IIS 預設log路徑為 %SystemDrive%\inetpub\logs\LogFiles\，在資料夾中，各網站會有一個子資料夾如：W3S]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>IIS 預設log路徑為 <code>%SystemDrive%\inetpub\logs\LogFiles\</code>，在資料夾中，各網站會有一個子資料夾如：<code>W3SVC1</code>，網站的 log 會在資料夾中以 <code>u_exyymmdd.log</code> 的log檔呈現。</p>]]></description>
 </item>
 <item>
     <title>資訊安全-Wevtutil 日誌指令</title>
@@ -25,7 +27,17 @@
     <pubDate>Mon, 01 Nov 2021 16:42:48 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command/</guid>
-    <description><![CDATA[Windows 日誌匯出指令 wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored. 延伸閱讀 資訊安全-Windows Event Log位置 資]]></description>
+    <description><![CDATA[<p>Windows 日誌匯出指令</p>
+<pre tabindex="0"><code>wevtutil epl System C:\\backup\\system0506.evtx
+</code></pre><h3 id="gl">gl</h3>
+<p>Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored.</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2022/01/22/windows-event-log%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">資訊安全-Windows Event Log位置</a></li>
+<li><a href="https://amingosec.blog/2022/01/26/iis-log-%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">資訊安全-IIS log 位置</a></li>
+</ul>
+<h2 id="參考資料">參考資料</h2>
+<p><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil</a></p>]]></description>
 </item>
 <item>
     <title>Windows Server Update Services (WSUS) 介紹</title>
@@ -33,7 +45,16 @@
     <pubDate>Thu, 06 May 2021 16:11:44 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</guid>
-    <description><![CDATA[WSUS是windows提供更新管理的Server 影片說明 https://www.youtube.com/watch?v=Yv0qjxdX5yw 文章連結 https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+ 相關攻擊手法 https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/]]></description>
+    <description><![CDATA[<p>WSUS是windows提供更新管理的Server</p>
+<h2 id="影片說明">影片說明</h2>
+<p><a href="https://www.youtube.com/watch?v=Yv0qjxdX5yw" target="_blank" rel="noopener noreffer ">https://www.youtube.com/watch?v=Yv0qjxdX5yw</a></p>
+<h2 id="文章連結">文章連結</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus</a></li>
+<li><a href="https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84&#43;Windows&#43;Update&#43;Server&#43;-&#43;WSUS&#43;" target="_blank" rel="noopener noreffer ">https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+</a></li>
+</ul>
+<h2 id="相關攻擊手法">相關攻擊手法</h2>
+<p><a href="https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/" target="_blank" rel="noopener noreffer ">https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/</a></p>]]></description>
 </item>
 <item>
     <title>下載windows vm</title>
@@ -41,7 +62,14 @@
     <pubDate>Tue, 29 May 2018 15:25:38 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/download-windows-vm/</guid>
-    <description><![CDATA[介紹 如果手邊臨時需要建 VM，但又沒有 windows 的安裝 image 時，可以使用微軟提供的測試 VM。到下面的連結中，選擇想要的 VM 檔下載即可。 密碥為 Passw0rd! 下載位置 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ https://www.microsoft.com/zh-tw/evalcenter/try]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>如果手邊臨時需要建 VM，但又沒有 windows 的安裝 image 時，可以使用微軟提供的測試 VM。到下面的連結中，選擇想要的 VM 檔下載即可。</p>
+<p>密碥為 Passw0rd!</p>
+<h3 id="下載位置">下載位置</h3>
+<ul>
+<li><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank" rel="noopener noreffer ">https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/</a></li>
+<li><a href="https://www.microsoft.com/zh-tw/evalcenter/try" target="_blank" rel="noopener noreffer ">https://www.microsoft.com/zh-tw/evalcenter/try</a></li>
+</ul>]]></description>
 </item>
 </channel>
 </rss>

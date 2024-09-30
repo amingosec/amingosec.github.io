@@ -9,7 +9,16 @@
     <pubDate>Sat, 25 Jan 2020 14:21:20 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/sscp-methodology-of-an-attack/</guid>
-    <description><![CDATA[說明 在SSCP中說明攻擊者攻擊成功會經過的步驟，這些過程跟cyber kill chain有相似的地方，可相互對照。 Target Acquisition Target Analysis Target Access Target Appropriation Target Acquisition 在攻擊前取得目]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>在SSCP中說明攻擊者攻擊成功會經過的步驟，這些過程跟cyber kill chain有相似的地方，可相互對照。</p>
+<ul>
+<li>Target Acquisition</li>
+<li>Target Analysis</li>
+<li>Target Access</li>
+<li>Target Appropriation</li>
+</ul>
+<p>Target Acquisition<br>
+在攻擊前取得目標資訊，公開非公開都是。</p>]]></description>
 </item>
 <item>
     <title>資安名詞hug-Cyber Kill Chain</title>
@@ -17,7 +26,9 @@
     <pubDate>Wed, 18 Apr 2018 13:39:01 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/cyber-kill-chain/</guid>
-    <description><![CDATA[介紹 Cyber Kill Chain由洛馬發展出來，中文有人翻譯成「網路狙殺鏈」但通常還是直接念英文較為順口。 Cyber Kill Chain主要是說明APT攻擊時的流程，進行]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>Cyber Kill Chain由洛馬發展出來，中文有人翻譯成「網路狙殺鏈」但通常還是直接念英文較為順口。</p>
+<p>Cyber Kill Chain主要是說明APT攻擊時的流程，進行資安鑑識時可輔助解析攻擊的過程，對防守方來說，也可用來檢視在各階段防禦的狀態。</p>]]></description>
 </item>
 </channel>
 </rss>

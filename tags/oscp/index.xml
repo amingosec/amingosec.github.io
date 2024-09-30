@@ -9,7 +9,17 @@
     <pubDate>Sat, 03 Apr 2021 03:13:43 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/oscp-experience-sharing-from-lonelysec/</guid>
-    <description><![CDATA[介紹 OSCP是有名的滲透證照，以下為網路上有人分享OSCP心得。 文章連結 https://lonelysec.com/offensive-security-certified-professional-oscp-%E8%80%83%E8%A9%A6%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/ 延伸閱讀 The Journey to Try Harder: TJnull’s Preparation Guide for PWK/OSCP | NetSec Focus 建立Metaspl]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>OSCP是有名的滲透證照，以下為網路上有人分享OSCP心得。</p>
+<h2 id="文章連結">文章連結</h2>
+<p><a href="https://lonelysec.com/offensive-security-certified-professional-oscp-%E8%80%83%E8%A9%A6%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/" target="_blank" rel="noopener noreffer ">https://lonelysec.com/offensive-security-certified-professional-oscp-%E8%80%83%E8%A9%A6%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/</a></p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2020/02/17/the-journey-to-try-harder-tjnulls-preparation-guide-for-pwk-oscp-netsec-focus/" target="_blank" rel="noopener noreffer ">The Journey to Try Harder: TJnull’s Preparation Guide for PWK/OSCP | NetSec Focus</a></li>
+<li><a href="https://amingosec.blog/2018/06/03/metasploitable-%e5%bb%ba%e7%ab%8b/" target="_blank" rel="noopener noreffer ">建立Metasploitable 滲透練習Lab</a></li>
+<li><a href="https://amingosec.blog/2020/02/20/github-klionsec-redteamer-%e7%ba%a2%e6%96%b9%e4%ba%ba%e5%91%98%e4%bd%9c%e6%88%98%e6%89%a7%e8%a1%8c%e6%89%8b%e5%86%8c/" target="_blank" rel="noopener noreffer ">Redteam-紅隊作戰執行手冊</a></li>
+<li><a href="https://amingosec.blog/2019/04/17/redteam%e6%94%bb%e6%93%8a%e6%8a%80%e5%b7%a7%e5%92%8c%e5%ae%89%e5%85%a8%e9%98%b2%e7%a6%a6/" target="_blank" rel="noopener noreffer ">RedTeam攻擊技巧和安全防禦</a></li>
+</ul>]]></description>
 </item>
 </channel>
 </rss>

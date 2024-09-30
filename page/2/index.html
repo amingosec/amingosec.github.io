@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
     <head>
-	<meta name="generator" content="Hugo 0.111.3">
+	<meta name="generator" content="Hugo 0.135.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="資安工作筆記" />
-<meta property="og:description" content="資訊安全相關內容分享" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://amingosec.github.io/" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="資安工作筆記"/>
-<meta name="twitter:description" content="資訊安全相關內容分享"/>
+        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="資安工作筆記">
+  <meta property="og:description" content="資訊安全相關內容分享">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="資安工作筆記">
+  <meta name="twitter:description" content="資訊安全相關內容分享">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -55,35 +58,67 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/learning-resource/">Learning Resource</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-07-10">2022-07-10</time></span></div><div class="content"><p>在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。</p>
+<h2 id="microsoft-learn">Microsoft Learn</h2>
+<p>Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的Learning Path，雖說大多是介紹微軟的工具，但所包含的內容相當的廣，很適合初學者學習。</p></div><div class="post-footer">
+        <a href="/posts/learning-resource/">閱讀全文</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/kali-linux-upgrade-and-check-version/">Kali Linux 升級跟版本確認</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-25">2022-05-25</time></span></div><div class="content">Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。 升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令 方法 1 lsb_release -a</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-25">2022-05-25</time></span></div><div class="content"><p>Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。</p>
+<h2 id="升級指令">升級指令</h2>
+<pre tabindex="0"><code>sudo apt update
+sudo apt full-upgrade -y 
+</code></pre><h2 id="確認版本指令">確認版本指令</h2>
+<p>確認版本可以使用以下兩個指令</p>
+<p>方法 1</p>
+<pre tabindex="0"><code>lsb_release -a 
+</code></pre><p>方法 2</p>
+<pre tabindex="0"><code>cat /etc/os-release 
+</code></pre></div><div class="post-footer">
         <a href="/posts/kali-linux-upgrade-and-check-version/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/upgrade/">upgrade</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/upgrade/">Upgrade</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/powershell-use-where-object-to-filter-results/">PowerShell - 使用 Where-Object 過慮輸出內容</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-19">2022-05-19</time></span></div><div class="content">說明 PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。 在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operater</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-19">2022-05-19</time></span></div><div class="content"><h2 id="說明">說明</h2>
+<p>PowerShell 是近期想多熟悉的語言，最近剛好有機會來練習了 Where-Object 的使用。</p>
+<p>在條件比對中 Where-Object 支援多個 operaters，以下列出幾個較常使用的 operaters。</p>
+<h3 id="containment-operators">Containment Operators</h3>
+<ul>
+<li><code>-contains</code>：包含特定值</li>
+<li><code>-notcontains</code>：不包含特定值</li>
+</ul>
+<h3 id="matching-operators">Matching Operators</h3>
+<ul>
+<li><code>-like</code>：字串符合萬用字元特徵</li>
+<li><code>-notlike</code>：字串不符合萬用字元特徵</li>
+</ul>
+<h3 id="equality-operators">Equality Operators</h3>
+<ul>
+<li><code>-eq</code>：完全符合值</li>
+<li><code>-ne</code>：不符合值</li>
+</ul>
+<h2 id="範例">範例</h2>
+<p>下面指令可以將想要的 hotfix 輸出出來。</p></div><div class="post-footer">
         <a href="/posts/powershell-use-where-object-to-filter-results/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/excel-remove-duplicates/">Excel 刪除重覆值或取得唯一值</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-18">2022-05-18</time></span></div><div class="content">在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-18">2022-05-18</time></span></div><div class="content"><p>在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重覆值刪除的功能，選取有重覆值的欄，再點選 Remove Duplicates 就可以了。</p></div><div class="post-footer">
         <a href="/posts/excel-remove-duplicates/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/postgresql-date-calculate/">postgresql 計算日期</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-15">2022-05-15</time></span></div><div class="content">使用在 postgresql 使用 date_trunc 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用current_date 取得基準天的時間，再利用 +/- interval 來取得想要的</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-15">2022-05-15</time></span></div><div class="content"><p>使用在 postgresql 使用 <code>date_trunc</code> 可以動態取得想要的日期。算是相當重要的應用。主要的想法為，利用<code>current_date</code> 取得基準天的時間，再利用 +/- <code>interval</code> 來取得想要的日期與時間。</p></div><div class="post-footer">
         <a href="/posts/postgresql-date-calculate/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/postgresql/">postgresql</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/postgresql/">Postgresql</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/vs-code-extensions-for-markdown/">VS Code extensions 推薦 for markdown</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-03">2022-05-03</time></span></div><div class="content">使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。 Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-03">2022-05-03</time></span></div><div class="content"><p>使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。</p>
+<h2 id="markdown-all-in-one">Markdown All in One</h2>
+<p>首推的就是 <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" target="_blank" rel="noopener noreffer ">Markdown All in One</a> 支援相當多的快速編輯功能，其中包含 <code>Table of contents</code> 跟 <code>Easily add/update/remove section numbering</code> 都是相當實用的功能。</p></div><div class="post-footer">
         <a href="/posts/vs-code-extensions-for-markdown/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/vs-code/">VS Code</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/linux-hash-command/">利用 Linux command 取得檔案 hash 值</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-05-01">2022-05-01</time></span></div><div class="content">Note hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異</div><div class="post-footer">
-        <a href="/posts/linux-hash-command/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -104,11 +139,11 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/23/">23</a>
+                        <a href="/page/22/">22</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

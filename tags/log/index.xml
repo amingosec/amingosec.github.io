@@ -9,7 +9,8 @@
     <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</guid>
-    <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。 TUrnedOnTimesView透過windows]]></description>
+    <description><![CDATA[<p>除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。</p>
+<p>TUrnedOnTimesView透過windows event log來比對開關機資訊。</p>]]></description>
 </item>
 <item>
     <title>Windows Event Log位置</title>
@@ -17,7 +18,7 @@
     <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/location-of-windows-event-log/</guid>
-    <description><![CDATA[在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系]]></description>
+    <description><![CDATA[<p>在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。</p>]]></description>
 </item>
 <item>
     <title>名詞介紹-日誌 Log</title>
@@ -25,7 +26,7 @@
     <pubDate>Mon, 03 Sep 2018 05:26:48 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E6%97%A5%E8%AA%8C%E9%9B%BB%E8%85%A6%E5%AF%AB%E7%9A%84%E6%97%A5%E8%A8%98/</guid>
-    <description><![CDATA[log檔可分為system log, security log, even log…等等，事發時可透過log來勾勒出事情的樣貌。平時可將log統一保存，並設立分析規則，用以偵察事件的]]></description>
+    <description><![CDATA[<p>log檔可分為system log, security log, even log…等等，事發時可透過log來勾勒出事情的樣貌。平時可將log統一保存，並設立分析規則，用以偵察事件的發生。 可透過稽核來追蹤誰在什麼時候改變了什麼，以維持資源的完整性。 在組織中，會將log集中保存。一般的架構下，會有前端收集器，負責將log進行收集與正規化，再將處理過的資料傳到後端SIEM，在SIEM中建端關聯規則產生即時告警，或進行統計產生視覺化圖表或報告，可較為完整的看到組織內資安狀況的全貌。</p>]]></description>
 </item>
 </channel>
 </rss>

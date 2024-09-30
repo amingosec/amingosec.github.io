@@ -9,7 +9,7 @@
     <pubDate>Sun, 26 Mar 2023 21:53:19 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/what-is-vpn/</guid>
-    <description><![CDATA[virtual private network (VPN) 讓使用者可以在較不安全、或公開的網路環境中，建立一個加密的連線，達到私有網路的功能。也因此 VPN 提高了使用者的私密性。在現今各家廠商針對]]></description>
+    <description><![CDATA[<p>virtual private network (VPN) 讓使用者可以在較不安全、或公開的網路環境中，建立一個加密的連線，達到私有網路的功能。也因此 VPN 提高了使用者的私密性。在現今各家廠商針對上網行為的追蹤與網絡攻擊的環境下，VPN 成為了保護個人上網安全和隱私的重要工具之一。如果想直接看推薦的 VPN 可直接到「如何選擇 VPN 」的章節。</p>]]></description>
 </item>
 <item>
     <title>Kali Linux 升級跟版本確認</title>
@@ -17,7 +17,17 @@
     <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/kali-linux-upgrade-and-check-version/</guid>
-    <description><![CDATA[Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。 升級指令 sudo apt update sudo apt full-upgrade -y 確認版本指令 確認版本可以使用以下兩個指令 方法 1 lsb_release -a]]></description>
+    <description><![CDATA[<p>Kali Linux 會定期更新，有時會出一些不錯的功能，可以透過以下指令來進行更新。</p>
+<h2 id="升級指令">升級指令</h2>
+<pre tabindex="0"><code>sudo apt update
+sudo apt full-upgrade -y 
+</code></pre><h2 id="確認版本指令">確認版本指令</h2>
+<p>確認版本可以使用以下兩個指令</p>
+<p>方法 1</p>
+<pre tabindex="0"><code>lsb_release -a 
+</code></pre><p>方法 2</p>
+<pre tabindex="0"><code>cat /etc/os-release 
+</code></pre>]]></description>
 </item>
 <item>
     <title>Excel 刪除重覆值或取得唯一值</title>
@@ -25,7 +35,7 @@
     <pubDate>Wed, 18 May 2022 07:13:18 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/excel-remove-duplicates/</guid>
-    <description><![CDATA[在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重]]></description>
+    <description><![CDATA[<p>在使用 Excel 時，常出現在一欄中有多個列值是重覆的，如果資料少的話，利用工人智慧可以解決，但資料量一多，一筆一筆刪只會浪費大量的時間。好在 Excel 有把重覆值刪除的功能，選取有重覆值的欄，再點選 Remove Duplicates 就可以了。</p>]]></description>
 </item>
 <item>
     <title>利用 Linux command 取得檔案 hash 值</title>
@@ -33,7 +43,15 @@
     <pubDate>Sun, 01 May 2022 03:21:15 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/linux-hash-command/</guid>
-    <description><![CDATA[Note hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異]]></description>
+    <description><![CDATA[<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">hash 值是經過特定的演算法，取得資料的唯一值，是不可逆的函數，也就是說無法利用 hash 值來回推原本的檔案內容。利用 hash 值的特性可以用來判斷檔案是否有異動，比較是否為相同的檔案。</div>
+        </div>
+    </div>
+<p>之前介紹了 Windows 中取得檔案 hash 值的方式。在這邊列出幾個 Linux 上取得 hash 值的指令。</p>]]></description>
 </item>
 <item>
     <title>VS Code extension 推薦</title>
@@ -41,7 +59,7 @@
     <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
-    <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的ext]]></description>
+    <description><![CDATA[<p>VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。</p>]]></description>
 </item>
 <item>
     <title>獨立線路的另一個選擇 - 無框行動 Circles.Life</title>
@@ -49,7 +67,7 @@
     <pubDate>Sun, 17 Apr 2022 05:13:22 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-circles-life/</guid>
-    <description><![CDATA[在執行資安工作時，不論是事件、惡意程式分析或滲透，都會需要獨立的線路。尤其是在家工作時，相較牽新的線路，使用 4G 網路會是很好的選擇，而**無框]]></description>
+    <description><![CDATA[<p>在執行資安工作時，不論是事件、惡意程式分析或滲透，都會需要獨立的線路。尤其是在家工作時，相較牽新的線路，使用 4G 網路會是很好的選擇，而**<a href="https://twshop4coupon.com/track/clicks/5051/ce2bc2b79a0925deefcda67f8835ce13286948cc71e4f0ab416db7056205?subid_1=&amp;subid_2=&amp;subid_3=&amp;subid_4=&amp;subid_5=" target="_blank" rel="noopener noreffer ">無框行動 Circles.Life</a>** 的方案相當值得推薦。搭配 <a href="http://www.momoshop.com.tw/goods/GoodsDetail.jsp?osm=league&amp;i_code=7084653&amp;cid=apuad&amp;oid=1&amp;memid=6000020061" target="_blank" rel="noopener noreffer ">4G LTE 無線路由器</a>可快速建立獨立線路。</p>]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 6</title>
@@ -57,7 +75,26 @@
     <pubDate>Fri, 15 Apr 2022 16:08:45 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/</guid>
-    <description><![CDATA[Lab: Remote code execution via polyglot web shell upload Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容sub]]></description>
+    <description><![CDATA[<p>Lab: Remote code execution via polyglot web shell upload</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<ul>
+<li>跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。</li>
+<li>此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。</li>
+</ul>
+<h2 id="步驟">步驟</h2>
+<ul>
+<li>如同之前的 lab 先找到上傳後可被存取的路徑。</li>
+<li>因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。</li>
+<li>需要將 payload 加到圖片檔中來執行。</li>
+<li>下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行<code>sudo apt install libimage-exiftool-perl</code>來安裝。</li>
+</ul>
+<pre tabindex="0"><code>exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 
+</code></pre><ul>
+<li>因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 <code>FLAG_START</code> 、 <code>FLAG_END</code>加以區別。</li>
+<li>將產生的<code>payload.php</code>上傳後，存取<code>/files/avatars/payload.php</code>即可取得此Lab的Flag。</li>
+</ul>
+<h2 id="補充說明">補充說明</h2>
+<p>在執行 php 檔時，會從<code>&lt;?</code>開始到<code>?&gt;</code>結束，因此將 php code 內容放在 png 的 comment 中，再存成 .php 檔，會把其他內容當成亂碼，但執行放在 comment 的 php code。</p>]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 5</title>
@@ -65,7 +102,9 @@
     <pubDate>Mon, 04 Apr 2022 02:38:09 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-obfuscated-file-extension/</guid>
-    <description><![CDATA[Lab: Web shell upload via obfuscated file extension Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subs]]></description>
+    <description><![CDATA[<p>Lab: Web shell upload via obfuscated file extension</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<p>跟上一個lab相同，利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p>]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 4</title>
@@ -73,7 +112,9 @@
     <pubDate>Wed, 30 Mar 2022 16:10:42 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</guid>
-    <description><![CDATA[Lab: Web shell upload via extension blacklist bypass Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subs]]></description>
+    <description><![CDATA[<p>Lab: Web shell upload via extension blacklist bypass</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<p>跟上一個lab相同，利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p>]]></description>
 </item>
 <item>
     <title>Microsoft Edge 瀏覽記錄位置</title>
@@ -81,7 +122,10 @@
     <pubDate>Tue, 22 Mar 2022 13:55:42 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/microsoft-edge-browsing-history-location/</guid>
-    <description><![CDATA[說明 Edge的瀏覽記錄位置如下，檔案名稱為History，以SQLite的型式儲存。 C:\Users\\AppData\Local\Microsoft\Edge\User Data\Default\ 取得資料後可以使用讀取SQLite的工具，如SQLi]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>Edge的瀏覽記錄位置如下，檔案名稱為History，以SQLite的型式儲存。</p>
+<p>C:\Users\<!-- raw HTML omitted -->\AppData\Local\Microsoft\Edge\User Data\Default\</p>
+<p>取得資料後可以使用讀取SQLite的工具，如SQLite Reader去讀取資料。</p>]]></description>
 </item>
 </channel>
 </rss>

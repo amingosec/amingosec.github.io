@@ -9,7 +9,13 @@
     <pubDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</guid>
-    <description><![CDATA[分享最近在IIS上使用Web Platform Installer安裝的經驗。 OS：Server 2016 PHP：8.0 1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools 2. 安裝VC++ Runtime 如果沒]]></description>
+    <description><![CDATA[<p>分享最近在IIS上使用Web Platform Installer安裝的經驗。<br>
+OS：Server 2016<br>
+PHP：8.0</p>
+<h2 id="1-安裝iis-web-server">1. 安裝IIS Web Server</h2>
+<p><code>Install-WindowsFeature -name Web-Server -IncludeManagementTools</code></p>
+<h2 id="2-安裝vc-runtime">2. 安裝VC++ Runtime</h2>
+<p>如果沒有安裝的話，之後會出現error code 500。可安裝最新的x86版本，下載連結如下：</p>]]></description>
 </item>
 <item>
     <title>資訊安全-Wevtutil 日誌指令</title>
@@ -17,7 +23,17 @@
     <pubDate>Mon, 01 Nov 2021 16:42:48 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-windows-wevtutil-command/</guid>
-    <description><![CDATA[Windows 日誌匯出指令 wevtutil epl System C:\\backup\\system0506.evtx gl Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored. 延伸閱讀 資訊安全-Windows Event Log位置 資]]></description>
+    <description><![CDATA[<p>Windows 日誌匯出指令</p>
+<pre tabindex="0"><code>wevtutil epl System C:\\backup\\system0506.evtx
+</code></pre><h3 id="gl">gl</h3>
+<p>Displays configuration information for the specified log, which includes whether the log is enabled or not, the current maximum size limit of the log, and the path to the file where the log is stored.</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2022/01/22/windows-event-log%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">資訊安全-Windows Event Log位置</a></li>
+<li><a href="https://amingosec.blog/2022/01/26/iis-log-%e4%bd%8d%e7%bd%ae/" target="_blank" rel="noopener noreffer ">資訊安全-IIS log 位置</a></li>
+</ul>
+<h2 id="參考資料">參考資料</h2>
+<p><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil</a></p>]]></description>
 </item>
 <item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
@@ -25,7 +41,7 @@
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-ir/</guid>
-    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
+    <description><![CDATA[<p>在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。</p>]]></description>
 </item>
 </channel>
 </rss>

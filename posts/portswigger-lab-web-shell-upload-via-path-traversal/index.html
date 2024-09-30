@@ -4,15 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>PortSwigger-檔案上傳漏洞 lab 3 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="PortSwigger-檔案上傳漏洞 lab 3" />
-<meta property="og:description" content="Lab: Web shell upload via path traversal Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsm" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-20T13:33:54+00:00" />
-<meta property="article:modified_time" content="2022-03-20T13:33:54+00:00" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="PortSwigger-檔案上傳漏洞 lab 3"/>
-<meta name="twitter:description" content="Lab: Web shell upload via path traversal Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsm"/>
+        <title>PortSwigger-檔案上傳漏洞 lab 3 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="PortSwigger-檔案上傳漏洞 lab 3">
+  <meta property="og:description" content="Lab: Web shell upload via path traversal
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-03-20T13:33:54+00:00">
+    <meta property="article:modified_time" content="2022-03-20T13:33:54+00:00">
+    <meta property="article:tag" content="資訊安全">
+    <meta property="article:tag" content="Fiel Upload Vulnerabilities">
+    <meta property="article:tag" content="Lab">
+    <meta property="article:tag" content="PortSwigger">
+    <meta property="article:tag" content="檔案上傳">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PortSwigger-檔案上傳漏洞 lab 3">
+  <meta name="twitter:description" content="Lab: Web shell upload via path traversal
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -143,7 +154,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/">檔案上傳</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">Fiel Upload Vulnerabilities</a>,&nbsp;<a href="/tags/lab/">Lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/">檔案上傳</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主頁</a></span>
         </section>
@@ -154,7 +165,7 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

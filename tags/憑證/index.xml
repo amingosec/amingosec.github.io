@@ -9,7 +9,7 @@
     <pubDate>Wed, 04 Jul 2018 02:18:00 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</guid>
-    <description><![CDATA[最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證]]></description>
+    <description><![CDATA[<p>最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證匯入電腦都不行，直到發現了一件事，使用者的電腦日期比憑證的啟用日期還早，原來是很久沒使用電腦了，日期正常後就好了。</p>]]></description>
 </item>
 </channel>
 </rss>

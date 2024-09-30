@@ -1,15 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>beef - 標籤 - 資安工作筆記</title>
+        <title>Beef - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/beef/</link>
-        <description>beef - 標籤 - 資安工作筆記</description>
+        <description>Beef - 標籤 - 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/beef/" rel="self" type="application/rss+xml" /><item>
     <title>網頁攻擊手法-XSS 介紹</title>
     <link>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</link>
     <pubDate>Tue, 10 Jul 2018 03:00:11 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-cross-site-scripting-xss/</guid>
-    <description><![CDATA[介紹 Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>Cross Site Script, XSS主要為在Client side 的攻擊，對server來說沒有直接影響，但對使用者端來說，可能會有cookie被拿走的風險。在實作上類似於SQLi，尋找與分析注入點後，試著對前面的語法進行閉合，再插入攻擊語法。但因為目前不少網站有對輸入的文字進行script過濾，可用其他呼叫的方法達成。</p>]]></description>
 </item>
 </channel>
 </rss>

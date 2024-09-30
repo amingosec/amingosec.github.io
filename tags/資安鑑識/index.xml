@@ -9,7 +9,8 @@
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
-    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的<a href="https://osquery.io/schema/5.2.2/" target="_blank" rel="noopener noreffer ">schema</a>。</p>]]></description>
 </item>
 <item>
     <title>Windows Event Log位置</title>
@@ -17,7 +18,7 @@
     <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/location-of-windows-event-log/</guid>
-    <description><![CDATA[在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系]]></description>
+    <description><![CDATA[<p>在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。</p>]]></description>
 </item>
 <item>
     <title>工具介紹-Microsoft Network Monitor</title>
@@ -25,7 +26,8 @@
     <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</guid>
-    <description><![CDATA[說明 Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路界面卡。</p>]]></description>
 </item>
 <item>
     <title>PowerShell-使用powershell查找電腦開關機狀況</title>
@@ -33,7 +35,10 @@
     <pubDate>Thu, 10 Jun 2021 16:05:03 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/using-powershell-to-check-system-up-down-time/</guid>
-    <description><![CDATA[說明 Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間 Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap 如果]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>Event id 6005 說明了Event log開始紀錄，也代表了開機時間，6006為Event Log停止記錄，也代表了關機時間</p>
+<pre tabindex="0"><code>Get-EventLog -LogName System |? {$\_.EventID -in (6005,6006,6008,6009,1074,1076)} | ft TimeGenerated,EventId,Message -AutoSize -wrap
+</code></pre><p>如果要存到特定檔案，可在後面加入&gt;來進行輸出</p>]]></description>
 </item>
 <item>
     <title>資安監控- 監控 AD 的受駭跡證</title>
@@ -41,7 +46,9 @@
     <pubDate>Wed, 26 May 2021 07:24:33 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
-    <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。 介紹 資安監控可以有效的發現場域內需要注意]]></description>
+    <description><![CDATA[<p>本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。</p>
+<h2 id="介紹">介紹</h2>
+<p>資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。</p>]]></description>
 </item>
 <item>
     <title>資安鑑識-Memory Analyzing</title>
@@ -49,7 +56,19 @@
     <pubDate>Tue, 18 May 2021 12:30:06 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/memory-analyzing/</guid>
-    <description><![CDATA[主要利用volatility framework 2.6執行 識別system profile python vol.py -f %image\_name% imageinfo pslist pstree cmdscan 延伸閱讀 [轉]藍隊訓練 [轉]病毒分析教學 Malware-Analysis-Training 藍隊營運Blue Team Operations [Part 1]:]]></description>
+    <description><![CDATA[<p>主要利用volatility framework 2.6執行</p>
+<h2 id="識別system-profile">識別system profile</h2>
+<pre tabindex="0"><code>python vol.py -f %image\_name% imageinfo
+</code></pre><p>pslist</p>
+<p>pstree</p>
+<p>cmdscan</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2021/04/13/808/" target="_blank" rel="noopener noreffer ">[轉]藍隊訓練</a></li>
+<li><a href="https://amingosec.blog/2020/02/21/674/" target="_blank" rel="noopener noreffer ">[轉]病毒分析教學 Malware-Analysis-Training</a></li>
+<li><a href="https://amingosec.blog/2021/05/11/1010/" target="_blank" rel="noopener noreffer ">藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate?</a></li>
+<li><a href="https://amingosec.blog/2021/05/11/1011/" target="_blank" rel="noopener noreffer ">藍隊營運Blue Team Operations [Part 2]: How To Investigate Malware Incidents as a SOC Analyst</a></li>
+</ul>]]></description>
 </item>
 <item>
     <title>工具介紹-PsTools</title>
@@ -57,7 +76,8 @@
     <pubDate>Thu, 06 May 2021 05:38:30 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/pstools/</guid>
-    <description><![CDATA[PsExec：執行遠端電腦上的指令 PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，或是Regedit等特定的系統工具程式。舉例來]]></description>
+    <description><![CDATA[<p>PsExec：執行遠端電腦上的指令<br>
+PsExec最主要的功能就是啟動遠端電腦上的命令式批次指令，或是Regedit等特定的系統工具程式。舉例來說，若我們欲在名稱為iThome的遠端電腦上，執行test.exe程式，則可鍵入「psexec \\iThome -u user -p passwd -c c:\test.exe」，其中user與passwd為系統管理員帳號及密碼，而這兩個也是PsTools的公用參數；至於-c則代表先將應用程式test.exe，複製到遠端電腦後再執行。值得注意的是，若使用者未指定欲執行的應用程式路徑，則會使用預設的原始目錄，亦即Windows根目錄（％SystemRoot％）。</p>]]></description>
 </item>
 <item>
     <title>在 Windows 系統上進行Incident Response 的重點</title>
@@ -65,7 +85,7 @@
     <pubDate>Tue, 04 May 2021 12:42:48 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-ir/</guid>
-    <description><![CDATA[在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，]]></description>
+    <description><![CDATA[<p>在這篇文章整理一下平時在 Windows 主機上進行 incident response (IR)時會注意的幾個重點。還是要提醒一下 IR 與鑑識是有差距的，其中差別會包含到在法院上證據力的呈現，如果要進行鑑識時，請找有通過驗證的實驗室進行，相關內容就不在這篇文章中說明。</p>]]></description>
 </item>
 <item>
     <title>名詞介紹-YARA Rules</title>
@@ -73,7 +93,21 @@
     <pubDate>Thu, 21 Jun 2018 01:57:56 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</guid>
-    <description><![CDATA[YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。 YARA Elements YARA rules包含以下幾個元件： Metadata Strings Conditions Imports 參考連]]></description>
+    <description><![CDATA[<p>YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。</p>
+<h2 id="yara-elements">YARA Elements</h2>
+<p>YARA rules包含以下幾個元件：</p>
+<ul>
+<li>Metadata</li>
+<li>Strings</li>
+<li>Conditions</li>
+<li>Imports</li>
+</ul>
+<h2 id="參考連結">參考連結</h2>
+<ul>
+<li><a href="https://www.varonis.com/blog/yara-rules" target="_blank" rel="noopener noreffer ">YARA Rules Guide: Learning this Malware Research Tool</a></li>
+<li><a href="https://medium.com/bugbountywriteup/intro-to-malware-detection-using-yara-eacab8373cf4" target="_blank" rel="noopener noreffer ">malware detection using yara</a></li>
+<li><a href="https://yara.readthedocs.io/en/latest/" target="_blank" rel="noopener noreffer ">YARA 文件</a></li>
+</ul>]]></description>
 </item>
 </channel>
 </rss>

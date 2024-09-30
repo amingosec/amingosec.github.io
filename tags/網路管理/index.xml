@@ -9,7 +9,8 @@
     <pubDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/cmder/</guid>
-    <description><![CDATA[介紹 Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行命令行指令，可用來取代內建的cmd.exe甚至powershell。可至<a href="https://cmder.net/" target="_blank" rel="noopener noreffer ">Cmder官網</a>下載。而Cmder的兩個版本，mini和full版本，讓人可依不同的情況來下載使用。兩個版本的差別在full版本多了git for windows，如果本身有裝git的話，下載mini的版本就行了。</p>]]></description>
 </item>
 <item>
     <title>Windows-Windows Server IIS 上建立PHP網站</title>
@@ -17,7 +18,13 @@
     <pubDate>Fri, 04 Feb 2022 15:10:39 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-server-iis-%E8%B7%91-php/</guid>
-    <description><![CDATA[分享最近在IIS上使用Web Platform Installer安裝的經驗。 OS：Server 2016 PHP：8.0 1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools 2. 安裝VC++ Runtime 如果沒]]></description>
+    <description><![CDATA[<p>分享最近在IIS上使用Web Platform Installer安裝的經驗。<br>
+OS：Server 2016<br>
+PHP：8.0</p>
+<h2 id="1-安裝iis-web-server">1. 安裝IIS Web Server</h2>
+<p><code>Install-WindowsFeature -name Web-Server -IncludeManagementTools</code></p>
+<h2 id="2-安裝vc-runtime">2. 安裝VC++ Runtime</h2>
+<p>如果沒有安裝的話，之後會出現error code 500。可安裝最新的x86版本，下載連結如下：</p>]]></description>
 </item>
 <item>
     <title>Network-私有IP位置</title>
@@ -25,7 +32,35 @@
     <pubDate>Sat, 23 Oct 2021 11:53:25 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/private-ip-address/</guid>
-    <description><![CDATA[私有IPv4 RFC1918 name IP address range Number of addresses Largest CIDR block (subnet mask) Host ID size Mask bits Classful description 24-bit block 10.0.0.0 – 10.255.255.255 16777216 10.0.0.0/8 (255.0.0.0) 24 bits 8 bits single class A network 20-bit block 172.16.0.0 – 172.31.255.255 1048576 172.16.0.0/12 (255.240.0.0) 20 bits 12 bits 16 contiguous class B networks 16-bit block 192.168.0.0 – 192.168.255.255 65536 192.168.0.0/16 (255.255.0.0) 16 bits 16]]></description>
+    <description><![CDATA[<h2 id="私有ipv4">私有IPv4</h2>
+<p>RFC1918 name</p>
+<p>IP address range</p>
+<p>Number of addresses</p>
+<p>Largest CIDR block (subnet mask)</p>
+<p>Host ID size</p>
+<p>Mask bits</p>
+<p><em>Classful</em> description</p>
+<p>24-bit block</p>
+<p>10.0.0.0 – 10.255.255.255</p>
+<p>16777216</p>
+<p>10.0.0.0/8 (255.0.0.0)</p>
+<p>24 bits</p>
+<p>8 bits</p>
+<p>single class A network</p>
+<p>20-bit block</p>
+<p>172.16.0.0 – 172.31.255.255</p>
+<p>1048576</p>
+<p>172.16.0.0/12 (255.240.0.0)</p>
+<p>20 bits</p>
+<p>12 bits</p>
+<p>16 contiguous class B networks</p>
+<p>16-bit block</p>
+<p>192.168.0.0 – 192.168.255.255</p>
+<p>65536</p>
+<p>192.168.0.0/16 (255.255.0.0)</p>
+<p>16 bits</p>
+<p>16 bits</p>
+<p>256 contiguous class C networks</p>]]></description>
 </item>
 <item>
     <title>工具介紹-Microsoft Network Monitor</title>
@@ -33,7 +68,8 @@
     <pubDate>Fri, 09 Jul 2021 11:55:56 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-microsoft-network-monitor/</guid>
-    <description><![CDATA[說明 Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>Microsoft Network Monitor是由微軟出的網路封包分析工具，主要功能跟wireshark類似，有興趣的下可以載來玩玩。安裝後要重登入，才可以讀到網路界面卡。</p>]]></description>
 </item>
 <item>
     <title>Network-反向代理</title>
@@ -41,7 +77,9 @@
     <pubDate>Fri, 07 May 2021 17:19:40 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
-    <description><![CDATA[說明 反向代理 Reverse Proxy顧名思意，是相較Proxy的行為反向執行。代替Server將請求回傳給Client。 也就是說Client端所請求的對]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>反向代理 Reverse Proxy顧名思意，是相較Proxy的行為反向執行。代替Server將請求回傳給Client。</p>
+<p>也就是說Client端所請求的對向不是真正的Server，而是Reverse Proxy。因此對Server來說可以達到隱藏真實IP的功能。</p>]]></description>
 </item>
 <item>
     <title>Network-135、137、138、139、445說明</title>
@@ -49,7 +87,7 @@
     <pubDate>Wed, 05 May 2021 16:54:20 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/about-ports-135-137-138-139-445/</guid>
-    <description><![CDATA[這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更]]></description>
+    <description><![CDATA[<p>這5個 Port 在工作上時不時會遇到，在一知半解的狀況下，常常會沒辦法判斷真時的發生狀況。因此參考網路上的介紹做一些整理，希望能這對這些Port有更多瞭解。</p>]]></description>
 </item>
 <item>
     <title>Windows-NTP設定</title>
@@ -57,7 +95,12 @@
     <pubDate>Thu, 25 Oct 2018 01:27:21 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-ntp%E8%A8%AD%E5%AE%9A/</guid>
-    <description><![CDATA[利用Reg設定Windows ntp值，可寫在BAT檔中，但需要admin權限 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /d 0x00000e10 /t REG_DWORD /f 接受誤差 在預設的狀況下，與NTP Server]]></description>
+    <description><![CDATA[<p>利用Reg設定Windows ntp值，可寫在BAT檔中，但需要admin權限</p>
+<pre tabindex="0"><code>
+
+REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /d 0x00000e10 /t REG_DWORD /f
+</code></pre><h2 id="接受誤差">接受誤差</h2>
+<p>在預設的狀況下，與NTP Server誤差過大時，不會進行校時。如果沒有設定有可能會因為有誤差而沒有校時成功。</p>]]></description>
 </item>
 <item>
     <title>Network - 常見HTTP status codes整理</title>
@@ -65,7 +108,15 @@
     <pubDate>Thu, 30 Aug 2018 08:11:07 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/http-response-status-codes/</guid>
-    <description><![CDATA[403 表示路徑正確，但沒有權限存取 404 表示路徑不存在 500 表示程式只接受特定的字元或符號(可透過使用正確的符號完成注入) 參考資料 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status]]></description>
+    <description><![CDATA[<ul>
+<li>403 表示路徑正確，但沒有權限存取</li>
+<li>404 表示路徑不存在</li>
+<li>500 表示程式只接受特定的字元或符號(可透過使用正確的符號完成注入)</li>
+</ul>
+<h2 id="參考資料">參考資料</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank" rel="noopener noreffer ">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status</a></li>
+</ul>]]></description>
 </item>
 <item>
     <title>Network-一些常用的埠號 port number</title>
@@ -73,7 +124,7 @@
     <pubDate>Tue, 10 Jul 2018 00:20:53 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%A0%E8%99%9F-port-number/</guid>
-    <description><![CDATA[在應用層中，每個服務都有預設的port number，當然也可以依自己的需求指定使用，曾經也是有看過https走TCP/80，或是RDP走TC]]></description>
+    <description><![CDATA[<p>在應用層中，每個服務都有預設的port number，當然也可以依自己的需求指定使用，曾經也是有看過https走TCP/80，或是RDP走TCP/1234。</p>]]></description>
 </item>
 <item>
     <title>憑證過期問題</title>
@@ -81,7 +132,7 @@
     <pubDate>Wed, 04 Jul 2018 02:18:00 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E6%86%91%E8%AD%89%E9%81%8E%E6%9C%9F%E5%95%8F%E9%A1%8C/</guid>
-    <description><![CDATA[最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證]]></description>
+    <description><![CDATA[<p>最近遇到一個好玩的事，使用者上網時一直出現憑證錯誤，原本以為是憑證問題，也怕是有人用假憑證架釣魚網站。但檢查後發現完全沒問題，最後就連把憑證匯入電腦都不行，直到發現了一件事，使用者的電腦日期比憑證的啟用日期還早，原來是很久沒使用電腦了，日期正常後就好了。</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -1,15 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>attack vectors - 標籤 - 資安工作筆記</title>
+        <title>Attack Vectors - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/attack-vectors/</link>
-        <description>attack vectors - 標籤 - 資安工作筆記</description>
+        <description>Attack Vectors - 標籤 - 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/attack-vectors/" rel="self" type="application/rss+xml" /><item>
     <title>資安名詞-病毒相關名詞</title>
     <link>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</link>
     <pubDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</guid>
-    <description><![CDATA[Attack Vectors Attack Vectors指攻擊途徑，也就是攻擊者進入到網路或系統的方式，對防禦方來講，可說是曝露在外可受攻擊的路徑。 常見的attack vectors 包含社交]]></description>
+    <description><![CDATA[<h2 id="attack-vectors">Attack Vectors</h2>
+<p>Attack Vectors指攻擊途徑，也就是攻擊者進入到網路或系統的方式，對防禦方來講，可說是曝露在外可受攻擊的路徑。</p>
+<p>常見的attack vectors 包含社交工程、漏洞利用或內部威&hellip;等</p>]]></description>
 </item>
 </channel>
 </rss>

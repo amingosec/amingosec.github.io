@@ -9,7 +9,9 @@
     <pubDate>Tue, 27 Apr 2021 01:19:42 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/get-the-stored-wifi-password-on-windows/</guid>
-    <description><![CDATA[利用netsh wlan指令找出連線過的Wifi名稱 netsh wlan show profiles 再利用以下指令，針對想查詢的wlan名稱顯示明碼的Key，[WLAN Name]請換]]></description>
+    <description><![CDATA[<p>利用netsh wlan指令找出連線過的Wifi名稱</p>
+<p>netsh wlan show profiles</p>
+<p>再利用以下指令，針對想查詢的wlan名稱顯示明碼的Key，[WLAN Name]請換成想查詢的名稱</p>]]></description>
 </item>
 <item>
     <title>Red team-後滲透清除入侵軌跡</title>
@@ -17,7 +19,8 @@
     <pubDate>Sat, 24 Apr 2021 17:26:23 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E5%BE%8C%E6%BB%B2%E9%80%8F%E6%B8%85%E9%99%A4%E5%85%A5%E4%BE%B5%E8%BB%8C%E8%B7%A1/</guid>
-    <description><![CDATA[說明 在渗透完成之後，為了降低被發現的機率，攻擊者需要將自己的入侵軌跡清除。當然如果時間不夠，目標又有可利用的漏洞，直接作加密勒索一波也是常見]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>在渗透完成之後，為了降低被發現的機率，攻擊者需要將自己的入侵軌跡清除。當然如果時間不夠，目標又有可利用的漏洞，直接作加密勒索一波也是常見的方式。</p>]]></description>
 </item>
 <item>
     <title>從紅隊角度看Mittre Att&amp;amp;ck</title>
@@ -25,7 +28,7 @@
     <pubDate>Sat, 24 Apr 2021 08:25:25 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E5%BE%9E%E7%B4%85%E9%9A%8A%E8%A7%92%E5%BA%A6%E7%9C%8Bmitre-attck/</guid>
-    <description><![CDATA[link.medium.com/ILX1KSadIfb]]></description>
+    <description><![CDATA[<p><a href="https://link.medium.com/ILX1KSadIfb" target="_blank" rel="noopener noreffer ">link.medium.com/ILX1KSadIfb</a></p>]]></description>
 </item>
 <item>
     <title>密碼破解-密碼噴灑攻擊</title>
@@ -33,7 +36,8 @@
     <pubDate>Sat, 10 Apr 2021 15:18:35 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E5%AF%86%E7%A2%BC%E5%99%B4%E7%81%91%E6%94%BB%E6%93%8A/</guid>
-    <description><![CDATA[說明 在密碼噴濺攻擊中，攻擊者會使用許多不同帳戶與服務中最常見的密碼，去嘗試存取任何他們能找到的密碼保護資產。這些攻擊通常可能橫跨許多不同組織]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>在密碼噴濺攻擊中，攻擊者會使用許多不同帳戶與服務中最常見的密碼，去嘗試存取任何他們能找到的密碼保護資產。這些攻擊通常可能橫跨許多不同組織和識別提供者。舉例來說，攻擊者會使用 <a href="https://www.blackhillsinfosec.com/introducing-mailsniper-a-tool-for-searching-every-users-email-for-sensitive-data/" target="_blank" rel="noopener noreffer ">Mailsniper</a> 這類容易取得的工具組去羅列出數個組織中的所有使用者，然後嘗試用「P@$$w0rd」和「Password1」去登入這些帳戶。</p>]]></description>
 </item>
 <item>
     <title>課程分享-免費逆向教學</title>
@@ -41,7 +45,11 @@
     <pubDate>Sun, 04 Apr 2021 15:57:03 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E5%85%8D%E8%B2%BB%E9%80%86%E5%90%91%E6%95%99%E5%AD%B8/</guid>
-    <description><![CDATA[介紹 A FREE comprehensive reverse engineering course covering x86, x64, 32-bit ARM &amp; 64-bit ARM architectures. 網頁連結 https://github.com/mytechnotalent/Reverse-Engineering?fbclid=IwAR0xlXSnR5zyRNEmQ2B2PRD3mLjL59ynh0zsYr7lj2UD8rOG5w1-FHsPDN4]]></description>
+    <description><![CDATA[<p></p>
+<h2 id="介紹">介紹</h2>
+<p>A FREE comprehensive reverse engineering course covering x86, x64, 32-bit ARM &amp; 64-bit ARM architectures.</p>
+<h2 id="網頁連結">網頁連結</h2>
+<p><a href="https://github.com/mytechnotalent/Reverse-Engineering?fbclid=IwAR0xlXSnR5zyRNEmQ2B2PRD3mLjL59ynh0zsYr7lj2UD8rOG5w1-FHsPDN4" target="_blank" rel="noopener noreffer ">https://github.com/mytechnotalent/Reverse-Engineering?fbclid=IwAR0xlXSnR5zyRNEmQ2B2PRD3mLjL59ynh0zsYr7lj2UD8rOG5w1-FHsPDN4</a></p>]]></description>
 </item>
 <item>
     <title>github跟raw.githubusercontent.com</title>
@@ -49,7 +57,7 @@
     <pubDate>Sat, 19 Sep 2020 16:25:39 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/github%E8%B7%9Fraw-githubusercontent-com/</guid>
-    <description><![CDATA[在看到不少Powershell攻擊指令時，都會raw.githubusercontent.com下載東西，其實是在github上的code點]]></description>
+    <description><![CDATA[<p>在看到不少Powershell攻擊指令時，都會raw.githubusercontent.com下載東西，其實是在github上的code點raw看到的URL，除了一開始的domain不同外，後面的路徑是相同的。</p>]]></description>
 </item>
 <item>
     <title>Windows - 利用Kali Linux找回登入密碼</title>
@@ -57,7 +65,7 @@
     <pubDate>Sat, 15 Aug 2020 03:25:49 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC-%E5%88%A9%E7%94%A8kali-linux/</guid>
-    <description><![CDATA[最近一次機會下，需要幫朋友登入忘記密碼的筆電。原本想利用常見的手法，用windows 重灌光碟把cmd.exe改成放大鏡，但居然因為找不到相應]]></description>
+    <description><![CDATA[<p>最近一次機會下，需要幫朋友登入忘記密碼的筆電。原本想利用常見的手法，用windows 重灌光碟把cmd.exe改成放大鏡，但居然因為找不到相應的版本而沒有辦法使用。</p>]]></description>
 </item>
 <item>
     <title>工具介紹-Tcpdump指令介紹</title>
@@ -65,7 +73,25 @@
     <pubDate>Sun, 09 Aug 2020 02:02:30 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-tcpdump-command/</guid>
-    <description><![CDATA[tcpdump 指令可以用來監聽網卡的封包，是相當實用的 Linux 指令。 確認是否有安裝 which tcpdump 安裝tcpdump # yum install -y tcpdump 參數介紹 -d 看可用的介面卡 -i 選擇特定的介面卡 tcpdump]]></description>
+    <description><![CDATA[<p>tcpdump 指令可以用來監聽網卡的封包，是相當實用的 Linux 指令。</p>
+<h2 id="確認是否有安裝">確認是否有安裝</h2>
+<p><code>which tcpdump</code></p>
+<p>安裝tcpdump</p>
+<p><code># yum install -y tcpdump</code></p>
+<h2 id="參數介紹">參數介紹</h2>
+<p>-d 看可用的介面卡</p>
+<p>-i 選擇特定的介面卡</p>
+<p>tcpdump -nnSX port 443</p>
+<p>取得 HTTPS port 443 的流量。</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/introduction-to-microsoft-network-monitor/" target="_blank" rel="noopener noreffer ">工具介紹-Microsoft Network Monitor</a></li>
+</ul>
+<h2 id="參考資料">參考資料</h2>
+<ul>
+<li><a href="https://opensource.com/article/18/10/introduction-tcpdump" target="_blank" rel="noopener noreffer ">https://opensource.com/article/18/10/introduction-tcpdump</a></li>
+<li><a href="https://www.tcpdump.org/manpages/tcpdump.1.html" target="_blank" rel="noopener noreffer ">https://www.tcpdump.org/manpages/tcpdump.1.html</a></li>
+</ul>]]></description>
 </item>
 <item>
     <title>Tycoon Ransomware - Java Ransomware Attack Windows &amp;amp; Linux Users</title>
@@ -73,7 +99,7 @@
     <pubDate>Sat, 06 Jun 2020 13:51:22 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/tycoon-ransomware-java-ransomware-attack-windows-linux-users/</guid>
-    <description><![CDATA[針對Linux的勒鎖病毒，Tycoon Ransomware，利用Java Security experts have warned that hackers are using a new multi-platform Java ransomware &ldquo;Tycoon&rdquo; to target Windows and Linux users to lock down the files. — Read on gbhackers.com/tycoon-ransomware/]]></description>
+    <description><![CDATA[<p>針對Linux的勒鎖病毒，Tycoon Ransomware，利用Java Security experts have warned that hackers are using a new multi-platform Java ransomware &ldquo;Tycoon&rdquo; to target Windows and Linux users to lock down the files. — Read on <a href="https://gbhackers.com/tycoon-ransomware/?fbclid=IwAR1QwSbH_de51-kTI4ALLcHfZtI31hiDcSyJv9dJk2XC2bdGtdwgwgih4WU" target="_blank" rel="noopener noreffer ">gbhackers.com/tycoon-ransomware/</a></p>]]></description>
 </item>
 <item>
     <title>PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒</title>
@@ -81,7 +107,13 @@
     <pubDate>Sat, 30 May 2020 04:34:09 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/powershell-%E7%B7%B4%E7%BF%92-%E7%94%A8-powershell-%E8%A8%AD%E5%AE%9A-windows-%E6%8E%92%E7%A8%8B%E8%B7%91-powershell-%E9%BB%91%E6%9A%97%E5%9F%B7%E8%A1%8C%E7%B7%92/</guid>
-    <description><![CDATA[計劃把原本的手工部署與設定操作逐步轉成 PowerShell Script。這樣做有幾個好處： 作業標準化，避免人為失誤 寫成腳本，不管誰來操作結果都一致，不會無人交]]></description>
+    <description><![CDATA[<p>計劃把原本的手工部署與設定操作逐步轉成 PowerShell Script。這樣做有幾個好處：</p>
+<p>作業標準化，避免人為失誤<br>
+寫成腳本，不管誰來操作結果都一致，不會無人交接手藝失傳，也排除腦殘眼拙手滑出錯的風險，<br>
+大量部署或需重複執行時可節省可觀時間<br>
+例如要部署上百台機器的場合。<br>
+可設定排程自動化部署&hellip;<br>
+— Read on <a href="https://blog.darkthread.net/blog/psfaq-setup-schtask/" target="_blank" rel="noopener noreffer ">blog.darkthread.net/blog/psfaq-setup-schtask/</a></p>]]></description>
 </item>
 </channel>
 </rss>

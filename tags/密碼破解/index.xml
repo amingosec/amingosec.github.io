@@ -9,7 +9,15 @@
     <pubDate>Fri, 11 Feb 2022 08:33:18 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/what-is-credential-stuffing/</guid>
-    <description><![CDATA[說明 Credential stuffing為密碼破解的一種手法，利用在外部取得的帳密，在目標網站登入位置進行密碼噴灑、撞庫或其他爆力密碼破解方式。 延伸閱讀 密碼破]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>Credential stuffing為密碼破解的一種手法，利用在外部取得的帳密，在目標網站登入位置進行密碼噴灑、撞庫或其他爆力密碼破解方式。</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2022/02/06/%e6%92%9e%e5%ba%ab%e6%94%bb%e6%93%8a/" target="_blank" rel="noopener noreffer ">密碼破解-撞庫攻擊</a></li>
+<li><a href="https://amingosec.blog/2021/04/10/%e5%af%86%e7%a2%bc%e5%99%b4%e7%81%91%e6%94%bb%e6%93%8a/" target="_blank" rel="noopener noreffer ">密碼破解-密碼噴灑攻擊</a></li>
+</ul>
+<h2 id="參考網站">參考網站</h2>
+<p><a href="https://owasp.org/www-community/attacks/Credential" target="_blank" rel="noopener noreffer ">https://owasp.org/www-community/attacks/Credential</a>_stuffing</p>]]></description>
 </item>
 <item>
     <title>密碼破解-撞庫攻擊</title>
@@ -17,7 +25,9 @@
     <pubDate>Sun, 06 Feb 2022 03:39:07 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/</guid>
-    <description><![CDATA[撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。 偵測與防範的手]]></description>
+    <description><![CDATA[<p>撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。</p>
+<h2 id="偵測與防範的手法">偵測與防範的手法</h2>
+<p>2階段驗證(2FA)，是能有效防止的一種方式。</p>]]></description>
 </item>
 </channel>
 </rss>

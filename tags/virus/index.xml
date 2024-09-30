@@ -9,7 +9,9 @@
     <pubDate>Tue, 28 Jan 2020 16:03:10 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E7%97%85%E6%AF%92%E7%9B%B8%E9%97%9C%E5%90%8D%E8%A9%9E/</guid>
-    <description><![CDATA[Attack Vectors Attack Vectors指攻擊途徑，也就是攻擊者進入到網路或系統的方式，對防禦方來講，可說是曝露在外可受攻擊的路徑。 常見的attack vectors 包含社交]]></description>
+    <description><![CDATA[<h2 id="attack-vectors">Attack Vectors</h2>
+<p>Attack Vectors指攻擊途徑，也就是攻擊者進入到網路或系統的方式，對防禦方來講，可說是曝露在外可受攻擊的路徑。</p>
+<p>常見的attack vectors 包含社交工程、漏洞利用或內部威&hellip;等</p>]]></description>
 </item>
 </channel>
 </rss>

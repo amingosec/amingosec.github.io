@@ -4,19 +4,27 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>名詞介紹-瞭解MDR EDR EPP XDR - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="名詞介紹-瞭解MDR EDR EPP XDR" />
-<meta property="og:description" content="說明 MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。 EDR：Endpoint Detection and Response 故名思意針對端點還的行" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://amingosec.github.io/posts/introduction-to-mdr-edr-epp-xdr/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-11T10:11:33+00:00" />
-<meta property="article:modified_time" content="2021-05-11T10:11:33+00:00" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="名詞介紹-瞭解MDR EDR EPP XDR"/>
-<meta name="twitter:description" content="說明 MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。 EDR：Endpoint Detection and Response 故名思意針對端點還的行"/>
+        <title>名詞介紹-瞭解MDR EDR EPP XDR - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/posts/introduction-to-mdr-edr-epp-xdr/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="名詞介紹-瞭解MDR EDR EPP XDR">
+  <meta property="og:description" content="說明 MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。
+EDR：Endpoint Detection and Response 故名思意針對端點還的行為進行監控，並提供回應的功能，讓使用者可以遠端網網、取證、調查…等">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-05-11T10:11:33+00:00">
+    <meta property="article:modified_time" content="2021-05-11T10:11:33+00:00">
+    <meta property="article:tag" content="資訊安全">
+    <meta property="article:tag" content="資安監控">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="名詞介紹-瞭解MDR EDR EPP XDR">
+  <meta name="twitter:description" content="說明 MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。
+EDR：Endpoint Detection and Response 故名思意針對端點還的行為進行監控，並提供回應的功能，讓使用者可以遠端網網、取證、調查…等">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/introduction-to-mdr-edr-epp-xdr/" /><link rel="prev" href="https://amingosec.github.io/posts/%E7%B4%85%E9%9A%8A%E6%94%BB%E9%98%B2%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-%E7%A5%9E%E9%9A%B1%E4%B9%8B%E8%B7%AF/" /><link rel="next" href="https://amingosec.github.io/posts/1010/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/introduction-to-mdr-edr-epp-xdr/" /><link rel="prev" href="https://amingosec.github.io/posts/%E7%B4%85%E9%9A%8A%E6%94%BB%E9%98%B2%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-%E7%A5%9E%E9%9A%B1%E4%B9%8B%E8%B7%AF/" /><link rel="next" href="https://amingosec.github.io/posts/open-source-intelligence-osint/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -129,11 +137,11 @@
     </div>
 
     <div class="post-nav"><a href="/posts/%E7%B4%85%E9%9A%8A%E6%94%BB%E9%98%B2%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-%E7%A5%9E%E9%9A%B1%E4%B9%8B%E8%B7%AF/" class="prev" rel="prev" title="[轉]紅隊攻防基礎建設-神隱之路"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[轉]紅隊攻防基礎建設-神隱之路</a>
-            <a href="/posts/1010/" class="next" rel="next" title="藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate?">藍隊營運Blue Team Operations [Part 1]: How Corporate and Enterprise SOC Operate?<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+            <a href="/posts/open-source-intelligence-osint/" class="next" rel="next" title="資訊安全-公開資訊蒐集">資訊安全-公開資訊蒐集<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

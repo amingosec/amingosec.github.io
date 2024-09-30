@@ -9,7 +9,8 @@
     <pubDate>Mon, 28 Feb 2022 23:30:30 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-osquery/</guid>
-    <description><![CDATA[介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢]]></description>
+    <description><![CDATA[<h2 id="介紹">介紹</h2>
+<p>osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的<a href="https://osquery.io/schema/5.2.2/" target="_blank" rel="noopener noreffer ">schema</a>。</p>]]></description>
 </item>
 <item>
     <title>資安監控- 監控 AD 的受駭跡證</title>
@@ -17,7 +18,9 @@
     <pubDate>Wed, 26 May 2021 07:24:33 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/monitoring-active-directory-for-signs-of-compromise/</guid>
-    <description><![CDATA[本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。 介紹 資安監控可以有效的發現場域內需要注意]]></description>
+    <description><![CDATA[<p>本篇文章介紹Windows Event Log中的類型與稽核原則。後續並介紹建議設定的稽核原則內容與監控的方向。</p>
+<h2 id="介紹">介紹</h2>
+<p>資安監控可以有效的發現場域內需要注意的事項，在組織內部的監控設備中，AD上的Event Log是絕對不可少的，從Windows 2008跟Vista開始，Windows 提供了以下 9 種 Event log 類型。</p>]]></description>
 </item>
 <item>
     <title>名詞介紹-瞭解MDR EDR EPP XDR</title>
@@ -25,7 +28,10 @@
     <pubDate>Tue, 11 May 2021 10:11:33 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/introduction-to-mdr-edr-epp-xdr/</guid>
-    <description><![CDATA[說明 MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。 EDR：Endpoint Detection and Response 故名思意針對端點還的行]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>MDR EDR EPP XDR在國內近期相當的常聽到，但不是所有人都知道是什麼，以下是簡單的名詞解釋。</p>
+<h3 id="edrendpoint-detection-and-response">EDR：Endpoint Detection and Response</h3>
+<p>故名思意針對端點還的行為進行監控，並提供回應的功能，讓使用者可以遠端網網、取證、調查&hellip;等</p>]]></description>
 </item>
 <item>
     <title>Windows Server Update Services (WSUS) 介紹</title>
@@ -33,7 +39,16 @@
     <pubDate>Thu, 06 May 2021 16:11:44 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/windows-server-update-services-wsus-%E4%BB%8B%E7%B4%B9/</guid>
-    <description><![CDATA[WSUS是windows提供更新管理的Server 影片說明 https://www.youtube.com/watch?v=Yv0qjxdX5yw 文章連結 https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+ 相關攻擊手法 https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/]]></description>
+    <description><![CDATA[<p>WSUS是windows提供更新管理的Server</p>
+<h2 id="影片說明">影片說明</h2>
+<p><a href="https://www.youtube.com/watch?v=Yv0qjxdX5yw" target="_blank" rel="noopener noreffer ">https://www.youtube.com/watch?v=Yv0qjxdX5yw</a></p>
+<h2 id="文章連結">文章連結</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus</a></li>
+<li><a href="https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84&#43;Windows&#43;Update&#43;Server&#43;-&#43;WSUS&#43;" target="_blank" rel="noopener noreffer ">https://blog.xuite.net/tolarku/blog/194558299-%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%AE%B6%E7%9A%84+Windows+Update+Server+-+WSUS+</a></li>
+</ul>
+<h2 id="相關攻擊手法">相關攻擊手法</h2>
+<p><a href="https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/" target="_blank" rel="noopener noreffer ">https://www.gosecure.net/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/</a></p>]]></description>
 </item>
 </channel>
 </rss>

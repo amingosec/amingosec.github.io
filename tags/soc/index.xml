@@ -9,7 +9,7 @@
     <pubDate>Mon, 03 Sep 2018 05:26:48 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/%E6%97%A5%E8%AA%8C%E9%9B%BB%E8%85%A6%E5%AF%AB%E7%9A%84%E6%97%A5%E8%A8%98/</guid>
-    <description><![CDATA[log檔可分為system log, security log, even log…等等，事發時可透過log來勾勒出事情的樣貌。平時可將log統一保存，並設立分析規則，用以偵察事件的]]></description>
+    <description><![CDATA[<p>log檔可分為system log, security log, even log…等等，事發時可透過log來勾勒出事情的樣貌。平時可將log統一保存，並設立分析規則，用以偵察事件的發生。 可透過稽核來追蹤誰在什麼時候改變了什麼，以維持資源的完整性。 在組織中，會將log集中保存。一般的架構下，會有前端收集器，負責將log進行收集與正規化，再將處理過的資料傳到後端SIEM，在SIEM中建端關聯規則產生即時告警，或進行統計產生視覺化圖表或報告，可較為完整的看到組織內資安狀況的全貌。</p>]]></description>
 </item>
 </channel>
 </rss>

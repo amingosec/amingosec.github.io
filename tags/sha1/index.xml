@@ -1,15 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>sha1 - 標籤 - 資安工作筆記</title>
+        <title>Sha1 - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/sha1/</link>
-        <description>sha1 - 標籤 - 資安工作筆記</description>
+        <description>Sha1 - 標籤 - 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sat, 27 Oct 2018 16:16:54 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/sha1/" rel="self" type="application/rss+xml" /><item>
     <title>PowerShell - 取得檔案hash值</title>
     <link>https://amingosec.github.io/posts/powershell-get-filehash/</link>
     <pubDate>Sat, 27 Oct 2018 16:16:54 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/powershell-get-filehash/</guid>
-    <description><![CDATA[說明 在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-fileha]]></description>
+    <description><![CDATA[<h2 id="說明">說明</h2>
+<p>在網路上相信能找到不少軟體能取得檔案的hash，但如果能用系統自己提供的相信會安全一些。在PowerShell中提供get-filehash指令來取得檔案的hash值。</p>]]></description>
 </item>
 <item>
     <title>Windows 產生檔案 hash 值的方式</title>
@@ -17,7 +18,8 @@
     <pubDate>Wed, 20 Jun 2018 02:21:27 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/get-file-hash-in-windows/</guid>
-    <description><![CDATA[hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。 在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒]]></description>
+    <description><![CDATA[<p>hash 值可用以檢查檔案的完整性，來確認所獲取的檔案是否為完整。</p>
+<p>在佈屬一些資安軟體時，常會被公司自己的防毒擋住，此時將檔案的hash值直接放入防毒白名單會是個好方法。</p>]]></description>
 </item>
 </channel>
 </rss>

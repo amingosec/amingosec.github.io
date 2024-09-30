@@ -3,8 +3,16 @@
         <title>Tags - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/</link>
         <description>Tags - 標籤 - 資安工作筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>cmder</title>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 30 Sep 2024 23:01:58 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Cloud</title>
+    <link>https://amingosec.github.io/tags/cloud/</link>
+    <pubDate>Mon, 30 Sep 2024 23:01:58 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://amingosec.github.io/tags/cloud/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cmder</title>
     <link>https://amingosec.github.io/tags/cmder/</link>
     <pubDate>Mon, 03 Apr 2023 23:52:51 &#43;0800</pubDate>
     <author>作者</author>
@@ -52,7 +60,7 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>upgrade</title>
+    <title>Upgrade</title>
     <link>https://amingosec.github.io/tags/upgrade/</link>
     <pubDate>Wed, 25 May 2022 06:39:02 &#43;0000</pubDate>
     <author>作者</author>
@@ -68,19 +76,11 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>postgresql</title>
+    <title>Postgresql</title>
     <link>https://amingosec.github.io/tags/postgresql/</link>
     <pubDate>Sun, 15 May 2022 14:46:13 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/tags/postgresql/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>VS Code</title>
-    <link>https://amingosec.github.io/tags/vs-code/</link>
-    <pubDate>Tue, 03 May 2022 16:09:50 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://amingosec.github.io/tags/vs-code/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

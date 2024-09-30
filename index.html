@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
     <head>
-	<meta name="generator" content="Hugo 0.111.3">
+	<meta name="generator" content="Hugo 0.135.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="資安工作筆記" />
-<meta property="og:description" content="資訊安全相關內容分享" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://amingosec.github.io/" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="資安工作筆記"/>
-<meta name="twitter:description" content="資訊安全相關內容分享"/>
+        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="資安工作筆記">
+  <meta property="og:description" content="資訊安全相關內容分享">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="資安工作筆記">
+  <meta name="twitter:description" content="資訊安全相關內容分享">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -55,32 +58,71 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/azure-cli-command/">Azure Cli Command</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2024-09-30">2024-09-30</time></span></div><div class="content"><h1 id="azure-cli">Azure Cli</h1>
+<p>列出幾個常用到的Azure Cli 指令，方便Azuer 的維運。</p>
+<h2 id="login">login</h2>
+<p>在安裝好Azure Cli後，使用以下指令Azure</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">login</span>
+</span></span></code></pre></div><h2 id="確認-subscription">確認 Subscription</h2>
+<p>登入後可使用 account 指令確認一下環境</p></div><div class="post-footer">
+        <a href="/posts/azure-cli-command/">閱讀全文</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cloud/">Cloud</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/cmder/">Cmder</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-04-03">2023-04-03</time></span></div><div class="content">介紹 Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-04-03">2023-04-03</time></span></div><div class="content"><h2 id="介紹">介紹</h2>
+<p>Cmder是一款優秀的Windows命令行工具，具有許多功能和方便的使用體驗。它提供了一個可攜式的環境，讓您可以在任何地方都能快速地運行命令行指令，可用來取代內建的cmd.exe甚至powershell。可至<a href="https://cmder.net/" target="_blank" rel="noopener noreffer ">Cmder官網</a>下載。而Cmder的兩個版本，mini和full版本，讓人可依不同的情況來下載使用。兩個版本的差別在full版本多了git for windows，如果本身有裝git的話，下載mini的版本就行了。</p></div><div class="post-footer">
         <a href="/posts/cmder/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cmder/">cmder</a>,&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cmder/">Cmder</a>,&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/what-is-vpn/">VPN 介紹</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-03-26">2023-03-26</time></span></div><div class="content">virtual private network (VPN) 讓使用者可以在較不安全、或公開的網路環境中，建立一個加密的連線，達到私有網路的功能。也因此 VPN 提高了使用者的私密性。在現今各家廠商針對</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-03-26">2023-03-26</time></span></div><div class="content"><p>virtual private network (VPN) 讓使用者可以在較不安全、或公開的網路環境中，建立一個加密的連線，達到私有網路的功能。也因此 VPN 提高了使用者的私密性。在現今各家廠商針對上網行為的追蹤與網絡攻擊的環境下，VPN 成為了保護個人上網安全和隱私的重要工具之一。如果想直接看推薦的 VPN 可直接到「如何選擇 VPN 」的章節。</p></div><div class="post-footer">
         <a href="/posts/what-is-vpn/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/vpn/">VPN</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/rakuten-kobo/">Rakuten Kobo 電子書</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-02-02">2023-02-02</time></span></div><div class="content">樂天 kobo 是全球前幾名的電子書商，也是我常購買電子書的地方。相較其他電子書他給我的感覺是有較好的排版針對電子閱讀方式有所優化。 kobo 部落格會有【一週</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-02-02">2023-02-02</time></span></div><div class="content"><p>樂天 kobo 是全球前幾名的電子書商，也是我常購買電子書的地方。相較其他電子書他給我的感覺是有較好的排版針對電子閱讀方式有所優化。</p>
+<p><a href="https://afftck.com/track/clicks/1390/c627c2bf910526dcf088ec35dc2e9753743940cf70e8e2fd113ff408660756ee?subid_1=blog&amp;t=https%3A%2F%2Fwww.kobo.com%2Fzh%2Fblog" target="_blank" rel="noopener noreffer ">kobo 部落格</a>會有【一週99書單】讓讀者用 99 元的價格購書，想買電子書的話別錯過。同時也推薦下面幾本自己看過的書。</p></div><div class="post-footer">
         <a href="/posts/rakuten-kobo/">閱讀全文</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/windows-event-log/">Windows Event Log</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content">Event Log Location %SystemRoot%\System32\winevt\Logs\ 三種主要取得 Event Log 的方法： Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx 在 System 中有主機運作的相關訊息。 Security.evtx 在</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2023-01-22">2023-01-22</time></span></div><div class="content"><h2 id="event-log-location">Event Log Location</h2>
+<p><code>%SystemRoot%\System32\winevt\Logs\</code></p>
+<p>三種主要取得 Event Log 的方法：</p>
+<ol>
+<li>Event Viewer (GUI-based application)</li>
+<li>Wevtutil.exe (command-line tool)</li>
+<li>Get-WinEvent (PowerShell cmdlet)</li>
+</ol>
+<h2 id="常使用的-log">常使用的 Log</h2>
+<ul>
+<li>Security.evtx</li>
+<li>System.evtx</li>
+<li>Application.evtx</li>
+<li>Windows PowerShell.evtx</li>
+<li>Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx</li>
+</ul>
+<h2 id="特殊狀況log">特殊狀況Log</h2>
+<ul>
+<li>MSExchange Management.evtx</li>
+<li>IIS Log</li>
+<li>FireWall Log</li>
+</ul>
+<h2 id="log-說明">Log 說明</h2>
+<ul>
+<li>
+<p>System.evtx</p>
+<p>在 System 中有主機運作的相關訊息。</p>
+</li>
+<li>
+<p>Security.evtx</p>
+<p>在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。</p></div><div class="post-footer">
         <a href="/posts/windows-event-log/">閱讀全文</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/tips-for-improving-your-remote-meetings/">讓你的遠端會議更輕鬆的幾個重點</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-08-27">2022-08-27</time></span></div><div class="content">隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。在疫情間建立起遠端會議的</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-08-27">2022-08-27</time></span></div><div class="content"><p>隨著疫情的展開至今，越來越多公司願意讓員工在家上班(WFH)，而這個潮流沒有因為疫情消退而有所反轉，尤其實遠端會議。在疫情間建立起遠端會議的模式讓會議的時間地點更有彈性，方便性的提升讓更多人習慣使用遠端開會。</p></div><div class="post-footer">
         <a href="/posts/tips-for-improving-your-remote-meetings/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%B7%A5%E4%BD%9C%E7%BF%92%E6%85%A3/">工作習慣</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/learning-resource/">Learning Resource</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-07-10">2022-07-10</time></span></div><div class="content">在資訊安全領域，持續學習相當的重要，這邊整理幾個我覺得滿實用的學習資源。 Microsoft Learn Microsoft Learn 一個是我覺得相當好的學習資源，裡面針對了不同的主題有不同的L</div><div class="post-footer">
-        <a href="/posts/learning-resource/">閱讀全文</a></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -97,11 +139,11 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/23/">23</a>
+                        <a href="/page/22/">22</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

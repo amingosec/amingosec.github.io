@@ -9,7 +9,7 @@
     <pubDate>Sun, 26 Jan 2020 16:35:11 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/demilitarized-zone-dmz/</guid>
-    <description><![CDATA[DMZ為外部網路使用者提供有限度的連線存取，讓外部使用者能最小限度使用組織所提供的公開資源(如網站)，並且與內部網路(LAN)區隔。一般來說]]></description>
+    <description><![CDATA[<p>DMZ為外部網路使用者提供有限度的連線存取，讓外部使用者能最小限度使用組織所提供的公開資源(如網站)，並且與內部網路(LAN)區隔。一般來說，會使用Firewall隔出DMZ區。同時，DMZ區主機亦會限制存取內部網路資源，避免DMZ區受駭時，造成內網資安的威脅。</p>]]></description>
 </item>
 </channel>
 </rss>

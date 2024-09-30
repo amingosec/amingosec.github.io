@@ -4,15 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Windows Event Log - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="Windows Event Log" />
-<meta property="og:description" content="Event Log Location %SystemRoot%\System32\winevt\Logs\ 三種主要取得 Event Log 的方法： Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx 在 System 中有主機運作的相關訊息。 Security.evtx 在" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://amingosec.github.io/posts/windows-event-log/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-01-22T20:13:06+08:00" />
-<meta property="article:modified_time" content="2023-01-22T20:13:06+08:00" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Windows Event Log"/>
-<meta name="twitter:description" content="Event Log Location %SystemRoot%\System32\winevt\Logs\ 三種主要取得 Event Log 的方法： Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx 在 System 中有主機運作的相關訊息。 Security.evtx 在"/>
+        <title>Windows Event Log - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/posts/windows-event-log/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="Windows Event Log">
+  <meta property="og:description" content="Event Log Location %SystemRoot%\System32\winevt\Logs\
+三種主要取得 Event Log 的方法：
+Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx
+在 System 中有主機運作的相關訊息。
+Security.evtx
+在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-01-22T20:13:06+08:00">
+    <meta property="article:modified_time" content="2023-01-22T20:13:06+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Windows Event Log">
+  <meta name="twitter:description" content="Event Log Location %SystemRoot%\System32\winevt\Logs\
+三種主要取得 Event Log 的方法：
+Event Viewer (GUI-based application) Wevtutil.exe (command-line tool) Get-WinEvent (PowerShell cmdlet) 常使用的 Log Security.evtx System.evtx Application.evtx Windows PowerShell.evtx Microsoft-TerminalServices-LocalSessionmanager%3Operational.evtx 特殊狀況Log MSExchange Management.evtx IIS Log FireWall Log Log 說明 System.evtx
+在 System 中有主機運作的相關訊息。
+Security.evtx
+在 Security Log 中有主機的 Login/Logout 資訊，還有其他 Security 相關的 log。">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -183,7 +197,7 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

@@ -9,7 +9,8 @@
     <pubDate>Fri, 20 Apr 2018 03:23:59 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/what-is-command-and-control-server-c2/</guid>
-    <description><![CDATA[惡意中繼站是指具備命令與控制能力的伺服器 (Command &amp; Control, C&amp;C)或叫C2 server。 通常為被駭客入侵的主機，並用利用此受駭主機來對其他入侵後]]></description>
+    <description><![CDATA[<p>惡意中繼站是指具備命令與控制能力的伺服器 (Command &amp; Control, C&amp;C)或叫C2 server。</p>
+<p>通常為被駭客入侵的主機，並用利用此受駭主機來對其他入侵後的主機進行連線與操作。</p>]]></description>
 </item>
 </channel>
 </rss>

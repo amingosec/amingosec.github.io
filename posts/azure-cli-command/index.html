@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Azure Cli Command - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/posts/azure-cli-command/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="Azure Cli Command">
+  <meta property="og:description" content="Azure Cli 列出幾個常用到的Azure Cli 指令，方便Azuer 的維運。
+login 在安裝好Azure Cli後，使用以下指令Azure
+az login 確認 Subscription 登入後可使用 account 指令確認一下環境">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-30T23:01:58+08:00">
+    <meta property="article:modified_time" content="2024-09-30T23:01:58+08:00">
+    <meta property="article:tag" content="Cloud">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Azure Cli Command">
+  <meta name="twitter:description" content="Azure Cli 列出幾個常用到的Azure Cli 指令，方便Azuer 的維運。
+login 在安裝好Azure Cli後，使用以下指令Azure
+az login 確認 Subscription 登入後可使用 account 指令確認一下環境">
+<meta name="application-name" content="資安工作筆記">
+<meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://amingosec.github.io/posts/azure-cli-command/" /><link rel="prev" href="https://amingosec.github.io/posts/cmder/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Azure Cli Command",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/amingosec.github.io\/posts\/azure-cli-command\/"
+        },"genre": "posts","keywords": "cloud","wordcount":  447 ,
+        "url": "https:\/\/amingosec.github.io\/posts\/azure-cli-command\/","datePublished": "2024-09-30T23:01:58+08:00","dateModified": "2024-09-30T23:01:58+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="資安工作筆記"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="資安工作筆記"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目錄</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Azure Cli Command</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-09-30">2024-09-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 447 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 1 分鐘&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目錄</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#login">login</a></li>
+    <li><a href="#確認-subscription">確認 Subscription</a>
+      <ul>
+        <li><a href="#指令">指令</a></li>
+        <li><a href="#以-table-呈現">以 Table 呈現</a></li>
+      </ul>
+    </li>
+    <li><a href="#確認-resource-group">確認 Resource group</a>
+      <ul>
+        <li><a href="#指令-1">指令</a></li>
+      </ul>
+    </li>
+    <li><a href="#azure-vm-確認與建立">Azure VM 確認與建立</a>
+      <ul>
+        <li><a href="#列出所有vm">列出所有VM</a></li>
+        <li><a href="#列出特定resource-group-vm">列出特定Resource Group VM</a></li>
+        <li><a href="#列出較詳細">列出較詳細</a></li>
+        <li><a href="#列出在azure-marketplace-可用的-image">列出在Azure Marketplace 可用的 image</a></li>
+        <li><a href="#建立-linux-vm">建立 Linux VM</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="azure-cli">Azure Cli</h1>
+<p>列出幾個常用到的Azure Cli 指令，方便Azuer 的維運。</p>
+<h2 id="login">login</h2>
+<p>在安裝好Azure Cli後，使用以下指令Azure</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">login</span>
+</span></span></code></pre></div><h2 id="確認-subscription">確認 Subscription</h2>
+<p>登入後可使用 account 指令確認一下環境</p>
+<h3 id="指令">指令</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">account</span> <span class="n">list</span>
+</span></span></code></pre></div><h3 id="以-table-呈現">以 Table 呈現</h3>
+<p>預設都會使用json回傳，可利用<code>-o table</code>讓介面較為可讀。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">account</span> <span class="n">list</span> <span class="n">-o</span> <span class="n">table</span>
+</span></span></code></pre></div><h2 id="確認-resource-group">確認 Resource group</h2>
+<p>使用 group 指令列出resource group</p>
+<h3 id="指令-1">指令</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">az</span> <span class="nb">group </span><span class="n">list</span>
+</span></span></code></pre></div><h2 id="azure-vm-確認與建立">Azure VM 確認與建立</h2>
+<p>跟 Azure VM 相關的指令</p>
+<h3 id="列出所有vm">列出所有VM</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">list</span>
+</span></span></code></pre></div><h3 id="列出特定resource-group-vm">列出特定Resource Group VM</h3>
+<p>大小寫無關</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">list</span> <span class="n">-g</span> <span class="s2">&#34;test-resourcegroup&#34;</span>
+</span></span></code></pre></div><h3 id="列出較詳細">列出較詳細</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">list</span> <span class="n">-g</span> <span class="s2">&#34;test-resourcegroup&#34;</span> <span class="n">-d</span>
+</span></span></code></pre></div><h3 id="列出在azure-marketplace-可用的-image">列出在Azure Marketplace 可用的 image</h3>
+<p>使用以下指令可以找出相離線中可用的image</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Powershell" data-lang="Powershell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">image</span> <span class="n">list</span>
+</span></span></code></pre></div><p>使用以下指令列出所有的image (時間會較久)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">image</span> <span class="n">list</span> <span class="n">-all</span>
+</span></span></code></pre></div><p>建議改用以下指令過濾特定image，指定<code>--publisher</code>, <code>--offer</code> , <code>--sku</code> or <code>--edge-zone</code>參數可以過濾，支援關鍵字。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">image</span> <span class="n">list</span> <span class="p">-</span><span class="n">-offer</span> <span class="n">kali</span> <span class="p">-</span><span class="n">-all</span> <span class="n">-o</span> <span class="n">table</span>
+</span></span></code></pre></div><p>以上指令都可加<code>-o table</code> 使用 table 呈現,</p>
+<h3 id="建立-linux-vm">建立 Linux VM</h3>
+<p>在使用之前需接受 Azure Marketplace term 才可安裝</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">image</span> <span class="n">terms</span> <span class="n">accept</span> <span class="p">-</span><span class="n">-urn</span> <span class="s2">&#34;kali-linux:kali:kali-2024-3:2024.3.0&#34;</span>
+</span></span></code></pre></div><p>使用image建立kali，image 參數需設定URN，URN的型式為 &ldquo;Publisher:Offer:Sku:Version&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">vm</span> <span class="n">create</span> <span class="p">\</span>
+</span></span><span class="line"><span class="cl">  <span class="p">-</span><span class="n">-resource-group</span> <span class="s2">&#34;test-resourcegroup&#34;</span> <span class="p">\</span>
+</span></span><span class="line"><span class="cl">  <span class="p">-</span><span class="n">-name</span> <span class="nb">test-kali</span> <span class="p">\</span>
+</span></span><span class="line"><span class="cl">  <span class="p">-</span><span class="n">-image</span> <span class="s2">&#34;kali-linux:kali:kali-2024-3:2024.3.0&#34;</span> <span class="p">\</span>
+</span></span><span class="line"><span class="cl">  <span class="p">-</span><span class="n">-admin-username</span> <span class="s2">&#34;attacker&#34;</span> <span class="p">\</span>
+</span></span><span class="line"><span class="cl">  <span class="p">-</span><span class="n">-generate-ssh-keys</span>
+</span></span></code></pre></div><p>完成後可直接使用 ssh 連線</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新於 2024-09-30</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://amingosec.github.io/posts/azure-cli-command/" data-title="Azure Cli Command" data-hashtags="cloud"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://amingosec.github.io/posts/azure-cli-command/" data-hashtag="cloud"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="https://amingosec.github.io/posts/azure-cli-command/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://amingosec.github.io/posts/azure-cli-command/" data-title="Azure Cli Command"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cloud/">Cloud</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主頁</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/cmder/" class="prev" rel="prev" title="Cmder"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Cmder</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到頂部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看評論">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"複製到剪貼板","maxShownLines":50},"comment":{},"data":{"id-1":"資安工作筆記","id-2":"資安工作筆記"},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

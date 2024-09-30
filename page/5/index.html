@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
     <head>
-	<meta name="generator" content="Hugo 0.111.3">
+	<meta name="generator" content="Hugo 0.135.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="資安工作筆記" />
-<meta property="og:description" content="資訊安全相關內容分享" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://amingosec.github.io/" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="資安工作筆記"/>
-<meta name="twitter:description" content="資訊安全相關內容分享"/>
+        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="資安工作筆記">
+  <meta property="og:description" content="資訊安全相關內容分享">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="資安工作筆記">
+  <meta name="twitter:description" content="資訊安全相關內容分享">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -55,35 +58,49 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/portswigger-file-upload-lab-1/">PortSwigger 檔案上傳漏洞 lab 1</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-07">2022-03-07</time></span></div><div class="content"><h2 id="lab-目標">Lab 目標</h2>
+<p>Lab：remote code execution via web shell upload</p>
+<p>利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p></div><div class="post-footer">
+        <a href="/posts/portswigger-file-upload-lab-1/">閱讀全文</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/introduction-to-osquery/">工具介紹-osquery</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-28">2022-02-28</time></span></div><div class="content">介紹 osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-28">2022-02-28</time></span></div><div class="content"><h2 id="介紹">介紹</h2>
+<p>osquery 是由 facebook 開發的開源工具，可以運用在 Security、Compliance、Aduit方面，相較於其他工具，osquery 提供了一致的查詢方式與一致的結果呈現。從工具名稱就可看出，主打像取得db資料一樣的取得os資訊。在進行操作前可以先瞭解osquery所提供的<a href="https://osquery.io/schema/5.2.2/" target="_blank" rel="noopener noreffer ">schema</a>。</p></div><div class="post-footer">
         <a href="/posts/introduction-to-osquery/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/osquery/">osquery</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E7%9B%A3%E6%8E%A7/">資安監控</a>,&nbsp;<a href="/tags/%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98/">資安鑑識</a>,&nbsp;<a href="/tags/osquery/">Osquery</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/what-is-credential-stuffing/">攻擊手法-Credential stuffing</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-11">2022-02-11</time></span></div><div class="content">說明 Credential stuffing為密碼破解的一種手法，利用在外部取得的帳密，在目標網站登入位置進行密碼噴灑、撞庫或其他爆力密碼破解方式。 延伸閱讀 密碼破</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-11">2022-02-11</time></span></div><div class="content"><h2 id="說明">說明</h2>
+<p>Credential stuffing為密碼破解的一種手法，利用在外部取得的帳密，在目標網站登入位置進行密碼噴灑、撞庫或其他爆力密碼破解方式。</p>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li><a href="https://amingosec.blog/2022/02/06/%e6%92%9e%e5%ba%ab%e6%94%bb%e6%93%8a/" target="_blank" rel="noopener noreffer ">密碼破解-撞庫攻擊</a></li>
+<li><a href="https://amingosec.blog/2021/04/10/%e5%af%86%e7%a2%bc%e5%99%b4%e7%81%91%e6%94%bb%e6%93%8a/" target="_blank" rel="noopener noreffer ">密碼破解-密碼噴灑攻擊</a></li>
+</ul>
+<h2 id="參考網站">參考網站</h2>
+<p><a href="https://owasp.org/www-community/attacks/Credential" target="_blank" rel="noopener noreffer ">https://owasp.org/www-community/attacks/Credential</a>_stuffing</p></div><div class="post-footer">
         <a href="/posts/what-is-credential-stuffing/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/">密碼破解</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/introduction-to-weevely-php-webshell/">工具介紹-Weevely (kali linux web shell產生工具)</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-07">2022-02-07</time></span></div><div class="content">Weevely是使用python寫成的webshell管理工具，可產生php webshell。 產生Webshell 使用以下指令產生websh</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-07">2022-02-07</time></span></div><div class="content"><p>Weevely是使用python寫成的webshell管理工具，可產生php webshell。</p>
+<h2 id="產生webshell">產生Webshell</h2>
+<p>使用以下指令產生webshell，要注意密碼用特殊字元有時會造成連線失敗。</p></div><div class="post-footer">
         <a href="/posts/introduction-to-weevely-php-webshell/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/webshell/">webshell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kali-linux/">Kali Linux</a>,&nbsp;<a href="/tags/webshell/">Webshell</a>,&nbsp;<a href="/tags/%E6%BB%B2%E9%80%8F%E6%B8%AC%E8%A9%A6/">滲透測試</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">密碼破解-撞庫攻擊</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-06">2022-02-06</time></span></div><div class="content">撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。 偵測與防範的手</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-06">2022-02-06</time></span></div><div class="content"><p>撞庫攻擊是密碼破解的一種手法，駭客利用A網站洩露的帳密來登入B網站。基本思考方式是，「人在不同網站有很大的機會用同一組帳密」。</p>
+<h2 id="偵測與防範的手法">偵測與防範的手法</h2>
+<p>2階段驗證(2FA)，是能有效防止的一種方式。</p></div><div class="post-footer">
         <a href="/posts/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3/">密碼破解</a>,&nbsp;<a href="/tags/%E5%AF%86%E7%A2%BC%E5%AD%B8/">密碼學</a>,&nbsp;<a href="/tags/%E6%92%9E%E5%BA%AB%E6%94%BB%E6%93%8A/">撞庫攻擊</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全-基本概念</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-05">2022-02-05</time></span></div><div class="content">資訊安全的主體是資訊，不論是過去在古代傳達的軍令，還是現在人在意的個資，都是資訊安全想保護的主體。因此資訊安全一開始要討論的就是，資訊怎麼樣</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-05">2022-02-05</time></span></div><div class="content"><p>資訊安全的主體是資訊，不論是過去在古代傳達的軍令，還是現在人在意的個資，都是資訊安全想保護的主體。因此資訊安全一開始要討論的就是，資訊怎麼樣是安全的？也就是說我們可以從什麼方面來確認我們的資訊是安全的？這時就是要提到訊息的個層面，「機密性、完整性、可用性」。我們可以用一句話來說明，「當被核可的人需要資源或資料時，它們就一如預期的在那邊可以使用。」</p></div><div class="post-footer">
         <a href="/posts/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">閱讀全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/information-security/">Information Security</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/windows-server-iis-%E8%B7%91-php/">Windows-Windows Server IIS 上建立PHP網站</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-02-04">2022-02-04</time></span></div><div class="content">分享最近在IIS上使用Web Platform Installer安裝的經驗。 OS：Server 2016 PHP：8.0 1. 安裝IIS Web Server Install-WindowsFeature -name Web-Server -IncludeManagementTools 2. 安裝VC++ Runtime 如果沒</div><div class="post-footer">
-        <a href="/posts/windows-server-iis-%E8%B7%91-php/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86/">網路管理</a>,&nbsp;<a href="/tags/windows/">Windows</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -114,11 +131,11 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/23/">23</a>
+                        <a href="/page/22/">22</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

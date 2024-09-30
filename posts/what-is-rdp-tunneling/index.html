@@ -4,15 +4,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>攻擊手法-RDP tunneling介紹與防範 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="攻擊手法-RDP tunneling介紹與防範" />
-<meta property="og:description" content="介紹 利用受害者電腦對c2 Server建立起ssh連線行，進一步建立tunnel從c2 Server RDP連線至受害者主機。 A Microsoft Windows component, RDP was designed to provide administrators, engineers, and users with remote" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://amingosec.github.io/posts/what-is-rdp-tunneling/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-01-28T05:07:14+00:00" />
-<meta property="article:modified_time" content="2019-01-28T05:07:14+00:00" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="攻擊手法-RDP tunneling介紹與防範"/>
-<meta name="twitter:description" content="介紹 利用受害者電腦對c2 Server建立起ssh連線行，進一步建立tunnel從c2 Server RDP連線至受害者主機。 A Microsoft Windows component, RDP was designed to provide administrators, engineers, and users with remote"/>
+        <title>攻擊手法-RDP tunneling介紹與防範 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/posts/what-is-rdp-tunneling/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="攻擊手法-RDP tunneling介紹與防範">
+  <meta property="og:description" content="介紹 利用受害者電腦對c2 Server建立起ssh連線行，進一步建立tunnel從c2 Server RDP連線至受害者主機。
+A Microsoft Windows component, RDP was designed to provide administrators, engineers, and users with remote access to systems. However, threat actors have been using the technology for nefarious purposes, and the trend continues, especially since an RDP attack is usually more difficult to detect than a backdoor. ">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-01-28T05:07:14+00:00">
+    <meta property="article:modified_time" content="2019-01-28T05:07:14+00:00">
+    <meta property="article:tag" content="滲透測試">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="攻擊手法-RDP tunneling介紹與防範">
+  <meta name="twitter:description" content="介紹 利用受害者電腦對c2 Server建立起ssh連線行，進一步建立tunnel從c2 Server RDP連線至受害者主機。
+A Microsoft Windows component, RDP was designed to provide administrators, engineers, and users with remote access to systems. However, threat actors have been using the technology for nefarious purposes, and the trend continues, especially since an RDP attack is usually more difficult to detect than a backdoor. ">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -149,7 +156,7 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

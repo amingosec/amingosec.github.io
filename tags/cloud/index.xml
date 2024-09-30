@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cloud - 標籤 - 資安工作筆記</title>
+        <link>https://amingosec.github.io/tags/cloud/</link>
+        <description>Cloud - 標籤 - 資安工作筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Mon, 30 Sep 2024 23:01:58 &#43;0800</lastBuildDate><atom:link href="https://amingosec.github.io/tags/cloud/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Cli Command</title>
+    <link>https://amingosec.github.io/posts/azure-cli-command/</link>
+    <pubDate>Mon, 30 Sep 2024 23:01:58 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://amingosec.github.io/posts/azure-cli-command/</guid>
+    <description><![CDATA[<h1 id="azure-cli">Azure Cli</h1>
+<p>列出幾個常用到的Azure Cli 指令，方便Azuer 的維運。</p>
+<h2 id="login">login</h2>
+<p>在安裝好Azure Cli後，使用以下指令Azure</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">login</span>
+</span></span></code></pre></div><h2 id="確認-subscription">確認 Subscription</h2>
+<p>登入後可使用 account 指令確認一下環境</p>]]></description>
+</item>
+</channel>
+</rss>

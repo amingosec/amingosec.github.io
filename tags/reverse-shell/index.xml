@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>reverse-shell - 標籤 - 資安工作筆記</title>
+        <title>Reverse-Shell - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/reverse-shell/</link>
-        <description>reverse-shell - 標籤 - 資安工作筆記</description>
+        <description>Reverse-Shell - 標籤 - 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Sat, 03 Nov 2018 01:09:59 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/reverse-shell/" rel="self" type="application/rss+xml" /><item>
     <title>Reverse Shell 偵測</title>
     <link>https://amingosec.github.io/posts/detecting-reverse-shell/</link>
     <pubDate>Sat, 03 Nov 2018 01:09:59 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/detecting-reverse-shell/</guid>
-    <description><![CDATA[reverse shell 是外網滲透轉到內網滲透重要一步，取得shell後就有機會用來往目標組織更進一步的入侵。 也因此在於這個階段的攻防可說是相當重要，也是近期E]]></description>
+    <description><![CDATA[<p>reverse shell 是外網滲透轉到內網滲透重要一步，取得shell後就有機會用來往目標組織更進一步的入侵。 也因此在於這個階段的攻防可說是相當重要，也是近期EDR興起的重要原因。</p>]]></description>
 </item>
 </channel>
 </rss>

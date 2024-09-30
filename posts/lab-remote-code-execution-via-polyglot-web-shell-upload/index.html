@@ -4,15 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>PortSwigger-檔案上傳漏洞 lab 6 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="PortSwigger-檔案上傳漏洞 lab 6" />
-<meta property="og:description" content="Lab: Remote code execution via polyglot web shell upload Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容sub" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-04-15T16:08:45+00:00" />
-<meta property="article:modified_time" content="2022-04-15T16:08:45+00:00" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="PortSwigger-檔案上傳漏洞 lab 6"/>
-<meta name="twitter:description" content="Lab: Remote code execution via polyglot web shell upload Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容sub"/>
+        <title>PortSwigger-檔案上傳漏洞 lab 6 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/posts/lab-remote-code-execution-via-polyglot-web-shell-upload/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="PortSwigger-檔案上傳漏洞 lab 6">
+  <meta property="og:description" content="Lab: Remote code execution via polyglot web shell upload
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。 此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。 步驟 如同之前的 lab 先找到上傳後可被存取的路徑。 因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。 需要將 payload 加到圖片檔中來執行。 下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行sudo apt install libimage-exiftool-perl來安裝。 exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 FLAG_START 、 FLAG_END加以區別。 將產生的payload.php上傳後，存取/files/avatars/payload.php即可取得此Lab的Flag。 補充說明 在執行 php 檔時，會從&lt;?開始到?&gt;結束，因此將 php code 內容放在 png 的 comment 中，再存成 .php 檔，會把其他內容當成亂碼，但執行放在 comment 的 php code。">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-04-15T16:08:45+00:00">
+    <meta property="article:modified_time" content="2022-04-15T16:08:45+00:00">
+    <meta property="article:tag" content="資訊安全">
+    <meta property="article:tag" content="Fiel Upload Vulnerabilities">
+    <meta property="article:tag" content="Lab">
+    <meta property="article:tag" content="PortSwigger">
+    <meta property="article:tag" content="檔案上傳漏洞">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PortSwigger-檔案上傳漏洞 lab 6">
+  <meta name="twitter:description" content="Lab: Remote code execution via polyglot web shell upload
+Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmit。 此 lab 會檢查檔案 header 因此需產生 polyglot web shell 來上傳。 步驟 如同之前的 lab 先找到上傳後可被存取的路徑。 因為此 lab 開始針對檔案 header 進行檢查，因此會發現之前幾個 lab 的手法無法使用。 需要將 payload 加到圖片檔中來執行。 下面指令使用 exiftool 來將 payload 加入圖片 exif 的 comment 中，並產生一個附檔名為 php 的圖片檔。kali 預設沒有安裝 exiftool，執行sudo apt install libimage-exiftool-perl來安裝。 exiftool -Comment=&#34;&lt;?php echo &#39; FLAG_START &#39; . file_get_contents(&#39;/home/carlos/secret&#39;) . &#39; FLAG_END &#39;; ?&gt;&#34; &lt;image_file&gt;.png -o payload.php 因為單純將 flag 顯示出來，會跟其他圖片檔亂碼接在一起，容易搞混，在前後分別加上 FLAG_START 、 FLAG_END加以區別。 將產生的payload.php上傳後，存取/files/avatars/payload.php即可取得此Lab的Flag。 補充說明 在執行 php 檔時，會從&lt;?開始到?&gt;結束，因此將 php code 內容放在 png 的 comment 中，再存成 .php 檔，會把其他內容當成亂碼，但執行放在 comment 的 php code。">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -148,7 +159,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/">檔案上傳漏洞</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">Fiel Upload Vulnerabilities</a>,&nbsp;<a href="/tags/lab/">Lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E6%BC%8F%E6%B4%9E/">檔案上傳漏洞</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主頁</a></span>
         </section>
@@ -159,7 +170,7 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

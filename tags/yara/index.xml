@@ -1,15 +1,29 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>yara - 標籤 - 資安工作筆記</title>
+        <title>Yara - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/yara/</link>
-        <description>yara - 標籤 - 資安工作筆記</description>
+        <description>Yara - 標籤 - 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Thu, 21 Jun 2018 01:57:56 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/yara/" rel="self" type="application/rss+xml" /><item>
     <title>名詞介紹-YARA Rules</title>
     <link>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</link>
     <pubDate>Thu, 21 Jun 2018 01:57:56 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/yara-%E6%98%AF%E4%BB%80%E9%BA%BC/</guid>
-    <description><![CDATA[YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。 YARA Elements YARA rules包含以下幾個元件： Metadata Strings Conditions Imports 參考連]]></description>
+    <description><![CDATA[<p>YARA rules 提供資安人員自行定義並撰寫惡意程式特徵規則。利用文字或binary的特徵來比對惡意程式。</p>
+<h2 id="yara-elements">YARA Elements</h2>
+<p>YARA rules包含以下幾個元件：</p>
+<ul>
+<li>Metadata</li>
+<li>Strings</li>
+<li>Conditions</li>
+<li>Imports</li>
+</ul>
+<h2 id="參考連結">參考連結</h2>
+<ul>
+<li><a href="https://www.varonis.com/blog/yara-rules" target="_blank" rel="noopener noreffer ">YARA Rules Guide: Learning this Malware Research Tool</a></li>
+<li><a href="https://medium.com/bugbountywriteup/intro-to-malware-detection-using-yara-eacab8373cf4" target="_blank" rel="noopener noreffer ">malware detection using yara</a></li>
+<li><a href="https://yara.readthedocs.io/en/latest/" target="_blank" rel="noopener noreffer ">YARA 文件</a></li>
+</ul>]]></description>
 </item>
 </channel>
 </rss>

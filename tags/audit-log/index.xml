@@ -9,7 +9,8 @@
     <pubDate>Sun, 13 Mar 2022 04:25:23 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/using-turnedontimesview-to-get-windows-off-on-time/</guid>
-    <description><![CDATA[除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。 TUrnedOnTimesView透過windows]]></description>
+    <description><![CDATA[<p>除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。</p>
+<p>TUrnedOnTimesView透過windows event log來比對開關機資訊。</p>]]></description>
 </item>
 <item>
     <title>Windows Event Log位置</title>
@@ -17,7 +18,7 @@
     <pubDate>Sat, 22 Jan 2022 06:52:27 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/location-of-windows-event-log/</guid>
-    <description><![CDATA[在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系]]></description>
+    <description><![CDATA[<p>在進行事件分析時，相較於在目標主機上直接操作，取得目標主機的 Event log 來進行分析是較為良好的方式，不會在操作時同時汙染了目標主機。因此，在遇到 Windows 系統時，可到 log 的存放位置來取得幾個重要的 event log。</p>]]></description>
 </item>
 </channel>
 </rss>

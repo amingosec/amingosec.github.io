@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
     <head>
-	<meta name="generator" content="Hugo 0.111.3">
+	<meta name="generator" content="Hugo 0.135.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="資安工作筆記" />
-<meta property="og:description" content="資訊安全相關內容分享" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://amingosec.github.io/" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="資安工作筆記"/>
-<meta name="twitter:description" content="資訊安全相關內容分享"/>
+        <title>資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="資安工作筆記">
+  <meta property="og:description" content="資訊安全相關內容分享">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="資安工作筆記">
+  <meta name="twitter:description" content="資訊安全相關內容分享">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -55,33 +58,53 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle">資訊安全相關內容分享</div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/microsoft-edge-browsing-history-location/">Microsoft Edge 瀏覽記錄位置</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-22">2022-03-22</time></span></div><div class="content"><h2 id="說明">說明</h2>
+<p>Edge的瀏覽記錄位置如下，檔案名稱為History，以SQLite的型式儲存。</p>
+<p>C:\Users\<!-- raw HTML omitted -->\AppData\Local\Microsoft\Edge\User Data\Default\</p>
+<p>取得資料後可以使用讀取SQLite的工具，如SQLite Reader去讀取資料。</p></div><div class="post-footer">
+        <a href="/posts/microsoft-edge-browsing-history-location/">閱讀全文</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/portswigger-lab-web-shell-upload-via-path-traversal/">PortSwigger-檔案上傳漏洞 lab 3</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content">Lab: Web shell upload via path traversal Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsm</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content"><p>Lab: Web shell upload via path traversal</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<p>跟上一個lab相同，利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p></div><div class="post-footer">
         <a href="/posts/portswigger-lab-web-shell-upload-via-path-traversal/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">fiel upload vulnerabilities</a>,&nbsp;<a href="/tags/lab/">lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/">檔案上傳</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/fiel-upload-vulnerabilities/">Fiel Upload Vulnerabilities</a>,&nbsp;<a href="/tags/lab/">Lab</a>,&nbsp;<a href="/tags/portswigger/">PortSwigger</a>,&nbsp;<a href="/tags/%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3/">檔案上傳</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/portswigger-file-upload-lab-2/">PortSwigger 檔案上傳漏洞 lab 2</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content">Lab 名稱 Web shell upload via Content-Type restriction bypass Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容su</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-20">2022-03-20</time></span></div><div class="content"><h2 id="lab-名稱">Lab 名稱</h2>
+<p>Web shell upload via Content-Type restriction bypass</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<p>跟上一個lab相同，利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p></div><div class="post-footer">
         <a href="/posts/portswigger-file-upload-lab-2/">閱讀全文</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time/">工具介紹-TurnedOnTimesView-取得windows 開關機資訊</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-13">2022-03-13</time></span></div><div class="content">除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。 TUrnedOnTimesView透過windows</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-13">2022-03-13</time></span></div><div class="content"><p>除了之前介紹使用powershell來抓取開關機資訊外，也可利用現成的工具來取得此資訊。</p>
+<p>TUrnedOnTimesView透過windows event log來比對開關機資訊。</p></div><div class="post-footer">
         <a href="/posts/using-turnedontimesview-to-get-windows-off-on-time/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/log/">LOG</a>,&nbsp;<a href="/tags/windows-server/">windows server</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/audit-log/">Audit Log</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a>,&nbsp;<a href="/tags/log/">LOG</a>,&nbsp;<a href="/tags/windows-server/">Windows Server</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/slove-cmder-font-overlap-problem/">工具使用-Cmder字體重疊調整</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-07">2022-03-07</time></span></div><div class="content">在使用cmder時，有時會出現字體重疊的問題，原因是設定中將長字串固定長度造成的，可以在設定調整。 可以參考下圖，在設定中General-&g</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-07">2022-03-07</time></span></div><div class="content"><p>在使用cmder時，有時會出現字體重疊的問題，原因是設定中將長字串固定長度造成的，可以在設定調整。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://amingosec.blog/wp-content/uploads/2022/03/image.png?w=473"
+        data-srcset="https://amingosec.blog/wp-content/uploads/2022/03/image.png?w=473, https://amingosec.blog/wp-content/uploads/2022/03/image.png?w=473 1.5x, https://amingosec.blog/wp-content/uploads/2022/03/image.png?w=473 2x"
+        data-sizes="auto"
+        alt="https://amingosec.blog/wp-content/uploads/2022/03/image.png?w=473"
+        title="https://amingosec.blog/wp-content/uploads/2022/03/image.png?w=473" /></p>
+<p>可以參考下圖，在設定中General-&gt; Fonts中將上圖的Compress long strings to fit space取消勾選(下圖紅框處)，儲存後即可正常顯示。</p></div><div class="post-footer">
         <a href="/posts/slove-cmder-font-overlap-problem/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cmder/">cmder</a>,&nbsp;<a href="/tags/network/">Network</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cmder/">Cmder</a>,&nbsp;<a href="/tags/network/">Network</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/waht-is-dns-over-https-doh/">Network - DNS over HTTPS (DoH)介紹</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-07">2022-03-07</time></span></div><div class="content">DNS over HTTPS 是利用HTTPS協定來提供名稱解析的服務。以達到私密性與安全性的目標。 提供DoH服務的Server稱為DoH Server，而使用DoH</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-07">2022-03-07</time></span></div><div class="content"><p>DNS over HTTPS 是利用HTTPS協定來提供名稱解析的服務。以達到私密性與安全性的目標。</p>
+<p>提供DoH服務的Server稱為DoH Server，而使用DoH服務的Client稱為DoH Client。</p></div><div class="post-footer">
         <a href="/posts/waht-is-dns-over-https-doh/">閱讀全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">dns</a>,&nbsp;<a href="/tags/doh/">DOH</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/portswigger-file-upload-lab-1/">PortSwigger 檔案上傳漏洞 lab 1</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span>&nbsp;<span class="post-publish">發佈於 <time datetime="2022-03-07">2022-03-07</time></span></div><div class="content">Lab 目標 Lab：remote code execution via web shell upload 利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsmi</div><div class="post-footer">
-        <a href="/posts/portswigger-file-upload-lab-1/">閱讀全文</a></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/dns/">DNS</a>,&nbsp;<a href="/tags/doh/">DOH</a>,&nbsp;<a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -110,11 +133,11 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/23/">23</a>
+                        <a href="/page/22/">22</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

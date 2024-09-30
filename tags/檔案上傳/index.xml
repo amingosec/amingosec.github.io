@@ -9,7 +9,9 @@
     <pubDate>Wed, 30 Mar 2022 16:10:42 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/lab-web-shell-upload-via-extension-blacklist-bypass/</guid>
-    <description><![CDATA[Lab: Web shell upload via extension blacklist bypass Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subs]]></description>
+    <description><![CDATA[<p>Lab: Web shell upload via extension blacklist bypass</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<p>跟上一個lab相同，利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p>]]></description>
 </item>
 <item>
     <title>PortSwigger-檔案上傳漏洞 lab 3</title>
@@ -17,7 +19,9 @@
     <pubDate>Sun, 20 Mar 2022 13:33:54 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/portswigger-lab-web-shell-upload-via-path-traversal/</guid>
-    <description><![CDATA[Lab: Web shell upload via path traversal Lab 目標 跟上一個lab相同，利用上傳漏洞將目標主機上/home/carlos/secret檔案內容輸出，再將輸出的內容subsm]]></description>
+    <description><![CDATA[<p>Lab: Web shell upload via path traversal</p>
+<h2 id="lab-目標">Lab 目標</h2>
+<p>跟上一個lab相同，利用上傳漏洞將目標主機上<code>/home/carlos/secret</code>檔案內容輸出，再將輸出的內容subsmit。</p>]]></description>
 </item>
 </channel>
 </rss>

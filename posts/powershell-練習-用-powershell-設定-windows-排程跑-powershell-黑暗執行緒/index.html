@@ -4,15 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:title" content="PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒" />
-<meta property="og:description" content="計劃把原本的手工部署與設定操作逐步轉成 PowerShell Script。這樣做有幾個好處： 作業標準化，避免人為失誤 寫成腳本，不管誰來操作結果都一致，不會無人交" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://amingosec.github.io/posts/powershell-%E7%B7%B4%E7%BF%92-%E7%94%A8-powershell-%E8%A8%AD%E5%AE%9A-windows-%E6%8E%92%E7%A8%8B%E8%B7%91-powershell-%E9%BB%91%E6%9A%97%E5%9F%B7%E8%A1%8C%E7%B7%92/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-05-30T04:34:09+00:00" />
-<meta property="article:modified_time" content="2020-05-30T04:34:09+00:00" /><meta property="og:site_name" content="資安工作筆記" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒"/>
-<meta name="twitter:description" content="計劃把原本的手工部署與設定操作逐步轉成 PowerShell Script。這樣做有幾個好處： 作業標準化，避免人為失誤 寫成腳本，不管誰來操作結果都一致，不會無人交"/>
+        <title>PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒 - 資安工作筆記</title><meta name="Description" content="資訊安全相關內容分享"><meta property="og:url" content="https://amingosec.github.io/posts/powershell-%E7%B7%B4%E7%BF%92-%E7%94%A8-powershell-%E8%A8%AD%E5%AE%9A-windows-%E6%8E%92%E7%A8%8B%E8%B7%91-powershell-%E9%BB%91%E6%9A%97%E5%9F%B7%E8%A1%8C%E7%B7%92/">
+  <meta property="og:site_name" content="資安工作筆記">
+  <meta property="og:title" content="PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒">
+  <meta property="og:description" content="計劃把原本的手工部署與設定操作逐步轉成 PowerShell Script。這樣做有幾個好處：
+作業標準化，避免人為失誤
+寫成腳本，不管誰來操作結果都一致，不會無人交接手藝失傳，也排除腦殘眼拙手滑出錯的風險，
+大量部署或需重複執行時可節省可觀時間
+例如要部署上百台機器的場合。
+可設定排程自動化部署…
+— Read on blog.darkthread.net/blog/psfaq-setup-schtask/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-05-30T04:34:09+00:00">
+    <meta property="article:modified_time" content="2020-05-30T04:34:09+00:00">
+    <meta property="article:tag" content="未分類">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PowerShell - 用 PowerShell 設定 Windows 排程跑 PowerShell-黑暗執行緒">
+  <meta name="twitter:description" content="計劃把原本的手工部署與設定操作逐步轉成 PowerShell Script。這樣做有幾個好處：
+作業標準化，避免人為失誤
+寫成腳本，不管誰來操作結果都一致，不會無人交接手藝失傳，也排除腦殘眼拙手滑出錯的風險，
+大量部署或需重複執行時可節省可觀時間
+例如要部署上百台機器的場合。
+可設定排程自動化部署…
+— Read on blog.darkthread.net/blog/psfaq-setup-schtask/">
 <meta name="application-name" content="資安工作筆記">
 <meta name="apple-mobile-web-app-title" content="資安工作筆記"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -120,7 +137,7 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2024</span></div>
         </div>
     </footer></div>
 

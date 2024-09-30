@@ -1,15 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>netcat - 標籤 - 資安工作筆記</title>
+        <title>Netcat - 標籤 - 資安工作筆記</title>
         <link>https://amingosec.github.io/tags/netcat/</link>
-        <description>netcat - 標籤 - 資安工作筆記</description>
+        <description>Netcat - 標籤 - 資安工作筆記</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><lastBuildDate>Tue, 04 May 2021 15:21:58 &#43;0000</lastBuildDate><atom:link href="https://amingosec.github.io/tags/netcat/" rel="self" type="application/rss+xml" /><item>
     <title>工具介紹-Netcat指令</title>
     <link>https://amingosec.github.io/posts/netcat-nc-commands/</link>
     <pubDate>Tue, 04 May 2021 15:21:58 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/netcat-nc-commands/</guid>
-    <description><![CDATA[netcat 可分兩種執行模式client mode和server mode。可以使用client mode去確認TCP/UDP port是否開啟。 跟遠端主機特]]></description>
+    <description><![CDATA[<p>netcat 可分兩種執行模式client mode和server mode。可以使用client mode去確認TCP/UDP port是否開啟。</p>
+<h2 id="跟遠端主機特定port建立連線">跟遠端主機特定Port建立連線</h2>
+<p>確認是特定主機3389 Port是否有開，有時可以取代telnet</p>]]></description>
 </item>
 </channel>
 </rss>

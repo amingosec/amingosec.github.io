@@ -9,7 +9,9 @@
     <pubDate>Tue, 03 May 2022 16:09:50 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/vs-code-extensions-for-markdown/</guid>
-    <description><![CDATA[使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。 Markdown All in One 首推的就是 Markdown All in One 支援相當多的快速編輯功能，其中包含 Table of]]></description>
+    <description><![CDATA[<p>使用 VS Code 撰寫 markdown 除了本身 VS Code 的支援外，安裝以下幾個套件會讓你使用起來更加方便。</p>
+<h2 id="markdown-all-in-one">Markdown All in One</h2>
+<p>首推的就是 <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" target="_blank" rel="noopener noreffer ">Markdown All in One</a> 支援相當多的快速編輯功能，其中包含 <code>Table of contents</code> 跟 <code>Easily add/update/remove section numbering</code> 都是相當實用的功能。</p>]]></description>
 </item>
 <item>
     <title>VS Code extension 推薦</title>
@@ -17,7 +19,7 @@
     <pubDate>Thu, 28 Apr 2022 17:10:45 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://amingosec.github.io/posts/top-vscode-extensions-for-cyber-security-work/</guid>
-    <description><![CDATA[VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的ext]]></description>
+    <description><![CDATA[<p>VS Code是一個相當好用的軟體，除了提供開發的功能外，他的 extension 更可以讓 VS Code 的使用範圍擴大，在資安工作上也相同的幫助。以下整理了幾個常用的extension。</p>]]></description>
 </item>
 </channel>
 </rss>
